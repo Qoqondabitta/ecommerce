@@ -1,19 +1,26 @@
 import React from "react";
-import { Container, Input, Parts, SearchContainer, Wrapper } from "./style";
+import { Container, Input, Language, Parts, SearchContainer, Wrapper, Logo } from "./style";
 import { CiSearch } from "react-icons/ci";
+import logo from "../../assets/images/logo.png"
+import "./design.css"
 
 const Navbar = () => {
   return (
     <Container>
       <Wrapper>
         <Parts>
+          <Language>En</Language>
           <SearchContainer>
-            <CiSearch />
             <Input type="text" placeholder="Search" />
+            <CiSearch />
           </SearchContainer>
         </Parts>
-        <Parts></Parts>
-        <Parts></Parts>
+        <Parts>
+          <Logo src={logo} />
+        </Parts>
+        <Parts>
+          <button className="btn">check</button>
+        </Parts>
       </Wrapper>
     </Container>
   );

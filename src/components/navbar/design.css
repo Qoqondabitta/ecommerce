@@ -1,0 +1,20 @@
+.btn {
+    width: 200px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+@media only screen and (max-width: 450px) {
+    .btn{
+        background-color: blue;
+    }
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .btn{
+        background-color: green;
+    }
+}
