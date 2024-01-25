@@ -11,11 +11,30 @@ export const Wrapper = styled.div`
 `;
 
 export const Parts = styled.div`
-  /* flex: 1; */
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
+  /* background: blue; */
+  flex: 1;
+  @media only screen and (max-width: 450px) {
+    justify-content: flex-start;
+  }
+`;
+
+export const Search = styled(Parts)`
+  justify-content: center;
+
+  @media only screen and (max-width: 450px) {
+    order: 1;
+    margin: 0 auto;
+  }
+`;
+
+export const Shop = styled(Parts)`
+  @media only screen and (max-width: 450px) {
+    justify-content: flex-end;
+  }
 `;
 
 export const SearchContainer = styled.div`
@@ -28,10 +47,19 @@ export const SearchContainer = styled.div`
   border: 1px solid grey;
 `;
 
-export const Input = styled.input`
-  border: none;
-  outline: none;
-  width: 180px;
+export const Round = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  background: blue;
+  color: #fff;
+  position: absolute;
+  top: -13px;
+  right: -10px;
 `;
 
 export const Language = styled.span`
@@ -41,8 +69,9 @@ export const Language = styled.span`
 `;
 
 export const Logo = styled.img`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   object-fit: cover;
   object-position: center;
 `;

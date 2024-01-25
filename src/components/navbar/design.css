@@ -1,20 +1,37 @@
 .btn {
-    width: 200px;
-    background-color: red;
-    color: white;
-    border-radius: 5px;
-    border: none;
+  width: 200px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  border: none;
 }
 
-@media only screen and (max-width: 450px) {
-    .btn{
-        background-color: blue;
-    }
+.wrapper {
+  width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+@media screen and (max-width: 1300px) {
+  .btn {
+    background-color: green;
+  }
+  .wrapper {
+    width: 700px;
+  }
+}
 
-@media only screen and (max-width: 1300px) {
-    .btn{
-        background-color: green;
-    }
+@media screen and (max-width: 450px) {
+  .btn {
+    background-color: blue;
+  }
+  .wrapper {
+    /* flex-direction: row-reverse; */
+    width: 355px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
