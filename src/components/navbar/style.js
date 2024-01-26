@@ -2,12 +2,9 @@ import { styled } from "styled-components";
 
 export const Container = styled.div`
   height: 60px;
-`;
-
-export const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 `;
 
 export const Parts = styled.div`
@@ -15,7 +12,6 @@ export const Parts = styled.div`
   align-items: center;
   justify-content: center;
   gap: 15px;
-  /* background: blue; */
   flex: 1;
   @media only screen and (max-width: 450px) {
     justify-content: flex-start;
@@ -32,8 +28,8 @@ export const Search = styled(Parts)`
 `;
 
 export const Shop = styled(Parts)`
-  @media only screen and (max-width: 450px) {
     justify-content: flex-end;
+  @media only screen and (max-width: 1300px) {
   }
 `;
 

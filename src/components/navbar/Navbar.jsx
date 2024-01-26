@@ -17,13 +17,14 @@ import { PiShoppingCartLight } from "react-icons/pi";
 import { useSelector, useDispatch } from "react-redux";
 // import { increment, decrement } from "../../redux/Counter";
 import Input from "../generics/input/Input";
+// import "../../style.css"
 
 const Navbar = () => {
   const counter = useSelector((store) => store.counter);
   // const dispatch = useDispatch();
 
   return (
-    <Container>
+    <Container className="center">
       <div className="wrapper">
         <Search>
           <Language>En</Language>
@@ -36,7 +37,7 @@ const Navbar = () => {
           <Logo src={logo} />
         </Parts>
         <Shop style={{ position: "relative" }}>
-          <PiShoppingCartLight size="1.5em" />
+          <PiShoppingCartLight size="1.8em" />
           <Round className="center">{counter.data}</Round>
         </Shop>
       </div>

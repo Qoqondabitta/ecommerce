@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .btn {
   width: 200px;
   background-color: red;
@@ -19,6 +25,8 @@
   }
   .wrapper {
     width: 700px;
+    margin-top: 20px;
+
   }
 }
 
@@ -27,11 +35,12 @@
     background-color: blue;
   }
   .wrapper {
-    /* flex-direction: row-reverse; */
     width: 355px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    padding: 0px 10px;
+    margin-top: 65px;
   }
 }
