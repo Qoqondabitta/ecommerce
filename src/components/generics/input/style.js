@@ -25,7 +25,7 @@ const getType = ({ type }) => {
 };
 
 export const Inputs = styled.input`
-  /* width: ${({ width }) => (width ? `${width}px` : "120px")}; */
+  width: ${({ width }) => (width ? `${width}px` : "120px")};
   font-style: normal;
   font-weight: 400;
   ${getType};

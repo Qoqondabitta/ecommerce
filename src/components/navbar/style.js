@@ -1,10 +1,13 @@
 import { styled } from "styled-components";
 
 export const Container = styled.div`
-  height: 60px;
+  /* height: 60px; */
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 4px 7px 15px #e6e4e4;
+  padding: 20px 0px;
+  /* border-bottom: 1px solid grey; */
 `;
 
 export const Parts = styled.div`
@@ -19,7 +22,7 @@ export const Parts = styled.div`
 `;
 
 export const Search = styled(Parts)`
-  justify-content: center;
+  justify-content: flex-start;
 
   @media only screen and (max-width: 450px) {
     order: 1;
@@ -28,9 +31,10 @@ export const Search = styled(Parts)`
 `;
 
 export const Shop = styled(Parts)`
-    justify-content: flex-end;
-  @media only screen and (max-width: 1300px) {
-  }
+  justify-content: flex-end;
+  position: relative;
+  /* @media only screen and (max-width: 1300px) {
+  } */
 `;
 
 export const SearchContainer = styled.div`
@@ -59,12 +63,46 @@ export const Round = styled.div`
 `;
 
 export const Language = styled.span`
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
+  color: grey;
   cursor: pointer;
 `;
 
-export const Logo = styled.img`
+export const Combine = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+`;
+
+export const Title = styled.div`
+  /* height: 40px; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+`;
+
+export const Top = styled.p`
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+`;
+
+export const Center = styled.p`
+  line-height: 14px;
+  font-weight: bold;
+  font-size: 16px;
+`;
+
+export const Bottom = styled.p`
+  line-height: 14px;
+  font-weight: bold;
+  font-size: 18px;
+`;
+
+export const Post = styled.img`
   width: 40px;
   height: 40px;
   border-radius: 50%;

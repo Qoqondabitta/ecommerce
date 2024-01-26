@@ -5,6 +5,8 @@
 }
 
 .btn {
+  box-shadow: 4px 7px 15px #e6e4e4;
+
   width: 200px;
   background-color: red;
   color: white;
@@ -13,6 +15,8 @@
 }
 
 .wrapper {
+  padding: 0px 50px;
+  /* background-color: red; */
   width: 1300px;
   display: flex;
   align-items: center;

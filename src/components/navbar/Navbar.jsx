@@ -1,23 +1,30 @@
 import React from "react";
 import {
   Container,
-  // Input,
   Language,
   Parts,
   SearchContainer,
   Search,
-  Logo,
   Round,
   Shop,
+  Combine,
+  Title,
+  Top,
+  Center,
+  Bottom,
+  Post,
 } from "./style";
 import { CiSearch } from "react-icons/ci";
-import logo from "../../assets/images/logo.jpg";
 import "./design.css";
 import { PiShoppingCartLight } from "react-icons/pi";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector} from "react-redux";
 // import { increment, decrement } from "../../redux/Counter";
 import Input from "../generics/input/Input";
+// import Xon from "../logo/Logo";
+// import Logo from "../logo/Logo";
 // import "../../style.css"
+import logo from "../../assets/images/logo.jpg";
+
 
 const Navbar = () => {
   const counter = useSelector((store) => store.counter);
@@ -34,9 +41,17 @@ const Navbar = () => {
           </SearchContainer>
         </Search>
         <Parts>
-          <Logo src={logo} />
+          {" "}
+          <Combine>
+            <Post src={logo} />
+            <Title>
+              <Top>XON</Top>
+              <Center>Online</Center>
+              <Bottom>Market</Bottom>
+            </Title>
+          </Combine>
         </Parts>
-        <Shop style={{ position: "relative" }}>
+        <Shop>
           <PiShoppingCartLight size="1.8em" />
           <Round className="center">{counter.data}</Round>
         </Shop>
