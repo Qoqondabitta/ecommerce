@@ -6,4 +6,5 @@ export const Container = styled.div`
   color: yellow;
   font-size: 14px;
   text-align: center;
+  font-weight: bold;
 `;

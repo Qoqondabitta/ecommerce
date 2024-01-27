@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Container,
-  Language,
   Parts,
   SearchContainer,
   Search,
@@ -20,10 +19,8 @@ import { PiShoppingCartLight } from "react-icons/pi";
 import { useSelector} from "react-redux";
 // import { increment, decrement } from "../../redux/Counter";
 import Input from "../generics/input/Input";
-// import Xon from "../logo/Logo";
-// import Logo from "../logo/Logo";
-// import "../../style.css"
 import logo from "../../assets/images/logo.jpg";
+import Drop from "../dropdown/Drop";
 
 
 const Navbar = () => {
@@ -34,7 +31,7 @@ const Navbar = () => {
     <Container className="center">
       <div className="wrapper">
         <Search>
-          <Language>En</Language>
+          <Drop />
           <SearchContainer>
             <Input type="search" placeholder="Search" />
             <CiSearch />
