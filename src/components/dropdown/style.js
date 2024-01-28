@@ -15,6 +15,7 @@ export const Container = styled.div`
   width: 100px;
   font-size: 20px;
   cursor: pointer;
+  position: relative;
 
   @media only screena and (max-width: 450px) {
     font-size: 14px;
@@ -22,7 +23,6 @@ export const Container = styled.div`
 `;
 
 export const List = styled.ul`
-  background: red;
   list-style-type: none;
   display: flex;
   flex-direction: column;

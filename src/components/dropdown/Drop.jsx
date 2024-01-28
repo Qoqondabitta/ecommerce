@@ -5,11 +5,18 @@ import UZ from "../../assets/images/uzbek.png";
 import RUS from "../../assets/images/usa.png";
 import ENG from "../../assets/images/rus.png";
 import { russian, english, uzbek } from "../../redux/language";
-import { IoIosArrowDown } from "react-icons/io";
+import { MdKeyboardArrowLeft } from "react-icons/md";
+import "./drop.css"
+import { useState } from "react";
 
 const Drop = () => {
+    const [move, setMove] = useState(false)
   const language = useSelector((store) => store.language);
   const dispatch = useDispatch();
+
+  const iconMove = () => {
+    setMove(!move)
+  }
   return (
     <Wrapper>
       <Container>
@@ -21,19 +28,24 @@ const Drop = () => {
         ) : language.value === "UZB" ? (
           <Flag src={UZ} />
         ) : null}
-        <IoIosArrowDown />;
+        <MdKeyboardArrowLeft
+          onClick={iconMove}
+          className={`down ${move ? "expand" : ""}`}
+        />
       </Container>
-      <List>
-        <Item onClick={() => dispatch(english())}>
-          ENG <Flag src={RUS} />
-        </Item>
-        <Item onClick={() => dispatch(russian())}>
-          RUS <Flag src={ENG} />
-        </Item>
-        <Item onClick={() => dispatch(uzbek())}>
-          UZB <Flag src={UZ} />
-        </Item>
-      </List>
+      {move && (
+        <List className={`dropdown-content ${move ? "collapsed" : ""}`}>
+          <Item onClick={() => dispatch(english())}>
+            ENG <Flag src={RUS} />
+          </Item>
+          <Item onClick={() => dispatch(russian())}>
+            RUS <Flag src={ENG} />
+          </Item>
+          <Item onClick={() => dispatch(uzbek())}>
+            UZB <Flag src={UZ} />
+          </Item>
+        </List>
+      )}
     </Wrapper>
   );
 };

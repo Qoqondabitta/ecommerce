@@ -1,0 +1,21 @@
+.down{
+    margin-left: 5px;
+    transition: transform 0.5s;
+}
+
+.down.expand {
+    transform: rotate(-90deg);
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 15px;
+  /* left: 0; */
+  height: 70px;
+  width: 100%;
+  transition: top 2s;
+}
+
+.dropdown-content.collapsed {
+    top: 70px;
+}
