@@ -8,6 +8,28 @@ const getType = ({ type }) => {
         background: "red",
         padding: "5px 0px",
       };
+    case "xon":
+      return {
+        fontSize: "14px",
+        lineHeight: "14px",
+        fontWeight: "600",
+        color: "yellow",
+
+      };
+    case "online":
+      return {
+        fontSize: "16px",
+        lineHeight: "14px",
+        fontWeight: "bold",
+        color: "#fff",
+      };
+    case "store":
+      return {
+        fontSize: "18px",
+        lineHeight: "14px",
+        fontWeight: "bold",
+        color: "pink",
+      };
     case "signup":
       return {
         color: "#3a4752",
@@ -20,21 +42,18 @@ const getType = ({ type }) => {
         color: "#fff",
         borderRadius: "12px",
       };
-      break;
   }
 };
 
-export const Title = styled.button`
+export const Titles = styled.p`
   width: ${({ width }) => (width ? `${width}px` : "120px")};
   cursor: pointer;
   font-style: normal;
   font-weight: 400;
   ${getType};
   transition: all 0.5s;
-  &:hover {
-    transform: scale(1.15);
-  }
-  &:active {
-    opacity: 0.7;
+
+  @media only screen and (max-width: 1025px) {
+    display: ${({ media }) => media && "none"};
   }
 `;

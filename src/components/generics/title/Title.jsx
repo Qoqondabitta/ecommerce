@@ -1,17 +1,17 @@
 import React from "react";
-import { Title } from "./style";
+import { Titles } from "./style";
 
-const Title = ({ children, onClick, type, width, mediaWidth }) => {
+const Title = ({ children, onClick, type, width, mediaWidth, media }) => {
   return (
-    <Title
-      className="center"
+    <Titles
       onClick={onClick}
       type={type}
+      media={media}
       mediaWidth={mediaWidth}
       width={width}
     >
       {children || "buy"}
-    </Title>
+    </Titles>
   );
 };
 

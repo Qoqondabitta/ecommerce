@@ -4,10 +4,11 @@ import { Container, Flag, Item, List, Wrapper } from "./style";
 import UZ from "../../assets/images/uzbek.png";
 import RUS from "../../assets/images/usa.png";
 import ENG from "../../assets/images/rus.png";
-import { russian, english, uzbek } from "../../redux/language";
+// import { russian, english, uzbek } from "../../redux/language";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import "./drop.css"
 import { useState } from "react";
+import { tongues } from "../../constants/navbar";
 
 const Drop = () => {
     const [move, setMove] = useState(false)
@@ -29,13 +30,16 @@ const Drop = () => {
           <Flag src={UZ} />
         ) : null}
         <MdKeyboardArrowLeft
+        size="1.5em"
           onClick={iconMove}
           className={`down ${move ? "expand" : ""}`}
+          color="white"
         />
       </Container>
       {move && (
         <List className={`dropdown-content ${move ? "collapsed" : ""}`}>
-          <Item onClick={() => {dispatch(english()); setMove(!move)}}>
+          {tongues.map((value, index)=><Item key={index} onClick={()=>{setMove(!move); dispatch(value.function)}}>{value.country} <Flag src={value.icon} /></Item>)}
+          {/* <Item onClick={() => {dispatch(english()); setMove(!move)}}>
             ENG <Flag src={RUS} />
           </Item>
           <Item onClick={() => {dispatch(russian()); setMove(!move)}}>
@@ -43,7 +47,7 @@ const Drop = () => {
           </Item>
           <Item onClick={() => {dispatch(uzbek()); setMove(!move)}}>
             UZB <Flag src={UZ} />
-          </Item>
+          </Item> */}
         </List>
       )}
     </Wrapper>

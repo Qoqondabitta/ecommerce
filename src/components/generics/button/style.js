@@ -8,6 +8,18 @@ const getType = ({ type }) => {
         background: "red",
         padding: "5px 0px",
       };
+    case "category":
+      return {
+        background: "red",
+        borderRadius: "5px",
+        border: "none",
+        gap: "5px",
+        width: "150px",
+        height: "50px",
+        color: "#fff",
+        fontWeight: "bold",
+        fontSize: "16px",
+      };
     case "signup":
       return {
         color: "#3a4752",
@@ -36,5 +48,11 @@ export const Button = styled.button`
   }
   &:active {
     opacity: 0.7;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    font-size: 12px;
+    height: 40px;
+    width: 120px;
   }
 `;

@@ -1,4 +1,5 @@
 .down {
+  margin-left: 10px;
   transition: transform 0.5s;
 }
 

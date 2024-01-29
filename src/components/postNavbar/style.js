@@ -4,10 +4,9 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* box-shadow: 4px 7px 15px #e6e4e4; */
+  box-shadow: 4px 7px 15px #e6e4e4;
   padding: 20px 0px;
   background: #01172c;
-  border-bottom: 1px solid grey;
 
   @media only screen and (max-width: 450px) {
     padding: 15px 0px;
@@ -21,9 +20,8 @@ export const Parts = styled.div`
   align-items: center;
   justify-content: flex-start;
   gap: 15px;
-  flex: 1;
   @media only screen and (max-width: 1300px) {
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
   @media only screen and (max-width: 450px) {
     justify-content: flex-start;
@@ -31,8 +29,13 @@ export const Parts = styled.div`
 `;
 
 export const Search = styled(Parts)`
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 5px;
+  width: 850px;
+
+  @media only screen and (max-width: 1300px) {
+    justify-content: center;
+  }
   @media only screen and (max-width: 450px) {
     order: 1;
     margin: 0 auto;
@@ -40,11 +43,8 @@ export const Search = styled(Parts)`
 `;
 
 export const Shop = styled(Parts)`
-  justify-content: center;
-
-  @media only screen and (max-width: 450px) {
-    order: 2;
-  }
+  justify-content: flex-end;
+  width: 100px;
 `;
 
 export const SearchContainer = styled.div`
@@ -52,9 +52,19 @@ export const SearchContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 10px 15px;
-  border-radius: 20px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  width: 100%;
   border: 1px solid #fff;
+
+  @media only screen and (max-width: 1300px) {
+    width: 90%;
+    padding: 11.5px 20px;
+  }
+
+  @media only screen and (max-width: 450px) {
+    width: 100%;
+  }
 `;
 
 export const Round = styled.div`
@@ -82,7 +92,7 @@ export const Language = styled.span`
 export const Combine = styled.div`
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 5px;
 `;
 
@@ -110,25 +120,14 @@ export const Icon = styled.div`
   position: relative;
 `;
 
-export const List = styled.ul`
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-
-  @media only screen and (max-width: 450px) {
-    gap: 32px;
-  }
-`;
-
-export const Item = styled.li`
-  font-size: 20px;
-  font-weight: bold;
+export const Category = styled.button`
+  background: red;
+  border-radius: 5px;
+  border: none;
+  gap: 5px;
+  width: 150px;
+  height: 50px;
   color: #fff;
-  text-align: center;
-
-  @media only screen and (max-width: 1300px) {
-    font-size: 16px;
-  }
+  font-weight: bold;
+  font-size: 16px;
 `;

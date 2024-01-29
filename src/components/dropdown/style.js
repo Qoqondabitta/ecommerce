@@ -13,9 +13,10 @@ export const Container = styled.div`
   justify-content: flex-start;
   gap: 10px;
   width: 100px;
-  font-size: 20px;
+  font-size: 14px;
   cursor: pointer;
   position: relative;
+  color: #fff;
 
   @media only screena and (max-width: 450px) {
     font-size: 14px;
@@ -28,16 +29,18 @@ export const List = styled.ul`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  gap: 5px;
   background: #fff;
   width: 100px;
   padding: 10px 5px;
-  box-shadow: 4px 7px 15px #e6e4e4;
+  z-index: 1000000000;
+  /* box-shadow: 4px 7px 15px #e6e4e4; */
 `;
 
 export const Item = styled(Container)`
   width: 70px;
   justify-content: space-between;
-
+  color: grey;
   @media only screena and (max-width: 450px) {
     font-size: 14px;
   }

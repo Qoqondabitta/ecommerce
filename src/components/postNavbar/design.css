@@ -31,9 +31,6 @@
     width: 750px;
 
   }
-  .media{
-    display: none;
-  }
 }
 
 @media screen and (max-width: 450px) {
@@ -43,7 +40,7 @@
   .wrapper {
     width: 355px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
     padding: 0px 10px;

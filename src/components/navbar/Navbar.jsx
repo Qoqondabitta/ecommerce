@@ -2,59 +2,36 @@ import React from "react";
 import {
   Container,
   Parts,
-  SearchContainer,
   Search,
-  Round,
   Shop,
   Combine,
-  Title,
-  Top,
-  Center,
-  Bottom,
+  Titles,
   Post,
+  List,
+  Item,
 } from "./style";
-import { CiSearch } from "react-icons/ci";
 import "./design.css";
-import { PiShoppingCartLight } from "react-icons/pi";
 import { useSelector } from "react-redux";
 // import { increment, decrement } from "../../redux/Counter";
-import Input from "../generics/input/Input";
 import logo from "../../assets/images/logo.jpg";
 import Drop from "../dropdown/Drop";
+import Title from "../generics/title/Title";
+import { FaLocationDot } from "react-icons/fa6";
+// import { navbar } from "../../constants/navbar";
 
 const Navbar = () => {
-  const counter = useSelector((store) => store.counter);
   const language = useSelector((store) => store.language);
   // const dispatch = useDispatch();
-console.log( language);
+  console.log(language);
   return (
     <Container className="center">
       <div className="wrapper">
-        <Search>
-          <Drop />
-          <SearchContainer>
-            <Input
-              type="search"
-              placeholder={
-                language.value === "ENG"
-                  ? "Search"
-                  : language.value === "UZB"
-                  ? "Qidirish"
-                  : language.value === "RUS"
-                  ? "Поиск"
-                  : "search"
-              }
-            />
-            <CiSearch />
-          </SearchContainer>
-        </Search>
         <Parts>
-          {" "}
           <Combine>
             <Post src={logo} />
-            <Title>
-              <Top>XON</Top>
-              <Center>
+            <Titles>
+              <Title type="xon">XON</Title>
+              <Title type="online">
                 {language.value === "ENG"
                   ? "Online"
                   : language.value === "UZB"
@@ -62,8 +39,8 @@ console.log( language);
                   : language.value === "RUS"
                   ? "Онлайн"
                   : "search"}
-              </Center>
-              <Bottom>
+              </Title>
+              <Title type="store">
                 {language.value === "ENG"
                   ? "Market"
                   : language.value === "UZB"
@@ -71,14 +48,58 @@ console.log( language);
                   : language.value === "RUS"
                   ? "Магазин"
                   : "search"}
-              </Bottom>
-            </Title>
+              </Title>
+            </Titles>
           </Combine>
         </Parts>
+
         <Shop>
-          <PiShoppingCartLight size="1.8em" />
-          <Round className="center">{counter.data}</Round>
+          <List>
+            <Item>
+              {language.value === "ENG"
+                ? "Top Products"
+                : language.value === "UZB"
+                ? "Sara Mahsulotlar"
+                : language.value === "RUS"
+                ? "Топ Продукты"
+                : "search"}
+            </Item>
+            <Item>
+              {language.value === "ENG"
+                ? "Discounts"
+                : language.value === "UZB"
+                ? "Chegirmalar"
+                : language.value === "RUS"
+                ? "Скидки"
+                : "search"}
+            </Item>
+            <Item>
+              {language.value === "ENG"
+                ? "Branches"
+                : language.value === "UZB"
+                ? "Filiallar"
+                : language.value === "RUS"
+                ? "Магазины"
+                : "search"}
+            </Item>
+          </List>
         </Shop>
+
+        <Search>
+          <Combine>
+            <FaLocationDot className="media" color="white" size="1.3em" />
+            <Title media type="xon">
+              {language.value === "ENG"
+                ? "Tashkent, Uzbekistan"
+                : language.value === "UZB"
+                ? "Tashkent, Uzbekistan"
+                : language.value === "RUS"
+                ? "Ташкент, Узбекистан"
+                : "search"}
+            </Title>
+          </Combine>
+          <Drop />
+        </Search>
       </div>
     </Container>
   );

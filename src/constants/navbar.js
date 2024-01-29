@@ -1,16 +1,23 @@
-
+import rus from "../assets/images/rus.png";
+import eng from "../assets/images/usa.png";
+import uz from "../assets/images/uzbek.png";
+import { english, russian, uzbek } from "../redux/language";
 
 export const tongues = [
   {
     country: "ENG",
-    icon: uzbek,
+    icon: eng,
+    function: english(),
   },
   {
     country: "RUS",
-    icon: uzbek,
+    icon: rus,
+    function: russian(),
   },
   {
     country: "UZB",
-    icon: uzbek,
+    icon: uz,
+    function: uzbek(),
   },
 ];
+

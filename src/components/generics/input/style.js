@@ -6,8 +6,9 @@ const getType = ({ type }) => {
       return {
         border: "none",
         outline: "none",
-        width: "180px",
-        background: "transparent"
+        width: "100%",
+        background: "transparent",
+        color: "#fff"
       };
     case "signup":
       return {
@@ -29,4 +30,8 @@ export const Inputs = styled.input`
   font-style: normal;
   font-weight: 400;
   ${getType};
+
+  &::placeholder{
+    color: #fff;
+  }
 `;
