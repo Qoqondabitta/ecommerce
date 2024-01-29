@@ -8,3 +8,4 @@ reducer: {
     language,
 }
 })
+// console.log(store.language);

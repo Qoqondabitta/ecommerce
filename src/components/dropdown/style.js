@@ -11,7 +11,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 5px;
+  gap: 10px;
   width: 100px;
   font-size: 20px;
   cursor: pointer;
@@ -28,6 +28,10 @@ export const List = styled.ul`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  background: #fff;
+  width: 100px;
+  padding: 10px 5px;
+  box-shadow: 4px 7px 15px #e6e4e4;
 `;
 
 export const Item = styled(Container)`

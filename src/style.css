@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+#root{
+  primaryColor: #fff;
+}
+
 .display {
   display: flex;
 }

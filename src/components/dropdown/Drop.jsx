@@ -35,13 +35,13 @@ const Drop = () => {
       </Container>
       {move && (
         <List className={`dropdown-content ${move ? "collapsed" : ""}`}>
-          <Item onClick={() => dispatch(english())}>
+          <Item onClick={() => {dispatch(english()); setMove(!move)}}>
             ENG <Flag src={RUS} />
           </Item>
-          <Item onClick={() => dispatch(russian())}>
+          <Item onClick={() => {dispatch(russian()); setMove(!move)}}>
             RUS <Flag src={ENG} />
           </Item>
-          <Item onClick={() => dispatch(uzbek())}>
+          <Item onClick={() => {dispatch(uzbek()); setMove(!move)}}>
             UZB <Flag src={UZ} />
           </Item>
         </List>

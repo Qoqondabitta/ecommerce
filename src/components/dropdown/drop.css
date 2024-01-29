@@ -1,21 +1,34 @@
-.down{
-    margin-left: 5px;
-    transition: transform 0.5s;
+.down {
+  transition: transform 0.5s;
 }
 
 .down.expand {
-    transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .dropdown-content {
   position: absolute;
-  top: 15px;
-  /* left: 0; */
-  height: 70px;
-  width: 100%;
-  transition: top 2s;
+  top: 0px;
+  height: 90px;
+  width: 70px;
+  margin-top: 15px;
+  border-radius: 10px;
+  transition: all 10s;
 }
 
 .dropdown-content.collapsed {
-    top: 70px;
+  top: 70px;
+}
+
+@media only screen and (max-width: 450px) {
+  .dropdown-content.collapsed {
+    top: 130px;
+  }
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .dropdown-content.collapsed {
+    top: 90px;
+  }
 }

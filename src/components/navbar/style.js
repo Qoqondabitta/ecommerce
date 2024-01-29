@@ -1,13 +1,16 @@
 import { styled } from "styled-components";
 
 export const Container = styled.div`
-  /* height: 60px; */
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 4px 7px 15px #e6e4e4;
   padding: 20px 0px;
-  /* border-bottom: 1px solid grey; */
+
+  @media only screen and (max-width: 450px) {
+    padding: 15px 0px;
+    align-items: flex-start;
+  }
 `;
 
 export const Parts = styled.div`
@@ -16,6 +19,9 @@ export const Parts = styled.div`
   justify-content: center;
   gap: 15px;
   flex: 1;
+  @media only screen and (max-width: 1300px) {
+    justify-content: flex-end;
+  }
   @media only screen and (max-width: 450px) {
     justify-content: flex-start;
   }
@@ -23,7 +29,7 @@ export const Parts = styled.div`
 
 export const Search = styled(Parts)`
   justify-content: flex-start;
-
+  gap: 5px;
   @media only screen and (max-width: 450px) {
     order: 1;
     margin: 0 auto;
@@ -33,8 +39,6 @@ export const Search = styled(Parts)`
 export const Shop = styled(Parts)`
   justify-content: flex-end;
   position: relative;
-  /* @media only screen and (max-width: 1300px) {
-  } */
 `;
 
 export const SearchContainer = styled.div`
@@ -77,7 +81,6 @@ export const Combine = styled.div`
 `;
 
 export const Title = styled.div`
-  /* height: 40px; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
