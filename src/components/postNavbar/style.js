@@ -130,4 +130,5 @@ export const Category = styled.button`
   color: #fff;
   font-weight: bold;
   font-size: 16px;
+  position: relative;
 `;

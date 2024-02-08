@@ -18,17 +18,26 @@ import Title from "../generics/title/Title";
 import { BsFillSuitHeartFill } from "react-icons/bs";
 import { BiSolidCategory } from "react-icons/bi";
 import { Button } from "../generics/button/style";
+import { useState } from "react";
+import Categories from "../Category/Categories";
+// import
 
 const PostNavbar = () => {
+  const [show, setShow] = useState(false)
   const counter = useSelector((store) => store.counter);
   const language = useSelector((store) => store.language);
   // const dispatch = useDispatch();
   console.log(language);
+
+  const category = () => {
+    setShow(!show)
+  }
+
   return (
     <Container className="center">
       <div className="wrapper">
-        <Parts>
-          <Button type="category" className="center">
+        <Parts style={{ position: "relative" }}>
+          <Button onClick={category} type="category" className="center">
             <BiSolidCategory color="white" size="1.3em" />
             {language.value === "ENG"
               ? "Category"
@@ -38,6 +47,7 @@ const PostNavbar = () => {
               ? "Категория"
               : "search"}
           </Button>
+          {show && <Categories position="absolute" />}
         </Parts>{" "}
         <Search>
           <SearchContainer>
