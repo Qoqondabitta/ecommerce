@@ -1,8 +1,8 @@
 import React from "react";
 import Add from "../components/Announcement/Add";
-// import Categories from "../components/Category/Categories";
 import Navbar from "../components/navbar/Navbar";
 import PostNavbar from "../components/postNavbar/PostNavbar";
+import Slider from "../components/slider/Slider";
 
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
       <Add />
       <Navbar />
       <PostNavbar />
-      {/* <Categories /> */}
+      <Slider />
     </div>
   );
 };

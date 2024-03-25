@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux";
 import rus from "../assets/images/rus.png";
 import eng from "../assets/images/usa.png";
 import uz from "../assets/images/uzbek.png";
@@ -20,4 +21,3 @@ export const tongues = [
     function: uzbek(),
   },
 ];
-

@@ -88,7 +88,7 @@ const Navbar = () => {
         <Search>
           <Combine>
             <FaLocationDot className="media" color="white" size="1.3em" />
-            <Title media type="xon">
+            <Title media="true" type="xon">
               {language.value === "ENG"
                 ? "Tashkent, Uzbekistan"
                 : language.value === "UZB"
