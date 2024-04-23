@@ -17,7 +17,6 @@ export const languageSlice = createSlice({
   },
 });
 
-
 export const { english, uzbek, russian } = languageSlice.actions;
 
-export default languageSlice.reducer
+export default languageSlice.reducer;

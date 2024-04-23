@@ -6,18 +6,19 @@ import RUS from "../../assets/images/usa.png";
 import ENG from "../../assets/images/rus.png";
 // import { russian, english, uzbek } from "../../redux/language";
 import { MdKeyboardArrowLeft } from "react-icons/md";
-import "./drop.css"
+import { IoMdClose } from "react-icons/io";
+import "./drop.css";
 import { useState } from "react";
 import { tongues } from "../../constants/navbar";
 
 const Drop = () => {
-    const [move, setMove] = useState(false)
+  const [move, setMove] = useState(false);
   const language = useSelector((store) => store.language);
   const dispatch = useDispatch();
 
   const iconMove = () => {
-    setMove(!move)
-  }
+    setMove(!move);
+  };
   return (
     <Wrapper>
       <Container>
@@ -29,16 +30,33 @@ const Drop = () => {
         ) : language.value === "UZB" ? (
           <Flag src={UZ} />
         ) : null}
-        <MdKeyboardArrowLeft
-        size="1.5em"
-          onClick={iconMove}
-          className={`down ${move ? "expand" : ""}`}
-          color="white"
-        />
+        {move ? (
+          <div className="center box">
+            {" "}
+            <IoMdClose size="1.7em" onClick={iconMove} color="white" />
+          </div>
+        ) : (
+          <MdKeyboardArrowLeft
+            size="1.5em"
+            onClick={iconMove}
+            className={`down ${move ? "expand" : ""}`}
+            color="white"
+          />
+        )}
       </Container>
       {move && (
-        <List className={`dropdown-content ${move ? "collapsed" : ""}`}>
-          {tongues.map((value, index)=><Item key={index} onClick={()=>{setMove(!move); dispatch(value.function)}}>{value.country} <Flag src={value.icon} /></Item>)}
+        <List className={`dropdown ${move ? "collapsed" : ""}`}>
+          {tongues.map((value, index) => (
+            <Item
+              key={index}
+              onClick={() => {
+                setMove(!move);
+                dispatch(value.function);
+              }}
+            >
+              {value.country} <Flag src={value.icon} />
+            </Item>
+          ))}
           {/* <Item onClick={() => {dispatch(english()); setMove(!move)}}>
             ENG <Flag src={RUS} />
           </Item>

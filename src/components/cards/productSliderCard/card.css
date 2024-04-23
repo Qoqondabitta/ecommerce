@@ -1,0 +1,10 @@
+.heart {
+    position: absolute;
+    top: 3%;
+    right: 6%;
+    cursor: pointer;
+}
+
+/* .move:hover {
+    transform: translateX(800px);
+} */

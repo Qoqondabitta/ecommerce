@@ -1,0 +1,17 @@
+
+.scrollExample::-webkit-scrollbar {
+  width: 1px;
+  height: 5px;
+  /* display: none; */
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  background-color: rgb(230, 224, 224);
+
+  /* display: none; */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(66, 64, 64);
+  /* border-radius: 100vw; */
+}
