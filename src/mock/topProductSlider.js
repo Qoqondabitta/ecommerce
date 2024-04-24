@@ -13,10 +13,10 @@ import top12 from "../assets/images/topCard/top12.jpg"
 
 export const topCardDetails = [
   { id: 8, img: top9, title: "TK Max Boots", desc: "Spring Sales", price: "128 zl" },
-  { id: 13, img: top12, title: "Sinsay Boots", desc: "Spring Sales", price: "128 zl" },
-  { id: 2, img: top2, title: "Zara Boots", desc: "Spring Sales", price: "128 zl" },
-  { id: 6, img: top7, title: "Puma Boots", desc: "Spring Sales", price: "128 zl" },
   { id: 10, img: top11, title: "Pull&Bear Boots", desc: "Spring Sales", price: "128 zl" },
+  { id: 6, img: top7, title: "Puma Boots", desc: "Spring Sales", price: "128 zl" },
+  { id: 2, img: top2, title: "Zara Boots", desc: "Spring Sales", price: "128 zl" },
+  { id: 13, img: top12, title: "Sinsay Boots", desc: "Spring Sales", price: "128 zl" },
   { id: 5, img: top6, title: "Adidas Boots", desc: "Spring Sales", price: "128 zl" },
   { id: 4, img: top5, title: "Cropp Boots", desc: "Spring Sales", price: "128 zl" },
   { id: 3, img: top3, title: "H&M Boots", desc: "Spring Sales", price: "128 zl" },

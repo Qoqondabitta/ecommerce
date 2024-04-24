@@ -1,7 +1,5 @@
 import React from "react";
 import Add from "../components/Announcement/Add";
-// import Navbar from "../components/navbar/Navbar";
-// import PostNavbar from "../components/postNavbar/PostNavbar";
 import Slider from "../components/sliders/slider/Slider";
 import Nav from "../components/navbars/secondNav/Nav";
 import Video from "../components/video/Video";
@@ -12,6 +10,7 @@ import TopProductSlider from "../components/sliders/topProductSlider/topProductS
 import BotProductSlider from "../components/sliders/botProductSlider/botProductSlider";
 import { useSelector } from "react-redux";
 import Diogonal from "../components/diogonal/Diogonal";
+import Soon from "../components/soon/Soon";
 
 const Home = () => {
   const {value} = useSelector(store => store.title)
@@ -24,8 +23,8 @@ const Home = () => {
       {/* <PostNavbar /> */}
       <DoubleSlider />
       <Video />
-      <Slider />
       <Diogonal />
+      <Soon />
       <ClothTab />
       {value == "SHOE" ? (
         <ProductSlider />
