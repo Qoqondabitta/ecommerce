@@ -6,12 +6,15 @@ export const Main = styled.div`
   position: relative;
   width: 100%;
   height: 100vh;
+  gap: 17px;
 `;
 
 export const Container = styled.div`
-  height: 100vh;
-width: 50vw;
+  height: 100%;
+width: 50%;
   position: relative;
+  box-sizing: border-box;
+
 `;
 
 export const Content = styled.div`
@@ -20,9 +23,12 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
   position: absolute;
+  /* transform: skewX(12deg); */
   width: 50vw;
+  z-index: -3999;
   /* height: 100vh; */
   transform: translateX(0vw);
+  /* box-sizing: border-box; */
 `;
 
 export const ArrowWrapper = styled.div`
@@ -43,6 +49,7 @@ export const Left = styled.div`
   flex: 1;
   background-color: rgb(190, 184, 184);
   position: relative;
+  /* box-sizing: border-box; */
 `;
 export const Right = styled(Left)``;
 
@@ -58,6 +65,7 @@ export const Image = styled.img`
   object-fit: cover;
   object-position: top;
   cursor: pointer;
+  transform: scaleX(17deg);
   transition: all 1s;
   &:hover {
     transform: translateY(-10px);

@@ -12,24 +12,26 @@ import {
   Main,
   Right,
 } from "./style";
-import smart from "../../assets/images/smart.jpg";
-import smartm from "../../assets/images/smartm.jpg";
-import suit from "../../assets/images/suit.webp";
-import suit2 from "../../assets/images/suit2.webp";
-import beckham from "../../assets/images/beckham.webp";
-import under from "../../assets/images/under.webp";
-import under1 from "../../assets/images/under.jpg";
-import messi from "../../assets/images/messi.jpg";
-import neymar from "../../assets/images/neymar.avif";
-import zlatan from "../../assets/images/zlatan.avif";
+import smart from "../../../assets/images/smart.jpg";
+import smartm from "../../../assets/images/smartm.jpg";
+import suit from "../../../assets/images/suit.webp";
+import suit2 from "../../../assets/images/suit2.webp";
+import beckham from "../../../assets/images/beckham.webp";
+import under from "../../../assets/images/under.webp";
+import under1 from "../../../assets/images/under.jpg";
+import messi from "../../../assets/images/messi.jpg";
+import neymar from "../../../assets/images/neymar.avif";
+import zlatan from "../../../assets/images/zlatan.avif";
 
 import "./double.css";
+// import Nav from "../secondNav/Nav";
 
 const DoubleSlider = () => {
   return (
     <Main className="center">
+      {/* <Nav /> */}
       <Blurs></Blurs>
-      <Container className="center">
+      <Container className="center right">
         {/* First Card */}
         <Content className="messi" style={{ "--delay": "-1" }}>
           <Right>
@@ -70,7 +72,8 @@ const DoubleSlider = () => {
         </Content>
         {/* Fifth Card */}
       </Container>
-      <Container className="center">
+
+      <Container className="center left">
         {/* First Card */}
         <Content className="messis" style={{ "--delay": "-1" }}>
           <Left className="center">
@@ -110,24 +113,24 @@ const DoubleSlider = () => {
           </Right>
         </Content>
         {/* Fifth Card */}
-
-        {/* Arrows */}
-        {/* <ArrowWrapper className="center" left="true">
-          <MdKeyboardArrowLeft
-            color="white"
-            size="1.5em"
-            style={{ zIndex: "200" }}
-          />
-        </ArrowWrapper>
-        <ArrowWrapper className="center">
-          <MdKeyboardArrowRight
-            color="white"
-            size="1.5em"
-            style={{ zIndex: "200" }}
-          />
-        </ArrowWrapper> */}
-        {/* Arrows */}
       </Container>
+
+      {/* Arrows */}
+      <ArrowWrapper className="center" left="true">
+        <MdKeyboardArrowLeft
+          color="white"
+          size="1.5em"
+          style={{ zIndex: "200" }}
+        />
+      </ArrowWrapper>
+      <ArrowWrapper className="center">
+        <MdKeyboardArrowRight
+          color="white"
+          size="1.5em"
+          style={{ zIndex: "200" }}
+        />
+      </ArrowWrapper>
+      {/* Arrows */}
     </Main>
   );
 };

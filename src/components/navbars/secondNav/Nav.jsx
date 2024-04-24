@@ -4,7 +4,7 @@ import { Icon, Round, Shop } from "./style";
 import { BsFillSuitHeartFill } from "react-icons/bs";
 import { PiShoppingCartLight } from "react-icons/pi";
 import { useSelector } from "react-redux";
-import Drop from "../dropdown/Drop";
+import Drop from "../../dropdown/Drop"
 
 const Nav = () => {
   const counter = useSelector((store) => store.counter);

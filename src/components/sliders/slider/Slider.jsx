@@ -13,24 +13,23 @@ import {
   Right,
 } from "./style";
 // import casual from "../../assets/images/casual.png";
-import smart from "../../assets/images/smart.jpg";
-import smartm from "../../assets/images/smartm.jpg";
-import suit from "../../assets/images/suit.webp";
-import suit2 from "../../assets/images/suit2.webp";
-import beckham from "../../assets/images/beckham.webp";
-import under from "../../assets/images/under.webp";
-import under1 from "../../assets/images/under.jpg";
-import messi from "../../assets/images/messi.jpg";
-import neymar from "../../assets/images/neymar.avif";
-import zlatan from "../../assets/images/zlatan.avif";
+import smart from "../../../assets/images/smart.jpg";
+import smartm from "../../../assets/images/smartm.jpg";
+import suit from "../../../assets/images/suit.webp";
+import suit2 from "../../../assets/images/suit2.webp";
+import beckham from "../../../assets/images/beckham.webp";
+import under from "../../../assets/images/under.webp";
+import under1 from "../../../assets/images/under.jpg";
+import messi from "../../../assets/images/messi.jpg";
+import neymar from "../../../assets/images/neymar.avif";
+import zlatan from "../../../assets/images/zlatan.avif";
 
 import "./slider.css";
-import Nav from "../secondNav/Nav";
+// import Nav from "../secondNav/Nav";
 
 const Slider = () => {
   return (
     <Main>
-      <Nav />
       <Blur></Blur>
       <Container className="center">
         {/* First Card */}
