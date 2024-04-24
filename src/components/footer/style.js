@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const Main = styled.div`
   width: 100%;
-  height: fit-content;
+  height: 500px;
   margin: 0 auto;
   background-color: black;
 `;
@@ -10,15 +10,14 @@ export const Main = styled.div`
 export const Container = styled.div`
   width: 100%;
   height: 100%;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: space-between; */
-  padding: 40px 70px;
+  padding: 60px 70px;
 `;
 
 export const Row = styled.div`
   width: 100%;
-  /* gap: 60px; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 `;
 
 export const Parts = styled.div`
@@ -26,13 +25,21 @@ export const Parts = styled.div`
 `;
 
 export const List = styled.ul`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   gap: 20px;
   list-style: none;
 `;
 
 export const Item = styled.li`
-  text-decoration: ${({ underline }) => (underline ? "underline" : "none")};
+font-weight: ${({capital})=> capital ? '600' : 'normal'} ;
+  font-size: ${({ fontSize }) => (fontSize ? fontSize : "16px")};
   color: ${({ color }) => color};
   text-transform: ${({ capital }) => (capital ? "uppercase" : "none")};
-  margin-bottom: ${({botMar})=>botMar&&"15px"};
+  margin-bottom: ${({ botMar }) => botMar && "10px"};
+  line-height: ${({ heights }) => (heights ? `${heights}` : "normal")};
+  padding-bottom: ${({ heights }) => heights && "0px"};
+  border-bottom: ${({ underline }) => underline && "1px solid white"};
 `;

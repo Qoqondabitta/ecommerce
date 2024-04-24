@@ -11,6 +11,7 @@ import BotProductSlider from "../components/sliders/botProductSlider/botProductS
 import { useSelector } from "react-redux";
 import Diogonal from "../components/diogonal/Diogonal";
 import Soon from "../components/soon/Soon";
+import Footer from "../components/footer/Footer";
 
 const Home = () => {
   const {value} = useSelector(store => store.title)
@@ -33,6 +34,7 @@ const Home = () => {
       ) : (
         <BotProductSlider />
       )}
+      <Footer />
     </div>
   );
 };
