@@ -4,8 +4,8 @@ export const helpFooter = [
     color: "grey",
     underline: false,
     capital: true,
-        botMar: true,
-    size: "14px"
+    botMar: true,
+    size: "14px",
   },
   {
     name: "Contact Us",
@@ -50,8 +50,8 @@ export const companyFooter = [
     color: "grey",
     capital: true,
     underline: false,
-        botMar: true,
-    size: "14px"
+    botMar: true,
+    size: "14px",
   },
   {
     name: "About 👑XON",
@@ -117,17 +117,27 @@ export const detailsFooter = [
     privacy: false,
   },
   {
-    name: "Sign Up For Gucci Updates",
+    name: "Sign Up For XON Updates",
     capital: true,
     underline: false,
     color: "grey",
-    botMar: true,
+    botMar: false,
     placeHolder: { title: "E-Mail" },
     text: {
       script:
-        "By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and initiatives. More details on this are provided in our",
+        "By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and initiatives.",
       color: "white",
     },
     privacy: true,
   },
+];
+
+export const serviceFooter = [
+  { color: "grey", text: "XON SERVICES", underline: false },
+  { color: "white", text: "Discover our services", underline: true },
+];
+
+export const countryFooter = [
+  { color: "grey", text: "CONTRY/REGION", underline: false },
+  { color: "white", text: "Poland", underline: true },
 ];
