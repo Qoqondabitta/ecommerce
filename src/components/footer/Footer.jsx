@@ -7,6 +7,7 @@ import {
   helpFooter,
   serviceFooter,
 } from "../../constants/footer";
+import "./footer.css"
 
 const Footer = () => {
   return (
@@ -80,8 +81,18 @@ const Footer = () => {
               </Item>
             ))}
           </Parts>
-              </Row>
-              <XON>XON BRAND</XON>
+        </Row>
+        <XON>XON BRAND</XON>
+        <section>
+          <div className="form-group">
+            <input type="text" placeholder="Full Name" />
+            <label className="form-label">Full Name</label>
+          </div>
+          <div className="form-group">
+            <input type="text" placeholder="E-mail" />
+            <label className="form-label">E-mail</label>
+          </div>
+        </section>
       </Container>
     </Main>
   );
