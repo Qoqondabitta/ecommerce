@@ -24,11 +24,13 @@ import neymar from "../../../assets/images/neymar.avif";
 import zlatan from "../../../assets/images/zlatan.avif";
 
 import "./double.css";
+import ScrollWatcher from "../../scrollWatcher/ScrollWatcher";
 // import Nav from "../secondNav/Nav";
 
 const DoubleSlider = () => {
   return (
     <Main className="center">
+      <ScrollWatcher />
       {/* <Nav /> */}
       <Blurs></Blurs>
       <Container className="center right">

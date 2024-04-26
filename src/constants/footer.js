@@ -54,7 +54,7 @@ export const companyFooter = [
     size: "14px",
   },
   {
-    name: "About 👑XON",
+    name: "About Xon",
     color: "white",
     capital: false,
     underline: true,
@@ -62,7 +62,7 @@ export const companyFooter = [
     size: "14px",
   },
   {
-    name: "👑XON Equilibrium",
+    name: "Xon Equilibrium",
     color: "white",
     capital: false,
     botMar: false,

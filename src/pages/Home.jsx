@@ -12,13 +12,15 @@ import { useSelector } from "react-redux";
 import Diogonal from "../components/diogonal/Diogonal";
 import Soon from "../components/soon/Soon";
 import Footer from "../components/footer/Footer";
+import ScrollWatcher from "../components/scrollWatcher/ScrollWatcher";
 
 const Home = () => {
   const {value} = useSelector(store => store.title)
   console.log(value, ": this is the title");
   return (
     <div className="">
-      <Add />
+      <ScrollWatcher />
+      {/* <Add /> */}
       <Nav />
       {/* <Navbar /> */}
       {/* <PostNavbar /> */}

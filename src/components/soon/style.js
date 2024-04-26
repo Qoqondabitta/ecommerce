@@ -48,8 +48,9 @@ export const Text = styled.p`
 `;
 export const Button = styled.button`
   font-size: 14px;
+  border-radius: 5px;
   /* font-weight: 600; */
-  padding: 4px 40px;
+  padding: 8px 50px;
   cursor: pointer;
   border: 1px solid white;
   color: white;
