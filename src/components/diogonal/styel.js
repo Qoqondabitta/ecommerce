@@ -30,7 +30,13 @@ export const Button = styled.button`
   position: absolute;
   top: 80%;
   left: ${({ left }) => left && "5%"};
-  right: ${({right})=>right&&"20%"};
+  right: ${({ right }) => right && "20%"};
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: white;
 `;
 
 export const Long = styled.div`
@@ -43,3 +49,4 @@ left: 49%;
 background-color: red;
 transform: skewX(-12deg);
 `
+

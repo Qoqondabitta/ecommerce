@@ -60,7 +60,10 @@ const Footer = () => {
                     {`${v.text.script}`}
                   </Text>
                 )}
-                <Input placeholder={v.placeHolder.title} />
+                <section className="form-group topMar">
+                  <Input type="text" placeholder={v.placeHolder.title} />
+                  <label className="form-label">{v.placeHolder.title}</label>
+                </section>
               </Item>
             ))}
           </List>
@@ -83,7 +86,7 @@ const Footer = () => {
           </Parts>
         </Row>
         <XON>XON BRAND</XON>
-        <section>
+        {/* <section>
           <div className="form-group">
             <input type="text" placeholder="Full Name" />
             <label className="form-label">Full Name</label>
@@ -92,7 +95,7 @@ const Footer = () => {
             <input type="text" placeholder="E-mail" />
             <label className="form-label">E-mail</label>
           </div>
-        </section>
+        </section> */}
       </Container>
     </Main>
   );

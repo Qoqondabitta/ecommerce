@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const Main = styled.div`
   width: 100%;
-  height: 1000px;
+  height: 800px;
   margin: 0 auto;
   background-color: black;
 `;
@@ -48,7 +48,7 @@ export const Item = styled.li`
   font-size: ${({ fontSize }) => (fontSize ? fontSize : "14px")};
   color: ${({ color }) => color};
   text-transform: ${({ capital }) => (capital ? "uppercase" : "none")};
-  margin-bottom: ${({ botMar }) => botMar && "10px"};
+  margin-bottom: ${({ botMar }) => botMar ? "10px": "0px"};
   line-height: ${({ heights }) => (heights ? `${heights}` : "normal")};
   padding-bottom: ${({ heights }) => heights && "0px"};
   border-bottom: ${({ underline }) => underline && "1px solid white"};
@@ -66,7 +66,7 @@ export const Input = styled.input`
   border-bottom: 1px solid white;
   padding-bottom: 2px;
   outline: none;
-  padding-block: 15px;
+  padding-block: 10px;
   color: white;
 `;
 

@@ -54,6 +54,12 @@
   background-color: rgb(215, 213, 213);
 }
 
+.start{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
 .columnStart{
   display: flex;
   flex-direction: column;
