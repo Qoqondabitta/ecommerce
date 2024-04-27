@@ -7,8 +7,8 @@ const MostSellers = () => {
   return (
     <Main className="center">
       <Container className="center">
-        <Left img={left}></Left>
-        <Right img={right}></Right>
+        <Left imgs={left}></Left>
+        <Right imgs={right}></Right>
       </Container>
     </Main>
   );
