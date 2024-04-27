@@ -14,5 +14,10 @@ height: 100%;
 
 export const Left = styled.div`
 flex: 1;
-background-image: url(${({img})=>img});
+background-color: red;
+/* background-image: url(${({img})=>img}); */
+`
+
+export const Right = styled(Left)`
+background-color: blue;
 `

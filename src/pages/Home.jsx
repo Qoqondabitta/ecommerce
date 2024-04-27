@@ -13,6 +13,7 @@ import Diogonal from "../components/diogonal/Diogonal";
 import Soon from "../components/soon/Soon";
 import Footer from "../components/footer/Footer";
 import ScrollWatcher from "../components/scrollWatcher/ScrollWatcher";
+import MostSellers from "../components/most/MostSellers";
 
 const Home = () => {
   const {value} = useSelector(store => store.title)
@@ -20,7 +21,7 @@ const Home = () => {
   return (
     <div className="">
       <ScrollWatcher />
-      {/* <Add /> */}
+      <Add />
       <Nav />
       {/* <Navbar /> */}
       {/* <PostNavbar /> */}
@@ -28,6 +29,7 @@ const Home = () => {
       <Video />
       <Diogonal />
       <Soon />
+      <MostSellers />
       <ClothTab />
       {value == "SHOE" ? (
         <ProductSlider />
