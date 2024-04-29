@@ -8,7 +8,7 @@ import "./soon.css"
 const Soon = () => {
     return (
       <Main>
-        <Blur></Blur>
+        {/* <Blur></Blur> */}
         <Container img={background}>
           <Content className="">
             <Motiv>

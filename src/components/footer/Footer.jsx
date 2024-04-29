@@ -15,9 +15,10 @@ const Footer = () => {
       <Container>
         <Row>
           <List flex="1">
-            {helpFooter.map((v) => (
+            {helpFooter.map((v, id) => (
               <Item
-                botMar={v.botMar}
+                key={id}
+                botmar={v.botMar}
                 underline={v.underline}
                 capital={v.capital}
                 color={v.color}
@@ -30,9 +31,10 @@ const Footer = () => {
           </List>
           <List flex="1">
             {/* © 2021 - Tod */}
-            {companyFooter.map((v) => (
+            {companyFooter.map((v, id) => (
               <Item
-                botMar={v.botMar}
+                key={id}
+                botmar={v.botMar}
                 underline={v.underline}
                 capital={v.capital}
                 color={v.color}
@@ -44,11 +46,12 @@ const Footer = () => {
             ))}
           </List>
           <List flex="2">
-            {detailsFooter.map((v) => (
+            {detailsFooter.map((v, id) => (
               <Item
+                key={id}
                 widths="true"
                 color={v.color}
-                botMar={v.botMar}
+                botmar={v.botMar}
                 underline={v.underline}
                 capital={v.capital}
                 gap="20px"
@@ -71,31 +74,21 @@ const Footer = () => {
         <Row>
           {/* {serviceFooter.map(v => <Parts>{serviceFooter.map(v=><Item>v.</Item>) }</Parts>)} */}
           <Parts className="columnStart">
-            {serviceFooter.map((v) => (
-              <Item underline={v.underline} heights="true" color={v.color}>
+            {serviceFooter.map((v, id) => (
+              <Item key={id} underline={v.underline} heights="true" color={v.color}>
                 {v.text}
               </Item>
             ))}
           </Parts>
           <Parts className="columnStart">
-            {countryFooter.map((v) => (
-              <Item underline={v.underline} heights="true" color={v.color}>
+            {countryFooter.map((v, id) => (
+              <Item underline={v.underline} key={id} heights="true" color={v.color}>
                 {v.text}
               </Item>
             ))}
           </Parts>
         </Row>
         <XON>XON BRAND</XON>
-        {/* <section>
-          <div className="form-group">
-            <input type="text" placeholder="Full Name" />
-            <label className="form-label">Full Name</label>
-          </div>
-          <div className="form-group">
-            <input type="text" placeholder="E-mail" />
-            <label className="form-label">E-mail</label>
-          </div>
-        </section> */}
       </Container>
     </Main>
   );

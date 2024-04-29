@@ -1,24 +1,18 @@
-import { styled } from "styled-components"
+import { styled } from "styled-components";
 
 export const Main = styled.div`
-width:  100%;
-height: 100vh;
-margin: 0 auto;
-
-`
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+`;
 
 export const Container = styled.div`
-width: 100%;
-height: 100vh;
-`
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+`;
 
-export const Left = styled.div`
+export const Back = styled.div`
 flex: 1;
-background-color: red;
-/* background-image: url(${({imgs})=>imgs}); */
-`
-
-export const Right = styled.div`
-background-color: blue;
-flex: 1;
+background: red;
 `

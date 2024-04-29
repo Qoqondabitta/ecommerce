@@ -31,7 +31,7 @@ export const Content = styled.div`
   width: 300px;
 `;
 
-export const Title = styled.h1`
+export const Title = styled.p`
   font-size: 35px;
   line-height: 35px;
   color: white;
