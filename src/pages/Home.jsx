@@ -19,7 +19,7 @@ const Home = () => {
   const {value} = useSelector(store => store.title)
   console.log(value, ": this is the title");
   return (
-    <div className="columnCenter" style={{gap: "240px"}}>
+    <div>
       <ScrollWatcher />
       <Add />
       <Nav />
@@ -29,15 +29,15 @@ const Home = () => {
       <Video />
       <Diogonal />
       <Soon />
-      <MostSellers />
       <ClothTab />
       {value == "SHOE" ? (
         <ProductSlider />
-      ) : value == "TOP" ? (
-        <TopProductSlider />
-      ) : (
-        <BotProductSlider />
-      )}
+        ) : value == "TOP" ? (
+          <TopProductSlider />
+          ) : (
+            <BotProductSlider />
+            )}
+            <MostSellers />
       <Footer />
     </div>
   );
