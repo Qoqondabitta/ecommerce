@@ -1,0 +1,26 @@
+.ronaldo {
+  /* opacity: 1; */
+  /* pointer-events: none; */
+    background-position: center;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: basicSlider 12s ease-in-out infinite;
+  /* animation-fill-mode: forwards; */
+  /* animation-delay: calc(3s * var(--delay)); */
+}
+
+@keyframes basicSlider {
+  0%, 100%{
+    background: url("../../../assets/images/smart6.webp");
+  }
+  25%{
+    background: url("../../../assets/images/smart7.jpg");
+  }
+  50%{
+    background: url("../../../assets/images/smartm.jpg");
+  }
+  75%{
+    background: url("../../../assets/images/smart.jpg");
+  }
+}
