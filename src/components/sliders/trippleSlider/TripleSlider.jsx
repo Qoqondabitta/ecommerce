@@ -4,16 +4,28 @@ import {
   Container,
   Content,
   Main,
+  Wrapper,
 } from "./style";
 import "./triple.css";
 
 const TripleSlider = () => {
   return (
-    <Main>
+    <Main className="center">
       {/* <Blur></Blur> */}
-      <Container className="center">
-        <Content className="ronaldo"></Content>
-      </Container>
+      <Wrapper className="center">
+        <Container borderleft="true" className="center" id="first">
+          <Content borderleft="true" className="ronaldo"></Content>
+        </Container>
+        <Container borderleft="true" className="center second">
+          <Content borderleft="true" id="second" className="ronaldo"></Content>
+        </Container>
+        <Container borderright="true" className="center third">
+          <Content borderright="true" className="ronaldo"></Content>
+        </Container>
+        <Container borderright="true" className="center fourth">
+          <Content borderright="true" className="ronaldo"></Content>
+        </Container>
+      </Wrapper>
     </Main>
   );
 };

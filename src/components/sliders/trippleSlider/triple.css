@@ -1,26 +1,39 @@
 .ronaldo {
-  /* opacity: 1; */
-  /* pointer-events: none; */
-    background-position: center;
-
+  width: 300px;
+  height: 200px;
   background-size: cover;
-  background-repeat: no-repeat;
-  animation: basicSlider 12s ease-in-out infinite;
-  /* animation-fill-mode: forwards; */
-  /* animation-delay: calc(3s * var(--delay)); */
+  background-position: top;
+  animation: basicSlider 15s ease infinite;
 }
 
 @keyframes basicSlider {
-  0%, 100%{
-    background: url("../../../assets/images/smart6.webp");
+  0%,
+  100% {
+    background-image: url("../../../assets/images/smart6.webp");
   }
-  25%{
-    background: url("../../../assets/images/smart7.jpg");
+  20% {
+    background-image: url("../../../assets/images/smart7.jpg");
   }
-  50%{
-    background: url("../../../assets/images/smartm.jpg");
+  40% {
+    background-image: url("../../../assets/images/smartm.jpg");
   }
-  75%{
-    background: url("../../../assets/images/smart.jpg");
+  60% {
+    background-image: url("../../../assets/images/smart.jpg");
+  }
+  80% {
+    background-image: url("../../../assets/images/beckham.webp");
   }
 }
+
+/* 
+#first,.fourth {
+  margin-bottom: 140px;
+}
+
+.second,.third{
+  margin-top: 190px;
+}
+
+#second{
+  border-bottom-left-radius: 110%;
+} */
