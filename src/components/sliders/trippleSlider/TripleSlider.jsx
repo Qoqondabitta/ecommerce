@@ -13,17 +13,17 @@ const TripleSlider = () => {
     <Main className="center">
       {/* <Blur></Blur> */}
       <Wrapper className="center">
-        <Container borderleft="true" className="center" id="first">
-          <Content borderleft="true" className="ronaldo"></Content>
+        <Container className="center">
+          <Content className="ronaldo"></Content>
         </Container>
-        <Container borderleft="true" className="center second">
-          <Content borderleft="true" id="second" className="ronaldo"></Content>
+        <Container className="center">
+          <Content className="lionel"></Content>
         </Container>
-        <Container borderright="true" className="center third">
-          <Content borderright="true" className="ronaldo"></Content>
+        <Container  className="center third">
+          <Content  className="neymar"></Content>
         </Container>
-        <Container borderright="true" className="center fourth">
-          <Content borderright="true" className="ronaldo"></Content>
+        <Container  className="center fourth">
+          <Content  className="suarez"></Content>
         </Container>
       </Wrapper>
     </Main>

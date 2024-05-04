@@ -9,31 +9,88 @@
 @keyframes basicSlider {
   0%,
   100% {
-    background-image: url("../../../assets/images/smart6.webp");
+    background-image: url("../../../assets/images/triple/sport2.jpg");
   }
-  20% {
-    background-image: url("../../../assets/images/smart7.jpg");
+  25% {
+    background-image: url("../../../assets/images/triple/sport.webp");
   }
-  40% {
-    background-image: url("../../../assets/images/smartm.jpg");
+  50% {
+    background-image: url("../../../assets/images/triple/sport1.jpg");
   }
-  60% {
-    background-image: url("../../../assets/images/smart.jpg");
-  }
-  80% {
-    background-image: url("../../../assets/images/beckham.webp");
+  75% {
+    background-image: url("../../../assets/images/triple/sport2.webp");
   }
 }
 
-/* 
-#first,.fourth {
-  margin-bottom: 140px;
+.lionel {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: top;
+  animation: messiSlider 15s ease infinite;
 }
 
-.second,.third{
-  margin-top: 190px;
+@keyframes messiSlider {
+  0%,
+  100% {
+    background-image: url("../../../assets/images/triple/fourth1.jpg");
+  }
+  25% {
+    background-image: url("../../../assets/images/triple/fourth4.jpg");
+  }
+  50% {
+    background-image: url("../../../assets/images/triple/fourth2.jpg");
+    background-position: center;
+  }
+  75% {
+    background-image: url("../../../assets/images/triple/fourth3.jpg");
+    background-position: center;
+  }
 }
 
-#second{
-  border-bottom-left-radius: 110%;
-} */
+.neymar {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: top;
+  animation: neymarSlider 15s ease infinite;
+}
+
+@keyframes neymarSlider {
+  0%,
+  100% {
+    background-image: url("../../../assets/images/triple/third3.jpg");
+  }
+  25% {
+    background-image: url("../../../assets/images/triple/second.jpg");
+  }
+  50% {
+    background-image: url("../../../assets/images/triple/first1.jpg");
+  }
+  75% {
+    background-image: url("../../../assets/images/triple/first3.jpg");
+  }
+}
+.suarez {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: top;
+  animation: suarezSlider 15s ease infinite;
+}
+
+@keyframes suarezSlider {
+  0%,
+  100% {
+    background-image: url("../../../assets/images/triple/third4.jpg");
+  }
+  25% {
+    background-image: url("../../../assets/images/triple/third5.jpg");
+  }
+  50% {
+    background-image: url("../../../assets/images/triple/third2.jpg");
+  }
+  75% {
+    background-image: url("../../../assets/images/triple/third6.jpg");
+  }
+}
