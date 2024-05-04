@@ -15,6 +15,7 @@ import Footer from "../components/footer/Footer";
 import ScrollWatcher from "../components/scrollWatcher/ScrollWatcher";
 import MostSellers from "../components/most/MostSellers";
 import TripleSlider from "../components/sliders/trippleSlider/tripleSlider";
+import BigSlider from "../components/sliders/bigSlider/BigSlider";
 
 const Home = () => {
   const {value} = useSelector(store => store.title)
@@ -32,6 +33,7 @@ const Home = () => {
       <TripleSlider />
       <MostSellers />
       <Soon />
+      <BigSlider />
       <ClothTab />
       {value == "SHOE" ? (
         <ProductSlider />

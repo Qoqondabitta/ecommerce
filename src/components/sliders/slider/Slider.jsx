@@ -1,18 +1,15 @@
 import React from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import {
-  Add,
   ArrowWrapper,
   Blur,
   Cards,
   Container,
   Content,
-  Image,
   Left,
   Main,
   Right,
 } from "./style";
-// import casual from "../../assets/images/casual.png";
 import smart from "../../../assets/images/smart.jpg";
 import smartm from "../../../assets/images/smartm.jpg";
 import suit from "../../../assets/images/suit.webp";
@@ -23,9 +20,7 @@ import under1 from "../../../assets/images/under.jpg";
 import messi from "../../../assets/images/messi.jpg";
 import neymar from "../../../assets/images/neymar.avif";
 import zlatan from "../../../assets/images/zlatan.avif";
-
 import "./slider.css";
-// import Nav from "../secondNav/Nav";
 
 const Slider = () => {
   return (
@@ -88,12 +83,12 @@ const Slider = () => {
         {/* Fifth Card */}
 
         {/* Arrows */}
-        <ArrowWrapper className="center" left="true">
+        {/* <ArrowWrapper className="center" left="true">
           <MdKeyboardArrowLeft color="white" size="1.5em" style={{zIndex: "200"}} />
         </ArrowWrapper>
         <ArrowWrapper className="center">
           <MdKeyboardArrowRight color="white" size="1.5em" style={{zIndex: "200"}}/>
-        </ArrowWrapper>
+        </ArrowWrapper> */}
         {/* Arrows */}
       </Container>
     </Main>

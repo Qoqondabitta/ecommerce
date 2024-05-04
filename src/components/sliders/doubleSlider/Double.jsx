@@ -25,7 +25,6 @@ import zlatan from "../../../assets/images/zlatan.avif";
 
 import "./double.css";
 import ScrollWatcher from "../../scrollWatcher/ScrollWatcher";
-// import Nav from "../secondNav/Nav";
 
 const DoubleSlider = () => {
   return (
@@ -118,7 +117,7 @@ const DoubleSlider = () => {
       </Container>
 
       {/* Arrows */}
-      <ArrowWrapper className="center" left="true">
+      {/* <ArrowWrapper className="center" left="true">
         <MdKeyboardArrowLeft
           color="white"
           size="1.5em"
@@ -131,7 +130,7 @@ const DoubleSlider = () => {
           size="1.5em"
           style={{ zIndex: "200" }}
         />
-      </ArrowWrapper>
+      </ArrowWrapper> */}
       {/* Arrows */}
     </Main>
   );
