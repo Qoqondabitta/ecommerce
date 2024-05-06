@@ -5,6 +5,8 @@ export const Main = styled.div`
   position: relative;
   height: 80vh;
   margin-bottom: 270px;
+  width: 100%;
+  /* z-index: 39999999999999 !important; */
 `;
 
 export const Videos = styled.video`

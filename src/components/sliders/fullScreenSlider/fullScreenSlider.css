@@ -1,0 +1,38 @@
+.messi {
+  opacity: 1;
+  pointer-events: none;
+  animation: animate 15s linear infinite;
+  animation-fill-mode: forwards;
+  animation-delay: calc(3s * var(--delay));
+}
+
+.test {
+  background-color: rgba(116, 115, 115, 0.211);
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  5%, 20% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  25%, 40% {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0%);
+  }
+  45%, 60% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  65% {
+    opacity: 0;
+    transform: translateY(-100%);
+  } 100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}

@@ -25,7 +25,7 @@ import "./slider.css";
 const Slider = () => {
   return (
     <Main>
-      <Blur></Blur>
+      {/* <Blur></Blur> */}
       <Container className="center">
         {/* First Card */}
         <Content className="messi" style={{ "--delay": "-1" }}>

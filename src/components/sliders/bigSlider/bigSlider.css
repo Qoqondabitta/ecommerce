@@ -1,7 +1,16 @@
 .moveLeft {
-
+  transform: translateX(100px);
+  transition: all 2s ease;
+  z-index: 200;
 }
 
 .moveRight {
-    
+  transition: all 2s ease;
+  transform: translateX(-100vw);
+  /* left: -400px; */
+  z-index: 2000;
+}
+
+#middle{
+    z-index: 999 !important;
 }

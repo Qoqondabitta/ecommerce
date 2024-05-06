@@ -7,7 +7,7 @@ import { Blur } from '../video/style';
 const MostSellers = () => {
     return (
       <Main>
-        <Blur></Blur>
+        {/* <Blur></Blur> */}
         <Container className="center">
           <Back backimg={back}></Back>
           <Back backimg={back1}></Back>

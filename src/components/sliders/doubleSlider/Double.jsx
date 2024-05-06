@@ -31,7 +31,7 @@ const DoubleSlider = () => {
     <Main className="center">
       <ScrollWatcher />
       {/* <Nav /> */}
-      <Blurs></Blurs>
+      {/* <Blurs></Blurs> */}
       <Container className="center right">
         {/* First Card */}
         <Content className="messi" style={{ "--delay": "-1" }}>

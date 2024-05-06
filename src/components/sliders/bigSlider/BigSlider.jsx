@@ -1,40 +1,36 @@
-import React, { useState } from 'react'
-import { Container, Main } from './style'
-import DoubleSlider from '../doubleSlider/Double'
-import Slider from '../slider/Slider'
-import { ArrowWrapper } from '../doubleSlider/style'
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md'
-import Video from '../../video/Video'
+import React, { useState } from "react";
+import { Child, Container, Main } from "./style";
+import DoubleSlider from "../doubleSlider/Double";
+import Slider from "../slider/Slider";
+import { ArrowWrapper } from "../doubleSlider/style";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+import Video from "../../video/Video";
 import "./bigSlider.css";
+import FullScreenSlider from "../fullScreenSlider/FullScreenSlider";
 
 const BigSlider = () => {
-    // const [left, setLeft] = useState(false)
-    // const [right, setRight] = useState(false);
-    // const Right = () => {
-    //   setRight(!value);
-    // };
-    // const Left = () => {
-    //    setLeft(!value)    
-    // }
+  const [side, setSide] = useState(0);
+  const Right = () => {
+    side == 3 ? setSide(0) : setSide(side + 1);
+  };
+  const Left = () => {
+      side == 0 ? setSide(3) : setSide(side - 1);
+      console.log(side);
+  };
   return (
     <Main className="center">
-      <Container>
-        <Video />
-        <DoubleSlider />
-        <Slider />
+      <Container className="center">
+        {side == 0 ? <Video /> : side == 1 ? <DoubleSlider /> : side==2 ? <Slider /> : <FullScreenSlider />}
       </Container>
       {/* Arrows */}
-      <ArrowWrapper
-        className="moveLeft center"
-        left="true"
-      >
+      <ArrowWrapper className="center" left="true" onClick={Left}>
         <MdKeyboardArrowLeft
           color="white"
           size="1.5em"
           style={{ zIndex: "200" }}
         />
       </ArrowWrapper>
-      <ArrowWrapper className="moveRight center">
+      <ArrowWrapper className="center" onClick={Right}>
         <MdKeyboardArrowRight
           color="white"
           size="1.5em"
@@ -44,6 +40,6 @@ const BigSlider = () => {
       {/* Arrows */}
     </Main>
   );
-}
+};
 
-export default BigSlider
+export default BigSlider;

@@ -38,6 +38,12 @@
   justify-content: center;
 }
 
+.justifyStart{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .space{
     display: flex;
     flex-direction: column;
