@@ -14,9 +14,9 @@ const Nav = () => {
       <Container>
         <Xon>XON</Xon>
         <List className="">
-          <Item>
+          {/* <Item>
             <Link>Home</Link>
-          </Item>
+          </Item> */}
           <Item>
             <Link>Women</Link>
           </Item>
