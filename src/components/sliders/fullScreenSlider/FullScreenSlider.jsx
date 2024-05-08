@@ -3,9 +3,7 @@ import {
   Cards,
   Container,
   Content,
-  Left,
   Main,
-  Right,
 } from "./style";
 import suit from "../../../assets/images/triple/hijab.webp";
 import suit2 from "../../../assets/images/triple/hijab4.jpg";
@@ -39,12 +37,8 @@ const FullScreenSlider = () => {
 
         {/* Fourth Card */}
         <Content className="messi" style={{ "--delay": "2" }}>
-          <Left className="center">
             <Cards s={under} p="right"></Cards>
-          </Left>{" "}
-          <Right>
             <Cards s={under1} p="center"></Cards>
-          </Right>
         </Content>
         {/* Fourth Card */}
 
