@@ -8,6 +8,7 @@ import {
   serviceFooter,
 } from "../../constants/footer";
 import "./footer.css"
+import { Info, TextWrapper, Text as Texts } from "../sliders/kids/style";
 
 const Footer = () => {
   return (
@@ -75,18 +76,37 @@ const Footer = () => {
           {/* {serviceFooter.map(v => <Parts>{serviceFooter.map(v=><Item>v.</Item>) }</Parts>)} */}
           <Parts className="columnStart">
             {serviceFooter.map((v, id) => (
-              <Item key={id} underline={v.underline} heights="true" color={v.color}>
+              <Item
+                key={id}
+                underline={v.underline}
+                heights="true"
+                color={v.color}
+              >
                 {v.text}
               </Item>
             ))}
           </Parts>
           <Parts className="columnStart">
             {countryFooter.map((v, id) => (
-              <Item underline={v.underline} key={id} heights="true" color={v.color}>
+              <Item
+                underline={v.underline}
+                key={id}
+                heights="true"
+                color={v.color}
+              >
                 {v.text}
               </Item>
             ))}
           </Parts>
+          {/* <TextWrapper>
+            <Texts className="justifyStart kid">
+              <Info>Different Colors</Info>
+              <Info>Different Styles </Info>
+              <Info>Special Offers</Info>
+              <Info>For Different Ages</Info>
+              <Info>Different Colors</Info>
+            </Texts>
+          </TextWrapper> */}
         </Row>
         <XON>XON BRAND</XON>
       </Container>

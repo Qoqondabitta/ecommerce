@@ -8,20 +8,25 @@ import Video from "../../video/Video";
 import "./bigSlider.css";
 import FullScreenSlider from "../fullScreenSlider/FullScreenSlider";
 import Kids from "../kids/Kids";
+import { useSelector } from "react-redux";
+import { decrement, increment } from "../../../redux/order";
 
 const BigSlider = () => {
-  const [side, setSide] = useState(1);
+  // const [side, setSide] = useState(1);
+  const {value} = useSelector(store=>store.order)
   const Right = () => {
-    side == 3 ? setSide(0) : setSide(side + 1);
+    // side == 3 ? setSide(0) : setSide(side + 1);
+    increment()
   };
   const Left = () => {
-      side == 0 ? setSide(3) : setSide(side - 1);
-      console.log(side);
+      // side == 0 ? setSide(3) : setSide(side - 1);
+    console.log(side);
+    decrement()
   };
   return (
     <Main className="center">
       <Container className="center">
-        {side == 0 ? <Video /> : side == 1 ? <DoubleSlider /> : side==2 ? <Kids /> : <FullScreenSlider />}
+        {value == 0 ? <Video /> : value == 1 ? <DoubleSlider /> : value==2 ? <Kids /> : <FullScreenSlider />}
       </Container>
       {/* Arrows */}
       <ArrowWrapper className="center" left="true" onClick={Left}>
