@@ -11,8 +11,8 @@ const TextSlider = () => {
     <TextWrapper>
       <Text className="justifyStart kid">
         {value == 1
-          ? man.map((v) => <Info key={v}>{v}</Info>)
-          : kid.map((v) => <Info key={v}>{v}</Info>)}
+          ? man.map((v, i) => <Info key={i}>{v}</Info>)
+          : kid.map((v, i) => <Info key={i}>{v}</Info>)}
       </Text>
     </TextWrapper>
   );
