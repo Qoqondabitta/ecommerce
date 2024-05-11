@@ -4,9 +4,11 @@ import { Icon, Round, Shop } from "./style";
 import { BsFillSuitHeartFill } from "react-icons/bs";
 import { PiShoppingCartLight } from "react-icons/pi";
 import { useSelector } from "react-redux";
-import Drop from "../../dropdown/Drop"
+import Drop from "../../dropdown/Drop";
+import { links } from "../../../constants/navbar";
 
 const Nav = () => {
+  const language = useSelector((store) => store.language);
   const counter = useSelector((store) => store.counter);
 
   return (
@@ -14,21 +16,17 @@ const Nav = () => {
       <Container>
         <Xon>XON</Xon>
         <List className="">
-          {/* <Item>
-            <Link>Home</Link>
-          </Item> */}
-          <Item>
-            <Link>Women</Link>
-          </Item>
-          <Item>
-            <Link>Men</Link>
-          </Item>
-          <Item>
-            <Link>Kids</Link>
-          </Item>
-          <Item>
-            <Link>Perfume</Link>
-          </Item>
+          {links.map((v, i) => (
+            <Item key={i}>
+              <Link>
+                {language.value == "ENG"
+                  ? v.title[0]
+                  : language.value == "UZB"
+                  ? v.title[1]
+                  : v.title[2]}
+              </Link>
+            </Item>
+          ))}
         </List>
         <Shop>
           <Drop />

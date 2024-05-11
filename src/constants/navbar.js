@@ -20,3 +20,10 @@ export const tongues = [
     function: uzbek(),
   },
 ];
+
+export const links = [
+  { title: ["Women", "Ayol", "Женщины"] },
+  { title: ["Men", "Erkaklarga", "Мужчины"] },
+  { title: ["Kids", "Bolalarga", "Дети"]},
+  { title: ["Perfume", "Atirlar", "Духи"] },
+];

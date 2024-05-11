@@ -5,7 +5,6 @@ export const order = createSlice({
   initialState: { value: 1 },
   reducers: {
     increment: (state, action) => {
-      // return (state.value==3?0: state.value + 1);
       if (state.value == 3) {
         state.value = 0;
       } else {
@@ -13,7 +12,6 @@ export const order = createSlice({
       }
     },
     decrement: (state, action) => {
-      // return (state.value == 0 ? 3 : state.value - 1);
       if (state.value == 0) {
         state.value = 3;
       } else {

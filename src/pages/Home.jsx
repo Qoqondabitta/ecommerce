@@ -29,13 +29,13 @@ const Home = () => {
       <Nav />
       {/* <Navbar /> */}
       {/* <PostNavbar /> */}
-      <DoubleSlider />
+      <BigSlider />
+      {/* <DoubleSlider /> */}
       <Video />
       <Diogonal />
       <TripleSlider />
       <MostSellers />
       <Soon />
-      <BigSlider />
       <ClothTab />
       {value == "SHOE" ? (
         <ProductSlider />
