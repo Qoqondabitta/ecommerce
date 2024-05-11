@@ -12,15 +12,6 @@ const Kids = () => {
       <Wrapper  className="center">
         <Main>
           <Container className="justifyStart kid">
-            <TextWrapper>
-              <Text className="justifyStart kid">
-                <Info>Different Colors</Info>
-                <Info>Different Styles </Info>
-                <Info>Special Offers</Info>
-                <Info>For Different Ages</Info>
-                <Info>Different Colors</Info>
-              </Text>
-            </TextWrapper>
             <ImgContainer pos="top" bg={kids4}></ImgContainer>
             <ImgContainer>
               <Image pos="left" src={kids3} />

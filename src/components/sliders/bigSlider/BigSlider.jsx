@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Child, Container, Main } from "./style";
 import DoubleSlider from "../doubleSlider/Double";
-// import Slider from "../slider/Slider";
 import { ArrowWrapper } from "../doubleSlider/style";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import Video from "../../video/Video";
@@ -13,20 +12,8 @@ import { decrement, increment } from "../../../redux/order";
 
 const BigSlider = () => {
   const dispatch = useDispatch()
-  // const [side, setSide] = useState(1);
   const order = useSelector((store) => store.order)
-    console.log(order);
-  // console.log(value);
-  const Right = () => {
-    // console.log(value);
-    // side == 3 ? setSide(0) : setSide(side + 1);
-    dispatch(increment())
-  };
-  const Left = () => {
-      // side == 0 ? setSide(3) : setSide(side - 1);
-    // console.log(value);
-    dispatch(decrement())
-  };
+
   return (
     <Main className="center">
       <Container className="center">

@@ -30,14 +30,15 @@ export const Cards = styled.div`
   background-position: ${({ p }) => p};
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 `;
 
-export const Blur = styled.div`
+export const Black = styled.div`
   position: absolute;
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
   z-index: 100;
-  background: rgba(116, 115, 115, 0.45);
+  background: rgba(116, 115, 115, 0.4);
 `;

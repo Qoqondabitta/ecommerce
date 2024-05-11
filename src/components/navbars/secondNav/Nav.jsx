@@ -14,7 +14,7 @@ const Nav = () => {
   return (
     <Main className="center">
       <Container>
-        <Xon>XON</Xon>
+        <Xon>{language.value == "RUS" ? "ХОН" : "XON"}</Xon>
         <List className="">
           {links.map((v, i) => (
             <Item key={i}>

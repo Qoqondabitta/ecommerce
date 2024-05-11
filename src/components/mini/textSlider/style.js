@@ -6,19 +6,18 @@ export const TextWrapper = styled.div`
   position: absolute;
   bottom:  10%;
   right: 5%;
-  z-index: 20000000000000000;
 `;
 
 export const Text = styled.div`
   width: 600px;
-  /* background-color: red; */
   position: relative;
   left: 0;
 `;
 export const Info = styled.p`
-  color: goldenrod;
-  font-size: 16px;
+  color: white;
+  font-size: 18px;
   font-weight: bolder;
   width: 20%;
   text-align: center;
+  z-index: 10;
 `;

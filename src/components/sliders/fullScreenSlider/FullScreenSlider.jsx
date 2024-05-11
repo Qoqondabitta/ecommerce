@@ -1,9 +1,11 @@
 import React from "react";
 import {
+  Black,
   Cards,
   Container,
   Content,
   Main,
+  // Right,
 } from "./style";
 import suit from "../../../assets/images/triple/hijab.webp";
 import suit2 from "../../../assets/images/triple/hijab4.jpg";
@@ -44,7 +46,9 @@ const FullScreenSlider = () => {
 
         {/* Fifth Card */}
         <Content className="messi" style={{ "--delay": "3" }}>
-            <Cards s={beckham} p="center"></Cards>
+          <Cards s={beckham} p="center">
+            <Black></Black>
+            </Cards>
         </Content>
         {/* Fifth Card */}
       </Container>

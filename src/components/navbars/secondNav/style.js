@@ -39,6 +39,7 @@ export const List = styled.ul`
 export const Item = styled.li`
   color: white;
   font-size: 18px;
+  font-weight: 600;
 `;
 
 export const Link = styled.a`

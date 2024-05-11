@@ -23,12 +23,9 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  /* transform: skewX(12deg); */
   width: 50vw;
   z-index: -3999;
-  /* height: 100vh; */
   transform: translateX(0vw);
-  /* box-sizing: border-box; */
 `;
 
 export const ArrowWrapper = styled.div`
@@ -49,7 +46,6 @@ export const Left = styled.div`
   flex: 1;
   background-color: rgb(190, 184, 184);
   position: relative;
-  /* box-sizing: border-box; */
 `;
 export const Right = styled(Left)``;
 
@@ -93,7 +89,7 @@ export const Blurs = styled.div`
   top: 0;
   left: 0;
   z-index: 100;
-  background: rgba(116, 115, 115, 0.450);
+  background: rgba(116, 115, 115, 0.150);
 `;
 
 export const Scripts = styled.div`
