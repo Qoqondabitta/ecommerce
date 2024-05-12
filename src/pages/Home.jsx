@@ -27,14 +27,11 @@ const Home = () => {
       <TextSlider />
       <Add />
       <Nav />
-      {/* <Navbar /> */}
-      {/* <PostNavbar /> */}
       <BigSlider />
-      {/* <DoubleSlider /> */}
       <Video />
-      <Diogonal />
       <TripleSlider />
       <MostSellers />
+      <Diogonal />
       <Soon />
       <ClothTab />
       {value == "SHOE" ? (

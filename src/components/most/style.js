@@ -22,4 +22,4 @@ export const Back = styled.div`
   background-repeat: no-repeat;
 `;
 
-// export 
+export const Button = styled.div``

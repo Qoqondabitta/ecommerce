@@ -4,8 +4,10 @@ import { botCardDetails as product } from "../../../mock/botProductSlider";
 import "./botProductSlider.css";
 import { FaArrowRight as Right } from "react-icons/fa6";
 import BotProSliderCard from "../../cards/bottomCards/BotCard";
+import { useSelector } from "react-redux";
 
 const BotProductSlider = () => {
+  const { value } = useSelector((store) => store.language);
   const [digit, setDigit] = useState(0);
   const scrollRef = useRef(null);
   const [move, setMove] = useState(true);
@@ -18,7 +20,7 @@ const BotProductSlider = () => {
         behavior: "smooth",
       });
     }
-    digit < 2 ? setDigit(digit + 1) : digit;
+    // digit < 2 ? setDigit(digit + 1) : digit;
   };
   const SetBack = () => {
     let node = scrollRef.current;
@@ -28,14 +30,14 @@ const BotProductSlider = () => {
         behavior: "smooth",
       });
     }
-    digit > 0 ? setDigit(digit - 1) : digit;
+    // digit > 0 ? setDigit(digit - 1) : digit;
   };
   return (
     <Main className="center">
       <Arrow className="center" position="right" onClick={handleScroll}>
         <Right size="1.5em" color="black" />
       </Arrow>
-      {digit != 0 && (
+      {/* {digit != 0 && ( */}
         <Arrow
           rotate="true"
           position="left"
@@ -44,7 +46,7 @@ const BotProductSlider = () => {
         >
           <Right size="1.5em" color="black" />
         </Arrow>
-      )}
+      {/* )} */}
       <Container
         ref={scrollRef}
         className="scrollExample"
@@ -55,8 +57,14 @@ const BotProductSlider = () => {
             key={v.id}
             id={v.id}
             price={v.price}
-            desc={v.desc}
-            title={v.title}
+            desc={value == "ENG" ? v.desc[0] : value == "UZB" ? v.desc[1] : v.desc[2]}
+            title={
+              value == "ENG"
+                ? v.title[0]
+                : value == "UZB"
+                ? v.title[1]
+                : v.title[2]
+            }
             img={v.img}
             color={v?.color}
             move={move}

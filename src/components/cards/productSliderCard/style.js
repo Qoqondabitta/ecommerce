@@ -49,6 +49,10 @@ export const Title = styled(Container)`
 export const H1 = styled.h1`
   font-size: 20px;
   font-weight: 400;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 20px;
 `;
 export const P = styled.p`
   color: grey;

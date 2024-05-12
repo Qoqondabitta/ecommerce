@@ -5,6 +5,7 @@ export const Main = styled.div`
   overflow: hidden;
   height: 100vh;
   position: relative;
+  /* z-index: 3200; */
 `;
 
 export const Container = styled.div`

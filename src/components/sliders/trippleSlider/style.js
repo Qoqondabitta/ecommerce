@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 export const Main = styled.div`
   margin: 0 auto;
   position: relative;
-  height: 150vh;
+  height: 100vh;
   width: 100%;
   gap: 5px;
 `;

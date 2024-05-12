@@ -9,7 +9,8 @@ export const Main = styled.div`
 export const Container = styled.div`
   background: red;
   /* position: absolute; */
-  z-index: 450;
+  z-index: 230000;
+  /* z-index: 450; */
   padding: 5px;
   color: yellow;
   font-size: 16px;

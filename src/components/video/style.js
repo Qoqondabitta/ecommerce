@@ -6,6 +6,7 @@ export const Main = styled.div`
   height: 80vh;
   margin-bottom: 270px;
   width: 100%;
+  /* z-index: -49; */
   /* z-index: 39999999999999 !important; */
 `;
 
@@ -20,9 +21,9 @@ export const Videos = styled.video`
 export const Blur = styled.div`
   position: absolute;
   width: 100%;
-  height: 100vh;
-  top: 0;
+  height: 125vh;
+  top: 0px;
   left: 0;
   z-index: 100;
-  background: rgba(116, 115, 115, 0.45);
+  background: rgba(116, 115, 115, 0.25);
 `;

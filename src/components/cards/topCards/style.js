@@ -46,11 +46,15 @@ export const Image = styled.img`
 export const Title = styled(Container)`
   gap: 15px;
   padding: 0px 10px 10px 10px;
-`;
+  `;
 
 export const H1 = styled.h1`
-  font-size: 20px;
   font-weight: 400;
+  font-size: 20px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 20px;
 `;
 export const P = styled.p`
   color: grey;

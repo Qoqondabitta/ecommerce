@@ -6,6 +6,7 @@ import "./tab.css";
 
 const ClothTab = () => {
   const { value } = useSelector((store) => store.title);
+  const language = useSelector((store) => store.language);
   console.log(value);
   const dispatch = useDispatch();
 
@@ -21,7 +22,11 @@ const ClothTab = () => {
                 dispatch(v.function);
               }}
             >
-              {v.name}
+              {language.value == "ENG"
+                ? v.name[0]
+                : language.value == "RUS"
+                ? v.name[2]
+                : v.name[1]}
             </Item>
           ))}
         </List>

@@ -26,7 +26,7 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
   z-index: 50000000000000000;
   width: 300px;
 `;
@@ -45,14 +45,26 @@ export const Motiv = styled.h1`
 export const Text = styled.p`
   color: white;
   font-weight: 400;
+  margin-bottom: 20px;
 `;
 export const Button = styled.button`
-  font-size: 14px;
+  font-size: 18px;
   border-radius: 5px;
-  /* font-weight: 600; */
-  padding: 8px 50px;
+  font-weight: 500;
+  padding-block: 12px ;
+  width: 97%;
   cursor: pointer;
   border: 1px solid white;
   color: white;
   background-color: transparent;
+`;
+
+export const Blur = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: rgba(116, 115, 115, 0.25);
 `;

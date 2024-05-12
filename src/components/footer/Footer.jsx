@@ -8,9 +8,10 @@ import {
   serviceFooter,
 } from "../../constants/footer";
 import "./footer.css"
-import { Info, TextWrapper, Text as Texts } from "../sliders/kids/style";
+import { useSelector } from "react-redux";
 
 const Footer = () => {
+  const {value} = useSelector((store) => store.language)
   return (
     <Main>
       <Container>
@@ -26,7 +27,11 @@ const Footer = () => {
                 heights="20px"
                 fontSize={v?.size}
               >
-                {v.name}
+                {value == "ENG"
+                  ? v.name[0]
+                  : value == "UZB"
+                  ? v.name[1]
+                  : v.name[2]}
               </Item>
             ))}
           </List>
@@ -42,7 +47,11 @@ const Footer = () => {
                 heights="20px"
                 fontSize={v?.size}
               >
-                {v.name}
+                {value == "ENG"
+                  ? v.name[0]
+                  : value == "UZB"
+                  ? v.name[1]
+                  : v.name[2]}
               </Item>
             ))}
           </List>
@@ -58,15 +67,41 @@ const Footer = () => {
                 gap="20px"
                 className="columnStart"
               >
-                {v.name}
+                {value == "ENG"
+                  ? v.name[0]
+                  : value == "UZB"
+                  ? v.name[1]
+                  : v.name[2]}
+
                 {v.privacy && (
                   <Text capital={v.capital} color={v.text.color}>
-                    {`${v.text.script}`}
+                    {/* {`${v.text.script}`} */}
+                    {value == "ENG"
+                      ? `${v.text.script[0]}`
+                      : value == "UZB"
+                      ? `${v.text.script[1]}`
+                      : `${v.text.script[2]}`}
                   </Text>
                 )}
                 <section className="form-group topMar">
-                  <Input type="text" placeholder={v.placeHolder.title} />
-                  <label className="form-label">{v.placeHolder.title}</label>
+                  <Input
+                    type="text"
+                    placeholder={
+                      value == "ENG"
+                        ? v.placeHolder.title[0]
+                        : value == "UZB"
+                        ? v.placeHolder.title[1]
+                        : v.placeHolder.title[2]
+                    }
+                  />
+                  <label className="form-label">
+                    {value == "ENG"
+                      ? v.placeHolder.title[0]
+                      : value == "UZB"
+                      ? v.placeHolder.title[1]
+                      : v.placeHolder.title[2]}
+                    {/* {v.placeHolder.title} */}
+                  </label>
                 </section>
               </Item>
             ))}
@@ -98,15 +133,6 @@ const Footer = () => {
               </Item>
             ))}
           </Parts>
-          {/* <TextWrapper>
-            <Texts className="justifyStart kid">
-              <Info>Different Colors</Info>
-              <Info>Different Styles </Info>
-              <Info>Special Offers</Info>
-              <Info>For Different Ages</Info>
-              <Info>Different Colors</Info>
-            </Texts>
-          </TextWrapper> */}
         </Row>
         <XON>XON BRAND</XON>
       </Container>
