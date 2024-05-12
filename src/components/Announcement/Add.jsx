@@ -9,11 +9,11 @@ const Add = () => {
     <Main>
       <Container className="center">
         {language.value === "ENG"
-          ? "Super Deal free shipping for orders over 50$"
+          ? "Super Deal free shipping for orders over 1000$"
           : language.value === "UZB"
-          ? "Super Kelishuv 50$ yuqori xaridlarga tekin yetkazib berish"
+          ? "Super Kelishuv 1000$ yuqori xaridlarga tekin yetkazib berish"
           : language.value === "RUS"
-          ? "Супер скидка бесплатная доставка заказами более 50$"
+          ? "Супер скидка бесплатная доставка заказами более 1000$"
           : "search"}
         {/* Super Deal free shipping for orders over 50$ */}
       </Container>

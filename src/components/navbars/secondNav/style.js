@@ -3,10 +3,23 @@ import { styled } from "styled-components";
 export const Main = styled.div`
   position: relative;
   margin: 0 auto;
+  background-color: grey;
+  z-index: 10000;
+  width: 100%;
+  /* padding: 2px; */
+`;
+
+export const Background = styled.div`
+  width: 100%;
+  background-color: blue;
+  z-index: 4599;
+  height: 300px;
 `;
 
 export const Container = styled.div`
   padding: 0px 50px;
+  /* background-color: blue; */
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,6 +36,7 @@ export const Xon = styled.h1`
   color: white;
   z-index: 340;
   font-size: 80px;
+  
 `;
 
 export const List = styled.ul`
@@ -33,7 +47,7 @@ export const List = styled.ul`
   justify-content: center;
   height: 100%;
   gap: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 45px;
 `;
 
 export const Item = styled.li`
@@ -82,6 +96,7 @@ export const Round = styled.div`
 export const Shop = styled(Parts)`
   justify-content: center;
   z-index: 450;
+  margin-bottom: 25px;
   @media only screen and (max-width: 450px) {
     order: 2;
   }

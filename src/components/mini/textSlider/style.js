@@ -14,10 +14,11 @@ export const Text = styled.div`
   left: 0;
 `;
 export const Info = styled.p`
-  color: white;
-  font-size: 18px;
+  color: ${({colors})=>colors};
+  font-size: 19px;
+  font-weight: 400;
   font-weight: bolder;
   width: 20%;
   text-align: center;
-  z-index: 10;
+  z-index: 100000000;
 `;
