@@ -154,11 +154,23 @@ export const detailsFooter = [
 ];
 
 export const serviceFooter = [
-  { color: "grey", text: ["XON SERVICES", "XON XIZMATLARI", "XOH "], underline: false },
-  { color: "white", text: "Discover our services", underline: true },
+  {
+    color: "grey",
+    text: ["XON SERVICES", "XON XIZMATLARI", "XOH УСЛУГИ"],
+    underline: false,
+  },
+  {
+    color: "white",
+    text: ["Discover our services", "Bizning Xizmatlar", "Hаши Услуги"],
+    underline: true,
+  },
 ];
 
 export const countryFooter = [
-  { color: "grey", text: "CONTRY/REGION", underline: false },
-  { color: "white", text: "Poland", underline: true },
+  {
+    color: "grey",
+    text: ["CONTRY/REGION", "Mamlakat/Hudud", "СТРАНА/РЕГИОН"],
+    underline: false,
+  },
+  { color: "white", text: ["USA", "AQSH", "США"], underline: true },
 ];

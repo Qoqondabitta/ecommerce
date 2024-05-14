@@ -117,7 +117,11 @@ const Footer = () => {
                 heights="true"
                 color={v.color}
               >
-                {v.text}
+                {value == "ENG"
+                  ? v.text[0]
+                  : value == "UZB"
+                  ? v.text[1]
+                  : v.text[2]}
               </Item>
             ))}
           </Parts>
@@ -129,12 +133,16 @@ const Footer = () => {
                 heights="true"
                 color={v.color}
               >
-                {v.text}
+                {value == "ENG"
+                  ? v.text[0]
+                  : value == "UZB"
+                  ? v.text[1]
+                  : v.text[2]}
               </Item>
             ))}
           </Parts>
         </Row>
-        <XON>XON BRAND</XON>
+        <XON>{value == "RUS" ? "XOH БРЕНД" : "XON BRAND"}</XON>
       </Container>
     </Main>
   );

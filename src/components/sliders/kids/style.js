@@ -12,7 +12,6 @@ export const Main = styled.div`
 export const Container = styled.div`
   width: 500%;
   position: relative;
-  /* background-color: blue; */
   left: 0;
 `;
 
@@ -23,6 +22,7 @@ export const ImgContainer = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: ${({ pos }) => pos};
+  position: relative;
 `;
 
 export const Image = styled.img`
@@ -41,7 +41,6 @@ export const Info = styled.p`
 
 export const Text = styled.div`
   width: 500px;
-  /* background-color: red; */
   position: relative;
   left: 0;
 `;
