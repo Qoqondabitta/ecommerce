@@ -1,5 +1,5 @@
 export const sport = [
-  ["Sport", "Sport", "Спорт", "white"],
+  ["Black T-Shirt", "Navy Tracksuit", "Black Sleeve T-Shirt", "white"],
   ["Formal", "Formalniy", "Формальный", "white"],
   ["Smart", "Ihcham", "Умная", "white"],
   ["Casual", "Ko'cha", "Повседневная ", "white"],
