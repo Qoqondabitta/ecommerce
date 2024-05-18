@@ -7,13 +7,24 @@ export const sport = [
     scripts: ["Navy Tracksuit", "To'q Ko'k Sportivka", "Темно-синий спортивкa"],
     color: ["white"],
   },
-  { scripts: ["Black Sleeve T-Shirt", "Ihcham", "Умная"], color: ["white"] },
   {
-    scripts: ["Black T-Shirt With Hood", "Ko'cha", "Повседневная "],
+    scripts: [
+      "Black Sleeve T-Shirt",
+      "Qora Yengi Uzun Futbolka",
+      "Черная футболка с рукавами",
+    ],
     color: ["white"],
   },
   {
-    scripts: ["Black T-Shirt", "Ichki Kiyim", "Нижнее Белье"],
+    scripts: [
+      "Black T-Shirt With Hood",
+      "Qora Yopinchig'li Futbolka",
+      "Черная футболка с капюшоном ",
+    ],
+    color: ["white"],
+  },
+  {
+    scripts: ["Black T-Shirt", "Qora Mayka", "Черная Mайка"],
     color: ["white"],
   },
 ];
