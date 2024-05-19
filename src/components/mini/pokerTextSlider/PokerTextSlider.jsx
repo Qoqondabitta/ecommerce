@@ -27,7 +27,7 @@ const PokerTextSlider = () => {
         </Text>
       </TextWrapper>
       <TextWrapper>
-        <Text position="top" className="justifyStart topSlides">
+        <Text position="top" className="columnCenter topSlides">
           {classic.map((v, i) => (
             <Info key={i} colors={v.color}>
               {language.value == "ENG"
@@ -53,7 +53,7 @@ const PokerTextSlider = () => {
         </Text>
       </TextWrapper>
       <TextWrapper>
-        <Text position="bottom" className="justifyStart bottomSlides">
+        <Text position="bottom" className="columnCenter bottomSlides">
           {formal.map((v, i) => (
             <Info key={i} colors={v.color}>
               {language.value == "ENG"
