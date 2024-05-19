@@ -1,57 +1,72 @@
 import React from "react";
-import { Info, Text, TextWrapper } from "./style";
-import "./textSlider.css";
-import { kid, man, perfume, woman } from "../../../constants/textSlider";
+import { Container, Info, Text, TextWrapper } from "./style";
+import "./poker.css";
 import { useSelector } from "react-redux";
+import {
+  sport,
+  classic,
+  casual,
+  formal,
+} from "../../../constants/pokerTextSlider";
 
-const TextSlider = () => {
-  const { value } = useSelector((store) => store.order);
+const PokerTextSlider = () => {
   const language = useSelector((store) => store.language);
   return (
-    <TextWrapper>
-      <Text className="justifyStart textSlides">
-        {value == 1
-          ? man.map((v, i) => (
-              <Info key={i} colors={v[3]}>
-                {language.value == "ENG"
-                  ? v[0]
-                  : language.value == "UZB"
-                  ? v[1]
-                  : v[2]}
-              </Info>
-            ))
-          : value == 0
-          ? perfume.map((v, i) => (
-              <Info key={i} colors={v[3]}>
-                {language.value == "ENG"
-                  ? v[0]
-                  : language.value == "UZB"
-                  ? v[1]
-                  : v[2]}
-              </Info>
-            ))
-          : value == 2
-          ? kid.map((v, i) => (
-              <Info key={i} colors={v[3]}>
-                {language.value == "ENG"
-                  ? v[0]
-                  : language.value == "UZB"
-                  ? v[1]
-                  : v[2]}
-              </Info>
-            ))
-          : woman.map((v, i) => (
-              <Info key={i} colors={v[3]}>
-                {language.value == "ENG"
-                  ? v[0]
-                  : language.value == "UZB"
-                  ? v[1]
-                  : v[2]}
-              </Info>
-            ))}
-      </Text>
-    </TextWrapper>
+    <Container className="center">
+      <TextWrapper>
+        <Text position="left" className="justifyStart textSlides">
+          {sport.map((v, i) => (
+            <Info key={i} colors={v.color}>
+              {language.value == "ENG"
+                ? v.scripts[0]
+                : language.value == "UZB"
+                ? v.scripts[1]
+                : v.scripts[2]}
+            </Info>
+          ))}
+        </Text>
+      </TextWrapper>
+      <TextWrapper>
+        <Text position="top" className="justifyStart topSlides">
+          {classic.map((v, i) => (
+            <Info key={i} colors={v.color}>
+              {language.value == "ENG"
+                ? v.scripts[0]
+                : language.value == "UZB"
+                ? v.scripts[1]
+                : v.scripts[2]}
+            </Info>
+          ))}
+        </Text>
+      </TextWrapper>
+      <TextWrapper>
+        <Text position="right" className="justifyStart rightSlides">
+          {casual.map((v, i) => (
+            <Info key={i} colors={v.color}>
+              {language.value == "ENG"
+                ? v.scripts[0]
+                : language.value == "UZB"
+                ? v.scripts[1]
+                : v.scripts[2]}
+            </Info>
+          ))}
+        </Text>
+      </TextWrapper>
+      <TextWrapper>
+        <Text position="bottom" className="justifyStart bottomSlides">
+          {formal.map((v, i) => (
+            <Info key={i} colors={v.color}>
+              {language.value == "ENG"
+                ? v.scripts[0]
+                : language.value == "UZB"
+                ? v.scripts[1]
+                : v.scripts[2]}
+            </Info>
+          ))}
+        </Text>
+      </TextWrapper>
+    </Container>
   );
 };
 
-export default TextSlider;
+export default PokerTextSlider;

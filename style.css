@@ -72,3 +72,9 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+
+.alignEnd{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}

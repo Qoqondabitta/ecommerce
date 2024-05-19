@@ -1,20 +1,27 @@
 import { styled } from "styled-components";
 
+export const Container = styled.div`
+  width: 100%;
+  height: 25px;
+  margin: 0 auto;
+  gap: 40px;
+  padding-bottom: 80px;
+`;
+
 export const TextWrapper = styled.div`
-  width: 120px;
+  width: 220px;
   overflow: hidden;
-  position: absolute;
-  bottom:  10%;
-  right: 5%;
+  /* background-color: red; */
 `;
 
 export const Text = styled.div`
-  width: 600px;
+  width: 1100px;
   position: relative;
-  left: 0;
+  height: 130px;
+  ${({position})=>position}: 0;
 `;
 export const Info = styled.p`
-  color: ${({colors})=>colors};
+  color: ${({ colors }) => colors};
   font-size: 19px;
   font-weight: 400;
   font-weight: bolder;

@@ -17,6 +17,7 @@ import MostSellers from "../components/most/MostSellers";
 import TripleSlider from "../components/sliders/trippleSlider/tripleSlider";
 import BigSlider from "../components/sliders/bigSlider/BigSlider";
 import TextSlider from "../components/mini/textSlider/TextSlider";
+import PokerTextSlider from "../components/mini/pokerTextSlider/PokerTextSlider";
 
 const Home = () => {
   const {value} = useSelector(store => store.title)
@@ -30,6 +31,7 @@ const Home = () => {
       <BigSlider />
       <Video />
       <TripleSlider />
+      <PokerTextSlider />
       <MostSellers />
       <Diogonal />
       <Soon />

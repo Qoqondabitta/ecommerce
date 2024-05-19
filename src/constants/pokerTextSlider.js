@@ -1,11 +1,11 @@
 export const sport = [
   {
     scripts: ["Black T-Shirt", "Qora Mayka", "Черная Mайка"],
-    color: ["white"],
+    color: ["black"],
   },
   {
     scripts: ["Navy Tracksuit", "To'q Ko'k Sportivka", "Темно-синий спортивкa"],
-    color: ["white"],
+    color: ["black"],
   },
   {
     scripts: [
@@ -13,7 +13,7 @@ export const sport = [
       "Qora Yengi Uzun Futbolka",
       "Черная футболка с рукавами",
     ],
-    color: ["white"],
+    color: ["black"],
   },
   {
     scripts: [
@@ -21,33 +21,82 @@ export const sport = [
       "Qora Yopinchig'li Futbolka",
       "Черная футболка с капюшоном ",
     ],
-    color: ["white"],
+    color: ["black"],
   },
   {
     scripts: ["Black T-Shirt", "Qora Mayka", "Черная Mайка"],
-    color: ["white"],
+    color: ["black"],
   },
 ];
+
 export const classic = [
-  ["Different Colors", "Har Hil Rang", "Различные Цвета", "white"],
-  ["Different Styles", "Har Hil Stil", "Различные Стили", "white"],
-  ["Special Offers", "Alohida", "Специальные", "white"],
-  ["Different Ages", "Har Hil Yosh", "Различные Возраст", "white"],
-  ["Different Colors", "Har Hil Rang", "Различные Цвета", "white"],
+  {
+    scripts: ["Navy & White", "To'q ko'k & Oq", "Темно-синий & Белый"],
+    color: ["black"],
+  },
+  {
+    scripts: ["Brown & White", "Jigarrang & Oq", "Коричневый & Белый"],
+    color: ["black"],
+  },
+  {
+    scripts: ["Green & White", "Yashil & Oq", "Зеленый & Белый"],
+    color: ["black"],
+  },
+  {
+    scripts: ["Black & White", "Qora & Oq", "Черный & Белый"],
+    color: ["black"],
+  },
+  {
+    scripts: ["Navy & White", "To'q ko'k & Oq", "Темно-синий & Белый"],
+    color: ["black"],
+  },
 ];
+
 export const casual = [
-  ["Different Colors", "Har Hil Rang", "Различные Цвета", "yellow"],
-  ["Different Styles", "Har Hil Stil", "Различные Стили", "yellow"],
-  ["Special Offers", "Alohida", "Специальные", "yellow"],
-  ["Different Ages", "Har Hil Yosh", "Различные Возраст", "yellow"],
-  ["Different Colors", "Har Hil Rang", "Различные Цвета", "yellow"],
+  {
+    scripts: ["Navy T-Shirt", "To'q Ko'k Futbolka", "Темно-синяя футболка"],
+    color: ["black"],
+  },
+  {
+    scripts: [
+      "Green Summer T-Shirt",
+      "Yozgi Yashil Futbolka",
+      "Зеленая летняя футболка",
+    ],
+    color: ["black"],
+  },
+  {
+    scripts: ["Reddish T-Shirt", "Qizil Futbolka", "Красноватая футболка"],
+    color: ["black"],
+  },
+  { scripts: ["White Finka", "Oq Finka", "Белый Финка"], color: ["black"] },
+  {
+    scripts: ["Navy T-Shirt", "To'q Ko'k Futbolka", "Темно-синяя футболка"],
+    color: ["black"],
+  },
 ];
+
 export const formal = [
-  ["For Women", "Ayollarga", "Для Женщин", "yellow"],
-  ["For Men", "Erkaklarga", "Для Мужчин", "yellow"],
-  ["For Kids", "Bolalarga", "Для Детей", "yellow"],
-  ["For Presents", "Sovgaga", "Для Подарков", "yellow"],
-  ["For Women", "Ayollarga", "Для Женщин", "yellow"],
+  {
+    scripts: ["Whitesmoke Suit", "Qaymoq Rang Kastim", "Белый костюм"],
+    color: ["black"],
+  },
+  {
+    scripts: ["Orange Suit", "Oranjeviy Kastim", "Оранжевый костюм"],
+    color: ["black"],
+  },
+  {
+    scripts: ["Brown Suit", "Jigar Rang Kastim", "Коричневый костюм"],
+    color: ["black"],
+  },
+  {
+    scripts: ["Navy Suit", "To'q Ko'k Kastim", "Темно-синий костюм"],
+    color: ["black"],
+  },
+  {
+    scripts: ["Navy T-Shirt", "To'q Ko'k Futbolka", "Темно-синяя футболка"],
+    color: ["black"],
+  },
 ];
 
 export const textSliderData = [];
