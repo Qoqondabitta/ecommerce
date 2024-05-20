@@ -99,4 +99,9 @@ export const formal = [
   },
 ];
 
-export const textSliderData = [];
+export const textSliderHeading = [
+  ["Sport", "Sport", "Спорт"],
+  ["Classic", "Klassik", "Классический"],
+  ["Casual", "Kundalik", "Повседневный"],
+  ["Formal", "Rasmiy", "Формальный"],
+];

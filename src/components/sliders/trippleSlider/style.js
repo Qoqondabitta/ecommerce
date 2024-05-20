@@ -3,11 +3,9 @@ import { styled } from "styled-components";
 export const Main = styled.div`
   margin: 0 auto;
   position: relative;
-  height: 80vh;
+  height: 70vh;
   width: 100%;
   gap: 5px;
-  padding-bottom: 20px;
-  /* background-color: red; */
 `;
 
 export const Container = styled.div`

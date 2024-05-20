@@ -10,7 +10,7 @@ import "./triple.css";
 
 const TripleSlider = () => {
   return (
-    <Main className="alignEnd">
+    <Main className="center">
       {/* <Blur></Blur> */}
       <Wrapper className="center">
         <Container className="center">

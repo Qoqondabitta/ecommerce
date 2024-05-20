@@ -44,9 +44,16 @@
   justify-content: flex-start;
 }
 
+.start{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
 .space{
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    /* flex-direction: column; */
     justify-content: space-between;
 }
 

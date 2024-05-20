@@ -1,5 +1,10 @@
 import React from "react";
-import { Container, Info, Text, TextWrapper } from "./style";
+import {
+  Container,
+  Info,
+  Text,
+  TextWrapper,
+} from "./style";
 import "./poker.css";
 import { useSelector } from "react-redux";
 import {
@@ -13,7 +18,7 @@ const PokerTextSlider = () => {
   const language = useSelector((store) => store.language);
   return (
     <Container className="center">
-      <TextWrapper>
+      <TextWrapper className="">
         <Text position="left" className="justifyStart textSlides">
           {sport.map((v, i) => (
             <Info key={i} colors={v.color}>
@@ -27,7 +32,7 @@ const PokerTextSlider = () => {
         </Text>
       </TextWrapper>
       <TextWrapper>
-        <Text position="top" className="columnCenter topSlides">
+        <Text position="left" className="start textSlides">
           {classic.map((v, i) => (
             <Info key={i} colors={v.color}>
               {language.value == "ENG"
@@ -40,7 +45,7 @@ const PokerTextSlider = () => {
         </Text>
       </TextWrapper>
       <TextWrapper>
-        <Text position="right" className="justifyStart rightSlides">
+        <Text position="left" className="start textSlides">
           {casual.map((v, i) => (
             <Info key={i} colors={v.color}>
               {language.value == "ENG"
@@ -53,7 +58,7 @@ const PokerTextSlider = () => {
         </Text>
       </TextWrapper>
       <TextWrapper>
-        <Text position="bottom" className="columnCenter bottomSlides">
+        <Text position="left" className="start textSlides">
           {formal.map((v, i) => (
             <Info key={i} colors={v.color}>
               {language.value == "ENG"
