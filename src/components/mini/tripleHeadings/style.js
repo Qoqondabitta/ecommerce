@@ -15,7 +15,7 @@ export const Heading = styled.p`
   font-weight: 600;
   color: black;
   width: 220px;
-  background-color: yellow;
+  /* background-color: yellow; */
   /* flex: 1; */
   text-align: center;
 `;

@@ -13,11 +13,11 @@ export const woman = [
   ["Different Colors", "Har Hil Rang", "Различные Цвета", "white"],
 ];
 export const kid = [
-  ["Different Colors", "Har Hil Rang", "Различные Цвета","yellow"],
-  ["Different Styles", "Har Hil Stil", "Различные Стили","yellow"],
-  ["Special Offers", "Alohida", "Специальные","yellow"],
-  ["Different Ages", "Har Hil Yosh", "Различные Возраст","yellow"],
-  ["Different Colors", "Har Hil Rang", "Различные Цвета","yellow"],
+  ["Different Colors", "Har Hil Rang", "Различные Цвета", "yellow"],
+  ["Different Styles", "Har Hil Stil", "Различные Стили", "yellow"],
+  ["Special Offers", "Alohida", "Специальные", "yellow"],
+  ["Different Ages", "Har Hil Yosh", "Различные Возраст", "yellow"],
+  ["Different Colors", "Har Hil Rang", "Различные Цвета", "yellow"],
 ];
 export const perfume = [
   ["For Women", "Ayollarga", "Для Женщин","yellow"],

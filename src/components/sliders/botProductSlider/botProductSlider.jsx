@@ -20,7 +20,7 @@ const BotProductSlider = () => {
         behavior: "smooth",
       });
     }
-    // digit < 2 ? setDigit(digit + 1) : digit;
+    digit < 2 ? setDigit(digit + 1) : digit;
   };
   const SetBack = () => {
     let node = scrollRef.current;
@@ -30,7 +30,7 @@ const BotProductSlider = () => {
         behavior: "smooth",
       });
     }
-    // digit > 0 ? setDigit(digit - 1) : digit;
+    digit > 0 ? setDigit(digit - 1) : digit;
   };
   return (
     <Main className="center">

@@ -45,14 +45,15 @@ export const Motiv = styled.h1`
 export const Text = styled.p`
   color: white;
   font-weight: 400;
+  font-size: 18px;
   margin-bottom: 20px;
 `;
 export const Button = styled.button`
   font-size: 18px;
   border-radius: 5px;
   font-weight: 500;
-  padding-block: 12px ;
-  width: 97%;
+  padding: 8px 80px;
+  /* width: 97%; */
   cursor: pointer;
   border: 1px solid white;
   color: white;

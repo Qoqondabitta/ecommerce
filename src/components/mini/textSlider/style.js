@@ -1,22 +1,22 @@
 import { styled } from "styled-components";
 
 export const TextWrapper = styled.div`
-  width: 120px;
+  width: 230px;
   overflow: hidden;
   position: absolute;
-  bottom:  10%;
-  right: 5%;
+  bottom: 10%;
+  left: 0%;
 `;
 
 export const Text = styled.div`
-  width: 600px;
+  width: 1150px;
   position: relative;
   left: 0;
 `;
 export const Info = styled.p`
-  color: ${({colors})=>colors};
-  font-size: 19px;
-  font-weight: 400;
+  color: ${({ colors }) => colors};
+  font-size:22px;
+  font-weight: 800;
   font-weight: bolder;
   width: 20%;
   text-align: center;
