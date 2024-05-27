@@ -20,6 +20,18 @@ const getType = ({ type }) => {
         fontWeight: "bold",
         fontSize: "16px",
       };
+    case "browse":
+      return {
+        background: "white",
+        borderRadius: "5px",
+        border: "1px solid black",
+        gap: "5px",
+        width: "150px",
+        height: "50px",
+        color: "black",
+        fontWeight: "bold",
+        fontSize: "16px",
+      };
     case "signup":
       return {
         color: "#3a4752",

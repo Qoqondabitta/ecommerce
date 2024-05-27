@@ -30,12 +30,12 @@ const Home = () => {
       <Add />
       <Nav />
       <BigSlider />
+      <Diogonal />
       <Video />
       <TripleHeadings />
       <TripleSlider />
       <PokerTextSlider />
-      <MostSellers />
-      <Diogonal />
+      {/* <MostSellers /> */}
       <Soon />
       <ClothTab />
       {value == "SHOE" ? (

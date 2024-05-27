@@ -14,7 +14,6 @@ const getType = ({ type }) => {
         lineHeight: "14px",
         fontWeight: "600",
         color: "yellow",
-
       };
     case "online":
       return {
@@ -29,6 +28,22 @@ const getType = ({ type }) => {
         lineHeight: "14px",
         fontWeight: "bold",
         color: "pink",
+      };
+    case "videoTitle":
+      return {
+        fontSize: "80px",
+        // lineHeight: "14px",
+        fontWeight: "900",
+        color: "white",
+        zIndex: "20000000000000",
+        textTransform: "uppercase"
+      };
+    case "videoText":
+      return {
+        fontSize: "18px",
+        // lineHeight: "14px",
+        // fontWeight: "bold",
+        color: "white",
       };
     case "signup":
       return {
@@ -52,7 +67,7 @@ export const Titles = styled.p`
   font-weight: 400;
   ${getType};
   transition: all 0.5s;
-
+/* text-transform: u; */
   @media only screen and (max-width: 1025px) {
     display: ${({ media }) => media && "none"};
   }

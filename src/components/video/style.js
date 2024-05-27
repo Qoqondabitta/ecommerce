@@ -6,8 +6,9 @@ export const Main = styled.div`
   height: 80vh;
   margin-bottom: 270px;
   width: 100%;
-  /* z-index: -49; */
-  /* z-index: 39999999999999 !important; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
 `;
 
 export const Videos = styled.video`
@@ -17,7 +18,6 @@ export const Videos = styled.video`
   width: 100%;
 `;
 
-
 export const Blur = styled.div`
   position: absolute;
   width: 100%;
@@ -26,4 +26,15 @@ export const Blur = styled.div`
   left: 0;
   z-index: 100;
   background: rgba(116, 115, 115, 0.25);
+`;
+
+export const Content = styled.div`
+  display: flex;
+  align-items: flex-end; 
+  justify-content: flex-start;
+  gap: 20px;
+  /* width: fit-content; */
+  width: 100%;
+  background-color: red;
+  z-index: 90000000000000000000;
 `;

@@ -21,8 +21,8 @@ const FullScreenSlider = () => {
     <Main>
       <Container className="center">
         {fullScreen.map((v, i) => (
-          <Content className={v.classTitle} style={{ "--delay": v.time }}>
-            <Cards s={v.cards.source} p={v.cards.place}></Cards>
+          <Content key={i} className={v.classTitle} style={{ "--delay": v.time }}>
+            <Cards s={v.cards.source} p={v.cards.place}>{ i==4&&<Black></Black>}</Cards>
             {v.visible && <Cards s={v.second.source} p={v.second.place}></Cards>}
           </Content>
         ))}
