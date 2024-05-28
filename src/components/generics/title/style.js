@@ -43,6 +43,8 @@ const getType = ({ type }) => {
         fontSize: "18px",
         // lineHeight: "14px",
         // fontWeight: "bold",
+        backgroundColor: "black",
+        zIndex: "20000000000000",
         color: "white",
       };
     case "signup":

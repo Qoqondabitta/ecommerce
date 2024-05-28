@@ -30,11 +30,12 @@ export const Blur = styled.div`
 
 export const Content = styled.div`
   display: flex;
-  align-items: flex-end; 
+  flex-direction: column;
+  align-items: flex-start; 
   justify-content: flex-start;
   gap: 20px;
-  /* width: fit-content; */
-  width: 100%;
+  width: 400px;
+  /* width: 100%; */
   background-color: red;
   z-index: 90000000000000000000;
 `;
