@@ -22,15 +22,16 @@ const getType = ({ type }) => {
       };
     case "browse":
       return {
+        zIndex: "20000000000000",
         background: "white",
-        borderRadius: "5px",
-        border: "1px solid black",
-        gap: "5px",
-        width: "150px",
-        height: "50px",
+        // borderRadius: "5px",
+        gap: "3px",
+        border:"none",
+        width: "120px",
+        height: "40px",
         color: "black",
-        fontWeight: "bold",
-        fontSize: "16px",
+        fontWeight: "600",
+        fontSize: "18px",
       };
     case "signup":
       return {
@@ -48,7 +49,7 @@ const getType = ({ type }) => {
   }
 };
 
-export const Button = styled.button`
+export const Buttoning = styled.button`
   width: ${({ width }) => (width ? `${width}px` : "120px")};
   cursor: pointer;
   font-style: normal;

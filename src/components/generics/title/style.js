@@ -31,10 +31,13 @@ const getType = ({ type }) => {
       };
     case "videoTitle":
       return {
-        fontSize: "80px",
-        // lineHeight: "14px",
+        fontSize: "65px",
+        lineHeight: "55px",
+        width: "fit-content",
         fontWeight: "900",
         color: "white",
+        letterSpacing: "-0.2rem",
+        // backgroundColor: "black",
         zIndex: "20000000000000",
         textTransform: "uppercase"
       };
@@ -42,9 +45,7 @@ const getType = ({ type }) => {
       return {
         fontSize: "18px",
         // lineHeight: "14px",
-        // fontWeight: "bold",
-        backgroundColor: "black",
-        zIndex: "20000000000000",
+        width: "fit-content",
         color: "white",
       };
     case "signup":

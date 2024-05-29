@@ -32,9 +32,11 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start; 
-  justify-content: flex-start;
-  gap: 20px;
-  width: 400px;
+  justify-content: flex-end;
+  gap: 40px;
+  width: 700px;
+  height: 100%;
+  /* margin-top: 400px; */
   /* width: 100%; */
   background-color: red;
   z-index: 90000000000000000000;

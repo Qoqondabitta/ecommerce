@@ -1,9 +1,9 @@
 import React from "react";
-import {Button} from "./style"
+import { Buttoning } from "./style";
 
 const Button = ({ children, onClick, type, width, mediaWidth }) => {
   return (
-    <Button
+    <Buttoning
       className="center"
       onClick={onClick}
       type={type}
@@ -11,7 +11,7 @@ const Button = ({ children, onClick, type, width, mediaWidth }) => {
       width={width}
     >
       {children || "buy"}
-    </Button>
+    </Buttoning>
   );
 };
 
