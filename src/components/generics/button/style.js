@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import { styled, withTheme } from "styled-components";
 
 const getType = ({ type }) => {
   switch (type) {
@@ -22,16 +22,27 @@ const getType = ({ type }) => {
       };
     case "browse":
       return {
-        zIndex: "20000000000000",
         background: "white",
-        // borderRadius: "5px",
         gap: "3px",
-        border:"none",
+        border: "none",
         width: "120px",
         height: "40px",
         color: "black",
         fontWeight: "600",
-        fontSize: "18px",
+        fontSize: "16px",
+      };
+    case "soon":
+      return {
+        background: "transparent",
+        gap: "3px",
+        border: "none",
+        width: "160px",
+        height: "40px",
+        color: "white",
+        fontWeight: "600",
+        fontSize: "16px",
+        borderRadius: "3px",
+        border: "1px solid white",
       };
     case "signup":
       return {

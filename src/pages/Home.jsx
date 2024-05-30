@@ -21,12 +21,13 @@ import PokerTextSlider from "../components/mini/pokerTextSlider/PokerTextSlider"
 import TripleHeadings from "../components/mini/tripleHeadings/TripleHeadings";
 
 const Home = () => {
-  const {value} = useSelector(store => store.title)
+  const { value } = useSelector((store) => store.title);
+  const turn = useSelector((store) => store.order);
   console.log(value, ": this is the title");
   return (
     <div>
       <ScrollWatcher />
-      <TextSlider />
+      {turn.value != 0 && <TextSlider />}
       <Add />
       <Nav />
       <BigSlider />
@@ -40,11 +41,11 @@ const Home = () => {
       <ClothTab />
       {value == "SHOE" ? (
         <ProductSlider />
-        ) : value == "TOP" ? (
-          <TopProductSlider />
-          ) : (
-            <BotProductSlider />
-            )}
+      ) : value == "TOP" ? (
+        <TopProductSlider />
+      ) : (
+        <BotProductSlider />
+      )}
       <Footer />
     </div>
   );

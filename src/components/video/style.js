@@ -33,11 +33,11 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: flex-start; 
   justify-content: flex-end;
-  gap: 40px;
+  gap: 30px;
   width: 700px;
-  height: 100%;
-  /* margin-top: 400px; */
-  /* width: 100%; */
-  background-color: red;
-  z-index: 90000000000000000000;
+  margin-top: 150px;
+  position: relative;
+  top: 150px;
+  z-index: 900;
+  padding-left: 80px;
 `;

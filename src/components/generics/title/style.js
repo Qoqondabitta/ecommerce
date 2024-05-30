@@ -36,15 +36,40 @@ const getType = ({ type }) => {
         width: "fit-content",
         fontWeight: "900",
         color: "white",
-        letterSpacing: "-0.2rem",
-        // backgroundColor: "black",
-        zIndex: "20000000000000",
-        textTransform: "uppercase"
+        letterSpacing: "-0.3rem",
+        wordSpacing: "-0.1em",
+        zIndex: "2000",
+        textTransform: "uppercase",
+      };
+    case "xonTitle":
+      return {
+        fontSize: "65px",
+        lineHeight: "55px",
+        width: "fit-content",
+        fontWeight: "900",
+        color: "white",
+        letterSpacing: "-0.3rem",
+        wordSpacing: "-0.1em",
+        zIndex: "2000",
+        textTransform: "uppercase",
+      };
+    case "soonTitle":
+      return {
+        fontSize: "33px",
+        lineHeight: "30px",
+        width: "fit-content",
+        fontWeight: "900",
+        color: "white",
+        letterSpacing: "-0.1rem",
+        wordSpacing: "0.1em",
+        zIndex: "2000",
+        textTransform: "uppercase",
+        marginTop: "20px",
       };
     case "videoText":
       return {
-        fontSize: "18px",
-        // lineHeight: "14px",
+        fontSize: "16px",
+        fontWeight: "400",
         width: "fit-content",
         color: "white",
       };

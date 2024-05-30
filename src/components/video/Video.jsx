@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import { Main, Videos, Blur, Content } from "./style";
 import video from "../../assets/images/video.mp4";
 import Title from "../generics/title/Title";
-import Button from "../generics/button/Button"
+import Button from "../generics/button/Button";
 import { forVideoTitle } from "../../constants/video";
 import { useSelector } from "react-redux";
-// import { Button } from "../generics";
 
 const Video = () => {
   const { value } = useSelector((store) => store.language);
-  const child=forVideoTitle[0]
+  const child = forVideoTitle[0];
   return (
     <Main className="">
       <Blur></Blur>

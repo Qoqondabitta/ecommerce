@@ -38,7 +38,7 @@ export const ArrowWrapper = styled.div`
   position: absolute;
   top: 50%;
   left: ${({ left }) => (left ? "2%" : "95%")};
-  z-index: 300;
+  z-index: 3000000000000;
 `;
 
 export const Left = styled.div`
