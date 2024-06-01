@@ -49,8 +49,8 @@ const getType = ({ type }) => {
         fontWeight: "400",
         color: "white",
         letterSpacing: "-0.5rem",
-        fontFamily: '"DM Serif Display", serif'
-// background:"red"
+        fontFamily: '"DM Serif Display", serif',
+        // background:"red"
       };
     case "soonTitle":
       return {
@@ -94,12 +94,16 @@ export const Titles = styled.p`
   font-weight: 400;
   ${getType};
   transition: all 0.5s;
-/* text-transform: u; */
+  /* text-transform: u; */
   @media only screen and (max-width: 1025px) {
     display: ${({ media }) => media && "none"};
   }
+  @media only screen and (max-width: 1025px) {
+    font-size: ${({ type }) => type == "xonTitle" && "40px"};
+    font-weight: ${({ type }) => type == "xonTitle" && "20px"};
+    letter-spacing: ${({ type }) => type == "xonTitle" && "0.5rem"};
+    line-height: ${({ type }) => type == "xonTitle" && "60px"};
+    /* text-align: end; */
+    /* height: ${({ type }) => type == "xonTitle" && "60px"}; */
+  }
 `;
-
-// macondo geostar
-// purple purse
-// ribeye marrow

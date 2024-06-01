@@ -24,13 +24,11 @@ export const Container = styled.div`
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
-`;
 
-export const Xon = styled.h1`
-  font-weight: bold;
-  color: white;
-  z-index: 3400000;
-  font-size: 80px;
+  @media only screen and (max-width: 425px) {
+    padding: 0px 10px 0px 20px;
+    height: 40px;
+  }
 `;
 
 export const List = styled.ul`
@@ -42,6 +40,10 @@ export const List = styled.ul`
   height: 100%;
   gap: 20px;
   margin-bottom: 45px;
+
+  @media only screen and (max-width: 425px) {
+    display: none;
+  }
 `;
 
 export const Item = styled.li`
@@ -62,6 +64,10 @@ export const Icon = styled.div`
   height: 40px;
   z-index: 450;
   position: relative;
+
+  @media only screen and (max-width: 425px) {
+    border: 1px solid transparent;
+  }
 `;
 
 export const Parts = styled.div`
@@ -93,5 +99,8 @@ export const Shop = styled(Parts)`
   margin-bottom: 25px;
   @media only screen and (max-width: 450px) {
     order: 2;
+    gap: 0px;
+    align-items: center;
+    margin-bottom: 0px;
   }
 `;

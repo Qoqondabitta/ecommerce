@@ -1,0 +1,28 @@
+.category {
+  position: fixed;
+  top: -30px;
+  left: 100%;
+  /* overflow-y: scroll; */
+}
+.open {
+  left: 65%;
+}
+
+@media only screen and (max-width: 450px) {
+    .open {
+        left: 30%;
+    }
+}
+
+.category::-webkit-scrollbar{
+    display: none;
+}
+
+.close{
+    /* width: 100%; */
+    background-color: black;
+    border-radius:50%;
+    padding: 5px;
+    position: relative;
+    left: 125%;
+}

@@ -11,6 +11,9 @@
   /* font-style: normal; */
 }
 
+body{
+  background-color: red;
+}
 /* #root{ */
   /* primaryColor: #fff; */
 /* } */
@@ -88,4 +91,8 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
+}
+
+.pointer{
+  cursor: pointer;
 }

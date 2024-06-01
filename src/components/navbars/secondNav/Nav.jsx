@@ -1,21 +1,27 @@
-import React from "react";
-import { Background, Container, Item, Link, List, Main, Xon } from "./style";
+import React, { useState } from "react";
+import { Container, Item, Link, List, Main } from "./style";
 import { Icon, Round, Shop } from "./style";
-import { BsFillSuitHeartFill } from "react-icons/bs";
-import { PiShoppingCartLight } from "react-icons/pi";
-import { useSelector } from "react-redux";
+import { FaRegHeart } from "react-icons/fa";
+import { IoCartOutline } from "react-icons/io5";
+import { useDispatch, useSelector } from "react-redux";
 import Drop from "../../dropdown/Drop";
-import { links } from "../../../constants/navbar";
-import "./secondNav.css"
+import { links } from "../../../constants/navbars/navbar";
+import "./secondNav.css";
 import Title from "../../generics/title/Title";
+import { LuUser } from "react-icons/lu";
+import { HiOutlineMenu } from "react-icons/hi";
+import { toggleBurger } from "../../../redux/burger";
+import Categories from "../../Category/Categories";
 
 const Nav = () => {
+  const dispatch = useDispatch()
   const language = useSelector((store) => store.language);
   const counter = useSelector((store) => store.counter);
   const order = useSelector((store) => store.order);
-
+  const burger = useSelector((store)=>store.burger)
+console.log(burger);
   return (
-    <Main className="center">
+    <Main className="columnCenter">
       <Container>
         <Title type="xonTitle">{language.value == "RUS" ? "ХОН" : "XON"}</Title>
         <List className="">
@@ -32,16 +38,23 @@ const Nav = () => {
           ))}
         </List>
         <Shop>
-          <Drop />
+          {/* <Drop /> */}
           <Icon className="center">
-            <BsFillSuitHeartFill color="red" size="1.3em" />
+            <FaRegHeart color="white" size="1.3em" />
           </Icon>
           <Icon className="center">
-            <PiShoppingCartLight color="white" size="1.6em" />
+            <LuUser color="white" size="1.3em" />
+          </Icon>
+          <Icon className="center">
+            <IoCartOutline color="white" size="1.5em" />
             <Round className="center">{counter.data}</Round>
           </Icon>
+            <Icon className="center" onClick={()=>dispatch(toggleBurger())}>
+              <HiOutlineMenu color="white" size="1.3em" />
+            </Icon>
         </Shop>
       </Container>
+        <Categories classTitle={burger.value==true && "open"} />
     </Main>
   );
 };

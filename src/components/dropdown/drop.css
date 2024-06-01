@@ -23,8 +23,8 @@
   transition: all 5s;
 }
 
-.dropdown.collapsed {
-  top: 70px;
+.collapsed {
+  top: 150px;
 }
 
 @media only screen and (max-width: 450px) {

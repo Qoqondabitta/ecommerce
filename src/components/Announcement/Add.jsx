@@ -6,7 +6,7 @@ import { Container, Main } from "./style";
 const Add = () => {
   const language = useSelector((store) => store.language);
   return (
-    <Main>
+    <Main className="center">
       <Container className="center">
         {language.value === "ENG"
           ? "Super Deal free shipping for orders over 1000$"

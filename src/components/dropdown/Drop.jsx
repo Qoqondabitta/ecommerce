@@ -8,8 +8,7 @@ import { MdKeyboardArrowLeft } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
 import "./drop.css";
 import { useState } from "react";
-import { tongues } from "../../constants/navbar";
-
+import { tongues } from "../../constants/navbars/navbar";
 
 const Drop = () => {
   const [move, setMove] = useState(false);
@@ -40,7 +39,7 @@ const Drop = () => {
             size="1.5em"
             onClick={iconMove}
             className={`down ${move ? "expand" : ""}`}
-            color="white"
+            color="black"
           />
         )}
       </Container>
@@ -54,7 +53,7 @@ const Drop = () => {
                 dispatch(value.function);
               }}
             >
-                {value.country} <Flag src={value.icon} />
+              {value.country} <Flag src={value.icon} />
             </Item>
           ))}
           {/* <Item onClick={() => {dispatch(english()); setMove(!move)}}>

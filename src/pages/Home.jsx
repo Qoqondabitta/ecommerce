@@ -13,7 +13,6 @@ import Diogonal from "../components/diogonal/Diogonal";
 import Soon from "../components/soon/Soon";
 import Footer from "../components/footer/Footer";
 import ScrollWatcher from "../components/scrollWatcher/ScrollWatcher";
-import MostSellers from "../components/most/MostSellers";
 import TripleSlider from "../components/sliders/trippleSlider/tripleSlider";
 import BigSlider from "../components/sliders/bigSlider/BigSlider";
 import TextSlider from "../components/mini/textSlider/TextSlider";
@@ -27,26 +26,25 @@ const Home = () => {
   return (
     <div>
       <ScrollWatcher />
-      {turn.value != 3 && <TextSlider />}
+      {/* {turn.value != 3 && <TextSlider />} */}
       <Add />
       <Nav />
-      <BigSlider />
-      <Diogonal />
-      <Video />
-      <TripleHeadings />
-      <TripleSlider />
-      <PokerTextSlider />
-      {/* <MostSellers /> */}
-      <Soon />
-      <ClothTab />
-      {value == "SHOE" ? (
+      {/* <BigSlider /> */}
+      {/* <Diogonal /> */}
+      {/* <Video /> */}
+      {/* <TripleHeadings /> */}
+      {/* <TripleSlider /> */}
+      {/* <PokerTextSlider /> */}
+      {/* <Soon /> */}
+      {/* <ClothTab /> */}
+      {/* {value == "SHOE" ? (
         <ProductSlider />
       ) : value == "TOP" ? (
         <TopProductSlider />
       ) : (
         <BotProductSlider />
-      )}
-      <Footer />
+      )} */}
+      {/* <Footer /> */}
     </div>
   );
 };

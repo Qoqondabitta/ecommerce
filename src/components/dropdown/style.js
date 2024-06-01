@@ -17,7 +17,7 @@ export const Container = styled.div`
   font-weight: 600;
   cursor: pointer;
   position: relative;
-  color: #fff;
+  color: black;
 
   @media only screena and (max-width: 450px) {
     font-size: 14px;

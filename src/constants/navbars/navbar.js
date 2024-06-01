@@ -1,7 +1,8 @@
-import rus from "../assets/images/rus.png";
-import eng from "../assets/images/usa.png";
-import uz from "../assets/images/uzbek.png";
-import { english, russian, uzbek } from "../redux/language";
+import rus from "../../assets/images/rus.png";
+import eng from "../../assets/images/usa.png";
+import uz from "../../assets/images/uzbek.png";
+import { english, russian, uzbek } from "../../redux/language";
+// import net from "../../assets/images"
 
 export const tongues = [
   {
@@ -24,6 +25,6 @@ export const tongues = [
 export const links = [
   { title: ["Women", "Ayol", "Женщины"] },
   { title: ["Men", "Erkaklarga", "Мужчины"] },
-  { title: ["Kids", "Bolalarga", "Дети"]},
+  { title: ["Kids", "Bolalarga", "Дети"] },
   { title: ["Perfume", "Atirlar", "Духи"] },
 ];

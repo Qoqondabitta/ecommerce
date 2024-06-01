@@ -4,6 +4,12 @@ const getBoxStyle = ({ type }) => {
   switch (type) {
     case "soon":
       return {};
+    case "burger":
+      return {
+        background: "white",
+        height: "500px",
+
+      };
     default:
       return {};
   }

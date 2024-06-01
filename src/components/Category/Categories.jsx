@@ -1,71 +1,29 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import {
-  EngAccCategory,
-  EngBotCategory,
-  EngTopCategory,
-  RusAccCategory,
-  RusBotCategory,
-  RusTopCategory,
-  UzbAccCategory,
-  UzbBotCategory,
-  UzbTopCategory,
-} from "../../constants/category";
-import { Container, Item, List, Types } from "./style";
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Container, Item, List } from "./style";
+import Drop from "../dropdown/Drop";
+import "./category.css"
+import { burgerInfo } from "../../constants/navbars/burger";
+import { IoClose } from "react-icons/io5";
+import { toggleBurger } from "../../redux/burger";
 
-const Categories = ({ position }) => {
+const Categories = ({ classTitle }) => {
+  const dispatch = useDispatch()
   const language = useSelector((store) => store.language);
-  return (
-    <Container position={position}>
-      <List>
-        <Types>
-          {language.value == "UZB"
-            ? "Tepa"
-            : language.value == "RUS"
-            ? "Bepx"
-            : "Top"}
-        </Types>
-        {(language.value == "UZB"
-          ? UzbTopCategory
-          : language.value == "RUS"
-          ? RusTopCategory
-          : EngTopCategory
-        ).map((v) => (
-          <Item>{v}</Item>
-        ))}
-      </List>
-      <List>
-        <Types>
-          {language.value == "UZB"
-            ? "Pas"
-            : language.value == "RUS"
-            ? "Hижний"
-            : "Bottom"}
-        </Types>
-        {(language.value == "RUS"
-          ? RusBotCategory
-          : language.value == "UZB"
-          ? UzbBotCategory
-          : EngBotCategory
-        ).map((v) => (
-          <Item>{v}</Item>
-        ))}
-      </List>
-      <List>
-        <Types>
-          {language.value == "UZB"
-            ? "Aksesuarlar"
-            : language.value == "RUS"
-            ? "Aксессуары"
-            : "Accessories"}
-        </Types>
-        {(language.value === "RUS"
-          ? RusAccCategory
-          : language.value == "UZB"
-          ? UzbAccCategory
-          : EngAccCategory
-        ).map((v) => (
-          <Item>{v}</Item>
+
+    return (
+    <Container className={`${classTitle} category`}>
+      <List className="columnCenter">
+        <IoClose className="pointer close" color="white" size="2em" onClick={()=>dispatch(toggleBurger())} />
+        <Drop />
+        {burgerInfo.map((v, i) => (
+          <Item className="pointer" key={i}>
+            {language.value == "ENG"
+              ? v.title[0]
+              : language.value == "UZB"
+              ? v.title[1]
+              : v.title[2]}
+          </Item>
         ))}
       </List>
     </Container>

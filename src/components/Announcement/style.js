@@ -3,8 +3,7 @@ export const Main = styled.div`
   background: red;
   position: relative;
   margin: 0 auto;
-  /* height: 26px; */
-  /* width: 100vw; */
+  width: 100%;
 `;
 export const Container = styled.div`
   background: red;
