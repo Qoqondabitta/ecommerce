@@ -3,14 +3,6 @@ import { styled } from "styled-components";
 export const Main = styled.div`
   position: relative;
   margin: 0 auto;
-  /* background-color: grey; */
-  /* z-index: -20; */
-  /* width: 100%; */
-  /* height: 120px; */
-  /* position: fixed; */
-  /* top: 0; */
-  /* background-color: beige; */
-  /* padding: 2px; */
 `;
 
 export const Background = styled.div`
@@ -18,7 +10,6 @@ export const Background = styled.div`
   background-color: blue;
   z-index: 4599;
   height: 300px;
-  /* position: absolute; */
 `;
 
 export const Container = styled.div`
@@ -29,9 +20,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: sticky; */
   z-index: 43000000;
-  /* top: 20px; */
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
@@ -42,7 +31,6 @@ export const Xon = styled.h1`
   color: white;
   z-index: 3400000;
   font-size: 80px;
-  
 `;
 
 export const List = styled.ul`

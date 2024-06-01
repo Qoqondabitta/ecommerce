@@ -13,7 +13,8 @@ export const Container = styled.div`
   justify-content: flex-start;
   gap: 10px;
   width: 100px;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
   position: relative;
   color: #fff;
@@ -30,6 +31,7 @@ export const List = styled.ul`
   align-items: flex-start;
   justify-content: center;
   gap: 5px;
+  font-size: 16px;
   background: #fff;
   width: 100px;
   padding: 10px 5px;
@@ -41,6 +43,8 @@ export const Item = styled(Container)`
   width: 70px;
   justify-content: space-between;
   color: grey;
+  font-weight: 600;
+  font-size: 16px;
   @media only screena and (max-width: 450px) {
     font-size: 14px;
   }

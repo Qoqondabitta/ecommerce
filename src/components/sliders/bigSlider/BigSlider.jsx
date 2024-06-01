@@ -17,20 +17,20 @@ const BigSlider = () => {
   return (
     <Main className="center">
       <Container className="center">
-        {order.value == 0 ? <Video /> : order.value == 1 ? <DoubleSlider /> : order.value==2 ? <Kids /> : <FullScreenSlider />}
+        {order.value == 0 ? <FullScreenSlider /> : order.value == 1 ? <DoubleSlider /> : order.value==2 ? <Kids /> : <Video />}
       </Container>
       {/* Arrows */}
-      <ArrowWrapper className="center" left="true" onClick={()=>dispatch(increment())}>
+      <ArrowWrapper className="center" left="true" onClick={()=>dispatch(decrement())}>
         <MdKeyboardArrowLeft
           color="white"
-          size="1.5em"
+          size="2em"
           style={{ zIndex: "200" }}
         />
       </ArrowWrapper>
-      <ArrowWrapper className="center" onClick={()=>dispatch(decrement())}>
+      <ArrowWrapper className="center" onClick={()=>dispatch(increment())}>
         <MdKeyboardArrowRight
           color="white"
-          size="1.5em"
+          size="2em"
           style={{ zIndex: "200" }}
         />
       </ArrowWrapper>

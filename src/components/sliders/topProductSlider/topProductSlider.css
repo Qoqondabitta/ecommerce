@@ -2,6 +2,7 @@
 .scrollExample::-webkit-scrollbar {
   width: 1px;
   height: 5px;
+  scroll-behavior: smooth;
   /* display: none; */
 }
 ::-webkit-scrollbar-track {

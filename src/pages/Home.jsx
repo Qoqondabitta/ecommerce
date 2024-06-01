@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <div>
       <ScrollWatcher />
-      {turn.value != 0 && <TextSlider />}
+      {turn.value != 3 && <TextSlider />}
       <Add />
       <Nav />
       <BigSlider />

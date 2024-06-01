@@ -4,12 +4,12 @@ import { Container, Flag, Item, List, Wrapper } from "./style";
 import UZ from "../../assets/images/uzbek.png";
 import RUS from "../../assets/images/usa.png";
 import ENG from "../../assets/images/rus.png";
-// import { russian, english, uzbek } from "../../redux/language";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
 import "./drop.css";
 import { useState } from "react";
 import { tongues } from "../../constants/navbar";
+
 
 const Drop = () => {
   const [move, setMove] = useState(false);
@@ -54,7 +54,7 @@ const Drop = () => {
                 dispatch(value.function);
               }}
             >
-              {value.country} <Flag src={value.icon} />
+                {value.country} <Flag src={value.icon} />
             </Item>
           ))}
           {/* <Item onClick={() => {dispatch(english()); setMove(!move)}}>

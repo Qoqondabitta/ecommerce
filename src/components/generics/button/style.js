@@ -44,6 +44,18 @@ const getType = ({ type }) => {
         borderRadius: "3px",
         border: "1px solid white",
       };
+    case "diogonal":
+      return {
+        background: "white",
+        position: "absolute",
+        top: "80%",
+        fontSize: "18px",
+        fontWeight: "600",
+        padding: "10px",
+        width: "130px",
+        cursor: "pointer",
+        border: "1px solid black",
+      };
     case "signup":
       return {
         color: "#3a4752",
@@ -65,6 +77,8 @@ export const Buttoning = styled.button`
   cursor: pointer;
   font-style: normal;
   font-weight: 400;
+  right: ${({ right }) => right && "20%"};
+  left: ${({ left }) => left && "5%"}; 
   ${getType};
   transition: all 0.5s;
   &:hover {

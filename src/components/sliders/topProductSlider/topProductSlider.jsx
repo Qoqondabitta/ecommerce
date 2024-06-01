@@ -20,6 +20,7 @@ const TopProductSlider = () => {
         behavior: "smooth",
       });
     }
+    setDigit(1)
     //  setDigit(digit + 2) 
   };
   const SetBack = () => {
@@ -30,6 +31,7 @@ const TopProductSlider = () => {
         behavior: "smooth",
       });
     }
+    setDigit(0)
     //  digit==1||2 ?setDigit(digit - 1) : digit;
   };
   return (
@@ -45,8 +47,6 @@ const TopProductSlider = () => {
         >
           <Right size="1.5em" color="black" />
         </Arrow>
-          {/* {digit != 0 && ( */}
-       {/* )}  */}
       <Container
         ref={scrollRef}
         className="scrollExample"

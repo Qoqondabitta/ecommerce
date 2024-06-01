@@ -33,8 +33,8 @@ export const ArrowWrapper = styled.div`
   border-radius: 50%;
   width: 45px;
   height: 45px;
-  border: none;
-  background: rgb(155, 156, 156);
+  border: 2px solid white;
+   background: transparent;
   position: absolute;
   top: 50%;
   left: ${({ left }) => (left ? "2%" : "95%")};

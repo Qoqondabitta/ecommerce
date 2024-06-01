@@ -26,18 +26,18 @@ export const Parts = styled.div`
   background-size: cover;
 `;
 
-export const Button = styled.button`
-  position: absolute;
-  top: 80%;
-  left: ${({ left }) => left && "5%"};
-  right: ${({ right }) => right && "20%"};
-  font-size: 18px;
-  font-weight: 600;
-  padding: 10px;
-  cursor: pointer;
-  border: 1px solid black;
-  background-color: white;
-`;
+// export const Button = styled.button`
+//   position: absolute;
+//   top: 80%;
+//   left: ${({ left }) => left && "5%"};
+//   right: ${({ right }) => right && "20%"};
+//   font-size: 18px;
+//   font-weight: 600;
+//   padding: 10px;
+//   cursor: pointer;
+//   border: 1px solid black;
+//   background-color: white;
+// `;
 
 export const Long = styled.div`
 width: 6px;

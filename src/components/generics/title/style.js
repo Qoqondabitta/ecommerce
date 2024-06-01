@@ -43,15 +43,14 @@ const getType = ({ type }) => {
       };
     case "xonTitle":
       return {
-        fontSize: "65px",
-        lineHeight: "55px",
+        fontSize: "120px",
+        lineHeight: "110px",
         width: "fit-content",
-        fontWeight: "900",
+        fontWeight: "400",
         color: "white",
-        letterSpacing: "-0.3rem",
-        wordSpacing: "-0.1em",
-        zIndex: "2000",
-        textTransform: "uppercase",
+        letterSpacing: "-0.5rem",
+        fontFamily: '"DM Serif Display", serif'
+// background:"red"
       };
     case "soonTitle":
       return {
@@ -100,3 +99,7 @@ export const Titles = styled.p`
     display: ${({ media }) => media && "none"};
   }
 `;
+
+// macondo geostar
+// purple purse
+// ribeye marrow
