@@ -12,11 +12,12 @@ export const Container = styled.div`
   border: none;
   gap: 50px;
   transition: all 2s;
-  height: 100vh;
+  height: 110vh;
 
   overflow-y: scroll;
 
   @media only screen and (max-width: 1300px) {
+    /* width: 380px; */
     /* left: -5%; */
   }
 
@@ -44,7 +45,7 @@ export const List = styled.ul`
   padding: 0px 80px;
   width: 100%;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1100px) {
     padding: 0px 20px;
   }
 `;

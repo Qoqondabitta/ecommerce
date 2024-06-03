@@ -41,7 +41,7 @@ export const List = styled.ul`
   gap: 20px;
   margin-bottom: 45px;
 
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 1000px) {
     display: none;
   }
 `;
@@ -65,7 +65,7 @@ export const Icon = styled.div`
   z-index: 450;
   position: relative;
 
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 1000px) {
     border: 1px solid transparent;
   }
 `;

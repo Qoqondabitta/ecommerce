@@ -29,8 +29,8 @@ const Home = () => {
       {/* {turn.value != 3 && <TextSlider />} */}
       <Add />
       <Nav />
-      {/* <BigSlider /> */}
-      {/* <Diogonal /> */}
+      <BigSlider />
+      <Diogonal />
       {/* <Video /> */}
       {/* <TripleHeadings /> */}
       {/* <TripleSlider /> */}

@@ -5,24 +5,109 @@
   /* overflow-y: scroll; */
 }
 .open {
-  left: 65%;
+  left: 67%;
 }
 
-@media only screen and (max-width: 450px) {
-    .open {
-        left: 30%;
-    }
+.category::-webkit-scrollbar {
+  display: none;
 }
 
-.category::-webkit-scrollbar{
-    display: none;
+.close {
+  background-color: black;
+  border-radius: 50%;
+  padding: 5px;
+  position: relative;
+  left: 125%;
 }
 
-.close{
-    /* width: 100%; */
-    background-color: black;
-    border-radius:50%;
-    padding: 5px;
-    position: relative;
-    left: 125%;
+@media only screen and (max-width: 1300px) {
+  .open {
+    left: 70%;
+  }
+  .close {
+    left: 85%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .open {
+    left: 60%;
+  }
+  .close {
+    left: 85%;
+  }
+}
+
+
+@media only screen and (max-width: 920px) {
+  .open {
+    left: 50%;
+  }
+  .close {
+    left: 95%;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .open {
+    left: 45%;
+  }
+  .close {
+    left: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .open {
+    left: 35%;
+  }
+  .close {
+    scale: 0.8;
+    padding: 3px;
+    left: 115%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .open {
+    left: 50%;
+  }
+  .close {
+    scale: 0.8;
+    padding: 3px;
+    left: 105%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .open {
+    left: 30%;
+  }
+  .close {
+    scale: 0.8;
+    padding: 3px;
+    left: 115%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .open {
+    left: 30%;
+  }
+  .close {
+    scale: 0.8;
+    padding: 3px;
+    left: 105%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .open {
+    left: 30%;
+  }
+  .close {
+    scale: 0.8;
+    padding: 3px;
+    left: 95%;
+  }
 }
