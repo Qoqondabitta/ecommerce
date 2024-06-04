@@ -58,7 +58,7 @@ export const Link = styled.a`
 
 export const Icon = styled.div`
   background: transparent;
-  border: 1px solid white;
+  border: 1px solid transparent;
   border-radius: 50%;
   width: 40px;
   height: 40px;

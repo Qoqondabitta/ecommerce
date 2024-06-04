@@ -46,11 +46,11 @@ console.log(burger);
             <LuUser color="white" size="1.3em" />
           </Icon>
           <Icon className="center">
-            <IoCartOutline color="white" size="1.5em" />
+            <IoCartOutline color="white" size="1.8em" />
             <Round className="center">{counter.data}</Round>
           </Icon>
             <Icon className="center" onClick={()=>dispatch(toggleBurger())}>
-              <HiOutlineMenu color="white" size="1.3em" />
+              <HiOutlineMenu color="white" size="1.8em" />
             </Icon>
         </Shop>
       </Container>

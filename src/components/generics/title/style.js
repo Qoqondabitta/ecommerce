@@ -98,7 +98,7 @@ export const Titles = styled.p`
   @media only screen and (max-width: 1025px) {
     display: ${({ media }) => media && "none"};
   }
-  @media only screen and (max-width: 1025px) {
+  @media only screen and (max-width: 600px) {
     font-size: ${({ type }) => type == "xonTitle" && "40px"};
     font-weight: ${({ type }) => type == "xonTitle" && "20px"};
     letter-spacing: ${({ type }) => type == "xonTitle" && "0.5rem"};
