@@ -56,6 +56,16 @@ const getType = ({ type }) => {
         cursor: "pointer",
         border: "1px solid black",
       };
+    case "gucci":
+      return {
+        background: "white",
+        position: "absolute",
+        fontSize: "18px",
+        fontWeight: "400",
+        padding: "10px 20px",
+        // width: "130px",
+        cursor: "pointer",
+      };
     case "signup":
       return {
         color: "#3a4752",

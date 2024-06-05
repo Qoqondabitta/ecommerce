@@ -40,13 +40,13 @@ console.log(burger);
         <Shop>
           {/* <Drop /> */}
           <Icon className="center">
-            <FaRegHeart color="white" size="1.3em" />
+            <FaRegHeart color="white" size="1.5em" />
           </Icon>
           <Icon className="center">
-            <LuUser color="white" size="1.3em" />
+            <LuUser color="white" size="1.7em" />
           </Icon>
           <Icon className="center">
-            <IoCartOutline color="white" size="1.8em" />
+            <IoCartOutline color="white" size="1.9em" />
             <Round className="center">{counter.data}</Round>
           </Icon>
             <Icon className="center" onClick={()=>dispatch(toggleBurger())}>

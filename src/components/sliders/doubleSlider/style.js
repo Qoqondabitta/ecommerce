@@ -7,6 +7,7 @@ export const Main = styled.div`
   width: 100%;
   height: 100vh;
   gap: 17px;
+
 `;
 
 export const Container = styled.div`
@@ -15,6 +16,9 @@ width: 50%;
   position: relative;
   box-sizing: border-box;
 
+  @media only screen and (max-width: 600px) {
+    height: 50vh;
+  }
 `;
 
 export const Content = styled.div`
