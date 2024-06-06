@@ -4,8 +4,12 @@ export const TextWrapper = styled.div`
   width: 230px;
   overflow: hidden;
   position: absolute;
-  bottom: 10%;
+  bottom: 12%;
   left: 0%;
+
+  @media only screen and (max-width: 1200px) {
+    display: none;
+  }
 `;
 
 export const Text = styled.div`

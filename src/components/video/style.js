@@ -9,6 +9,11 @@ export const Main = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
+  @media only screen and (max-width: 1200px) {
+    margin-bottom: 0px;
+    height: 50vh;
+    /* height: 120vh; */
+  }
 `;
 
 export const Videos = styled.video`
@@ -26,18 +31,38 @@ export const Blur = styled.div`
   left: 0;
   z-index: 100;
   background: rgba(116, 115, 115, 0.25);
+
+  @media only screen and (max-width: 600px) {
+  /* height: 63vh; */
+  display: none;
+  }
 `;
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
   justify-content: flex-end;
   gap: 30px;
   width: 700px;
   margin-top: 150px;
-  position: relative;
+  position: absolute;
   top: 150px;
   z-index: 900;
   padding-left: 80px;
+
+  @media only screen and (max-width: 1000px) {
+    gap: 20px;
+    top: 20%;
+    margin-top: 0px;
+    padding-left: 50px;
+    /* width: 500px; */
+  }
+  @media only screen and (max-width: 600px) {
+    gap: 10px;
+    top: 30%;
+    margin-top: 0px;
+    padding-left: 20px;
+    width: 235px;
+  }
 `;

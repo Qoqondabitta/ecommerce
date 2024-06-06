@@ -5,6 +5,10 @@ export const Main = styled.div`
   margin: 0 auto;
   position: relative;
   width: 100%;
+
+  @media only screen and (max-width: 1200px) {
+    display: none;
+  }
 `;
 
 export const Container = styled.div`

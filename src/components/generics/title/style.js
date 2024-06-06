@@ -72,6 +72,18 @@ const getType = ({ type }) => {
         width: "fit-content",
         color: "white",
       };
+    case "gucci":
+      return {
+        color: "white",
+        fontSize: "37px",
+        fontWeight: "400",
+        letterSpacing: "0.2rem",
+        wordSpacing: "-0.1em",
+        width: "100%",
+        fontFamily: '"DM Serif Display", serif',
+        flex: "1",
+        textAlign: "center",
+      };
     case "signup":
       return {
         color: "#3a4752",
@@ -95,15 +107,49 @@ export const Titles = styled.p`
   ${getType};
   transition: all 0.5s;
   /* text-transform: u; */
-  @media only screen and (max-width: 1025px) {
+  @media only screen and (max-width: 1000px) {
     display: ${({ media }) => media && "none"};
+    line-height: ${({ type }) =>
+      type == "xonTitle" ? "90px" : type == "videoTitle" ? "23px" : ""};
+    letter-spacing: ${({ type }) =>
+      // type == "xonTitle"
+      // ? "0.5rem"
+      // : type == "videoTitle"
+      type == "videoTitle" ? "-0.2rem" : "0rem"};
+    word-spacing: ${({ type }) => type == "videoTitle" && "0rem"};
+    font-size: ${({ type }) =>
+      type == "xonTitle"
+        ? "100px"
+        : type == "gucci"
+        ? "30px"
+        : type == "videoText"
+        ? "14px"
+        : type == "videoTitle"
+        ? "33px"
+        : "18px"};
   }
   @media only screen and (max-width: 600px) {
-    font-size: ${({ type }) => type == "xonTitle" && "40px"};
+    font-size: ${({ type }) =>
+      type == "xonTitle"
+        ? "40px"
+        : type == "gucci"
+        ? "30px"
+        : type == "videoText"
+        ? "10px"
+        : type == "videoTitle"
+        ? "20px"
+        : "18px"};
     font-weight: ${({ type }) => type == "xonTitle" && "20px"};
-    letter-spacing: ${({ type }) => type == "xonTitle" && "0.5rem"};
-    line-height: ${({ type }) => type == "xonTitle" && "60px"};
-    /* text-align: end; */
-    /* height: ${({ type }) => type == "xonTitle" && "60px"}; */
+    letter-spacing: ${({ type }) =>
+      type == "xonTitle"
+        ? "0.5rem"
+        : type == "videoTitle"
+        ? "-0.1rem"
+        : "0rem"};
+    word-spacing: ${({ type }) => type == "videoTitle" && "0rem"};
+    line-height: ${({ type }) =>
+      type == "xonTitle" ? "60px" : type == "videoTitle" ? "12px" : ""};
+    width: ${({ type }) => type == "videoText" && "140px"};
+    /* height: ${({ type }) => type == "videoText" && "60px"}; */
   }
 `;

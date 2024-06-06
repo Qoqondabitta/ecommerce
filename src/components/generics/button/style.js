@@ -22,14 +22,17 @@ const getType = ({ type }) => {
       };
     case "browse":
       return {
-        background: "white",
+        background:
+          "linear-gradient(135deg, rgba(201, 201, 201, 0.2), rgba(255, 255, 255, 0.1))",
+        backdropFilter: "blur(10px)",
         gap: "3px",
         border: "none",
-        width: "120px",
-        height: "40px",
-        color: "black",
-        fontWeight: "600",
-        fontSize: "16px",
+        width: "130px",
+        height: "45px",
+        color: "white",
+        border: "1px solid white",
+        fontWeight: "400",
+        fontSize: "14px",
       };
     case "soon":
       return {
@@ -58,13 +61,19 @@ const getType = ({ type }) => {
       };
     case "gucci":
       return {
-        background: "white",
+        background:
+          "linear-gradient(135deg, rgba(201, 201, 201, 0.1), rgba(255, 255, 255, 0))",
+        backdropFilter: "blur(10px)",
         position: "absolute",
-        fontSize: "18px",
+        fontSize: "14px",
         fontWeight: "400",
-        padding: "10px 20px",
-        // width: "130px",
+        padding: "15px 20px",
+        width: "270px",
         cursor: "pointer",
+        color: "white",
+        flex: "1",
+        border: "1px solid white",
+        zIndex: "100000000000000000",
       };
     case "signup":
       return {
@@ -88,19 +97,26 @@ export const Buttoning = styled.button`
   font-style: normal;
   font-weight: 400;
   right: ${({ right }) => right && "20%"};
-  left: ${({ left }) => left && "5%"}; 
+  left: ${({ left }) => left && "5%"};
+
   ${getType};
   transition: all 0.5s;
   &:hover {
     transform: scale(1.15);
+    border: ${({ type }) => (type == "gucci" ? "none" : "none")};
   }
   &:active {
     opacity: 0.7;
   }
-
   @media only screen and (max-width: 1300px) {
     font-size: 12px;
     height: 40px;
     width: 120px;
+  }
+  @media only screen and (max-width: 700px) {
+    width: ${({ type }) => (type == "gucci" ? "200px" : type=="browse"?"80px": "120px")};
+    font-size: ${({ type }) => (type == "gucci" ? "10px" : "10px")};
+    padding: ${({ type }) => (type == "gucci" ? "10px" : type=="browse"?"5px": "14px")};
+    height: ${({ type }) => (type == "browse" && "25px")};
   }
 `;

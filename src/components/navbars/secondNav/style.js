@@ -3,30 +3,29 @@ import { styled } from "styled-components";
 export const Main = styled.div`
   position: relative;
   margin: 0 auto;
-`;
+  `;
 
 export const Background = styled.div`
   width: 100%;
   background-color: blue;
   z-index: 4599;
   height: 300px;
-`;
+  `;
 
 export const Container = styled.div`
   padding: 0px 50px;
   position: absolute;
   top: 0px;
-  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 43000000;
+  z-index: 4300000000;
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
 
   @media only screen and (max-width: 425px) {
-    padding: 0px 10px 0px 20px;
+    padding: 10px 10px 0px 20px;
     height: 40px;
   }
 `;
@@ -58,15 +57,19 @@ export const Link = styled.a`
 
 export const Icon = styled.div`
   background: transparent;
-  border: 1px solid transparent;
-  border-radius: 50%;
   width: 40px;
   height: 40px;
-  z-index: 450;
+  z-index: 4500;
   position: relative;
+  top: 4px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 
-  @media only screen and (max-width: 1000px) {
-    border: 1px solid transparent;
+  @media only screen and (max-width: 600px) {
+    width: 30px;
+    height: 30px;
+    top: -2px;
   }
 `;
 
@@ -91,6 +94,14 @@ export const Round = styled.div`
   z-index: 450;
   top: -5px;
   right: -5px;
+
+  @media only screen and (max-width: 600px){
+    font-size: 8px;
+    height: 12px;
+    width: 12px;
+    top: -5%;
+    right: -5%;
+  }
 `;
 
 export const Shop = styled(Parts)`
@@ -100,7 +111,8 @@ export const Shop = styled(Parts)`
   @media only screen and (max-width: 450px) {
     order: 2;
     gap: 0px;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 0px;
+    /* background-color: red; */
   }
 `;

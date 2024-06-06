@@ -8,11 +8,14 @@ export const Main = styled.div`
   height: 100vh;
   gap: 17px;
 
+  /* @media only screen and (max-width: 1200px) {
+    display: none;
+  } */
 `;
 
 export const Container = styled.div`
   height: 100%;
-width: 50%;
+  width: 50%;
   position: relative;
   box-sizing: border-box;
 
@@ -38,11 +41,16 @@ export const ArrowWrapper = styled.div`
   width: 45px;
   height: 45px;
   border: 2px solid white;
-   background: transparent;
+  background: linear-gradient(
+    135deg,
+    rgba(201, 201, 201, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
   position: absolute;
   top: 50%;
   left: ${({ left }) => (left ? "2%" : "95%")};
-  z-index: 3000000000000;
+  z-index: 300000000;
 `;
 
 export const Left = styled.div`
@@ -93,9 +101,7 @@ export const Blurs = styled.div`
   top: 0;
   left: 0;
   z-index: 100;
-  background: rgba(116, 115, 115, 0.150);
+  background: rgba(116, 115, 115, 0.15);
 `;
 
-export const Scripts = styled.div`
-
-`
+export const Scripts = styled.div``;

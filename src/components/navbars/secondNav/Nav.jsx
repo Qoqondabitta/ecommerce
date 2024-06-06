@@ -39,22 +39,22 @@ console.log(burger);
         </List>
         <Shop>
           {/* <Drop /> */}
-          <Icon className="center">
-            <FaRegHeart color="white" size="1.5em" />
-          </Icon>
-          <Icon className="center">
-            <LuUser color="white" size="1.7em" />
-          </Icon>
-          <Icon className="center">
-            <IoCartOutline color="white" size="1.9em" />
+          {/* <Icon className=""> */}
+            <FaRegHeart color="white" size="1.5em" className="navIcons" />
+          {/* </Icon> */}
+          {/* <Icon className=""> */}
+            <LuUser color="white" size="1.7em" className="navIcons" />
+          {/* </Icon> */}
+          <Icon className="">
+            <IoCartOutline className="navIcons" color="white" size="1.8em" />
             <Round className="center">{counter.data}</Round>
           </Icon>
-            <Icon className="center" onClick={()=>dispatch(toggleBurger())}>
-              <HiOutlineMenu color="white" size="1.8em" />
-            </Icon>
+          {/* <Icon className="" onClick={() => dispatch(toggleBurger())}> */}
+            <HiOutlineMenu className="navIcons" color="white" size="1.8em" />
+          {/* </Icon> */}
         </Shop>
       </Container>
-        <Categories classTitle={burger.value==true && "open"} />
+      <Categories classTitle={burger.value == true && "open"} />
     </Main>
   );
 };

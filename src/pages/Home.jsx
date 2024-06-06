@@ -18,6 +18,7 @@ import BigSlider from "../components/sliders/bigSlider/BigSlider";
 import TextSlider from "../components/mini/textSlider/TextSlider";
 import PokerTextSlider from "../components/mini/pokerTextSlider/PokerTextSlider";
 import TripleHeadings from "../components/mini/tripleHeadings/TripleHeadings";
+import GucciLido from "../components/mini/gucciLido/GucciLido";
 
 const Home = () => {
   const { value } = useSelector((store) => store.title);
@@ -26,12 +27,13 @@ const Home = () => {
   return (
     <div>
       <ScrollWatcher />
-      {/* {turn.value != 3 && <TextSlider />} */}
+      {turn.value != 3 && <GucciLido />}
+      {turn.value != 3 && <TextSlider />}
       <Add />
       <Nav />
       <BigSlider />
+      <Video />
       <Diogonal />
-      {/* <Video /> */}
       {/* <TripleHeadings /> */}
       {/* <TripleSlider /> */}
       {/* <PokerTextSlider /> */}

@@ -18,8 +18,9 @@ export const Container = styled.div`
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 600px) {
     padding: 10px;
+    font-size: 14px;
   }
 @media only screen and (max-width: 350px) {
 padding: 0px;

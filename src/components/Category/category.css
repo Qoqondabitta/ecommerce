@@ -79,14 +79,14 @@
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 450px) {
   .open {
     left: 30%;
   }
   .close {
     scale: 0.8;
     padding: 3px;
-    left: 115%;
+    left: 120%;
   }
 }
 

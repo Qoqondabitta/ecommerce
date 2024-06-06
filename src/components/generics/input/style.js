@@ -8,7 +8,7 @@ const getType = ({ type }) => {
         outline: "none",
         width: "100%",
         background: "transparent",
-        color: "#fff"
+        color: "#fff",
       };
     case "signup":
       return {

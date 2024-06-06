@@ -2,6 +2,10 @@ import { styled } from "styled-components";
 
 export const Wrapper = styled.div`
   position: relative;
+
+  @media only screen and (max-width: 1200px) {
+    display: none;
+  }
 `;
 
 export const Main = styled.div`
