@@ -3,15 +3,14 @@ import { styled } from "styled-components";
 export const Main = styled.div`
   margin: 0 auto;
   position: relative;
-  height: 80vh;
-  margin-bottom: 270px;
+  height: 100vh;
+  /* margin-bottom: 270px; */
   width: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  @media only screen and (max-width: 1200px) {
-    margin-bottom: 0px;
-    height: 50vh;
+  @media only screen and (max-width: 1000px) {
+    height: 40vh;
     /* height: 120vh; */
   }
 `;
@@ -26,7 +25,7 @@ export const Videos = styled.video`
 export const Blur = styled.div`
   position: absolute;
   width: 100%;
-  height: 125vh;
+  /* height: 12vh; */
   top: 0px;
   left: 0;
   z-index: 100;
@@ -51,9 +50,16 @@ export const Content = styled.div`
   z-index: 900;
   padding-left: 80px;
 
+  @media only screen and (max-width: 1100px) {
+    gap: 20px;
+    top: 30%;
+    margin-top: 0px;
+    padding-left: 50px;
+    /* width: 500px; */
+  }
   @media only screen and (max-width: 1000px) {
     gap: 20px;
-    top: 20%;
+    top: 50%;
     margin-top: 0px;
     padding-left: 50px;
     /* width: 500px; */
