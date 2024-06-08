@@ -9,9 +9,26 @@ export const Main = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1100px) {
     height: 40vh;
-    /* height: 120vh; */
+  }
+  @media only screen and (max-width: 920px) {
+    height: 36vh;
+  }
+  @media only screen and (max-width: 830px) {
+    height: 38vh;
+  }
+  @media only screen and (max-width: 450px) {
+    height: 26vh;
+  }
+  @media only screen and (max-width: 415px) {
+    height: 25vh;
+  }
+  @media only screen and (max-width: 380px) {
+    height: 30vh;
+  }
+  @media only screen and (max-width: 370px) {
+    height: 27vh;
   }
 `;
 
@@ -25,15 +42,31 @@ export const Videos = styled.video`
 export const Blur = styled.div`
   position: absolute;
   width: 100%;
-  /* height: 12vh; */
+  height: 100vh;
   top: 0px;
   left: 0;
   z-index: 100;
   background: rgba(116, 115, 115, 0.25);
-
-  @media only screen and (max-width: 600px) {
-  /* height: 63vh; */
-  display: none;
+  @media only screen and (max-width: 1100px) {
+    height: 40vh;
+  }
+  @media only screen and (max-width: 920px) {
+    height: 36vh;
+  }
+  @media only screen and (max-width: 830px) {
+    height: 38vh;
+  }
+  @media only screen and (max-width: 450px) {
+    height: 26vh;
+  }
+  @media only screen and (max-width: 415px) {
+    height: 25vh;
+  }
+  @media only screen and (max-width: 380px) {
+    height: 30vh;
+  }
+  @media only screen and (max-width: 370px) {
+    height: 27vh;
   }
 `;
 
@@ -52,23 +85,27 @@ export const Content = styled.div`
 
   @media only screen and (max-width: 1100px) {
     gap: 20px;
-    top: 30%;
+    top: 50%;
     margin-top: 0px;
     padding-left: 50px;
-    /* width: 500px; */
   }
   @media only screen and (max-width: 1000px) {
     gap: 20px;
     top: 50%;
     margin-top: 0px;
     padding-left: 50px;
-    /* width: 500px; */
   }
   @media only screen and (max-width: 600px) {
     gap: 10px;
-    top: 30%;
+    top: 50%;
     margin-top: 0px;
     padding-left: 20px;
     width: 235px;
+  }
+  @media only screen and (max-width: 450px) {
+    top: 45%;
+  }
+  @media only screen and (max-width: 400px) {
+    top: 40%;
   }
 `;

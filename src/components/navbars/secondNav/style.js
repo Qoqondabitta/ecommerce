@@ -24,9 +24,12 @@ export const Container = styled.div`
   width: 100%;
   margin: 0 auto;
 
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 600px) {
     padding: 10px 10px 0px 20px;
     height: 40px;
+  }
+  @media only screen and (max-width: 500px) {
+    padding: 10px 10px 0px 20px;
   }
 `;
 
@@ -99,8 +102,8 @@ export const Round = styled.div`
     font-size: 8px;
     height: 12px;
     width: 12px;
-    top: -5%;
-    right: -5%;
+    top: 0%;
+    right: 0%;
   }
 `;
 
@@ -108,7 +111,7 @@ export const Shop = styled(Parts)`
   justify-content: center;
   z-index: 45000000000;
   margin-bottom: 25px;
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 600px) {
     order: 2;
     gap: 0px;
     align-items: flex-start;
