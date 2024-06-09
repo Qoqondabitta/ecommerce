@@ -110,13 +110,16 @@ export const Buttoning = styled.button`
   }
   @media only screen and (max-width: 1300px) {
     font-size: 12px;
-    height: 40px;
-    width: 120px;
+    height: ${({ type }) => type == "browse" && "40px"};
+    width: ${({ type }) =>
+      type == "gucci" ? "270px" : type == "browse" ? "140px" : "120px"};
   }
   @media only screen and (max-width: 700px) {
-    width: ${({ type }) => (type == "gucci" ? "200px" : type=="browse"?"80px": "120px")};
+    width: ${({ type }) =>
+      type == "gucci" ? "200px" : type == "browse" ? "80px" : "120px"};
     font-size: ${({ type }) => (type == "gucci" ? "10px" : "10px")};
-    padding: ${({ type }) => (type == "gucci" ? "10px" : type=="browse"?"5px": "14px")};
-    height: ${({ type }) => (type == "browse" && "25px")};
+    padding: ${({ type }) =>
+      type == "gucci" ? "10px" : type == "browse" ? "5px" : "14px"};
+    height: ${({ type }) => type == "browse" && "25px"};
   }
 `;

@@ -9,14 +9,14 @@ export const Main = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  @media only screen and (max-width: 1100px) {
-    height: 40vh;
+  @media only screen and (max-width: 1025px) {
+    height: 100vh;
   }
   @media only screen and (max-width: 920px) {
-    height: 36vh;
+    height: 100vh;
   }
   @media only screen and (max-width: 830px) {
-    height: 38vh;
+    height: 100vh;
   }
   @media only screen and (max-width: 450px) {
     height: 26vh;
@@ -47,8 +47,8 @@ export const Blur = styled.div`
   left: 0;
   z-index: 100;
   background: rgba(116, 115, 115, 0.25);
-  @media only screen and (max-width: 1100px) {
-    height: 40vh;
+  @media only screen and (max-width: 1025px) {
+    height: 100vh;
   }
   @media only screen and (max-width: 920px) {
     height: 36vh;
@@ -85,7 +85,7 @@ export const Content = styled.div`
 
   @media only screen and (max-width: 1100px) {
     gap: 20px;
-    top: 50%;
+    top: 40%;
     margin-top: 0px;
     padding-left: 50px;
   }

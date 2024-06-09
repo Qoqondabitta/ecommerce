@@ -50,7 +50,6 @@ const getType = ({ type }) => {
         color: "white",
         letterSpacing: "-0.5rem",
         fontFamily: '"DM Serif Display", serif',
-        // background:"red"
       };
     case "soonTitle":
       return {
@@ -106,15 +105,30 @@ export const Titles = styled.p`
   font-weight: 400;
   ${getType};
   transition: all 0.5s;
-  /* text-transform: u; */
+
+  @media only screen and (max-width: 1025px) {
+    display: ${({ media }) => media && "none"};
+    line-height: ${({ type }) =>
+      type == "xonTitle" ? "90px" : type == "videoTitle" ? "39px" : ""};
+    letter-spacing: ${({ type }) =>
+      type == "videoTitle" ? "-0.2rem" : "0rem"};
+    word-spacing: ${({ type }) => type == "videoTitle" && "0rem"};
+    font-size: ${({ type }) =>
+      type == "xonTitle"
+        ? "100px"
+        : type == "gucci"
+        ? "30px"
+        : type == "videoText"
+        ? "14px"
+        : type == "videoTitle"
+        ? "46px"
+        : "18px"};
+  }
   @media only screen and (max-width: 1000px) {
     display: ${({ media }) => media && "none"};
     line-height: ${({ type }) =>
       type == "xonTitle" ? "90px" : type == "videoTitle" ? "23px" : ""};
     letter-spacing: ${({ type }) =>
-      // type == "xonTitle"
-      // ? "0.5rem"
-      // : type == "videoTitle"
       type == "videoTitle" ? "-0.2rem" : "0rem"};
     word-spacing: ${({ type }) => type == "videoTitle" && "0rem"};
     font-size: ${({ type }) =>
