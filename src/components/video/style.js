@@ -19,10 +19,10 @@ export const Main = styled.div`
     height: 100vh;
   }
   @media only screen and (max-width: 450px) {
-    height: 26vh;
+    height: 100vh;
   }
   @media only screen and (max-width: 415px) {
-    height: 25vh;
+    height: 100vh;
   }
   @media only screen and (max-width: 380px) {
     height: 30vh;
@@ -57,10 +57,10 @@ export const Blur = styled.div`
     height: 38vh;
   }
   @media only screen and (max-width: 450px) {
-    height: 26vh;
+    height: 100vh;
   }
   @media only screen and (max-width: 415px) {
-    height: 25vh;
+    height: 100vh;
   }
   @media only screen and (max-width: 380px) {
     height: 30vh;
