@@ -4,7 +4,7 @@ export const Container = styled.div`
   gap: 30px;
   z-index: 400;
   position: absolute;
-  bottom: 0%;
+  bottom: 13%;
   left: 37%;
   margin: 0 auto;
   /* background-color: blue; */
@@ -14,7 +14,7 @@ export const Container = styled.div`
   }
 `;
 export const Content = styled.div`
-  height: 190px;
+  height: 115px;
   width: 350px;
   position: relative;
   gap: 15px;

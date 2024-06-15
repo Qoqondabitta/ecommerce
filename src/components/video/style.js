@@ -4,15 +4,15 @@ export const Main = styled.div`
   margin: 0 auto;
   position: relative;
   height: 100vh;
-  /* margin-bottom: 270px; */
+  padding: 20px 20px 0px 20px;
   width: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
   @media only screen and (max-width: 1025px) {
-    height: 100vh;
+    display: none;
   }
-  @media only screen and (max-width: 920px) {
+  /* @media only screen and (max-width: 920px) {
     height: 100vh;
   }
   @media only screen and (max-width: 830px) {
@@ -29,14 +29,16 @@ export const Main = styled.div`
   }
   @media only screen and (max-width: 370px) {
     height: 27vh;
-  }
+  } */
 `;
 
 export const Videos = styled.video`
   position: absolute;
   left: 0;
   top: 0;
+
   width: 100%;
+
 `;
 
 export const Blur = styled.div`

@@ -19,6 +19,9 @@ import TextSlider from "../components/mini/textSlider/TextSlider";
 import PokerTextSlider from "../components/mini/pokerTextSlider/PokerTextSlider";
 import TripleHeadings from "../components/mini/tripleHeadings/TripleHeadings";
 import GucciLido from "../components/mini/gucciLido/GucciLido";
+import MostSellers from "../components/most/MostSellers";
+import Genders from "../components/genders/Genders";
+import Sneakers from "../components/sneakers/Sneakers";
 
 const Home = () => {
   const { value } = useSelector((store) => store.title);
@@ -32,21 +35,24 @@ const Home = () => {
       <Add />
       <Nav />
       <BigSlider />
+      <Genders />
+      <MostSellers />
       <Video />
-      <Diogonal />
-      {/* <TripleHeadings /> */}
-      {/* <TripleSlider /> */}
-      {/* <PokerTextSlider /> */}
-      {/* <Soon /> */}
-      {/* <ClothTab /> */}
-      {/* {value == "SHOE" ? (
+      {/* <Diogonal /> */}
+      <Soon />
+      <TripleHeadings />
+      <TripleSlider />
+      <PokerTextSlider />
+      <Sneakers />
+      <ClothTab />
+      {value == "SHOE" ? (
         <ProductSlider />
       ) : value == "TOP" ? (
         <TopProductSlider />
       ) : (
         <BotProductSlider />
-      )} */}
-      {/* <Footer /> */}
+      )}
+      <Footer />
     </div>
   );
 };

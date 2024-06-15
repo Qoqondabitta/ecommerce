@@ -41,6 +41,18 @@ const getType = ({ type }) => {
         zIndex: "2000",
         textTransform: "uppercase",
       };
+    case "sneakersTitle":
+      return {
+        fontSize: "60px",
+        lineHeight: "50px",
+        width: "fit-content",
+        fontWeight: "600",
+        color: "black",
+        letterSpacing: "-0.1rem",
+        wordSpacing: "0em",
+        zIndex: "2000",
+        textTransform: "uppercase",
+      };
     case "xonTitle":
       return {
         fontSize: "120px",
@@ -69,14 +81,26 @@ const getType = ({ type }) => {
         fontSize: "16px",
         fontWeight: "400",
         width: "fit-content",
-        color: "white",
+        // color: "white",
       };
     case "gucci":
       return {
         color: "white",
+        fontSize: "32px",
+        fontWeight: "400",
+        letterSpacing: "0.15rem",
+        wordSpacing: "-0.1em",
+        width: "100%",
+        fontFamily: '"DM Serif Display", serif',
+        flex: "1",
+        textAlign: "center",
+      };
+    case "guccixon":
+      return {
+        color: "white",
         fontSize: "37px",
         fontWeight: "400",
-        letterSpacing: "0.2rem",
+        letterSpacing: "0.15rem",
         wordSpacing: "-0.1em",
         width: "100%",
         fontFamily: '"DM Serif Display", serif',
@@ -103,6 +127,8 @@ export const Titles = styled.p`
   cursor: pointer;
   font-style: normal;
   font-weight: 400;
+  font-size: ${({ fontSize }) => fontSize};
+  color: ${({ color }) => color};
   ${getType};
   transition: all 0.5s;
 

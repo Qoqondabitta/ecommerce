@@ -1,13 +1,15 @@
 import React from "react";
 import { Container, Content, Main, Blur } from "./style";
-import background from "../../assets/images/topCard/new.jpg";
+import background from "../../assets/images/just/sneakers.webp";
 import { FaCrown } from "react-icons/fa";
-import "./soon.css";
+import "./sneakers.css";
 import { useSelector } from "react-redux";
-import Button from "../generics/button/Button"
-import Title from "../generics/title/Title"
+import Button from "../generics/button/Button";
+import Title from "../generics/title/Title";
+import { PiSneakerThin } from "react-icons/pi";
+import { Item } from "../tabs/style";
 
-const Soon = () => {
+const Sneakers = () => {
   const { value } = useSelector((store) => store.language);
   return (
     <Main>
@@ -18,27 +20,28 @@ const Soon = () => {
             <FaCrown className="crown" />
             {value == "RUS" ? "ХОН" : "XON"}
           </Title> */}
-          <Title type="soonTitle">
+          <Title type="sneakersTitle">
             {value == "ENG"
-              ? "#Train#Wear#Enjoy With Us"
+              ? "UP TO 40% + 15% OFF*"
               : value == "RUS"
               ? `#Тренируйтесь#Одевайтесь \n #Наслаждайтесь`
               : "#Shug'ulan#Kiy#Rohatlan Biz Bilan"}
           </Title>
-          <Title type="videoText" color="white">
+          <Title type="videoText" color="black">
             {value == "ENG"
-              ? "New Tracksuit Collection for warm-weather trainings are available right now"
+              ? "New Sneakers Collection for warm-weather trainings are available right now"
               : value == "RUS"
               ? `Доступна новая коллекция спортивных костюмов для тренировок в теплую погоду прямо сейчас`
-              : "Issiq havoda mashg'ulotlar uchun yangi sport kostyumlari to'plami mavjud hoziroq"}
+              : "Issiq havoda mashg'ulotlar uchun yangi krasovkalar to'plami mavjud"}
           </Title>
-          <Button type="soon">
+          <Item type="browse">
             {value == "ENG" ? "Shop" : value == "RUS" ? "Купить" : "Olmoq"}
-          </Button>
+            <PiSneakerThin size="1.5em" />
+          </Item>
         </Content>
       </Container>
     </Main>
   );
 };
 
-export default Soon;
+export default Sneakers;

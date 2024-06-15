@@ -29,7 +29,7 @@ const Video = () => {
             : child.subTitle[2]}
         </Title>
 
-        <Title type="videoText">
+        <Title type="videoText" color="white">
           {value == "ENG"
             ? child.text[0]
             : value == "UZB"

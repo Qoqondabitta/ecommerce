@@ -25,7 +25,7 @@ const GucciLido = () => {
   return (
     <Container className="columnCenter">
       <Content className="columnCenter">
-        <Title type="gucci">Xon Store</Title>
+        <Title type="gucci">Xon Stores</Title>
         {(order.value == 0
           ? exploreWomen
           : order.value == 1

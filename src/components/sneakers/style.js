@@ -6,7 +6,7 @@ export const Main = styled.div`
   margin: 0 auto;
   position: relative;
   background-color: white;
-  padding: 15px;
+  /* padding: 15px; */
 `;
 
 export const Container = styled.div`
@@ -16,12 +16,14 @@ width: 100%;
   background-image: url(${({ img }) => img});
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-start;
   padding: 40px 70px;
 `;
 
+// EXTRA
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
@@ -29,7 +31,7 @@ export const Content = styled.div`
   justify-content: center;
   gap: 20px;
   z-index: 50000000000000000;
-  width: 300px;
+  /* width: 300px; */
 `;
 
 export const Blur = styled.div`

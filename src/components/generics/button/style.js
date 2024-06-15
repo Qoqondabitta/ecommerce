@@ -2,28 +2,10 @@ import { styled, withTheme } from "styled-components";
 
 const getType = ({ type }) => {
   switch (type) {
-    case "signin":
-      return {
-        color: "#fff",
-        background: "red",
-        padding: "5px 0px",
-      };
-    case "category":
-      return {
-        background: "red",
-        borderRadius: "5px",
-        border: "none",
-        gap: "5px",
-        width: "150px",
-        height: "50px",
-        color: "#fff",
-        fontWeight: "bold",
-        fontSize: "16px",
-      };
     case "browse":
       return {
         background:
-          "linear-gradient(135deg, rgba(201, 201, 201, 0.2), rgba(255, 255, 255, 0.1))",
+          "linear-gradient(135deg, rgba(100, 97, 97, 0.5), rgba(255, 255, 255, 0))",
         backdropFilter: "blur(10px)",
         gap: "3px",
         border: "none",
@@ -36,7 +18,9 @@ const getType = ({ type }) => {
       };
     case "soon":
       return {
-        background: "transparent",
+        background:
+          "linear-gradient(135deg, rgba(100, 97, 97, 0.1), rgba(255, 255, 255, 0))",
+        backdropFilter: "blur(10px)",
         gap: "3px",
         border: "none",
         width: "160px",
@@ -62,7 +46,22 @@ const getType = ({ type }) => {
     case "gucci":
       return {
         background:
-          "linear-gradient(135deg, rgba(201, 201, 201, 0.1), rgba(255, 255, 255, 0))",
+          "linear-gradient(135deg, rgba(100, 97, 97, 0.5), rgba(255, 255, 255, 0))",
+        backdropFilter: "blur(10px)",
+        // position: "relative",
+        fontSize: "14px",
+        fontWeight: "400",
+        padding: "15px 20px",
+        width: "270px",
+        cursor: "pointer",
+        color: "white",
+        border: "1px solid white",
+        zIndex: "100000000000000000",
+      };
+    case "xon":
+      return {
+        background:
+          "linear-gradient(135deg, rgba(100, 97, 97, 0), rgba(255, 255, 255, 0))",
         backdropFilter: "blur(10px)",
         position: "absolute",
         fontSize: "14px",
@@ -74,12 +73,6 @@ const getType = ({ type }) => {
         flex: "1",
         border: "1px solid white",
         zIndex: "100000000000000000",
-      };
-    case "signup":
-      return {
-        color: "#3a4752",
-        background: "yellow",
-        borderRadius: "10px",
       };
     default:
       return {
@@ -102,12 +95,12 @@ export const Buttoning = styled.button`
   ${getType};
   transition: all 0.5s;
   &:hover {
-    transform: scale(1.15);
+    transform: scale(0.9);
     border: ${({ type }) => (type == "gucci" ? "none" : "none")};
   }
-  &:active {
+  /* &:active {
     opacity: 0.7;
-  }
+  } */
   @media only screen and (max-width: 1300px) {
     font-size: 12px;
     height: ${({ type }) => type == "browse" && "40px"};
