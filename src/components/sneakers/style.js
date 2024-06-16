@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import boom from "../../assets/images/backgrounds/boom.png"
 
 export const Main = styled.div`
   width: 100%;
@@ -6,13 +7,11 @@ export const Main = styled.div`
   margin: 0 auto;
   position: relative;
   background-color: white;
-  /* padding: 15px; */
 `;
 
 export const Container = styled.div`
-width: 100%;
+  width: 100%;
   height: 100vh;
-  background-color: red;
   background-image: url(${({ img }) => img});
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,25 +20,32 @@ width: 100%;
   align-items: center;
   justify-content: flex-start;
   padding: 40px 70px;
+  z-index: -1;
 `;
 
-// EXTRA
 export const Content = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  /* padding-left: 70px; */
+  /* padding-top: 50px; */
   gap: 20px;
-  z-index: 50000000000000000;
-  /* width: 300px; */
+  z-index: 1;
+  /* height: 800px; */
+  /* width: 860px; */
+  /* background: url(${boom}); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 `;
 
-export const Blur = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  background: rgba(116, 115, 115, 0.25);
-`;
+export const Boom = styled.img`
+position: absolute;
+left: 0;
+top: -160%;
+width: 1100px;
+height: 800px;
+z-index: -0.5;
+`

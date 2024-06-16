@@ -8,7 +8,13 @@ const getBoxStyle = ({ type }) => {
       return {
         background: "white",
         height: "500px",
+      };
 
+    case "sneakersBtn":
+      return {
+        gap: "20px",
+        width: "100%",
+        display: "flex"
       };
     default:
       return {};
@@ -16,6 +22,6 @@ const getBoxStyle = ({ type }) => {
 };
 
 export const Container = styled.div`
-  margin: 0 auto;
-  ${getBoxStyle};
+  /* margin: 0 auto; */
+  ${getBoxStyle}
 `;

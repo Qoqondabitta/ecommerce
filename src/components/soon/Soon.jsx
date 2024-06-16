@@ -18,7 +18,7 @@ const Soon = () => {
             <FaCrown className="crown" />
             {value == "RUS" ? "ХОН" : "XON"}
           </Title> */}
-          <Title type="soonTitle">
+          <Title type="videoTitle">
             {value == "ENG"
               ? "#Train#Wear#Enjoy With Us"
               : value == "RUS"

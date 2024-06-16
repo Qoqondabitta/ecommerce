@@ -2,12 +2,6 @@ import { styled } from "styled-components";
 
 const getType = ({ type }) => {
   switch (type) {
-    case "signin":
-      return {
-        color: "#fff",
-        background: "red",
-        padding: "5px 0px",
-      };
     case "xon":
       return {
         fontSize: "14px",
@@ -79,9 +73,8 @@ const getType = ({ type }) => {
     case "videoText":
       return {
         fontSize: "16px",
-        fontWeight: "400",
+        // fontWeight: "400",
         width: "fit-content",
-        // color: "white",
       };
     case "gucci":
       return {
@@ -107,12 +100,6 @@ const getType = ({ type }) => {
         flex: "1",
         textAlign: "center",
       };
-    case "signup":
-      return {
-        color: "#3a4752",
-        background: "yellow",
-        borderRadius: "10px",
-      };
     default:
       return {
         background: "blue",
@@ -129,6 +116,7 @@ export const Titles = styled.p`
   font-weight: 400;
   font-size: ${({ fontSize }) => fontSize};
   color: ${({ color }) => color};
+  font-weight: ${({ fontWeight }) => fontWeight};
   ${getType};
   transition: all 0.5s;
 

@@ -10,7 +10,7 @@ const Genders = () => {
     <Container className="alignEnd" backimage={xonBackground}>
       <Content className="columnAlignEnd">
         <Title type="guccixon">XON Suits</Title>
-        <Button type="xon">EXPLORE SUITS</Button>
+        <Button type="gucci">EXPLORE SUITS</Button>
       </Content>
     </Container>
   );

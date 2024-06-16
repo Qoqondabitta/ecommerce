@@ -28,7 +28,6 @@ const Video = () => {
             ? child.subTitle[1]
             : child.subTitle[2]}
         </Title>
-
         <Title type="videoText" color="white">
           {value == "ENG"
             ? child.text[0]
@@ -36,7 +35,7 @@ const Video = () => {
             ? child.text[1]
             : child.text[2]}
         </Title>
-        <Button type="browse">
+        <Button type="soon">
           {value == "ENG"
             ? child.buttonText[0]
             : value == "UZB"

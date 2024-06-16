@@ -1,17 +1,14 @@
 import { styled } from "styled-components";
 export const Main = styled.div`
-  background: red;
+  background: white;
   position: relative;
   margin: 0 auto;
   width: 100%;
 `;
 export const Container = styled.div`
-  background: red;
-  /* position: absolute; */
   z-index: 230000;
-  /* z-index: 450; */
   padding: 5px;
-  color: yellow;
+  color: black;
   font-size: 16px;
   text-align: center;
   font-weight: bold;

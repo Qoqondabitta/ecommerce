@@ -1,7 +1,16 @@
 import React from "react";
 import { Buttoning } from "./style";
 
-const Button = ({ children, onClick, type, width, mediaWidth, left, right }) => {
+const Button = ({
+  children,
+  onClick,
+  type,
+  width,
+  mediaWidth,
+  left,
+  right,
+  backColor,
+}) => {
   return (
     <Buttoning
       className="center"
@@ -10,6 +19,7 @@ const Button = ({ children, onClick, type, width, mediaWidth, left, right }) => 
       mediaWidth={mediaWidth}
       width={width}
       left={left}
+      backColor={backColor}
       right={right}
     >
       {children || "buy"}

@@ -1,9 +1,20 @@
 import React from "react";
 import { Titles } from "./style";
 
-const Title = ({ children, onClick, type, width, mediaWidth, media, fontSize, color }) => {
+const Title = ({
+  children,
+  onClick,
+  type,
+  width,
+  mediaWidth,
+  media,
+  fontSize,
+  color,
+  fontWeight,
+}) => {
   return (
     <Titles
+      fontWeight={fontWeight}
       onClick={onClick}
       type={type}
       color={color}

@@ -6,7 +6,7 @@ export const Main = styled.div`
   margin: 0 auto;
   position: relative;
   background-color: white;
-  padding: 15px;
+  padding-top: 15px;
 `;
 
 export const Container = styled.div`
