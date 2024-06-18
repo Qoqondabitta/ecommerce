@@ -7,7 +7,6 @@ import Button from "../generics/button/Button";
 import Title from "../generics/title/Title";
 import { PiSneakerThin } from "react-icons/pi";
 import { Bunker } from "../generics";
-import boom from "../../assets/images/backgrounds/boom.png";
 
 const Sneakers = () => {
   const { value } = useSelector((store) => store.language);
@@ -15,7 +14,6 @@ const Sneakers = () => {
     <Main>
       <Container img={background}>
         <Content>
-          <Boom src={boom} />
           <Title type="sneakersTitle">
             {value == "ENG"
               ? "UP TO 40% + 15% OFF*"

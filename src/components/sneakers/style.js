@@ -29,23 +29,5 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  /* padding-left: 70px; */
-  /* padding-top: 50px; */
   gap: 20px;
-  z-index: 1;
-  /* height: 800px; */
-  /* width: 860px; */
-  /* background: url(${boom}); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 `;
-
-export const Boom = styled.img`
-position: absolute;
-left: 0;
-top: -160%;
-width: 1100px;
-height: 800px;
-z-index: -0.5;
-`
