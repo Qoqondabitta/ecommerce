@@ -7,7 +7,7 @@ import DoubleSlider from "../components/sliders/doubleSlider/Double";
 import ProductSlider from "../components/sliders/productSlider/productSlider";
 import ClothTab from "../components/tabs/ClothTab";
 import TopProductSlider from "../components/sliders/topProductSlider/topProductSlider";
-import BotProductSlider from "../components/sliders/botProductSlider/botProductSlider";
+import BotProductSlider from "../components/sliders//botProductSlider/botProductSlider";
 import { useSelector } from "react-redux";
 import Diogonal from "../components/diogonal/Diogonal";
 import Soon from "../components/soon/Soon";

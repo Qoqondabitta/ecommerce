@@ -1,5 +1,5 @@
 import React from "react";
-import { Boom, Container, Content, Main } from "./style";
+import { Container, Content, Main } from "./style";
 import background from "../../assets/images/just/sneakers.webp";
 import "./sneakers.css";
 import { useSelector } from "react-redux";
