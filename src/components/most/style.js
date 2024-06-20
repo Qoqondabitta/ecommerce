@@ -6,6 +6,10 @@ export const Main = styled.div`
   height: 100vh;
   position: relative;
   margin-top: 0px;
+
+  @media only screen and (max-width: 600px) {
+    /* height: 200vh; */
+  }
 `;
 
 export const Container = styled.div`
@@ -13,6 +17,11 @@ export const Container = styled.div`
   height: 100%;
   padding: 15px;
   gap: 15px;
+@media only screen and (max-width: 600px){
+  flex-direction: column;
+  height: 200%;
+  padding: 10px 0px;
+}
 `;
 
 export const Back = styled.div`
@@ -25,6 +34,11 @@ export const Back = styled.div`
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const Content = styled.div`

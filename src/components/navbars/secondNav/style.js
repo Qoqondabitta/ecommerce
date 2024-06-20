@@ -5,13 +5,6 @@ export const Main = styled.div`
   margin: 0 auto;
   `;
 
-export const Background = styled.div`
-  width: 100%;
-  background-color: blue;
-  z-index: 4599;
-  height: 300px;
-  `;
-
 export const Container = styled.div`
   padding: 0px 50px;
   position: absolute;
@@ -19,11 +12,11 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 4300000000;
+  /* z-index: 4300000000000000; */
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
-
+/* background-color: blue; */
   @media only screen and (max-width: 600px) {
     padding: 10px 10px 0px 20px;
     height: 40px;

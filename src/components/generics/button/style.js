@@ -13,6 +13,7 @@ const getType = ({ type }) => {
         fontSize: "14px",
         padding: "15px 20px",
         width: "270px",
+        zIndex: "9999"
       };
     case "black":
       return {

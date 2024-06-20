@@ -21,6 +21,9 @@ export const Container = styled.div`
   justify-content: flex-start;
   padding: 40px 70px;
   z-index: -1;
+  @media only screen and (max-width: 600px) {
+    margin-top: 100vh;
+  }
 `;
 
 export const Content = styled.div`

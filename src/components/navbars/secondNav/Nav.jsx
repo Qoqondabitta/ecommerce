@@ -40,17 +40,22 @@ console.log(burger);
         <Shop>
           {/* <Drop /> */}
           {/* <Icon className=""> */}
-            <FaRegHeart color="white" size="1.5em" className="navIcons" />
+          <FaRegHeart color="white" size="1.5em" className="navIcons" />
           {/* </Icon> */}
           {/* <Icon className=""> */}
-            <LuUser color="white" size="1.7em" className="navIcons" />
+          <LuUser color="white" size="1.7em" className="navIcons" />
           {/* </Icon> */}
           <Icon className="">
             <IoCartOutline className="navIcons" color="white" size="1.8em" />
             <Round className="center">{counter.data}</Round>
           </Icon>
           {/* <Icon className="" onClick={() => dispatch(toggleBurger())}> */}
-            <HiOutlineMenu className="navIcons" color="white" size="1.8em" />
+          <HiOutlineMenu
+            className="navIcons"
+            color="white"
+            size="1.8em"
+            onClick={() => dispatch(toggleBurger())}
+          />
           {/* </Icon> */}
         </Shop>
       </Container>

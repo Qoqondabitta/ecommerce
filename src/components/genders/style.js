@@ -9,4 +9,10 @@ export const Container = styled.div`
   background-size: cover;
   background-position: top;
   padding-bottom: 100px;
+  position: relative;
+  z-index: -1;
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 0px;
+  }
 `;

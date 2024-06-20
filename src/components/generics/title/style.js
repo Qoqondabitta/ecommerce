@@ -99,6 +99,7 @@ const getType = ({ type }) => {
         fontFamily: '"DM Serif Display", serif',
         flex: "1",
         textAlign: "center",
+        zIndex: "101"
       };
     default:
       return {

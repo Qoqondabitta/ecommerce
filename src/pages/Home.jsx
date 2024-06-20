@@ -39,10 +39,10 @@ const Home = () => {
       <MostSellers />
       <Video />
       {/* <Diogonal /> */}
-      <Soon />
-      <TripleHeadings />
-      <TripleSlider />
-      <PokerTextSlider />
+      {/* <Soon /> */}
+      {/* <TripleHeadings /> */}
+      {/* <TripleSlider /> */}
+      {/* <PokerTextSlider /> */}
       <Sneakers />
       <ClothTab />
       {value == "SHOE" ? (
@@ -52,7 +52,7 @@ const Home = () => {
       ) : (
         <BotProductSlider />
       )}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

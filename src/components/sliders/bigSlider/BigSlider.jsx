@@ -9,6 +9,7 @@ import FullScreenSlider from "../fullScreenSlider/FullScreenSlider";
 import Kids from "../kids/Kids";
 import { useDispatch, useSelector } from "react-redux";
 import { decrement, increment } from "../../../redux/order";
+import Nav from "../../navbars/secondNav/Nav";
 
 const BigSlider = () => {
   const dispatch = useDispatch()
@@ -16,6 +17,7 @@ const BigSlider = () => {
 
   return (
     <Main className="center">
+      <Nav />
       <Container className="center">
         {order.value == 0 ? <FullScreenSlider /> : order.value == 1 ? <DoubleSlider /> : order.value==2 ? <Kids /> : <Video />}
       </Container>
