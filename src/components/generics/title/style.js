@@ -160,7 +160,7 @@ export const Titles = styled.p`
   @media only screen and (max-width: 600px) {
     font-size: ${({ type }) =>
       type == "xonTitle"
-        ? "40px"
+        ? "60px"
         : type == "gucci"
         ? "30px"
         : type == "videoText"
@@ -171,13 +171,13 @@ export const Titles = styled.p`
     font-weight: ${({ type }) => type == "xonTitle" && "20px"};
     letter-spacing: ${({ type }) =>
       type == "xonTitle"
-        ? "0.5rem"
+        ? "-0.34rem"
         : type == "videoTitle"
         ? "-0.1rem"
         : "0rem"};
     word-spacing: ${({ type }) => type == "videoTitle" && "0rem"};
     line-height: ${({ type }) =>
-      type == "xonTitle" ? "60px" : type == "videoTitle" ? "12px" : ""};
+      type == "xonTitle" ? "80px" : type == "videoTitle" ? "12px" : ""};
     width: ${({ type }) => type == "videoText" && "140px"};
     /* height: ${({ type }) => type == "videoText" && "60px"}; */
   }

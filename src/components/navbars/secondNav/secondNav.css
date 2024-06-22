@@ -1,11 +1,17 @@
 .activeNavbarLink {
-    color: yellow;
+  color: yellow;
 }
 
-@media only screen and (max-width: 600px){
-    .navIcons{
-        scale: 0.7;
-        height: 100%;
-        flex: 1;
-    }
+@media only screen and (max-width: 600px) {
+  .navIcons {
+    scale: 0.7;
+    height: 100%;
+    flex: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #mainTitle {
+    margin-top: 10px;
+  }
 }

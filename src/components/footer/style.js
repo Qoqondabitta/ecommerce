@@ -21,6 +21,10 @@ export const Row = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
+  @media only screen and (max-widht: 600px) {
+    flex-direction: column;
+  }
 `;
 
 export const Parts = styled.div`

@@ -18,7 +18,7 @@ export const Container = styled.div`
   margin: 0 auto;
 /* background-color: blue; */
   @media only screen and (max-width: 600px) {
-    padding: 10px 10px 0px 20px;
+    padding: 10px 20px 0px 20px;
     height: 40px;
   }
   @media only screen and (max-width: 500px) {

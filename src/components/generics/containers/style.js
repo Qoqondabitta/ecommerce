@@ -19,15 +19,12 @@ const getBoxStyle = ({ type }) => {
     case "grey":
       return {
         gap: "10px",
-        // background: "red",
         height: "fit-content",
         zIndex: "100000000000",
-        // width: "100%",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center"
-        // display: "flex",
       };
     default:
       return {};

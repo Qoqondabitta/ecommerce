@@ -15,11 +15,11 @@ export const Container = styled.div`
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  background-color: red;
+  /* background-color: red; */
   @media only screen and (max-width: 600px) {
     /* padding: 10px; */
     font-size: 14px;
-    height: 16px;
+    /* height: 16px; */
   }
 @media only screen and (max-width: 350px) {
 padding: 0px;

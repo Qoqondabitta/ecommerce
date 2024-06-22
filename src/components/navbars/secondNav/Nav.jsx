@@ -23,7 +23,9 @@ console.log(burger);
   return (
     <Main className="columnCenter">
       <Container>
-        <Title type="xonTitle">{language.value == "RUS" ? "ХОН" : "XON"}</Title>
+        <Title id="mainTitle" type="xonTitle">
+          {language.value == "RUS" ? "ХОН" : "XON"}
+        </Title>
         <List className="">
           {links.map((v, i) => (
             <Item key={i}>
