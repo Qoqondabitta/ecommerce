@@ -12,17 +12,15 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* z-index: 4300000000000000; */
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
-/* background-color: blue; */
   @media only screen and (max-width: 600px) {
-    padding: 10px 20px 0px 20px;
+    padding: 20px 20px 0px 20px;
     height: 40px;
   }
-  @media only screen and (max-width: 500px) {
-    padding: 10px 10px 0px 20px;
+  @media only screen and (max-width: 400px) {
+    padding: 20px 10px 0px 10px;
   }
 `;
 

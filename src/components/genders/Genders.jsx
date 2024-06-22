@@ -12,7 +12,7 @@ const Genders = () => {
     <Container className="alignEnd" backimage={xonBackground}>
       <Blur></Blur>
       <Bunker type="grey" className="columnCenter">
-        <Title type="guccixon">XON Suits</Title>
+        <Title type="gucci">XON Suits</Title>
         <Button type="gucci">EXPLORE SUITS</Button>
       </Bunker>
     </Container>

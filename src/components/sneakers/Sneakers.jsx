@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Content, Main } from "./style";
 import background from "../../assets/images/just/sneakers.webp";
+import sneakers from "../../assets/images/backgrounds/sneakers.avif";
 import "./sneakers.css";
 import { useSelector } from "react-redux";
 import Button from "../generics/button/Button";
@@ -12,7 +13,7 @@ const Sneakers = () => {
   const { value } = useSelector((store) => store.language);
   return (
     <Main>
-      <Container img={background}>
+      <Container img={background} sneakersimg={sneakers}>
         <Content>
           <Title type="sneakersTitle">
             {value == "ENG"

@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
-import boom from "../../assets/images/backgrounds/boom.png"
-
+// import boom from "../../assets/images/backgrounds/snekaers.avif"
+// import noom from "../../assets/images/backgrounds"
 export const Main = styled.div`
   width: 100%;
   height: 100vh;
@@ -23,6 +23,7 @@ export const Container = styled.div`
   z-index: -1;
   @media only screen and (max-width: 600px) {
     margin-top: 100vh;
+    background-image: url(${({sneakersimg})=>sneakersimg});
   }
 `;
 
