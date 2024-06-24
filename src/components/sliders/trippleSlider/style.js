@@ -19,5 +19,8 @@ export const Content = styled.div`
 `;
 
 export const Wrapper = styled.div`
-gap: 10px;
-`
+  gap: 10px;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+`;

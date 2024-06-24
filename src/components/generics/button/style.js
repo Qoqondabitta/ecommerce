@@ -65,10 +65,22 @@ export const Buttoning = styled.button`
   }
   @media only screen and (max-width: 700px) {
     width: ${({ type }) =>
-      type == "gucci" ? "200px" : type == "browse" ? "80px" : "120px"};
-    font-size: ${({ type }) => (type == "gucci" ? "10px" : "10px")};
+      type == "gucci"
+        ? "200px"
+        : type == "browse"
+        ? "80px"
+        : type == "black"
+        ? "fit-content"
+        : "120px"};
+    font-size: ${({ type }) => (type == "gucci" ? "10px" : "12px")};
     padding: ${({ type }) =>
-      type == "gucci" ? "10px" : type == "browse" ? "5px" : "14px"};
+      type == "gucci"
+        ? "10px"
+        : type == "browse"
+        ? "5px"
+        : type == "black"
+        ? "10px 15px"
+        : "14px"};
     height: ${({ type }) => type == "browse" && "25px"};
   }
 `;

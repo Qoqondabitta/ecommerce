@@ -52,7 +52,7 @@ const Home = () => {
       ) : (
         <BotProductSlider />
       )}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

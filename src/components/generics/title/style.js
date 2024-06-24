@@ -161,10 +161,10 @@ export const Titles = styled.p`
     font-size: ${({ type }) =>
       type == "xonTitle"
         ? "60px"
-        : type == "gucci"
+        : type == "gucci" || type == "sneakersTitle"
         ? "30px"
         : type == "videoText"
-        ? "10px"
+        ? "12px"
         : type == "videoTitle"
         ? "20px"
         : "18px"};
@@ -177,8 +177,14 @@ export const Titles = styled.p`
         : "0rem"};
     word-spacing: ${({ type }) => type == "videoTitle" && "0rem"};
     line-height: ${({ type }) =>
-      type == "xonTitle" ? "80px" : type == "videoTitle" ? "12px" : ""};
-    width: ${({ type }) => type == "videoText" && "140px"};
+      type == "xonTitle"
+        ? "80px"
+        : type == "videoTitle"
+        ? "12px"
+        : type == "sneakersTitle"
+        ? "20px"
+        : ""};
+    width: ${({ type }) => type == "videoText" && "fit-content"};
     /* height: ${({ type }) => type == "videoText" && "60px"}; */
   }
 `;

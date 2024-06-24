@@ -5,6 +5,9 @@ export const Main = styled.div`
   height: 800px;
   margin: 0 auto;
   background-color: black;
+  @media only screen and (max-width: 600px) {
+    height: fit-content;
+  }
 `;
 
 export const Container = styled.div`
@@ -14,9 +17,12 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media only screen and (max-width: 600px) {
+    padding: 30px 20px;
+  }
 `;
 
-export const Row = styled.div`
+export const footerRows = styled.div`
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -24,6 +30,8 @@ export const Row = styled.div`
 
   @media only screen and (max-widht: 600px) {
     flex-direction: column;
+    gap: ${({ lists }) => lists && "20px"};
+    gap: 20px;
   }
 `;
 
@@ -31,6 +39,11 @@ export const Parts = styled.div`
   flex: 1;
   gap: 25px;
   font-weight: bold;
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 30px;
+    gap: 5px;
+  }
 `;
 
 export const List = styled.ul`
@@ -42,6 +55,11 @@ export const List = styled.ul`
   width: 100%;
   flex: ${({ flex }) => flex};
   list-style: none;
+
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 60px;
+    gap: 10px;
+  }
 `;
 
 export const Item = styled.li`
@@ -89,7 +107,12 @@ export const XON = styled.h1`
   text-align: center;
   color: white;
   letter-spacing: 20px;
-  /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-family: 'Times New Roman', Times, serif;
-/* font-family: 'Courier New', Courier, monospace; */
+
+@media only screen and (max-width: 600px) {
+  font-size: 64px;
+  line-height: 40px;
+  margin-top: 50px;
+  letter-spacing: -0.5px;
+}
 `;

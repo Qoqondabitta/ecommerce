@@ -23,15 +23,18 @@ export const Container = styled.div`
   z-index: -1;
   @media only screen and (max-width: 600px) {
     margin-top: 100vh;
-    background-image: url(${({sneakersimg})=>sneakersimg});
+    background-image: url(${({ sneakersimg }) => sneakersimg});
+    background-position: bottom;
+    padding: 20px;
   }
 `;
 
 export const Content = styled.div`
+height: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 20px;
 `;

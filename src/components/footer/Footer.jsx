@@ -1,5 +1,15 @@
 import React from "react";
-import { Container, Input, Item, List, Main, Parts, Row, Text, XON } from "./style";
+import {
+  Container,
+  Input,
+  Item,
+  List,
+  Main,
+  Parts,
+  footerRows,
+  Text,
+  XON,
+} from "./style";
 import {
   companyFooter,
   countryFooter,
@@ -15,7 +25,7 @@ const Footer = () => {
   return (
     <Main>
       <Container>
-        <Row>
+        <footerRows lists="true">
           <List flex="1">
             {helpFooter.map((v, id) => (
               <Item
@@ -106,8 +116,8 @@ const Footer = () => {
               </Item>
             ))}
           </List>
-        </Row>
-        <Row>
+        </footerRows>
+        <footerRows>
           {/* {serviceFooter.map(v => <Parts>{serviceFooter.map(v=><Item>v.</Item>) }</Parts>)} */}
           <Parts className="columnStart">
             {serviceFooter.map((v, id) => (
@@ -141,7 +151,7 @@ const Footer = () => {
               </Item>
             ))}
           </Parts>
-        </Row>
+        </footerRows>
         <XON>{value == "RUS" ? "XOH БРЕНД" : "XON BRAND"}</XON>
       </Container>
     </Main>
