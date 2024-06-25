@@ -35,6 +35,10 @@ height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 20px;
+
+  @media only screen and (max-width: 600px) {
+    justify-content: flex-start;
+  }
 `;

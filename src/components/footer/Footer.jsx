@@ -6,7 +6,7 @@ import {
   List,
   Main,
   Parts,
-  footerRows,
+  FooterRows,
   Text,
   XON,
 } from "./style";
@@ -25,7 +25,7 @@ const Footer = () => {
   return (
     <Main>
       <Container>
-        <footerRows lists="true">
+        <FooterRows lists="true">
           <List flex="1">
             {helpFooter.map((v, id) => (
               <Item
@@ -116,8 +116,8 @@ const Footer = () => {
               </Item>
             ))}
           </List>
-        </footerRows>
-        <footerRows>
+        </FooterRows>
+        <FooterRows>
           {/* {serviceFooter.map(v => <Parts>{serviceFooter.map(v=><Item>v.</Item>) }</Parts>)} */}
           <Parts className="columnStart">
             {serviceFooter.map((v, id) => (
@@ -151,7 +151,7 @@ const Footer = () => {
               </Item>
             ))}
           </Parts>
-        </footerRows>
+        </FooterRows>
         <XON>{value == "RUS" ? "XOH БРЕНД" : "XON BRAND"}</XON>
       </Container>
     </Main>

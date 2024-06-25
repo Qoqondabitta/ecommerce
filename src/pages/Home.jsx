@@ -37,11 +37,11 @@ const Home = () => {
       <BigSlider />
       <Genders />
       <MostSellers />
-      <Video />
+      {/* <Video /> */}
       {/* <Diogonal /> */}
       {/* <Soon /> */}
       {/* <TripleHeadings /> */}
-      {/* <TripleSlider /> */}
+      <TripleSlider />
       {/* <PokerTextSlider /> */}
       <Sneakers />
       <ClothTab />

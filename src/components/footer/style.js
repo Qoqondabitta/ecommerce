@@ -22,12 +22,13 @@ export const Container = styled.div`
   }
 `;
 
-export const footerRows = styled.div`
+export const FooterRows = styled.div`
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-
+  background-color: red;
   @media only screen and (max-widht: 600px) {
     flex-direction: column;
     gap: ${({ lists }) => lists && "20px"};

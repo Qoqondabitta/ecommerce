@@ -17,7 +17,7 @@ const BigSlider = () => {
 
   return (
     <Main className="center">
-      <Nav />
+      {/* <Nav /> */}
       <Container className="center">
         {order.value == 0 ? <FullScreenSlider /> : order.value == 1 ? <DoubleSlider /> : order.value==2 ? <Kids /> : <Video />}
       </Container>

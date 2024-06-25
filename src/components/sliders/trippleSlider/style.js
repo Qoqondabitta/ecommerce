@@ -6,6 +6,11 @@ export const Main = styled.div`
   height: 70vh;
   width: 100%;
   gap: 5px;
+
+  @media only screen and (max-width: 600px) {
+    height: 180vh;
+    margin-top: 200vh;
+  }
 `;
 
 export const Container = styled.div`
@@ -21,6 +26,9 @@ export const Content = styled.div`
 export const Wrapper = styled.div`
   gap: 10px;
   @media only screen and (max-width: 600px) {
+   height: 180vh;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 `;
