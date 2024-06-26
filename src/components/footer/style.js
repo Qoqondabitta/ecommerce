@@ -28,8 +28,8 @@ export const FooterRows = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  background-color: red;
-  @media only screen and (max-widht: 600px) {
+  /* background-color: red; */
+  @media only screen and (max-width: 600px) {
     flex-direction: column;
     gap: ${({ lists }) => lists && "20px"};
     gap: 20px;
