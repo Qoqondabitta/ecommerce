@@ -56,6 +56,7 @@ const getType = ({ type }) => {
         color: "white",
         letterSpacing: "-0.5rem",
         fontFamily: '"DM Serif Display", serif',
+        zIndex: "900"
       };
     case "soonTitle":
       return {

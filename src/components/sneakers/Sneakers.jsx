@@ -8,6 +8,10 @@ import Button from "../generics/button/Button";
 import Title from "../generics/title/Title";
 import { PiSneakerThin } from "react-icons/pi";
 import { Bunker } from "../generics";
+import {
+  sneakersBtnconstants,
+  sneakersTitleconstants,
+} from "../../constants/componentsContants/sneakers";
 
 const Sneakers = () => {
   const { value } = useSelector((store) => store.language);
@@ -15,33 +19,18 @@ const Sneakers = () => {
     <Main>
       <Container img={background} sneakersimg={sneakers}>
         <Content>
-          <Title type="sneakersTitle">
-            {value == "ENG"
-              ? "UP TO 40% + 15% OFF*"
-              : value == "RUS"
-              ? `#Тренируйтесь#Одевайтесь \n #Наслаждайтесь`
-              : "#Shug'ulan#Kiy#Rohatlan Biz Bilan"}
-          </Title>
-          <Title type="videoText" color="black" fontWeight="600">
-            {value == "ENG"
-              ? "New Sneakers Collection for warm-weather trainings are available right now"
-              : value == "RUS"
-              ? `Доступна новая коллекция спортивных костюмов для тренировок в теплую погоду прямо сейчас`
-              : "Issiq havoda mashg'ulotlar uchun yangi krasovkalar to'plami mavjud"}
-          </Title>
+          {sneakersTitleconstants.map((v, i) => (
+            <Title type={v.s} key={i} color={v?.color} fontWeight={v?.weight}>
+              {value == "ENG" ? v.m[0] : value == "RUS" ? v.m[2] : v.m[1]}
+            </Title>
+          ))}
           <Bunker type="sneakersBtn" className="center">
-            <Button type="black">
-              {value == "ENG" ? "Shop" : value == "RUS" ? "Купить" : "Olmoq"}
-              <PiSneakerThin size="1.5em" />
-            </Button>
-            <Button type="black">
-              {value == "ENG"
-                ? "See Other Offers"
-                : value == "RUS"
-                ? "Купить"
-                : "Olmoq"}
-              <PiSneakerThin size="1.5em" />
-            </Button>
+            {sneakersBtnconstants.map(({ m }, i) => (
+              <Button type="black" key={i}>
+                {value == "ENG" ? m[0] : value == "RUS" ? m[1] : m[2]}
+                <PiSneakerThin size="1.5em" />
+              </Button>
+            ))}
           </Bunker>
         </Content>
       </Container>

@@ -1,19 +1,19 @@
 export const sneakersTitleconstants = [
   {
-    mainTitle: [
+    m: [
       "UP TO 40% + 15% OFF*",
       "40% + 15% CHEGIRMA*",
       "СКИДКА ДО 40% + 15%*",
     ],
-    sortofTitle: "sneakersTitle",
+    s: "sneakersTitle",
   },
   {
-    mainTitle: [
+    m: [
       "New Sneakers Collection for warm-weather trainings are available right now",
       "Issiq havoda mashg'ulotlar uchun yangi krasovkalar to'plami mavjud",
-      "Доступна новая коллекция спортивных костюмов для тренировок в теплую погоду прямо сейчас",
+      "Доступна новая коллекция спортивных костюмов в теплую погоду прямо сейчас",
     ],
-    sortofTitle: "videoText",
+    s: "videoText",
     color: "black",
     weight: "600",
   },
@@ -21,9 +21,9 @@ export const sneakersTitleconstants = [
 
 export const sneakersBtnconstants = [
   {
-    mainTitle: ["Shop", "Olmoq", "Купить"],
+    m: ["Shop", "Olmoq", "Купить"],
   },
   {
-    mainTitle: ["See Other Offers", "Olmoq", "Купить"],
+    m: ["See Other Offers", "Olmoq", "Купить"],
   },
 ];

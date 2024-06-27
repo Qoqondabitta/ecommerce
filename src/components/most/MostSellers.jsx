@@ -1,31 +1,36 @@
 import React from "react";
 import { Back, Container, Main, Content } from "./style";
-import back from "../../assets/images/bottomCard/bottom11png.webp";
-import back1 from "../../assets/images/topCard/left.jpg";
-import { Blur } from "../video/style";
 import Button from "..//generics/button/Button";
 import Title from "..//generics/title/Title";
-import {Bunker} from "../generics"
-// import {Content} from "../mini/gucciLido/style"
-// import { Title } from '../cards/productSliderCard/style';
+import { Bunker } from "../generics";
+import { mostconstants } from "../../constants/componentsContants/most";
+import { useSelector } from "react-redux";
 
 const MostSellers = () => {
+  const { value } = useSelector((store) => store.language);
   return (
     <Main>
-      {/* <Blur></Blur> */}
       <Container className="center ">
-        <Back className="alignEnd" backimg={back}>
-          <Bunker type="grey" className="columnAlignEnd">
-            <Title type="gucci">Pre-FALL 2024</Title>
-            <Button type="gucci">EXPLORE FORMAL COLLECTION</Button>
-          </Bunker>
-        </Back>
-        <Back className="alignEnd" backimg={back1}>
-          <Bunker type="grey" className="columnAlignEnd">
-            <Title type="gucci">Sport Offers</Title>
-            <Button type="gucci">EXPLORE SPORT COLLECTION</Button>
-          </Bunker>
-        </Back>
+        {mostconstants.map((v, i) => (
+          <Back className={v.p} backimg={v.b} key={i}>
+            <Bunker type={v.ty} className={v.sp}>
+              <Title type={v.te.t}>
+                {value == "ENG"
+                  ? v.te.ch[0]
+                  : value == "RUS"
+                  ? v.te.ch[2]
+                  : v.te.ch[1]}
+              </Title>
+              <Button type={v.te.t}>
+                {value == "ENG"
+                  ? v.btn[0]
+                  : value == "RUS"
+                  ? v.btn[2]
+                  : v.btn[1]}
+              </Button>
+            </Bunker>
+          </Back>
+        ))}
       </Container>
     </Main>
   );
