@@ -7,6 +7,9 @@ export const Container = styled.div`
   gap: 40px;
   padding-bottom: 50px;
   /* background-color: red; */
+  @media only screen and (max-width: 800px){
+    /* flex-direction: column; */
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -30,5 +33,6 @@ export const Info = styled.p`
   font-weight: bolder;
   width: 20%;
   text-align: center;
+  color: white;
   z-index: 100000000;
 `;

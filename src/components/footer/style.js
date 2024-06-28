@@ -5,8 +5,11 @@ export const Main = styled.div`
   height: 800px;
   margin: 0 auto;
   background-color: black;
+  @media only screen and (max-width: 800px) {
+    height: 235vh;
+  }
   @media only screen and (max-width: 600px) {
-    height: fit-content;
+    height: 265vh;
   }
 `;
 
@@ -17,8 +20,15 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 100px;
+  @media only screen and (max-width: 800px) {
+    padding: 30px 20px;
+    height: 230vh;
+  }
   @media only screen and (max-width: 600px) {
     padding: 30px 20px;
+    height: 265vh;
+    gap: 10px;
   }
 `;
 
@@ -28,7 +38,7 @@ export const FooterRows = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  /* background-color: red; */
+  
   @media only screen and (max-width: 600px) {
     flex-direction: column;
     gap: ${({ lists }) => lists && "20px"};
@@ -42,7 +52,7 @@ export const Parts = styled.div`
   font-weight: bold;
 
   @media only screen and (max-width: 600px) {
-    margin-top: 30px;
+    margin-top: 20px;
     gap: 5px;
   }
 `;
@@ -58,7 +68,7 @@ export const List = styled.ul`
   list-style: none;
 
   @media only screen and (max-width: 600px) {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     gap: 10px;
   }
 `;

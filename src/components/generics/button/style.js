@@ -13,7 +13,7 @@ const getType = ({ type }) => {
         fontSize: "14px",
         padding: "15px 20px",
         width: "270px",
-        zIndex: "999999999999"
+        zIndex: "999999999999999999",
       };
     case "black":
       return {
@@ -43,7 +43,7 @@ export const Buttoning = styled.button`
   left: ${({ left }) => left && "5%"};
   background: ${({ type, backColor }) =>
     type == "soon" || type == "gucci"
-      ? "linear-gradient(135deg, rgba(100, 97, 97, 0.5), rgba(255, 255, 255, 0))"
+      ? "linear-gradient(135deg, rgba(100, 97, 97, 0), rgba(255, 255, 255, 0))"
       : backColor};
   backdrop-filter: ${({ type }) =>
     type == "soon" || type == "gucci" ? "blur(10px)" : "none"};

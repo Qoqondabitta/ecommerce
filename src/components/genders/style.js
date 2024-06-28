@@ -12,7 +12,7 @@ export const Container = styled.div`
   position: relative;
   z-index: -1;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1100px) {
     margin-top: 0px;
     padding-bottom: 80px;
   }
