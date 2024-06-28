@@ -22,7 +22,7 @@ export const Container = styled.div`
   padding: 40px 70px;
   z-index: -1;
   @media only screen and (max-width: 600px) {
-    margin-top: 100vh;
+    /* margin-top: 100vh; */
     background-image: url(${({ sneakersimg }) => sneakersimg});
     background-position: bottom;
     padding: 20px;

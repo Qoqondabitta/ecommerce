@@ -2,14 +2,14 @@ import { styled } from "styled-components";
 
 export const Main = styled.div`
   width: 100%;
-  height: 800px;
+  height: fit-content;
   margin: 0 auto;
   background-color: black;
   @media only screen and (max-width: 800px) {
-    height: 235vh;
+    /* height: 235vh; */
   }
   @media only screen and (max-width: 600px) {
-    height: 265vh;
+    /* height: 265vh; */
   }
 `;
 
@@ -23,11 +23,11 @@ export const Container = styled.div`
   gap: 100px;
   @media only screen and (max-width: 800px) {
     padding: 30px 20px;
-    height: 230vh;
+    /* height: 230vh; */
   }
   @media only screen and (max-width: 600px) {
     padding: 30px 20px;
-    height: 265vh;
+    /* height: 265vh; */
     gap: 10px;
   }
 `;
