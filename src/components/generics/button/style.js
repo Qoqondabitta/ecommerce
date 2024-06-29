@@ -61,7 +61,7 @@ export const Buttoning = styled.button`
     font-size: 12px;
     height: ${({ type }) => type == "browse" && "40px"};
     width: ${({ type }) =>
-      type == "gucci" ? "270px" : type == "browse" ? "140px" : "120px"};
+      type == "gucci" ? "270px" : type == "browse" ? "140px" : "fit-content"};
   }
   @media only screen and (max-width: 700px) {
     width: ${({ type }) =>

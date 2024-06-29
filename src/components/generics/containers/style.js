@@ -35,6 +35,10 @@ export const Container = styled.div`
   /* margin: 0 auto; */
   ${getBoxStyle}
 
+  @media only screen and (max-width: 1100px) {
+    flex-direction: ${({ type }) => (type == "sneakersBtn" ? "column" : "")};
+    gap: ${({ type }) => (type == "sneakersBtn" ? "20px" : "")};
+  }
   @media only screen and (max-width: 600px) {
     flex-direction: ${({ type }) => (type == "sneakersBtn" ? "column" : "")};
     gap: ${({ type }) => (type == "sneakersBtn" ? "10px" : "")};

@@ -132,6 +132,8 @@ export const Titles = styled.p`
     font-size: ${({ type }) =>
       type == "xonTitle"
         ? "100px"
+        : type == "sneakersTitle"
+        ? "50px"
         : type == "gucci"
         ? "30px"
         : type == "videoText"
@@ -139,6 +141,7 @@ export const Titles = styled.p`
         : type == "videoTitle"
         ? "46px"
         : "18px"};
+        width: ${({type})=>type=="videoText"&&"70%"};
   }
   @media only screen and (max-width: 1000px) {
     display: ${({ media }) => media && "none"};
@@ -150,13 +153,15 @@ export const Titles = styled.p`
     font-size: ${({ type }) =>
       type == "xonTitle"
         ? "100px"
+        : type == "sneakersTitle"
+        ? "45px"
         : type == "gucci"
         ? "30px"
         : type == "videoText"
         ? "14px"
         : type == "videoTitle"
         ? "33px"
-        : "18px"};
+            : "18px"};
   }
   @media only screen and (max-width: 600px) {
     font-size: ${({ type }) =>

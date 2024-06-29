@@ -118,12 +118,19 @@ export const XON = styled.h1`
   text-align: center;
   color: white;
   letter-spacing: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 
-@media only screen and (max-width: 600px) {
-  font-size: 64px;
-  line-height: 40px;
-  margin-top: 50px;
-  letter-spacing: -0.5px;
-}
+  @media only screen and (max-width: 600px) {
+    font-size: 64px;
+    line-height: 40px;
+    margin-top: 50px;
+    letter-spacing: -0.5px;
+  }
+
+  @media only screen and (max-width: 420px) {
+    font-size: 55px;
+    line-height: 35px;
+    margin-top: 50px;
+    letter-spacing: -0.5px;
+  }
 `;
