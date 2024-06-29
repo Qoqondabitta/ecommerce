@@ -7,6 +7,9 @@ export const Main = styled.div`
   margin: 0 auto;
   position: relative;
   background-color: white;
+  @media only screen and (max-width: 600px) {
+    height: 464px;
+  }
 `;
 
 export const Container = styled.div`
@@ -32,6 +35,7 @@ export const Container = styled.div`
     background-image: url(${({ sneakersimg }) => sneakersimg});
     background-position: bottom;
     padding: 20px;
+    height: 464px;
   }
 `;
 
