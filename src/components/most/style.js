@@ -19,7 +19,7 @@ export const Container = styled.div`
   gap: 15px;
 @media only screen and (max-width: 600px){
   flex-direction: column;
-  height: 200%;
+  height: 970px;
   padding: 10px 0px;
 }
 `;

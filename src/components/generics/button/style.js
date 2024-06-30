@@ -72,7 +72,7 @@ export const Buttoning = styled.button`
         : type == "black"
         ? "fit-content"
         : "120px"};
-    font-size: ${({ type }) => (type == "gucci" ? "10px" : "12px")};
+    font-size: ${({ type }) => (type == "gucci" ? "14px" : "12px")};
     padding: ${({ type }) =>
       type == "gucci"
         ? "10px"

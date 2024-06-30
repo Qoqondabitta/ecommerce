@@ -1,3 +1,4 @@
+// import { MdPadding } from "react-icons/md";
 import { styled } from "styled-components";
 
 const getType = ({ type }) => {
@@ -6,15 +7,20 @@ const getType = ({ type }) => {
       return {
         border: "none",
         outline: "none",
-        width: "100%",
-        background: "transparent",
-        color: "#fff",
+        // width: "50%",
+        background: "white",
+        color: "black",
+        borderRadius: "5px",
       };
-    case "signup":
+    case "mainSearch":
       return {
-        color: "#3a4752",
-        background: "yellow",
-        borderRadius: "10px",
+        width: "90%",
+        background: "transparent",
+        border:"none",
+        borderBottom: "1px solid grey",
+        padding: "5px 0px",
+        fontSize: "16px",
+        outline: "none",
       };
     default:
       return {
@@ -28,10 +34,10 @@ const getType = ({ type }) => {
 export const Inputs = styled.input`
   width: ${({ width }) => (width ? `${width}px` : "120px")};
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   ${getType};
 
-  &::placeholder{
-    color: #fff;
+  &::placeholder {
+    color: black;
   }
 `;

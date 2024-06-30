@@ -21,7 +21,7 @@ export const Main = styled.div`
   }
   @media only screen and (max-width: 600px) {
     /* height: 180vh; */
-    margin-top: 100vh;
+    margin-top: 35vh;
   }
 `;
 

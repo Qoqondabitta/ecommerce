@@ -16,8 +16,9 @@ export const Container = styled.div`
   width: 100%;
   margin: 0 auto;
   @media only screen and (max-width: 600px) {
-    padding: 20px 20px 0px 20px;
+    padding: 20px 10px 0px 10px;
     height: 40px;
+    margin-top: 5px;
   }
   @media only screen and (max-width: 400px) {
     padding: 20px 10px 0px 10px;
@@ -107,6 +108,6 @@ export const Shop = styled(Parts)`
     gap: 0px;
     align-items: flex-start;
     margin-bottom: 0px;
-    /* background-color: red; */
+    display: none;
   }
 `;

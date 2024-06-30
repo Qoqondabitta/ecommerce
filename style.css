@@ -11,6 +11,10 @@
   /* font-style: normal; */
 }
 
+.cursor{
+  cursor: pointer;
+}
+
 /* body{
   background-color: red;
 } */

@@ -133,4 +133,11 @@ export const XON = styled.h1`
     margin-top: 50px;
     letter-spacing: -0.5px;
   }
+  
+  @media only screen and (max-width: 350px) {
+    font-size: 45px;
+    line-height: 30px;
+    margin-top: 50px;
+    letter-spacing: -0.5px;
+  }
 `;

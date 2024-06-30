@@ -22,6 +22,7 @@ import GucciLido from "../components/mini/gucciLido/GucciLido";
 import MostSellers from "../components/most/MostSellers";
 import Genders from "../components/genders/Genders";
 import Sneakers from "../components/sneakers/Sneakers";
+import FootNav from "../components/footNav/FootNav";
 
 const Home = () => {
   const { value } = useSelector((store) => store.title);
@@ -53,6 +54,7 @@ const Home = () => {
         <BotProductSlider />
       )}
       <Footer />
+      <FootNav />
     </div>
   );
 };
