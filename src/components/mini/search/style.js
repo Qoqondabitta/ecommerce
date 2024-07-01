@@ -29,7 +29,8 @@ export const Text = styled.p`
 `;
 
 export const MediaText = styled.p`
-  background-color: grey;
-  padding: 2px;
+  background-color: rgb(193, 189, 189);
+  padding: 3px 4px;
+  font-size: 14px;
   border-radius: 2px;
 `;

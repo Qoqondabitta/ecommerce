@@ -1,16 +1,34 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { Inputs } from "./style";
 
-const Input = ({ placeholder, onClick, type, width, mediaWidth }) => {
-  return (
-    <Inputs
-      onClick={onClick}
-      type={type}
-      mediaWidth={mediaWidth}
-      width={width}
-      placeholder={placeholder}
-    />
-  );
-};
+const Input = forwardRef(
+  (
+    {
+      placeholder,
+      onClick,
+      type,
+      width,
+      mediaWidth,
+      onChange,
+      name,
+      defaultValue,
+    },
+    ref
+  ) => {
+    return (
+      <Inputs
+        ref={ref}
+        onClick={onClick}
+        type={type}
+        onChange={onChange}
+        name={name}
+        defaultValue={defaultValue}
+        mediaWidth={mediaWidth}
+        width={width}
+        placeholder={placeholder}
+      />
+    );
+  }
+);
 
 export default Input;

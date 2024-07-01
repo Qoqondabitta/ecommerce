@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Bunker } from "../../generics";
 import { Item, List, MediaText, Text } from "./style";
 import { Input } from "../../generics";
@@ -10,15 +10,36 @@ import { useDispatch, useSelector } from "react-redux";
 import { IoClose } from "react-icons/io5";
 import { IoSearch } from "react-icons/io5";
 import { toggleSearch } from "../../../redux/search";
+import { resultList } from "../../../constants/searchDrop/searchResults";
 
 const Search = ({ st }) => {
+  const searchRef = useRef();
+  const [list, setList] = useState(resultList);
   const dispatch = useDispatch();
+  const [inputValue, setInputValue] = useState(null);
   const search = useSelector((store) => store.search);
   const { value } = useSelector((store) => store.language);
+  //   console.log(searchRef.current, "searchRef");
+  const getValue = (e) => {
+      let res = resultList.filter((v) => {
+      return v.n.toLowerCase().localeCompare(e.target.value.toLowerCase())==0;
+    //   return v.n.toLowerCase()==e.target.value.toLowerCase();
+    });
+    setInputValue(e.target.value);
+    return setList(res);
+    };
+    const changeList = (e)=>{
+return 
+    }
   return (
     <Bunker type="searchDrop">
-      <Bunker type="searchDropFirst">
-        <Input type="mainSearch" placeholder="Search" />
+      <Bunker type="searchDropFirst" onClick={getValue}>
+        <Input
+          ref={searchRef}
+          onChange={getValue}
+          type="mainSearch"
+          placeholder="Search"
+        />
         <IoClose
           color="black"
           className="cursor"
@@ -48,14 +69,25 @@ const Search = ({ st }) => {
         ))}
       </Bunker>
       <Bunker type="searchDropMedia">
-        <List>
+        {list.map((v, i) => (
+          <Item key={i}>
+            <IoSearch color="black" size="1.1em" />
+            <Text>{v.n}</Text>
+          </Item>
+        ))}
+      </Bunker>
+
+      {!inputValue && (
+        <Bunker type="searchDropMedia">
+          {/* <List> */}
           {searchDropMedia.map((v, i) => (
             <MediaText key={i}>
               {value == "ENG" ? v.p[0] : value == "UZB" ? v.p[1] : v.p[2]}
             </MediaText>
           ))}
-        </List>
-      </Bunker>
+          {/* </List> */}
+        </Bunker>
+      )}
     </Bunker>
   );
 };

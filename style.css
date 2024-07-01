@@ -11,6 +11,10 @@
   /* font-style: normal; */
 }
 
+.colorTesters{
+  color: rgb(193, 189, 189)
+}
+
 .cursor{
   cursor: pointer;
 }

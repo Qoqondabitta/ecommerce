@@ -90,11 +90,22 @@ const getBoxStyle = ({ type }) => {
       };
     case "searchDropMedia":
       return {
-        width: "100%",
-        // height: "100vh",
+        gap: "15px",
         zIndex: "1000000000000000000",
         display: "none",
-        background: "white"
+        flexWrap: "wrap",
+        width: "60%",
+      };
+    case "searchSuggestions":
+      return {
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "flex-start",
+        justifyContent:"flex-start",
+        zIndex: "1000000000000",
+        background: "red",
+        height: "300px"
       };
     default:
       return {};
@@ -116,7 +127,6 @@ export const Container = styled.div`
     display: ${({ type }) =>
       type == "searchDrop"
         ? null
-        // : type == "searchDropFirst" || type == "searchDropSecond"
         : type == "searchDropSecond"
         ? "none"
         : "flex"};
