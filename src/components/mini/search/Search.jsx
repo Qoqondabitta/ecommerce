@@ -1,24 +1,30 @@
 import React, { useState } from "react";
 import { Bunker } from "../../generics";
-import { Item, List, Text } from "./style";
+import { Item, List, MediaText, Text } from "./style";
 import { Input } from "../../generics";
-import { searchDropListconstants } from "../../../constants/searchDrop/searchDrop";
+import {
+  searchDropListconstants,
+  searchDropMedia,
+} from "../../../constants/searchDrop/searchDrop";
 import { useDispatch, useSelector } from "react-redux";
 import { IoClose } from "react-icons/io5";
 import { IoSearch } from "react-icons/io5";
 import { toggleSearch } from "../../../redux/search";
 
-
 const Search = ({ st }) => {
-    const dispatch = useDispatch()
-    const search = useSelector(store=>store.search)
-    // const [show, setShow] = useState(search)
-    const { value } = useSelector((store) => store.language);
+  const dispatch = useDispatch();
+  const search = useSelector((store) => store.search);
+  const { value } = useSelector((store) => store.language);
   return (
-    <Bunker type="searchDrop" >
+    <Bunker type="searchDrop">
       <Bunker type="searchDropFirst">
         <Input type="mainSearch" placeholder="Search" />
-        <IoClose color="black" className="cursor" size="1.5em" onClick={()=>dispatch(toggleSearch())}/>
+        <IoClose
+          color="black"
+          className="cursor"
+          size="1.5em"
+          onClick={() => dispatch(toggleSearch())}
+        />
       </Bunker>
       <Bunker type="searchDropSecond">
         {searchDropListconstants.map((v, i) => (
@@ -40,6 +46,15 @@ const Search = ({ st }) => {
             ))}
           </List>
         ))}
+      </Bunker>
+      <Bunker type="searchDropMedia">
+        <List>
+          {searchDropMedia.map((v, i) => (
+            <MediaText key={i}>
+              {value == "ENG" ? v.p[0] : value == "UZB" ? v.p[1] : v.p[2]}
+            </MediaText>
+          ))}
+        </List>
       </Bunker>
     </Bunker>
   );

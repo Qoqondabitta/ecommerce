@@ -21,9 +21,15 @@ export const Item = styled.li`
 `;
 
 export const Text = styled.p`
-font-size: 12px;
-font-weight: 400;
-border-bottom: 1px solid black;
-padding-bottom: 1px;
-text-transform: capitalize;
-`
+  font-size: 12px;
+  font-weight: 400;
+  border-bottom: 1px solid black;
+  padding-bottom: 1px;
+  text-transform: capitalize;
+`;
+
+export const MediaText = styled.p`
+  background-color: grey;
+  padding: 2px;
+  border-radius: 2px;
+`;

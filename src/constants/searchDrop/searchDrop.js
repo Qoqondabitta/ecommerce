@@ -27,3 +27,12 @@ export const searchDropListconstants = [
     ],
   },
 ];
+
+export const searchDropMedia = [
+  { p: ["Headphones", "Quloqchinlar", "Наушники"] },
+  { p: ["Electronic Bikes", "Elektr Velosipedlar", "Электронные велосипеды"] },
+  { p: ["T-Shirts", "Futbolkalar", "Одежда"] },
+  { p: ["Watches", "Soatlar", "Часы"] },
+  { p: ["Dumbels", "Gantellar", "Гантели"] },
+  { p: ["Sunglasses", "Ko'zoynaklar", "Солнечные очки"] },
+];

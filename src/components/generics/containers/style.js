@@ -59,7 +59,6 @@ const getBoxStyle = ({ type }) => {
       return {
         gap: "10px",
         width: "fit-content",
-        zIndex: "100000000000",
         display: "flex",
         flexDirection: "column",
         alignItems: "flex-start",
@@ -69,6 +68,7 @@ const getBoxStyle = ({ type }) => {
         position: "absolute",
         top: "80px",
         right: "5.5%",
+        zIndex: "100000000000000",
       };
     case "searchDropFirst":
       return {
@@ -90,8 +90,8 @@ const getBoxStyle = ({ type }) => {
       };
     case "searchDropMedia":
       return {
-        width: "100vw",
-        height: "100vh",
+        width: "100%",
+        // height: "100vh",
         zIndex: "1000000000000000000",
         display: "none",
         background: "white"
@@ -113,12 +113,21 @@ export const Container = styled.div`
     flex-direction: ${({ type }) => (type == "sneakersBtn" ? "column" : "")};
     gap: ${({ type }) => (type == "sneakersBtn" ? "10px" : "")};
     /* display: "flex"; */
-    display: ${({ type }) => (type == "searchDrop" ? null : "flex")};
-    width: ${({ type }) => (type == "searchDrop" ? "100%" : null)};
-    height: ${({ type }) => (type == "searchDrop" ? "100%" : null)};
-    /* top: ${({ type }) => type == "searchDrop" && 0};
+    display: ${({ type }) =>
+      type == "searchDrop"
+        ? null
+        // : type == "searchDropFirst" || type == "searchDropSecond"
+        : type == "searchDropSecond"
+        ? "none"
+        : "flex"};
+    width: ${({ type }) => (type == "searchDrop" ? "100vw" : null)};
+    height: ${({ type }) => (type == "searchDrop" ? "100vh" : null)};
+    height: ${({ type }) => (type == "searchDrop" ? "100vh" : null)};
+    flex-wrap: ${({ type }) => (type == "searchDrop" ? "wrap" : null)};
+    gap: ${({ type }) => (type == "searchDrop" ? "15px" : null)};
+    top: ${({ type }) => type == "searchDrop" && 0};
     left: ${({ type }) => type == "searchDrop" && 0};
     right: ${({ type }) => type == "searchDrop" && 0};
-    bottom: ${({ type }) => type == "searchDrop" && 0}; */
+    bottom: ${({ type }) => type == "searchDrop" && 0};
   }
 `;
