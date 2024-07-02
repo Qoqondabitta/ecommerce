@@ -69,6 +69,8 @@ const getBoxStyle = ({ type }) => {
         top: "80px",
         right: "5.5%",
         zIndex: "100000000000000",
+        width: "710px",
+        height: "452px"
       };
     case "searchDropFirst":
       return {
@@ -100,12 +102,11 @@ const getBoxStyle = ({ type }) => {
       return {
         width: "100%",
         display: "flex",
+        gap:"15px",
         flexDirection: "column",
         alignItems: "flex-start",
         justifyContent:"flex-start",
         zIndex: "1000000000000",
-        background: "red",
-        height: "300px"
       };
     default:
       return {};

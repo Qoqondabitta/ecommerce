@@ -1,6 +1,14 @@
 import React, { useRef, useState } from "react";
 import { Bunker } from "../../generics";
-import { Item, List, MediaText, Text } from "./style";
+import {
+  SearchImages,
+  ImageSuggestions,
+  Item,
+  List,
+  MediaText,
+  SuggestionsWrapper,
+  Text,
+} from "./style";
 import { Input } from "../../generics";
 import {
   searchDropListconstants,
@@ -11,26 +19,22 @@ import { IoClose } from "react-icons/io5";
 import { IoSearch } from "react-icons/io5";
 import { toggleSearch } from "../../../redux/search";
 import { resultList } from "../../../constants/searchDrop/searchResults";
+import grey from "../../../assets/images/greyJacket.avif"
 
 const Search = ({ st }) => {
   const searchRef = useRef();
-  const [list, setList] = useState(resultList);
+  const [list, setList] = useState([]);
   const dispatch = useDispatch();
   const [inputValue, setInputValue] = useState(null);
   const search = useSelector((store) => store.search);
   const { value } = useSelector((store) => store.language);
-  //   console.log(searchRef.current, "searchRef");
   const getValue = (e) => {
-      let res = resultList.filter((v) => {
-      return v.n.toLowerCase().localeCompare(e.target.value.toLowerCase())==0;
-    //   return v.n.toLowerCase()==e.target.value.toLowerCase();
+    let res = resultList.filter((v) => {
+      return v.n.toLowerCase().localeCompare(e.target.value.toLowerCase()) == 0;
     });
     setInputValue(e.target.value);
     return setList(res);
-    };
-    const changeList = (e)=>{
-return 
-    }
+  };
   return (
     <Bunker type="searchDrop">
       <Bunker type="searchDropFirst" onClick={getValue}>
@@ -47,36 +51,44 @@ return
           onClick={() => dispatch(toggleSearch())}
         />
       </Bunker>
-      <Bunker type="searchDropSecond">
-        {searchDropListconstants.map((v, i) => (
-          <List key={i}>
-            <Item size="main">
-              {value == "ENG" ? v.h[0] : value == "UZB" ? v.h[1] : v.h[2]}
-            </Item>
-            {v.l.map((val, ind) => (
-              <Item key={ind}>
-                <IoSearch color="black" size="1.1em" />
-                <Text>
-                  {value == "ENG"
-                    ? val.n[0]
-                    : value == "UZB"
-                    ? val.n[1]
-                    : val.n[2]}
-                </Text>{" "}
+      {!inputValue && (
+        <Bunker type="searchDropSecond">
+          {searchDropListconstants.map((v, i) => (
+            <List key={i}>
+              <Item size="main">
+                {value == "ENG" ? v.h[0] : value == "UZB" ? v.h[1] : v.h[2]}
               </Item>
-            ))}
-          </List>
-        ))}
-      </Bunker>
-      <Bunker type="searchDropMedia">
-        {list.map((v, i) => (
-          <Item key={i}>
-            <IoSearch color="black" size="1.1em" />
-            <Text>{v.n}</Text>
-          </Item>
-        ))}
-      </Bunker>
-
+              {v.l.map((val, ind) => (
+                <Item key={ind}>
+                  <IoSearch color="black" size="1.1em" />
+                  <Text>
+                    {value == "ENG"
+                      ? val.n[0]
+                      : value == "UZB"
+                      ? val.n[1]
+                      : val.n[2]}
+                  </Text>{" "}
+                </Item>
+              ))}
+            </List>
+          ))}
+        </Bunker>
+      )}
+      <SuggestionsWrapper>
+        <Bunker type="searchSuggestions">
+          {list.map((v, i) => (
+            <Item key={i}>
+              <IoSearch color="black" size="1.1em" />
+              <Text>{v.n}</Text>
+            </Item>
+          ))}
+        </Bunker>
+        <ImageSuggestions>
+          {list.map((v, i) => (
+            <img key={i} scr={grey} />
+          ))}
+        </ImageSuggestions>
+      </SuggestionsWrapper>
       {!inputValue && (
         <Bunker type="searchDropMedia">
           {/* <List> */}
