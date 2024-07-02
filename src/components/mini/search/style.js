@@ -61,7 +61,7 @@ export const ImageSuggestions = styled.div`
 
 export const SearchImages = styled.img`
 width: 200px;
-height: 100px;
+height: 150px;
 /* object-fit: cover; */
 /* object-position: center; */
 `

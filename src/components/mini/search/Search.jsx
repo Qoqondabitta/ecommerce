@@ -85,7 +85,7 @@ const Search = ({ st }) => {
         </Bunker>
         <ImageSuggestions>
           {list.map((v, i) => (
-            <img key={i} scr={grey} />
+            <SearchImages key={i} src={v.url} />
           ))}
         </ImageSuggestions>
       </SuggestionsWrapper>
