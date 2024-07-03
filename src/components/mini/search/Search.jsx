@@ -8,6 +8,8 @@ import {
   MediaText,
   SuggestionsWrapper,
   Text,
+  SearchMediaWrapper,
+  Container,
 } from "./style";
 import { Input } from "../../generics";
 import {
@@ -19,8 +21,8 @@ import { IoClose } from "react-icons/io5";
 import { IoSearch } from "react-icons/io5";
 import { toggleSearch } from "../../../redux/search";
 import { resultList } from "../../../constants/searchDrop/searchResults";
-import grey from "../../../assets/images/greyJacket.avif"
-import "./search.css"
+import grey from "../../../assets/images/greyJacket.avif";
+import "./search.css";
 import InputGroup from "../input/Input";
 
 const Search = ({ st }) => {
@@ -38,12 +40,12 @@ const Search = ({ st }) => {
     return setList(res);
   };
   return (
-    <Bunker type="searchDrop">
+    <Container>
       <Bunker type="searchDropFirst" onClick={getValue}>
         <InputGroup onChange={getValue} />
         <IoClose
           color="black"
-          className="cursor"
+          className="cursor movetop"
           size="1.5em"
           onClick={() => dispatch(toggleSearch())}
         />
@@ -87,17 +89,16 @@ const Search = ({ st }) => {
         </ImageSuggestions>
       </SuggestionsWrapper>
       {!inputValue && (
-        <Bunker type="searchDropMedia">
-          {/* <List> */}
-          {searchDropMedia.map((v, i) => (
-            <MediaText key={i}>
-              {value == "ENG" ? v.p[0] : value == "UZB" ? v.p[1] : v.p[2]}
-            </MediaText>
-          ))}
-          {/* </List> */}
-        </Bunker>
+          <Bunker type="searchDropMedia">
+            {/* <List> */}
+            {searchDropMedia.map((v, i) => (
+              <MediaText key={i}>
+                {value == "ENG" ? v.p[0] : value == "UZB" ? v.p[1] : v.p[2]}
+              </MediaText>
+            ))}
+          </Bunker>
       )}
-    </Bunker>
+    </Container>
   );
 };
 

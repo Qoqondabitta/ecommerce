@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Item, Link, List, Main } from "./style";
+import { Container, Item, Link, List, Main, MediaLook } from "./style";
 import { Icon, Round, Shop } from "./style";
 import { FaRegHeart } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
@@ -19,7 +19,7 @@ import Search from "../../mini/search/Search";
 import { toggleSearch } from "../../../redux/search";
 
 const Nav = () => {
-  const search = useSelector(store=>store.search)
+  const search = useSelector((store) => store.search);
   const dispatch = useDispatch();
   const language = useSelector((store) => store.language);
   const counter = useSelector((store) => store.counter);
@@ -65,14 +65,10 @@ const Nav = () => {
             onClick={() => dispatch(toggleBurger())}
           />
         </Shop>
-        <Bunker
-          className="center"
-          type="search"
-          onClick={() => dispatch(toggleSearch())}
-        >
+        <MediaLook onClick={() => dispatch(toggleSearch())}>
           <Input type="search" placeholder="Search Anything" />
           <CiSearch color="black" />
-        </Bunker>
+        </MediaLook>
       </Container>
       {search.value && <Search />}
       <Categories classTitle={burger.value == true && "open"} />

@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 export const Main = styled.div`
   position: relative;
   margin: 0 auto;
-  `;
+`;
 
 export const Container = styled.div`
   padding: 0px 50px;
@@ -90,7 +90,7 @@ export const Round = styled.div`
   top: -5px;
   right: -5px;
 
-  @media only screen and (max-width: 600px){
+  @media only screen and (max-width: 600px) {
     font-size: 8px;
     height: 12px;
     width: 12px;
@@ -109,5 +109,23 @@ export const Shop = styled(Parts)`
     align-items: flex-start;
     margin-bottom: 0px;
     display: none;
+  }
+`;
+
+export const MediaLook = styled.div`
+  gap: 10px;
+  width: 60%;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 7px 15px;
+  border-radius: 20px;
+  display: none;
+  margin-bottom: 12px;
+
+  @media only screen and (max-width: 600px) {
+    display: flex;
   }
 `;

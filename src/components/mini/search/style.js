@@ -1,5 +1,17 @@
 import styled from "styled-components";
 
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  z-index: 1000000000000000000000;
+  width: fit-content;
+`;
+
+
 export const List = styled.ul`
   gap: 20px;
   display: flex;
@@ -53,15 +65,29 @@ export const ImageSuggestions = styled.div`
   gap: 5px;
   flex-wrap: wrap;
   /* width: ${({ width }) => width}; */
-  
+
   @media only screen and (max-width: 600px) {
     display: none;
   }
 `;
 
 export const SearchImages = styled.img`
-width: 200px;
-height: 150px;
-/* object-fit: cover; */
-/* object-position: center; */
-`
+  width: 200px;
+  height: 150px;
+`;
+
+export const SearchMediaWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: white;
+  height: 100vh; 
+  display: none;
+
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    position: absolute;
+  }
+`;

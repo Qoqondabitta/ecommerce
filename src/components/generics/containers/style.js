@@ -16,20 +16,6 @@ const getBoxStyle = ({ type }) => {
         width: "100%",
         display: "flex",
       };
-    case "footNavBox":
-      return {
-        gap: "20px",
-        width: "100%",
-        padding: "10px 30px",
-        position: "fixed",
-        bottom: "0",
-        left: "0",
-        display: "none",
-        zIndex: "100000000000000000000000",
-        display: "flex",
-        alignItems: "center",
-        justifyContent:"center"
-      };
     case "grey":
       return {
         gap: "10px",
@@ -40,25 +26,10 @@ const getBoxStyle = ({ type }) => {
         alignItems: "center",
         justifyContent: "center",
       };
-    case "search":
-      return {
-        gap: "10px",
-        width: "60%",
-        zIndex: "100000000000",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        background: "white",
-        padding: "7px 15px",
-        borderRadius: "20px",
-        display: "none",
-        marginBottom: "12px",
-      };
     case "searchDrop":
       return {
         gap: "10px",
         width: "fit-content",
-        background: "white",
         display: "flex",
         flexDirection: "column",
         justifyContent: "flex-start",
@@ -69,7 +40,8 @@ const getBoxStyle = ({ type }) => {
         right: "5.5%",
         zIndex: "100000000000000",
         width: "710px",
-        height: "452px"
+        height: "452px",
+        background: "white"
       };
     case "searchDropFirst":
       return {
@@ -88,6 +60,7 @@ const getBoxStyle = ({ type }) => {
         alignItems: "flex-start",
         justifyContent: "flex-start",
         padding: "0px 25px",
+        background: "white"
       };
     case "searchDropMedia":
       return {
@@ -96,6 +69,7 @@ const getBoxStyle = ({ type }) => {
         display: "none",
         flexWrap: "wrap",
         width: "60%",
+        background: "white",
       };
     case "searchSuggestions":
       return {
