@@ -5,11 +5,12 @@
   align-items: flex-start;
   width: 90%;
   position: relative;
-
+  height: 30px;
 }
 
 .input-group input {
-  font-size: 17px;
+    padding-bottom: 2px;
+  font-size: 14px;
   width: 100%;
   outline: none;
   border-radius: 0px;
@@ -22,6 +23,9 @@
 
 .input-group input:focus {
   border-color: black;
+  padding-bottom: 3px;
+  position: relative;
+  top: 10px;
 }
 
 .input-group input::placeholder {
@@ -30,9 +34,9 @@
 
 label {
   position: relative;
-  top: -20px;
+  top: -22px;
   left: 0;
-  font-size: 17px;
+  font-size: 18px;
   color: #acacac;
   pointer-events: none;
   transition: 0.15s all ease;
@@ -41,6 +45,7 @@ label {
 input:focus + label {
   top: -35px;
   background-color: transparent;
-  font-size: 14px;
+  font-size: 16px;
   color: black;
+  font-weight: bold;
 }

@@ -13,8 +13,9 @@ section{
 }
 
 .form-group input {
+    /* padding-bottom: 0; */
     /* padding: 8px 10px; */
-    font-size: 17px;
+    font-size: 14px;
     /* border-radius: 5px; */
     border: none;
     border-bottom:  1px solid #acacac;
@@ -25,6 +26,9 @@ section{
 
 .form-group input:focus {
     border-color: #eee;
+    padding-bottom: 3px;
+    position: relative;
+    top: 10px;
 }
 
 .form-group input::placeholder{
@@ -35,7 +39,7 @@ section{
     position: absolute;
     top: 9px;
     left: 0;
-    font-size: 17px;
+    font-size: 18px;
     /* padding: 0 10px; */
     color: #acacac;
     pointer-events: none;
@@ -44,9 +48,9 @@ section{
 
 .form-group input:focus + .form-label, 
 .form-group input:not(:placeholder-shown) + .form-label{
-    transform: translate(0px, -10px);
+    transform: translate(0px, -15px);
     background-color: transparent;
-    font-size: 12px;
+    font-size: 16px;
     color: #eee;
 }
 

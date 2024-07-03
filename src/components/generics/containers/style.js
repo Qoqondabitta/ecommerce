@@ -79,7 +79,7 @@ const getBoxStyle = ({ type }) => {
         display: "flex",
         alignItems: "flex-start",
         justifyContent: "center",
-        padding: "10px 0px",
+        padding: "10px 0px 0px 0px",
       };
     case "searchDropSecond":
       return {
@@ -88,7 +88,7 @@ const getBoxStyle = ({ type }) => {
         display: "flex",
         alignItems: "flex-start",
         justifyContent: "flex-start",
-        padding: "10px 25px",
+        padding: "00px 25px",
       };
     case "searchDropMedia":
       return {

@@ -40,18 +40,7 @@ const Search = ({ st }) => {
   return (
     <Bunker type="searchDrop">
       <Bunker type="searchDropFirst" onClick={getValue}>
-        {/* <section className="form-group topMar">
-          <Input
-            type="text"
-            placeholder={
-              value == "ENG" ? "Search" : value == "UZB" ? "Qidir" : "Top"
-            }
-          />
-          <label className="form-label">
-            {value == "ENG" ? "Search" : value == "UZB" ? "Qidir" : "Top"}
-          </label>
-        </section> */}
-              <InputGroup />
+              <InputGroup onChange={getValue} />
         <IoClose
           color="black"
           className="cursor"
