@@ -20,16 +20,15 @@ const getBoxStyle = ({ type }) => {
       return {
         gap: "20px",
         width: "100%",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
         padding: "10px 30px",
         position: "fixed",
         bottom: "0",
         left: "0",
-        background: "white",
         display: "none",
         zIndex: "100000000000000000000000",
+        display: "flex",
+        alignItems: "center",
+        justifyContent:"center"
       };
     case "grey":
       return {
@@ -59,11 +58,11 @@ const getBoxStyle = ({ type }) => {
       return {
         gap: "10px",
         width: "fit-content",
+        background: "white",
         display: "flex",
         flexDirection: "column",
-        alignItems: "flex-start",
         justifyContent: "flex-start",
-        background: "white",
+        alignItems: "flex-start",
         padding: "20px 0px 150px 10px",
         position: "absolute",
         top: "80px",
@@ -88,7 +87,7 @@ const getBoxStyle = ({ type }) => {
         display: "flex",
         alignItems: "flex-start",
         justifyContent: "flex-start",
-        padding: "00px 25px",
+        padding: "0px 25px",
       };
     case "searchDropMedia":
       return {
@@ -101,11 +100,11 @@ const getBoxStyle = ({ type }) => {
     case "searchSuggestions":
       return {
         width: "100%",
+        gap: "15px",
         display: "flex",
-        gap:"15px",
         flexDirection: "column",
+        justifyContent: "flex-start",
         alignItems: "flex-start",
-        justifyContent:"flex-start",
         zIndex: "1000000000000",
       };
     default:

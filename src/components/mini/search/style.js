@@ -40,7 +40,7 @@ export const SuggestionsWrapper = styled.div`
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
 `;
 

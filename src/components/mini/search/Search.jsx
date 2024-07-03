@@ -40,7 +40,7 @@ const Search = ({ st }) => {
   return (
     <Bunker type="searchDrop">
       <Bunker type="searchDropFirst" onClick={getValue}>
-              <InputGroup onChange={getValue} />
+        <InputGroup onChange={getValue} />
         <IoClose
           color="black"
           className="cursor"
