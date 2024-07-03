@@ -11,6 +11,7 @@ const Input = forwardRef(
       mediaWidth,
       onChange,
       name,
+      className,
       defaultValue,
     },
     ref
@@ -18,6 +19,7 @@ const Input = forwardRef(
     return (
       <Inputs
         ref={ref}
+        className={className}
         onClick={onClick}
         type={type}
         onChange={onChange}

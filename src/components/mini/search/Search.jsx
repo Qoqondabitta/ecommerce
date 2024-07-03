@@ -20,6 +20,8 @@ import { IoSearch } from "react-icons/io5";
 import { toggleSearch } from "../../../redux/search";
 import { resultList } from "../../../constants/searchDrop/searchResults";
 import grey from "../../../assets/images/greyJacket.avif"
+import "./search.css"
+import InputGroup from "../input/Input";
 
 const Search = ({ st }) => {
   const searchRef = useRef();
@@ -38,12 +40,18 @@ const Search = ({ st }) => {
   return (
     <Bunker type="searchDrop">
       <Bunker type="searchDropFirst" onClick={getValue}>
-        <Input
-          ref={searchRef}
-          onChange={getValue}
-          type="mainSearch"
-          placeholder="Search"
-        />
+        {/* <section className="form-group topMar">
+          <Input
+            type="text"
+            placeholder={
+              value == "ENG" ? "Search" : value == "UZB" ? "Qidir" : "Top"
+            }
+          />
+          <label className="form-label">
+            {value == "ENG" ? "Search" : value == "UZB" ? "Qidir" : "Top"}
+          </label>
+        </section> */}
+              <InputGroup />
         <IoClose
           color="black"
           className="cursor"

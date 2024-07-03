@@ -1,0 +1,46 @@
+.input-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  position: relative;
+
+}
+
+.input-group input {
+  font-size: 17px;
+  width: 100%;
+  outline: none;
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid #acacac;
+  background-color: transparent;
+  color: grey;
+  transition: 0.15s all ease;
+}
+
+.input-group input:focus {
+  border-color: black;
+}
+
+.input-group input::placeholder {
+  color: transparent;
+}
+
+label {
+  position: relative;
+  top: -20px;
+  left: 0;
+  font-size: 17px;
+  color: #acacac;
+  pointer-events: none;
+  transition: 0.15s all ease;
+}
+
+input:focus + label {
+  top: -35px;
+  background-color: transparent;
+  font-size: 14px;
+  color: black;
+}

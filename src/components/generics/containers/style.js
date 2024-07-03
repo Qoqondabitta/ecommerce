@@ -64,7 +64,7 @@ const getBoxStyle = ({ type }) => {
         alignItems: "flex-start",
         justifyContent: "flex-start",
         background: "white",
-        padding: "10px 0px 150px 10px",
+        padding: "20px 0px 150px 10px",
         position: "absolute",
         top: "80px",
         right: "5.5%",
