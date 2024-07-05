@@ -23,6 +23,7 @@ import MostSellers from "../components/most/MostSellers";
 import Genders from "../components/genders/Genders";
 import Sneakers from "../components/sneakers/Sneakers";
 import FootNav from "../components/footNav/FootNav";
+import Singin from "../components/accounts/signin/Singin";
 
 const Home = () => {
   const { value } = useSelector((store) => store.title);
@@ -30,29 +31,25 @@ const Home = () => {
   console.log(value, ": this is the title");
   return (
     <div>
-      <ScrollWatcher />
-      {turn.value != 3 && <GucciLido />}
-      {turn.value != 3 && <TextSlider />}
+      {/* <ScrollWatcher /> */}
+      {/* {turn.value != 3 && <GucciLido />} */}
+      {/* {turn.value != 3 && <TextSlider />} */}
       <Add />
       <Nav />
-      <BigSlider />
-      <Genders />
-      <MostSellers />
-      {/* <Video /> */}
-      {/* <Diogonal /> */}
-      {/* <Soon /> */}
-      {/* <TripleHeadings /> */}
-      <TripleSlider />
-      {/* <PokerTextSlider /> */}
-      <Sneakers />
-      <ClothTab />
-      {value == "SHOE" ? (
+      {/* <BigSlider /> */}
+      {/* <Genders /> */}
+      {/* <MostSellers /> */}
+      {/* <TripleSlider /> */}
+      {/* <Sneakers /> */}
+      <Singin />
+      {/* <ClothTab /> */}
+      {/* {value == "SHOE" ? (
         <ProductSlider />
       ) : value == "TOP" ? (
         <TopProductSlider />
       ) : (
         <BotProductSlider />
-      )}
+      )} */}
       <Footer />
       <FootNav />
     </div>

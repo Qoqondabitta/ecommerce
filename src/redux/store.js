@@ -5,6 +5,7 @@ import title from "./title";
 import order from "./order";
 import burger from "./burger";
 import search from "./search";
+import page from "./page";
 
 export const store = configureStore({
   reducer: {
@@ -13,7 +14,8 @@ export const store = configureStore({
     title,
     order,
     burger,
-    search
+    search,
+    page,
   },
 });
 // console.log(store.language);

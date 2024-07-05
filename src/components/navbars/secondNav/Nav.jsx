@@ -17,6 +17,7 @@ import { Input } from "../../generics";
 import { IoSearch } from "react-icons/io5";
 import Search from "../../mini/search/Search";
 import { toggleSearch } from "../../../redux/search";
+import { changePage } from "../../../redux/page";
 
 const Nav = () => {
   const search = useSelector((store) => store.search);
@@ -24,8 +25,9 @@ const Nav = () => {
   const language = useSelector((store) => store.language);
   const counter = useSelector((store) => store.counter);
   const order = useSelector((store) => store.order);
+  const page = useSelector((store) => store.page);
   const burger = useSelector((store) => store.burger);
-  console.log(search);
+  console.log(page.value, "page");
   return (
     <Main className="columnCenter">
       <Container>
@@ -34,7 +36,7 @@ const Nav = () => {
         </Title>
         <List className="">
           {links.map((v, i) => (
-            <Item className="cursor" key={i}>
+            <Item className="cursor" onClick={()=>dispatch(changePage(v.title[0]))} key={i}>
               <Link className={i == order.value && "activeNavbarLink"}>
                 {language.value == "ENG"
                   ? v.title[0]

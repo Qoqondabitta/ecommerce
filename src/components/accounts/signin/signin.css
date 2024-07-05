@@ -1,0 +1,70 @@
+.emails-group p {
+  font-weight: bold;
+  pointer-events: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: grey;
+  font-family: "DM Serif Display", serif;
+  font-size: 16px;
+ letter-spacing: 0.1rem;
+  transition: 0.15s all ease;
+}
+
+.emails-group input:focus + p {
+  transform: translateY(-25px);
+  font-weight: bold;
+  position: absolute;
+  padding: 5px;
+  top: 10px;
+  font-size: 14px;
+  color: black;
+  background-color: white;
+}
+
+.email-group p {
+  pointer-events: none;
+  position: absolute;
+  top: 10px;
+  font-family: "DM Serif Display", serif;
+  left: 10px;
+ letter-spacing: 0.1rem;
+  color: grey;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.15s all ease;
+}
+
+.email-group input:focus + p {
+  transform: translateY(-25px);
+  font-weight: bold;
+  position: absolute;
+  padding: 5px;
+  color: black;
+  top: 10px;
+  font-size: 14px;
+  background-color: white;
+}
+
+.password-group p {
+  pointer-events: none;
+  position: absolute;
+  top: 12px;
+  color: grey;
+  left: 10px;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.15s all ease;
+}
+
+.password-group input:focus + p {
+  transform: translateY(-25px);
+  font-weight: bold;
+  position: absolute;
+  padding: 5px;
+  top: 10px;
+  color: black;
+  font-size: 12px;
+  background-color: white;
+}

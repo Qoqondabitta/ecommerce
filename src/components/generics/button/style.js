@@ -15,8 +15,7 @@ const getType = ({ type }) => {
         width: "270px",
         zIndex: "999999999999999999",
         background: "#ffffff1a",
-  backdropFilter: "blur(10px) saturate(120%)",
-
+        backdropFilter: "blur(16px) saturate(120%)",
       };
     case "black":
       return {
