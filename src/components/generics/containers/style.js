@@ -106,7 +106,6 @@ export const Container = styled.div`
         : "flex"};
     width: ${({ type }) => (type == "searchDrop" ? "100vw" : null)};
     height: ${({ type }) => (type == "searchDrop" ? "100vh" : null)};
-    height: ${({ type }) => (type == "searchDrop" ? "100vh" : null)};
     flex-wrap: ${({ type }) => (type == "searchDrop" ? "wrap" : null)};
     gap: ${({ type }) => (type == "searchDrop" ? "15px" : null)};
     top: ${({ type }) => type == "searchDrop" && 0};

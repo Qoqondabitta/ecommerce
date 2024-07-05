@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -11,6 +10,33 @@ export const Container = styled.div`
   width: fit-content;
 `;
 
+export const SearchDrop = styled.div`
+  gap: 10px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px 0px 150px 10px;
+  position: absolute;
+  top: 80px;
+  right: 5.5%;
+  z-index: 100000000000000;
+  width: 710px;
+  height: 452px;
+  background: white;
+
+  @media only screen and (max-width: 600px) {
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+    gap: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+`;
 
 export const List = styled.ul`
   gap: 20px;
@@ -83,7 +109,7 @@ export const SearchMediaWrapper = styled.div`
   justify-content: flex-start;
   width: 100%;
   background-color: white;
-  height: 100vh; 
+  height: 100vh;
   display: none;
 
   @media only screen and (max-width: 600px) {
