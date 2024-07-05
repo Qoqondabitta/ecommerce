@@ -10,6 +10,11 @@ import {
   Text,
   SearchMediaWrapper,
   Container,
+  SearchDrop,
+  FirstCol,
+  SecondCol,
+  Suggestions,
+  DropMedia,
 } from "./style";
 import { Input } from "../../generics";
 import {
@@ -40,8 +45,8 @@ const Search = ({ st }) => {
     return setList(res);
   };
   return (
-    <Container>
-      <Bunker type="searchDropFirst" onClick={getValue}>
+    <SearchDrop>
+      <FirstCol onClick={getValue}>
         <InputGroup onChange={getValue} />
         <IoClose
           color="black"
@@ -49,9 +54,9 @@ const Search = ({ st }) => {
           size="1.5em"
           onClick={() => dispatch(toggleSearch())}
         />
-      </Bunker>
+      </FirstCol>
       {!inputValue && (
-        <Bunker type="searchDropSecond">
+        <SecondCol>
           {searchDropListconstants.map((v, i) => (
             <List key={i}>
               <Item size="main">
@@ -71,17 +76,17 @@ const Search = ({ st }) => {
               ))}
             </List>
           ))}
-        </Bunker>
+        </SecondCol>
       )}
       <SuggestionsWrapper>
-        <Bunker type="searchSuggestions">
+        <Suggestions>
           {list.map((v, i) => (
             <Item key={i}>
               <IoSearch color="black" size="1.1em" />
               <Text>{v.n}</Text>
             </Item>
           ))}
-        </Bunker>
+        </Suggestions>
         <ImageSuggestions>
           {list.map((v, i) => (
             <SearchImages key={i} src={v.url} />
@@ -89,16 +94,15 @@ const Search = ({ st }) => {
         </ImageSuggestions>
       </SuggestionsWrapper>
       {!inputValue && (
-          <Bunker type="searchDropMedia">
-            {/* <List> */}
-            {searchDropMedia.map((v, i) => (
-              <MediaText key={i}>
-                {value == "ENG" ? v.p[0] : value == "UZB" ? v.p[1] : v.p[2]}
-              </MediaText>
-            ))}
-          </Bunker>
+        <DropMedia>
+          {searchDropMedia.map((v, i) => (
+            <MediaText key={i}>
+              {value == "ENG" ? v.p[0] : value == "UZB" ? v.p[1] : v.p[2]}
+            </MediaText>
+          ))}
+        </DropMedia>
       )}
-    </Container>
+    </SearchDrop>
   );
 };
 

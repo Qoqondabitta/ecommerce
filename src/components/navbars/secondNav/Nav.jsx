@@ -34,7 +34,7 @@ const Nav = () => {
         </Title>
         <List className="">
           {links.map((v, i) => (
-            <Item key={i}>
+            <Item className="cursor" key={i}>
               <Link className={i == order.value && "activeNavbarLink"}>
                 {language.value == "ENG"
                   ? v.title[0]

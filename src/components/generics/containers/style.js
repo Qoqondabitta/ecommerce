@@ -26,23 +26,6 @@ const getBoxStyle = ({ type }) => {
         alignItems: "center",
         justifyContent: "center",
       };
-    case "searchDrop":
-      return {
-        gap: "10px",
-        width: "fit-content",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "flex-start",
-        alignItems: "flex-start",
-        padding: "20px 0px 150px 10px",
-        position: "absolute",
-        top: "80px",
-        right: "5.5%",
-        zIndex: "100000000000000",
-        width: "710px",
-        height: "452px",
-        background: "white"
-      };
     case "searchDropFirst":
       return {
         width: "100%",

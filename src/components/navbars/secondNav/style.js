@@ -44,6 +44,10 @@ export const Item = styled.li`
   color: white;
   font-size: 18px;
   font-weight: 600;
+  background: #ffffff1a;
+  padding: 2px 4px;
+  border-radius: 5px;
+  backdrop-filter: blur(10px) saturate(120%);
 `;
 
 export const Link = styled.a`

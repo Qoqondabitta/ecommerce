@@ -29,12 +29,64 @@ export const SearchDrop = styled.div`
   @media only screen and (max-width: 600px) {
     width: 100vw;
     height: 100vh;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 15px;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+  }
+`;
+
+export const FirstCol = styled.div`
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px 0px 0px 0px;
+`;
+
+export const SecondCol = styled.div`
+  gap: 60px;
+  width: 700px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 25px;
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
+`;
+
+export const Suggestions = styled.div`
+  width: 100%;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 1000000000000;
+padding-left: 20px;
+
+  @media only screen and (max-width: 600px){
+padding-left: 0px;
+  }
+`;
+
+export const DropMedia = styled.div`
+  gap: 15px;
+  z-index: 1000000000000000000;
+  display: none;
+  flex-wrap: wrap;
+  width: 60%;
+  background: white;
+
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 `;
 
@@ -78,20 +130,22 @@ export const SuggestionsWrapper = styled.div`
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
-  /* width: 100%; */
+  width: 100%;
   height: 100%;
 `;
 
 export const ImageSuggestions = styled.div`
   width: 300%;
-  height: 100%;
+  height: 130%;
+  overflow-y: auto;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 5px;
   flex-wrap: wrap;
-  /* width: ${({ width }) => width}; */
-
+  &::-webkit-scrollbar {
+    display: none;
+  }
   @media only screen and (max-width: 600px) {
     display: none;
   }
