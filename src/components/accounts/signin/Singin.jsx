@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Box,
   Button,
@@ -17,18 +17,33 @@ import "./signin.css";
 
 const Singin = () => {
   const { value } = useSelector((stroe) => stroe.language);
+  const [inputValue, setInputValue] = useState(null);
+  const [users, setUsers] = useState(null);
+  const getValue = (e) => {
+    setInputValue(e.target.value);
+  };
+
+  useEffect(() => {
+    fetch(`https://jsonplaceholder.typicode.com/users`)
+      .then((res) => res.json())
+      .then((res) => {
+        console.log(res);
+        setUsers(res);
+      });
+  }, []);
+    console.log(users);
   return (
     <Container>
       <Form>
         <Title>
           Join
-          <Title style={{display: "flex", gap: "10px"}}>
+          <Title style={{ display: "flex", gap: "10px" }}>
             <Title>XON</Title> Community
           </Title>
         </Title>
         <InputWrappers className="emails-group">
-          <Inputs className="email" type="email" />
-          <p className="email-label">
+          <Inputs className="email" type="email" required onChange={getValue} />
+          <p className={inputValue && "stay"}>
             {value == "ENG"
               ? "Email or phone number"
               : value == "UZB"

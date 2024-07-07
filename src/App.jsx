@@ -1,7 +1,7 @@
-import Home from "./pages/Home";
+import Root from "./root/Root";
 
 const App = () => {
-  return <Home />;
+  return <Root />;
 };
 
 export default App;

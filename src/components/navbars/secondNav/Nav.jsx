@@ -18,6 +18,7 @@ import { IoSearch } from "react-icons/io5";
 import Search from "../../mini/search/Search";
 import { toggleSearch } from "../../../redux/search";
 import { changePage } from "../../../redux/page";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   const search = useSelector((store) => store.search);
@@ -36,7 +37,11 @@ const Nav = () => {
         </Title>
         <List className="">
           {links.map((v, i) => (
-            <Item className="cursor" onClick={()=>dispatch(changePage(v.title[0]))} key={i}>
+            <Item
+              className="cursor"
+              onClick={() => dispatch(changePage(v.title[0]))}
+              key={i}
+            >
               <Link className={i == order.value && "activeNavbarLink"}>
                 {language.value == "ENG"
                   ? v.title[0]
@@ -55,7 +60,9 @@ const Nav = () => {
             className="navIcons"
           />
           <FaRegHeart color="white" size="1.5em" className="navIcons" />
-          <LuUser color="white" size="1.7em" className="navIcons" />
+          <NavLink to="/signin" exact>
+            <LuUser color="white" size="1.7em" className="navIcons" />
+          </NavLink>
           <Icon className="">
             <IoCartOutline className="navIcons" color="white" size="1.8em" />
             <Round className="center">{counter.data}</Round>

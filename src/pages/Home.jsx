@@ -24,6 +24,7 @@ import Genders from "../components/genders/Genders";
 import Sneakers from "../components/sneakers/Sneakers";
 import FootNav from "../components/footNav/FootNav";
 import Singin from "../components/accounts/signin/Singin";
+import Account from "../components/accounts/account/Account";
 
 const Home = () => {
   const { value } = useSelector((store) => store.title);
@@ -31,25 +32,26 @@ const Home = () => {
   console.log(value, ": this is the title");
   return (
     <div>
-      {/* <ScrollWatcher /> */}
+      <ScrollWatcher />
       {/* {turn.value != 3 && <GucciLido />} */}
-      {/* {turn.value != 3 && <TextSlider />} */}
+      {turn.value != 3 && <TextSlider />}
       <Add />
       <Nav />
+      <Account />
       {/* <BigSlider /> */}
       {/* <Genders /> */}
       {/* <MostSellers /> */}
       {/* <TripleSlider /> */}
       {/* <Sneakers /> */}
-      <Singin />
-      {/* <ClothTab /> */}
-      {/* {value == "SHOE" ? (
+      {/* <Singin /> */}
+      <ClothTab />
+      {value == "SHOE" ? (
         <ProductSlider />
       ) : value == "TOP" ? (
         <TopProductSlider />
       ) : (
         <BotProductSlider />
-      )} */}
+      )}
       <Footer />
       <FootNav />
     </div>

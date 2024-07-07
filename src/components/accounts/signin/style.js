@@ -5,8 +5,11 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-block: 100px;
-  background-color: white;
+  padding-top: 80px;
+
+  @media only screen and (max-width: 600px) {
+    padding-top: 20px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -20,8 +23,6 @@ export const Title = styled.h2`
 export const Subtitles = styled.p`
   font-size: 12px;
   color: orange;
-  /* font-family: "DM Serif Display", serif; */
-/* letter-spacing: 0.1rem; */
   font-weight: bold;
   cursor: pointer;
   display: flex;
@@ -83,7 +84,7 @@ export const Inputs = styled.input`
   padding: 5px 10px;
   border-radius: 5px;
 
-  &::placeholder {
+  &:focus &::placeholder {
     color: transparent;
   }
   &:focus {

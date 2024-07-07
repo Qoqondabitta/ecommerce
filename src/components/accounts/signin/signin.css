@@ -1,49 +1,44 @@
 .emails-group p {
   font-weight: bold;
-  pointer-events: none;
   position: absolute;
   top: 10px;
   left: 10px;
   color: grey;
   font-family: "DM Serif Display", serif;
   font-size: 16px;
- letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
+  pointer-events: none;
+  background-color: white;
   transition: 0.15s all ease;
 }
 
-.emails-group input:focus + p {
+.emails-group input:focus + p{
+/* .emails-group input:not(:placeholder-shown) + p { */
   transform: translateY(-25px);
-  font-weight: bold;
-  position: absolute;
   padding: 5px;
-  top: 10px;
   font-size: 14px;
   color: black;
-  background-color: white;
 }
 
 .email-group p {
-  pointer-events: none;
-  position: absolute;
-  top: 10px;
-  font-family: "DM Serif Display", serif;
-  left: 10px;
- letter-spacing: 0.1rem;
-  color: grey;
-  font-weight: bold;
-  font-size: 16px;
-  transition: 0.15s all ease;
+    position: absolute;
+    top: 10px;
+    font-family: "DM Serif Display", serif;
+    left: 10px;
+    letter-spacing: 0.1rem;
+    color: grey;
+    font-weight: bold;
+    font-size: 16px;
+    pointer-events: none;
+    background-color: white;
+    transition: 0.15s all ease;
 }
 
 .email-group input:focus + p {
   transform: translateY(-25px);
-  font-weight: bold;
-  position: absolute;
   padding: 5px;
   color: black;
-  top: 10px;
   font-size: 14px;
-  background-color: white;
 }
 
 .password-group p {
