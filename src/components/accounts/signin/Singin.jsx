@@ -13,9 +13,11 @@ import {
 } from "./style";
 import { useSelector } from "react-redux";
 import "./signin.css";
+import { useNavigate } from "react-router-dom";
 // import { Button } from "../../generics/button/Button";
 
 const Singin = () => {
+  const navigate = useNavigate();
   const { value } = useSelector((stroe) => stroe.language);
   const [inputValue, setInputValue] = useState(null);
   const [users, setUsers] = useState(null);
@@ -31,7 +33,17 @@ const Singin = () => {
         setUsers(res);
       });
   }, []);
-    console.log(users);
+  const checkUser = () => {
+    users.map((v, i) => {
+      if (v.username === inputValue) {
+        navigate("/account");
+      } else {
+        navigate("/home");
+      }
+    });
+  };
+
+  console.log(users);
   return (
     <Container>
       <Form>
@@ -69,24 +81,12 @@ const Singin = () => {
           </Remember>
           <Subtitles>Forgot Password?</Subtitles>
         </Box>
-        <Button>
+        <Button onClick={()=>checkUser()}>
           {value == "ENG" ? "SIGNIN" : value == "UZB" ? "KIRISH" : "ВОЙТИ"}
         </Button>
         <Subtitles style={{ color: "black", marginTop: "10px" }}>
           Not a member yet? <Subtitles> Sign up</Subtitles>
         </Subtitles>
-        {/* <Button type="black">SIGNIN</Button> */}
-
-        {/* <InputWrappers className="password-group">
-          <Inputs className="text" type="text" />
-          <p className="password-label">
-            {value == "ENG"
-              ? "Name"
-              : value == "UZB"
-              ? "Ism"
-              : "Parol"}
-          </p>
-        </InputWrappers> */}
       </Form>
     </Container>
   );

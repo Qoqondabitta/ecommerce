@@ -53,7 +53,7 @@ const getType = ({ type }) => {
         lineHeight: "110px",
         width: "fit-content",
         fontWeight: "400",
-        color: "white",
+        // color: "white",
         letterSpacing: "-0.5rem",
         fontFamily: '"DM Serif Display", serif',
         zIndex: "900"

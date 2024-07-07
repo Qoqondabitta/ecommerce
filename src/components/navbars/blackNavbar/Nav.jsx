@@ -32,7 +32,7 @@ const BlackNav = () => {
   return (
     <Main className="columnCenter">
       <Container>
-        <Title style={{color: "black"}} id="mainTitle" type="xonTitle">
+        <Title color="black" id="mainTitle" type="xonTitle">
           {language.value == "RUS" ? "ХОН" : "XON"}
         </Title>
         <List className="">

@@ -101,6 +101,11 @@
   justify-content: center;
 }
 
+.justifyEnd{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .columnAlignEnd{
   display: flex;

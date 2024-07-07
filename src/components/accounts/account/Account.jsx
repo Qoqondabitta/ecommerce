@@ -20,7 +20,7 @@ import BlackNav from "../../navbars/blackNavbar/Nav";
 const Account = () => {
   const { value } = useSelector((store) => store.language);
   const fileref = useRef();
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const [file, setFile] = useState(null);
   const getFile = (e) => {
     setFile(e.target.value, "file");
@@ -58,7 +58,7 @@ const Account = () => {
         </ProfilePhoto>
         <Orders>
           <Title>Abdulakhad Turgunaliev</Title>
-          <List className="center">
+          <List style={{ width: "100%"}} className="justifyEnd">
             <Item>
               <Link style={{ color: "black" }}>Liked Products</Link>
             </Item>

@@ -32,7 +32,7 @@ const Nav = () => {
   return (
     <Main className="columnCenter">
       <Container>
-        <Title id="mainTitle" type="xonTitle">
+        <Title color="white" id="mainTitle" type="xonTitle">
           {language.value == "RUS" ? "ХОН" : "XON"}
         </Title>
         <List className="">
