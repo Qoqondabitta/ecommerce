@@ -34,25 +34,25 @@ const Home = () => {
     <div>
       <ScrollWatcher />
       {/* {turn.value != 3 && <GucciLido />} */}
-      {turn.value != 3 && <TextSlider />}
-      <Add />
+      {/* {turn.value != 3 && <TextSlider />} */}
+      {/* <Add /> */}
       <Nav />
+      <BigSlider />
       <Account />
-      {/* <BigSlider /> */}
       {/* <Genders /> */}
       {/* <MostSellers /> */}
       {/* <TripleSlider /> */}
       {/* <Sneakers /> */}
       {/* <Singin /> */}
-      <ClothTab />
+      {/* <ClothTab />
       {value == "SHOE" ? (
         <ProductSlider />
       ) : value == "TOP" ? (
         <TopProductSlider />
       ) : (
         <BotProductSlider />
-      )}
-      <Footer />
+      )} */}
+      {/* <Footer /> */}
       <FootNav />
     </div>
   );

@@ -11,6 +11,7 @@ const Title = ({
   fontSize,
   color,
   fontWeight,
+  // colors
 }) => {
   return (
     <Titles

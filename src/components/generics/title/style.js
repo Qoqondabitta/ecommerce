@@ -124,6 +124,7 @@ export const Titles = styled.p`
 
   @media only screen and (max-width: 1025px) {
     display: ${({ media }) => media && "none"};
+    color: ${({color})=>color};
     line-height: ${({ type }) =>
       type == "xonTitle" ? "90px" : type == "videoTitle" ? "39px" : ""};
     letter-spacing: ${({ type }) =>

@@ -7,8 +7,8 @@ export const Main = styled.div`
 
 export const Container = styled.div`
   padding: 0px 50px;
-  position: absolute;
-  top: 0px;
+  /* position: absolute; */
+  /* top: 0px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,7 +41,7 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  color: white;
+  color: black;
   font-size: 18px;
   /* font-weight: 600; */
   background: #ffffff1a;

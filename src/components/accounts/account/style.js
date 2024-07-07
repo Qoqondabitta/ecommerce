@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
   position: relative;
   width: 100%;
+  height: 100vh;
   margin: 0 auto;
-  background-color: red;
 `;
 
 export const Hero = styled.div`
@@ -13,49 +13,57 @@ export const Hero = styled.div`
   justify-content: center;
   padding: 50px;
   position: relative;
+  /* background-color: orange; */
 `;
 
 export const ProfilePhoto = styled.div`
-  /* border-radius: 50%; */
-  /* width: 250px; */
-  /* height: 200px; */
-  position: relative;
-  /* border: 1px solid black; */
-  /* background-image: url(${({ bg }) => bg?bg:""}); */
-  /* background-size: cover; */
-  /* background-position: center; */
-  /* background-repeat: no-repeat; */
-  z-index: 0;
+  gap: 20px;
 `;
 
 export const Orders = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 5px;
+  gap: 20px;
   width: 100%;
+  /* background-color: red; */
+  padding: 0px 50px;
 `;
 
-export const Input = styled.input`
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  /* display: none; */
-`;
+export const Input = styled.input``;
 
-export const Label = styled.div`
-position: absolute;
-right: 0px;
-bottom: 30px;
-padding: 4px 4px 2px 4px;
-border-radius: 20px;
-border: 1px solid black;
-z-index: 1;
-`
+export const Mask = styled.button`
+  margin-top: 20px;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  font-family: "DM Serif Display", serif;
+  border: none;
+  letter-spacing: 0.1rem;
+  transition: all 0.25s;
+  text-transform: capitalize;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+`;
 
 export const Image = styled.img`
   border-radius: 50%;
-  width: 250px;
-  height: 200px;
-  position: relative;
+  width: 270px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
 `;
+
+export const Title = styled.div`
+font-size: 40px;
+font-family: "DM Serif Display", serif;
+letter-spacing: 0.1rem;
+`

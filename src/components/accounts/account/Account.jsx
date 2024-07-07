@@ -4,15 +4,23 @@ import {
   Hero,
   Image,
   Input,
-  Label,
+  Title,
+  Mask,
   Orders,
   ProfilePhoto,
 } from "./style";
 import { IoCameraOutline } from "react-icons/io5";
 import main from "../../../assets/images/just/main.jpg";
+import { useSelector } from "react-redux";
+import { Item, Link, List } from "../../navbars/secondNav/style";
+import Footer from "../../footer/Footer";
+import BlackNav from "../../navbars/blackNavbar/Nav";
+// import { Title } from "../../generics/title/Title";
 
 const Account = () => {
+  const { value } = useSelector((store) => store.language);
   const fileref = useRef();
+  const [show, setShow] = useState(true);
   const [file, setFile] = useState(null);
   const getFile = (e) => {
     setFile(e.target.value, "file");
@@ -20,27 +28,50 @@ const Account = () => {
   const changeURL = () => {
     const picture = document.getElementById("img-file");
     const folder = document.getElementById("bg-file");
-
+    setShow(!show);
     picture.src = URL.createObjectURL(folder.files[0]);
   };
-  // console.log(fileref.current.value, "filessss");
+  const showFile = () => {
+    setShow(!show);
+  };
   return (
     <Container>
+      <BlackNav />
       <Hero>
-        <ProfilePhoto bg={file} className="center">
-          <Image src={main} id="img-file" />
-          <Label for="bg-file" className="cursor">
-            <IoCameraOutline color="black" size="1.5rem" />
-          </Label>
-          <Input
-            type="file"
-            accept="image/jpeg, image/png, image/webp, image/jpg, image/avif"
-            onChange={changeURL}
-            id="bg-file"
-          />
+        <ProfilePhoto className="columnCenter">
+          <Image src={main} id="img-file" className="cursor" />
+          <Mask for="bg-file" className="cursor" onClick={showFile}>
+            {value == "ENG"
+              ? "Update Photo"
+              : value == "UZB"
+              ? "Rasmni Almashtiring"
+              : "Обновить фото"}
+          </Mask>
+          {show && (
+            <Input
+              type="file"
+              accept="image/jpeg, image/png, image/webp, image/jpg, image/avif"
+              onChange={changeURL}
+              id="bg-file"
+            />
+          )}
         </ProfilePhoto>
-        <Orders></Orders>
+        <Orders>
+          <Title>Abdulakhad Turgunaliev</Title>
+          <List className="center">
+            <Item>
+              <Link style={{ color: "black" }}>Liked Products</Link>
+            </Item>
+            <Item>
+              <Link style={{ color: "black" }}>Chosen Products</Link>
+            </Item>
+            <Item>
+              <Link style={{ color: "black" }}>Orders</Link>
+            </Item>
+          </List>
+        </Orders>
       </Hero>
+      <Footer />
     </Container>
   );
 };
