@@ -59,7 +59,7 @@ const Account = () => {
         <Orders>
           <Title>Abdulakhad Turgunaliev</Title>
           <List style={{ width: "100%"}} className="justifyEnd">
-            <Item>
+            <Item className="cursor">
               <Link style={{ color: "black" }}>Liked Products</Link>
             </Item>
             <Item>

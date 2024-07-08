@@ -59,13 +59,17 @@ const BlackNav = () => {
             size="1.6em"
             className="navIcons"
           />
-          <FaRegHeart color="black" size="1.5em" className="navIcons" />
+          <NavLink to="/account">
+            <FaRegHeart color="black" size="1.5em" className="navIcons" />
+          </NavLink>
           <NavLink to="/signin" exact>
             <LuUser color="black" size="1.7em" className="navIcons" />
           </NavLink>
           <Icon className="">
-            <IoCartOutline className="navIcons" color="black" size="1.8em" />
-            <Round className="center">{counter.data}</Round>
+            <NavLink to="/account">
+              <IoCartOutline className="navIcons" color="black" size="1.8em" />
+              <Round className="center">{counter.data}</Round>
+            </NavLink>
           </Icon>
           <HiOutlineMenu
             className="navIcons"

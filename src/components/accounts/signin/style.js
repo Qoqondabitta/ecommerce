@@ -35,7 +35,7 @@ export const Remember = styled.div`
   cursor: pointer;
 `;
 
-export const Form = styled.form`
+export const Form = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;

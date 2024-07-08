@@ -59,13 +59,18 @@ const Nav = () => {
             size="1.6em"
             className="navIcons"
           />
-          <FaRegHeart color="white" size="1.5em" className="navIcons" />
+
+          <NavLink to="/account">
+            <FaRegHeart color="white" size="1.5em" className="navIcons" />
+          </NavLink>
           <NavLink to="/signin" exact>
             <LuUser color="white" size="1.7em" className="navIcons" />
           </NavLink>
           <Icon className="">
-            <IoCartOutline className="navIcons" color="white" size="1.8em" />
-            <Round className="center">{counter.data}</Round>
+            <NavLink to="/account">
+              <IoCartOutline className="navIcons" color="white" size="1.8em" />
+              <Round className="center">{counter.data}</Round>
+            </NavLink>
           </Icon>
           <HiOutlineMenu
             className="navIcons"

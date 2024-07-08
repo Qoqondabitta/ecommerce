@@ -14,6 +14,7 @@ import {
 import { useSelector } from "react-redux";
 import "./signin.css";
 import { useNavigate } from "react-router-dom";
+import { usersList } from "../../../constants/users/in";
 // import { Button } from "../../generics/button/Button";
 
 const Singin = () => {
@@ -24,7 +25,7 @@ const Singin = () => {
   const getValue = (e) => {
     setInputValue(e.target.value);
   };
-
+console.log(inputValue, "email");
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/users`)
       .then((res) => res.json())
@@ -33,20 +34,27 @@ const Singin = () => {
         setUsers(res);
       });
   }, []);
+    // let list = [...users, ...usersList];
+    // let list = users.push(...usersList);
+    // let list = users.push({me:"me"})
+    // console.log(list);
+    console.log(usersList[0].name==inputValue);
   const checkUser = () => {
-    users.map((v, i) => {
-      if (v.username === inputValue) {
-        navigate("/account");
-      } else {
-        navigate("/home");
-      }
+    usersList.map((v, i) => {
+    //   if (inputValue == v.name) {
+    //     navigate("/account");
+    //   } else {
+    //     navigate("/home");
+        //   }
+        v.email==inputValue?navigate("/account"):navigate("/home")
+
     });
   };
 
   console.log(users);
   return (
     <Container>
-      <Form>
+      <Form >
         <Title>
           Join
           <Title style={{ display: "flex", gap: "10px" }}>
