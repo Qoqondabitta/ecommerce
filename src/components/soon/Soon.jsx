@@ -4,8 +4,8 @@ import background from "../../assets/images/topCard/new.jpg";
 import { FaCrown } from "react-icons/fa";
 import "./soon.css";
 import { useSelector } from "react-redux";
-import Button from "../generics/button/Button"
-import Title from "../generics/title/Title"
+import Button from "../generics/button/Button";
+import Title from "../generics/title";
 
 const Soon = () => {
   const { value } = useSelector((store) => store.language);

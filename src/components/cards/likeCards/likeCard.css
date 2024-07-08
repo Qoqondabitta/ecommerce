@@ -1,6 +1,6 @@
-.heart {
+.heartlike {
     position: absolute;
-    top: 50%;
+    top: 3%;
     right: 6%;
     cursor: pointer;
 }

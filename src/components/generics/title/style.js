@@ -62,14 +62,15 @@ const getType = ({ type }) => {
       return {
         fontSize: "33px",
         lineHeight: "30px",
+        fontFamily: '"DM Serif Display", serif',
         width: "fit-content",
-        fontWeight: "900",
+        // fontWeight: "900",
         color: "white",
         letterSpacing: "-0.1rem",
         wordSpacing: "0.1em",
         zIndex: "2000",
-        textTransform: "uppercase",
-        marginTop: "20px",
+        textTransform: "capitalize",
+        // marginTop: "20px",
       };
     case "videoText":
       return {

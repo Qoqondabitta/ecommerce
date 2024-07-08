@@ -6,7 +6,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
 import { links } from "../../../constants/navbars/navbar";
 import "./secondNav.css";
-import Title from "../../generics/title/Title";
+import Title from "../../generics/title";
 import { LuUser } from "react-icons/lu";
 import { HiOutlineMenu } from "react-icons/hi";
 import { toggleBurger } from "../../../redux/burger";

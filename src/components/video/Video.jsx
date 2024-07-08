@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Main, Videos, Blur, Content } from "./style";
 import video from "../../assets/images/video.mp4";
-import Title from "../generics/title/Title";
+import Title from "../generics/title";
 import Button from "../generics/button/Button";
 import { forVideoTitle } from "../../constants/video";
 import { useSelector } from "react-redux";

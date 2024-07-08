@@ -8,20 +8,21 @@ import {
   explorePerfumes,
   exploreWomen,
 } from "../../../constants/buttonConstants/buttonConstants";
-import Title from "../../generics/title/Title";
+import Title from "../../generics/title";
+import { Navigate } from "react-router-dom";
 
 const GucciLido = () => {
   const { value } = useSelector((store) => store.language);
-    const order = useSelector((store) => store.order);
-    console.log(value, "odx");
-    const mapItem =
-      order.value == 0
-        ? exploreWomen
-        : order.value == 1
-        ? exploreMen
-        : order.value == 2
-        ? exploreKids
-        : explorePerfumes;
+  const order = useSelector((store) => store.order);
+  console.log(value, "odx");
+  const mapItem =
+    order.value == 0
+      ? exploreWomen
+      : order.value == 1
+      ? exploreMen
+      : order.value == 2
+      ? exploreKids
+      : explorePerfumes;
   return (
     <Container className="columnCenter">
       <Content className="columnCenter">
@@ -34,7 +35,12 @@ const GucciLido = () => {
           ? exploreKids
           : explorePerfumes
         ).map((v, i) => (
-          <Button style={{background: "white"}} type="gucci" key={i}>
+          <Button
+            onClick={<Navigate to="/collection" />}
+            style={{ background: "white" }}
+            type="gucci"
+            key={i}
+          >
             {value == "ENG"
               ? v.title[0]
               : value == "UZB"

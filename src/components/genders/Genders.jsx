@@ -1,13 +1,12 @@
 import React from "react";
 import { Container } from "./style";
 import xonBackground from "../../assets/images/just/main.jpg";
-import Title from "../generics/title/Title";
+import Title from "../generics/title";
 import { Blur } from "../video/style";
 import { Bunker } from "../generics";
 import { gendersuits } from "../../constants/componentsContants/gender";
 import { useSelector } from "react-redux";
 import Button from "..//generics/button/Button";
-
 
 const Genders = () => {
   const { value } = useSelector((store) => store.language);

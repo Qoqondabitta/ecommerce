@@ -20,7 +20,7 @@ import { toggleSearch } from "../../../redux/search";
 import { changePage } from "../../../redux/page";
 import { NavLink } from "react-router-dom";
 
-const BlackNav = () => {
+const Nav = () => {
   const search = useSelector((store) => store.search);
   const dispatch = useDispatch();
   const language = useSelector((store) => store.language);
@@ -32,7 +32,7 @@ const BlackNav = () => {
   return (
     <Main className="columnCenter">
       <Container>
-        <Title color="black" id="mainTitle" type="xonTitle">
+        <Title id="mainTitle" type="xonTitle">
           {language.value == "RUS" ? "ХОН" : "XON"}
         </Title>
         <List className="">
@@ -42,7 +42,7 @@ const BlackNav = () => {
               onClick={() => dispatch(changePage(v.title[0]))}
               key={i}
             >
-              <Link className={i == order.value && "BlackactiveNavbarLink"}>
+              <Link className={i == order.value && "activeNavbarLink"}>
                 {language.value == "ENG"
                   ? v.title[0]
                   : language.value == "UZB"
@@ -55,25 +55,21 @@ const BlackNav = () => {
         <Shop>
           <IoSearch
             onClick={() => dispatch(toggleSearch())}
-            color="black"
+            color="white"
             size="1.6em"
             className="navIcons"
           />
-          <NavLink to="/account">
-            <FaRegHeart color="black" size="1.5em" className="navIcons" />
-          </NavLink>
+          <FaRegHeart color="white" size="1.5em" className="navIcons" />
           <NavLink to="/signin" exact>
-            <LuUser color="black" size="1.7em" className="navIcons" />
+            <LuUser color="white" size="1.7em" className="navIcons" />
           </NavLink>
           <Icon className="">
-            <NavLink to="/account">
-              <IoCartOutline className="navIcons" color="black" size="1.8em" />
-              <Round className="center">{counter.data}</Round>
-            </NavLink>
+            <IoCartOutline className="navIcons" color="white" size="1.8em" />
+            <Round className="center">{counter.data}</Round>
           </Icon>
           <HiOutlineMenu
             className="navIcons"
-            color="black"
+            color="white"
             size="1.8em"
             onClick={() => dispatch(toggleBurger())}
           />
@@ -89,4 +85,4 @@ const BlackNav = () => {
   );
 };
 
-export default BlackNav;
+export default Nav;

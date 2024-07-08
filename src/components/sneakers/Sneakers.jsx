@@ -5,7 +5,7 @@ import sneakers from "../../assets/images/backgrounds/sneakers.avif";
 import "./sneakers.css";
 import { useSelector } from "react-redux";
 import Button from "../generics/button/Button";
-import Title from "../generics/title/Title";
+import Title from "../generics/title";
 import { PiSneakerThin } from "react-icons/pi";
 import { Bunker } from "../generics";
 import {

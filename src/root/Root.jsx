@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Home from '../pages/Home'
 import Singin from '../components/accounts/signin/Singin'
 import Account from '../components/accounts/account/Account'
+import Mens from '../components/collection/mens/Mens'
 
 const Root = () => {
   return (
@@ -11,6 +12,7 @@ const Root = () => {
         <Route path="/" exact element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/signin" element={<Singin />} />
+        <Route path="/collection" element={<Mens />} />
         <Route path="/account" element={<Account />} />
         <Route path="*" element={<h1>404 Page Not Found</h1>} />
         {/* <Route path="/signup" element={<Signup />} /> */}

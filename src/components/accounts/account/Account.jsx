@@ -15,6 +15,7 @@ import { useSelector } from "react-redux";
 import { Item, Link, List } from "../../navbars/secondNav/style";
 import Footer from "../../footer/Footer";
 import BlackNav from "../../navbars/blackNavbar/Nav";
+import Like from "./userLike/Like";
 // import { Title } from "../../generics/title/Title";
 
 const Account = () => {
@@ -69,6 +70,7 @@ const Account = () => {
               <Link style={{ color: "black" }}>Orders</Link>
             </Item>
           </List>
+          <Like />
         </Orders>
       </Hero>
       <Footer />

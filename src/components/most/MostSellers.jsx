@@ -1,7 +1,7 @@
 import React from "react";
 import { Back, Container, Main, Content } from "./style";
 import Button from "..//generics/button/Button";
-import Title from "..//generics/title/Title";
+import Title from "../generics/title";
 import { Bunker } from "../generics";
 import { mostconstants } from "../../constants/componentsContants/most";
 import { useSelector } from "react-redux";
