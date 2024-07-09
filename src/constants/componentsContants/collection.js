@@ -1,3 +1,7 @@
+import bg1 from "../../assets/images/collection/men/collectioncard3.webp";
+import bg1alternative from "../../assets/images/collection/men/collectioncard3alternative.avif";
+import bg2alternative from "../../assets/images/collection/men/collectioncard4alternative.jpg"
+
 export const menscollection = [
   {
     ty: "soonTitle",
@@ -18,6 +22,20 @@ export const menscollection = [
   },
 ];
 
-// export const collectioncardconstants = [
-//     {}
-// ]
+export const collectioncardconstants = [
+  {
+    f: ["Men's T-Shirt", "To'q Ko'k Futbolka", "Мужская футболка"],
+    s: "10$",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bg1,
+    a: bg1alternative,
+  },
+  {
+    f: ["Men's T-Shirt", "To'q Ko'k Futbolka", "Мужская футболка"],
+    s: "10$",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bg1,
+      a: bg2alternative,
+    position: "bottom"
+  },
+];

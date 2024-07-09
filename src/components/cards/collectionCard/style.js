@@ -1,17 +1,20 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 320px;
+  width: 330px;
   height: 423px;
+  display: flex;
+  align-items: flex-end;
   position: relative;
   background-color: white;
   background-image: url(${({ bgimg }) => bgimg});
+  background-position: top;
   background-repeat: no-repeat;
-  background-position: bottom;
   border: 1px solid rgb(223, 218, 218);
   /* background-size: cover; */
   &:hover {
     background-image: url(${({ alternative }) => alternative});
+    background-position: ${({ position }) => position};
   }
 `;
 
@@ -48,10 +51,9 @@ export const Icon = styled.div`
   right: 3%;
 `;
 
-
-// export const Image = styled.img`
-// width: 100%;
-// height: 100%;
-// object-fit: cover;
-// object-position: center;
-// `
+export const Image = styled.img`
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  object-position: center;
+`;
