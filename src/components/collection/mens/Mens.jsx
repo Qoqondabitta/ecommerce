@@ -1,11 +1,23 @@
 import React from "react";
-import { Box, Collection, Container, Left, Main, Right, TwoHalf, Wrapper } from "./style";
+import {
+  Box,
+  Collection,
+  Container,
+  Left,
+  Main,
+  Right,
+  TwoHalf,
+  Wrapper,
+} from "./style";
 import main from "../../../assets/images/backgrounds/mens-fashion-2024.webp";
 import Nav from "../../navbars/secondNav/Nav";
 // import Nav from "../../navbars/secondNav/Nav";
 import { Title } from "../../generics";
 import { useSelector } from "react-redux";
-import { menscollection } from "../../../constants/componentsContants/collection";
+import {
+  collectioncardconstants,
+  menscollection,
+} from "../../../constants/componentsContants/collection";
 import CollectionCard from "../../cards/collectionCard/CollectionCard";
 
 const Mens = () => {
@@ -19,17 +31,29 @@ const Mens = () => {
             {value == "ENG" ? v.c[0] : value == "UZB" ? v.c[1] : v.c[2]}
           </Title>
         ))}
-          </Container>
-          <Wrapper>
-              <Box>
-                  <Collection>
-                  <CollectionCard></CollectionCard></Collection>
-                  <TwoHalf>
-                      <Left></Left>
-                      <Right></Right>
-                  </TwoHalf>
-              </Box>
-          </Wrapper>
+      </Container>
+      <Wrapper>
+        <Box>
+          <Collection>
+            <CollectionCard></CollectionCard>
+            {/* {collectioncardconstants.map((v, i) => (
+              <CollectionCard
+                first={v.f}
+                second={v.s}
+                third={v.t}
+                bgimg={v.bg}
+                alternative={v.a}
+                position={v?.position}
+                place={v.place}
+              ></CollectionCard>
+            ))} */}
+          </Collection>
+          <TwoHalf>
+            <Left></Left>
+            <Right></Right>
+          </TwoHalf>
+        </Box>
+      </Wrapper>
     </Main>
   );
 };
