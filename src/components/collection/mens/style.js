@@ -34,6 +34,7 @@ export const Box = styled(Wrapper)`
 export const Collection = styled.div`
   display: flex;
   align-items: flex-start;
+  margin-block: 50px;
   justify-content: center;
   gap: 0px;
   flex-wrap: wrap;

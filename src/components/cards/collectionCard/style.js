@@ -1,23 +1,25 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 330px;
+  width: ${({ width }) => (width ? width : "330px")};
   height: 423px;
   display: flex;
   align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 30px;
   position: relative;
   background-color: white;
   background-image: url(${({ bgimg }) => bgimg});
-  background-position: ${({place})=>place?place: "top"};
+  background-position: ${({ place }) => (place ? place : "top")};
   background-repeat: no-repeat;
   border: 1px solid rgb(223, 218, 218);
   z-index: 0;
-  /* background-size: cover; */
+  background-size: ${({ width }) => width && "cover"};
   &:hover {
     background-image: url(${({ alternative }) => alternative});
     background-position: ${({ position }) => position};
     /* height: 523px; */
-    margin-bottom: 100px;
+    margin-bottom: ${({ width }) => !width && "100px"};
   }
 `;
 
@@ -37,7 +39,7 @@ export const Data = styled.div`
   z-index: 10000000000000000;
 
   ${Container}:hover & {
-    display: flex;
+    display: ${({ width }) => !width && "flex"};
     /* position: relative; */
     /* bottom: -100px; */
   }
@@ -49,6 +51,7 @@ export const Subtitle = styled.p`
   text-transform: uppercase;
   text-decoration: ${({ underline }) => underline && "underline"};
   font-style: "DM Serif Display", serif;
+  padding-bottom: 2px;
 `;
 
 export const Icon = styled.div`

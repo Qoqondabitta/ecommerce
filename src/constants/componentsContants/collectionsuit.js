@@ -1,23 +1,23 @@
 import bg1 from "../../assets/images/collection/men/collectioncard3.webp";
 import bg1alternative from "../../assets/images/collection/men/collectioncard3alternative.avif";
-import bg2alternative from "../../assets/images/collection/men/collectioncard4alternative.jpg";
-import bg2 from "../../assets/images/collection/men/collectioncard4.avif";
+import bg2alternative from "../../assets/images/collection/men/suits1alternative.jpg";
+import bg2 from "../../assets/images/collection/men/suits1.jpg";
 import bg3alternative from "../../assets/images/collection/men/collectioncard5alternative.webp";
 import bg3 from "../../assets/images/collection/men/collectioncard5.avif";
 import bg4 from "../../assets/images/collection/men/collectioncard6.jpg";
 import bg5 from "../../assets/images/collection/men/collectioncard7.jpeg";
-import bg6 from "../../assets/images/collection/men/collectioncard8.jpeg";
-import bg7 from "../../assets/images/collection/men/collectioncard9.webp";
+import bg6 from "../../assets/images/collection/men/suits2.jpeg";
+import bg7 from "../../assets/images/collection/men/suits3.jpeg";
 import bg8 from "../../assets/images/collection/men/collectioncard10.jpeg";
 import bg4alternative from "../../assets/images/collection/men/collectioncard6alternative.jpg";
 import bg5alternative from "../../assets/images/collection/men/collectioncard7alternative.jpeg";
-import bg6alternative from "../../assets/images/collection/men/collectioncard8alternative.jpeg";
-import bg7alternative from "../../assets/images/collection/men/collectioncard9alternative.jpeg";
+import bg6alternative from "../../assets/images/collection/men/suits2alternative.jpeg";
+import bg7alternative from "../../assets/images/collection/men/suits3alternative.jpeg";
 import bg8alternative from "../../assets/images/collection/men/collectioncard10alternative.webp";
-import threbg1alternative from "../../assets/images/collection/men/threcollectioncarddoublefirst1alternative.jpeg";
+import threbg1alternative from "../../assets/images/collection/men/suits4alternative.jpeg";
 import threbg3alternative from "../../assets/images/collection/men/threcollectioncarddoublesecond1alternative.jpeg";
 import bg9alternative from "../../assets/images/collection/men/collectioncard11alternative.webp";
-import bg10alternative from "../../assets/images/collection/men/collectioncard12alternative.jpeg";
+import bg10alternative from "../../assets/images/collection/men/suits5.jpeg";
 import bg11alternative from "../../assets/images/collection/men/collectioncard13alternative.webp";
 import bg12alternative from "../../assets/images/collection/men/collectioncard14alternative.jpeg";
 import bg13alternative from "../../assets/images/collection/men/collectioncard15alternative.webp";
@@ -52,7 +52,7 @@ import bg34alternative from "../../assets/images/collection/men/collectioncard36
 // import bg42alternative from "../../assets/images/collection/men/collectioncard44alternative.jpeg";
 // import bg43alternative from "../../assets/images/collection/men/collectioncard45alternative.jpeg";
 import bg9 from "../../assets/images/collection/men/collectioncard11.webp";
-import bg10 from "../../assets/images/collection/men/collectioncard12.jpeg";
+import bg10 from "../../assets/images/collection/men/suits5alternative.jpeg";
 import bg11 from "../../assets/images/collection/men/collectioncard13.webp";
 import bg12 from "../../assets/images/collection/men/collectioncard14.jpeg";
 import bg13 from "../../assets/images/collection/men/collectioncard15.jpg";
@@ -87,7 +87,7 @@ import bg34 from "../../assets/images/collection/men/collectioncard36.jpeg";
 // import bg42 from "../../assets/images/collection/men/collectioncard44.jpeg";
 // import bg43 from "../../assets/images/collection/men/collectioncard45.jpeg";
 import threbg2 from "../../assets/images/collection/men/threcollectioncarddoublesecond1.webp";
-import threbg1 from "../../assets/images/collection/men/threcollectioncarddoublefirst1.jpeg";
+import threbg1 from "../../assets/images/collection/men/suits4.jpeg";
 import onehalf1 from "../../assets/images/collection/men/threcollectioncardone1.avif";
 import onehalf2 from "../../assets/images/topCard/new.jpg";
 import onehalf3 from "../../assets/images/messi.jpg";
@@ -111,39 +111,15 @@ export const menscollection = [
     color: "white",
   },
 ];
-export const threcollectioncard = [
-  {
-    two: [
-      {
-        f: ["Men's T-Shirt", "To'q Ko'k Futbolka", "Мужская футболка"],
-        s: "10$",
-        t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
-        bg: threbg1,
-        a: threbg1alternative,
-        place: "bottom",
-      },
-      {
-        f: ["Men's Classic Jeans", "Klassik Jinsi Shimlar", "Мужская футболка"],
-        s: "10$",
-        t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
-        bg: threbg2,
-        a: threbg3alternative,
-        position: "center",
-        place: "bottom",
-      },
-    ],
-    one: [{ s: ["Shop Now", "Hozir Olmoq", "купить сейчас"], bgimg: onehalf1, w: "660px" }],
-  },
-];
 
-export const collectioncardconstants = [
+export const collectioncardsuits = [
   {
     f: ["Men's T-Shirt", "To'q Ko'k Futbolka", "Мужская футболка"],
     s: "10$",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
-    bg: bg1,
-    a: bg1alternative,
-    place: "top",
+    bg: bg15,
+    a: bg15alternative,
+    place: "bottom",
   },
   {
     f: ["Men's Classic Jeans", "Klassik Jinsi Shimlar", "Мужская футболка"],

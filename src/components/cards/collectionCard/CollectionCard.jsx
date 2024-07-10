@@ -12,22 +12,32 @@ const CollectionCard = ({list}) => {
     <>
       {list.map((v, i) => (
         <Container
-          bgimg={v.bg}
+          bgimg={v?.bg}
           position={v?.position}
-          place={v.place}
-          alternative={v.a}
+          place={v?.place}
+          alternative={v?.a}
+          width={v?.w}
         >
           <Icon>
             <Heart color="black" size="1.4rem" />
           </Icon>
-          <Data>
-            <Subtitle>
-              {value == "ENG" ? v.f[0] : value == "UZB" ? v.f[1] : v.f[2]}
-            </Subtitle>
-            <Subtitle style={{ marginTop: "20px" }}>10$</Subtitle>
+          {v?.su && (
             <Subtitle underline="true">
-              {value == "ENG" ? v.t[0] : value == "UZB" ? v.t[1] : v.t[2]}
+              {value == "ENG" ? v?.su[0] : value == "UZB" ? v?.su[1] : v?.su[2]}
             </Subtitle>
+          )}
+          <Data width={v?.w}>
+            {v?.f && (
+              <Subtitle>
+                {value == "ENG" ? v?.f[0] : value == "UZB" ? v?.f[1] : v?.f[2]}
+              </Subtitle>
+            )}
+            {v?.s && <Subtitle style={{ marginTop: "20px" }}>10$</Subtitle>}
+            {v?.t && (
+              <Subtitle underline="true">
+                {value == "ENG" ? v?.t[0] : value == "UZB" ? v?.t[1] : v?.t[2]}
+              </Subtitle>
+            )}
           </Data>
         </Container>
       ))}

@@ -22,6 +22,7 @@ import {
 import CollectionCard from "../../cards/collectionCard/CollectionCard";
 import HalfScreenCard from "../../cards/collectionCard/halfscreencard/HalfScreenCard";
 import Footer from "../../footer/Footer"
+import { collectioncardsuits } from "../../../constants/componentsContants/collectionsuit";
 
 const Mens = () => {
   const { value } = useSelector((store) => store.language);
@@ -38,19 +39,19 @@ const Mens = () => {
       <Wrapper>
         <Box>
           <Collection>
-            <CollectionCard list={collectioncardconstants}></CollectionCard>
+            <CollectionCard list={collectioncardsuits}></CollectionCard>
           </Collection>
-          <TwoHalf>
+          {/* <TwoHalf>
             <Left>
               <CollectionCard list={threcollectioncard[0].two}></CollectionCard>
             </Left>
             <Right>
               <HalfScreenCard item={threcollectioncard[0].one}></HalfScreenCard>
             </Right>
-          </TwoHalf>
+          </TwoHalf> */}
         </Box>
       </Wrapper>
-<Footer />      
+      <Footer />
     </Main>
   );
 };
