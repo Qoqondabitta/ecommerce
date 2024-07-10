@@ -17,8 +17,11 @@ import { useSelector } from "react-redux";
 import {
   collectioncardconstants,
   menscollection,
+  threcollectioncard,
 } from "../../../constants/componentsContants/collection";
 import CollectionCard from "../../cards/collectionCard/CollectionCard";
+import HalfScreenCard from "../../cards/collectionCard/halfscreencard/HalfScreenCard";
+import Footer from "../../footer/Footer"
 
 const Mens = () => {
   const { value } = useSelector((store) => store.language);
@@ -35,25 +38,19 @@ const Mens = () => {
       <Wrapper>
         <Box>
           <Collection>
-            <CollectionCard></CollectionCard>
-            {/* {collectioncardconstants.map((v, i) => (
-              <CollectionCard
-                first={v.f}
-                second={v.s}
-                third={v.t}
-                bgimg={v.bg}
-                alternative={v.a}
-                position={v?.position}
-                place={v.place}
-              ></CollectionCard>
-            ))} */}
+            <CollectionCard list={collectioncardconstants}></CollectionCard>
           </Collection>
           <TwoHalf>
-            <Left></Left>
-            <Right></Right>
+            <Left>
+              <CollectionCard list={threcollectioncard[0].two}></CollectionCard>
+            </Left>
+            <Right>
+              <HalfScreenCard item={threcollectioncard[0].one}></HalfScreenCard>
+            </Right>
           </TwoHalf>
         </Box>
       </Wrapper>
+<Footer />      
     </Main>
   );
 };

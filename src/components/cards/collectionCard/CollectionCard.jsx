@@ -6,11 +6,11 @@ import cardimg2 from "../../../assets/images/collection/men/collectioncard10alte
 import { useSelector } from "react-redux";
 import { collectioncardconstants } from "../../../constants/componentsContants/collection";
 
-const CollectionCard = () => {
+const CollectionCard = ({list}) => {
   const { value } = useSelector((store) => store.language);
   return (
     <>
-      {collectioncardconstants.map((v, i) => (
+      {list.map((v, i) => (
         <Container
           bgimg={v.bg}
           position={v?.position}

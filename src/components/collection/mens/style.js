@@ -26,7 +26,7 @@ export const Wrapper = styled.div`
   padding: 5px;
   /* margin: 5px; */
   gap: 0px;
-  `;
+`;
 
 export const Box = styled(Wrapper)`
   /* border: 1px solid rgb(223, 218, 218); */
@@ -43,10 +43,14 @@ export const Collection = styled.div`
 export const TwoHalf = styled.div`
   display: flex;
   width: 100%;
+  gap: 0px;
 `;
 
-export const Left = styled(TwoHalf)``;
+export const Left = styled(TwoHalf)`
+  width: 50%;
+`;
 
 export const Right = styled.div`
+  width: 50%;
   background-image: url(${({ backimg }) => backimg});
 `;

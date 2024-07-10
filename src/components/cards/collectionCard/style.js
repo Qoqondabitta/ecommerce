@@ -16,15 +16,16 @@ export const Container = styled.div`
   &:hover {
     background-image: url(${({ alternative }) => alternative});
     background-position: ${({ position }) => position};
-    height: 523px;
+    /* height: 523px; */
+    margin-bottom: 100px;
   }
 `;
 
 export const Data = styled.div`
   background-color: white;
   width: 100%;
-  /* position: absolute; */
-  /* bottom: 0px; */
+  position: absolute;
+  bottom: -100px;
   display: flex;
   flex-direction: column;
   align-items: center;

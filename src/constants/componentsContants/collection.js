@@ -14,12 +14,14 @@ import bg5alternative from "../../assets/images/collection/men/collectioncard7al
 import bg6alternative from "../../assets/images/collection/men/collectioncard8alternative.jpeg";
 import bg7alternative from "../../assets/images/collection/men/collectioncard9alternative.jpeg";
 import bg8alternative from "../../assets/images/collection/men/collectioncard10alternative.webp";
-// import bg9alternative from "../../assets/images/collection/men/collectioncard5alternative.webp";
-// import bg3alternative from "../../assets/images/collection/men/collectioncard5alternative.webp";
+import threbg1alternative from "../../assets/images/collection/men/threcollectioncarddoublefirst1alternative.jpeg";
+import threbg3alternative from "../../assets/images/collection/men/threcollectioncarddoublesecond1alternative.jpeg";
 // import bg2 from "../../assets/images/collection/men/collectioncard4.avif";
 // import bg2 from "../../assets/images/collection/men/collectioncard4.avif";
 // import bg2 from "../../assets/images/collection/men/collectioncard4.avif";
-// import bg2 from "../../assets/images/collection/men/collectioncard4.avif";
+import threbg2 from "../../assets/images/collection/men/threcollectioncarddoublesecond1.webp";
+import threbg1 from "../../assets/images/collection/men/threcollectioncarddoublefirst1.jpeg";
+import onehalf1 from "../../assets/images/collection/men/threcollectioncardone1.avif";
 
 export const menscollection = [
   {
@@ -38,6 +40,30 @@ export const menscollection = [
       "Новые силуэты и детали меняют представление о мужской готовой одежде, представляя XON.",
     ],
     color: "white",
+  },
+];
+export const threcollectioncard = [
+  {
+    two: [
+      {
+        f: ["Men's T-Shirt", "To'q Ko'k Futbolka", "Мужская футболка"],
+        s: "10$",
+        t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+        bg: threbg1,
+        a: threbg1alternative,
+        place: "bottom",
+      },
+      {
+        f: ["Men's Classic Jeans", "Klassik Jinsi Shimlar", "Мужская футболка"],
+        s: "10$",
+        t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+        bg: threbg2,
+        a: threbg3alternative,
+        position: "center",
+        place: "bottom",
+      },
+    ],
+    one: [{ s: ["Shop Now", "Hozir Olmoq", "купить сейчас"], bgimg: onehalf1 }],
   },
 ];
 
