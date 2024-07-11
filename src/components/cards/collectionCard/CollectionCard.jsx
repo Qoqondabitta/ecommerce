@@ -22,7 +22,7 @@ const CollectionCard = ({list}) => {
             <Heart color="black" size="1.4rem" />
           </Icon>
           {v?.su && (
-            <Subtitle underline="true">
+            <Subtitle style={{color: "white"}} underline="true">
               {value == "ENG" ? v?.su[0] : value == "UZB" ? v?.su[1] : v?.su[2]}
             </Subtitle>
           )}

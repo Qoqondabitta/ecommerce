@@ -458,4 +458,5 @@ export const collectioncardconstants = [
     a: bg34alternative,
     place: "bottom",
   },
+  
 ];
