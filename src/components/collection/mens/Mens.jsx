@@ -23,6 +23,7 @@ import CollectionCard from "../../cards/collectionCard/CollectionCard";
 import HalfScreenCard from "../../cards/collectionCard/halfscreencard/HalfScreenCard";
 import Footer from "../../footer/Footer"
 import { collectioncardsuits } from "../../../constants/componentsContants/collectionsuit";
+import { collectioncardsport } from "../../../constants/componentsContants/collectionsport";
 
 const Mens = () => {
   const { value } = useSelector((store) => store.language);
@@ -39,7 +40,7 @@ const Mens = () => {
       <Wrapper>
         <Box>
           <Collection>
-            <CollectionCard list={collectioncardsuits}></CollectionCard>
+            <CollectionCard list={collectioncardsport}></CollectionCard>
           </Collection>
           {/* <TwoHalf>
             <Left>
