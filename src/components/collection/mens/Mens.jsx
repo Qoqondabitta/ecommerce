@@ -14,16 +14,21 @@ import Nav from "../../navbars/secondNav/Nav";
 // import Nav from "../../navbars/secondNav/Nav";
 import { Title } from "../../generics";
 import { useSelector } from "react-redux";
+// import {
+//   collectioncardconstants,
+//   menscollection,
+//   threcollectioncard,
+// } from "../../../constants/componentsContants/collection/collection";
 import {
   collectioncardconstants,
   menscollection,
   threcollectioncard,
-} from "../../../constants/componentsContants/collection";
+} from "../../../constants/componentsContants/collection/collection";
 import CollectionCard from "../../cards/collectionCard/CollectionCard";
 import HalfScreenCard from "../../cards/collectionCard/halfscreencard/HalfScreenCard";
-import Footer from "../../footer/Footer"
-import { collectioncardsuits } from "../../../constants/componentsContants/collectionsuit";
-import { collectioncardsport } from "../../../constants/componentsContants/collectionsport";
+import Footer from "../../footer/Footer";
+import { collectioncardsuits } from "../../../constants/componentsContants/collection/collectionsuit";
+import { collectioncardsport } from "../../../constants/componentsContants/collection/collectionsport";
 
 const Mens = () => {
   const { value } = useSelector((store) => store.language);

@@ -4,9 +4,9 @@ import { GoHeart as Heart } from "react-icons/go";
 import cardimg from "../../../assets/images/collection/men/collectioncard10.jpeg";
 import cardimg2 from "../../../assets/images/collection/men/collectioncard10alternative.webp";
 import { useSelector } from "react-redux";
-import { collectioncardconstants } from "../../../constants/componentsContants/collection";
+import { collectioncardconstants } from "../../../constants/componentsContants/collection/collection";
 
-const CollectionCard = ({list}) => {
+const CollectionCard = ({ list }) => {
   const { value } = useSelector((store) => store.language);
   return (
     <>
@@ -22,7 +22,7 @@ const CollectionCard = ({list}) => {
             <Heart color="black" size="1.4rem" />
           </Icon>
           {v?.su && (
-            <Subtitle style={{color: "white"}} underline="true">
+            <Subtitle style={{ color: "white" }} underline="true">
               {value == "ENG" ? v?.su[0] : value == "UZB" ? v?.su[1] : v?.su[2]}
             </Subtitle>
           )}
