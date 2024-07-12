@@ -407,7 +407,7 @@ export const collectioncardsport = [
     place: "center",
   },
   {
-    f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
+    f: ["Male Black Sneakers", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg28,
@@ -423,7 +423,7 @@ export const collectioncardsport = [
     place: "center",
   },
   {
-    f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
+    f: ["Male Black Sneakers", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg30,
