@@ -39,7 +39,7 @@ import { orange } from "../../../constants/componentsContants/collection/colors/
 const Mens = () => {
   const [display, setDisplay] = useState("red")
   const [show, setShow] = useState(false);
-  const [length, setLength] = useState("4288px");
+  const [length, setLength] = useState("fit-content");
   const dispatch = useDispatch();
   const collection = useSelector((store) => store.collection);
   const { value } = useSelector((store) => store.language);

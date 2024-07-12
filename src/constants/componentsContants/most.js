@@ -1,5 +1,7 @@
 import back from "../../assets/images/bottomCard/bottom11png.webp";
 import back1 from "../../assets/images/topCard/left.jpg";
+import { collectioncardsport } from "./collection/collectionsport";
+import { collectioncardsuits } from "./collection/collectionsuit";
 
 export const mostconstants = [
   {
@@ -13,6 +15,7 @@ export const mostconstants = [
       "To'plamlarni Ko'rish",
       "Смотреть коллекцию",
     ],
+    l: collectioncardsuits,
   },
   {
     p: "alignEnd",
@@ -25,5 +28,6 @@ export const mostconstants = [
       "To'plamlarni Ko'rish",
       "Смотреть коллекцию",
     ],
+    l: collectioncardsport,
   },
 ];

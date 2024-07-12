@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Content } from "./style";
 import Button from "../../generics/button/Button";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {
   exploreKids,
   exploreMen,
@@ -9,9 +9,12 @@ import {
   exploreWomen,
 } from "../../../constants/buttonConstants/buttonConstants";
 import Title from "../../generics/title";
-import { Navigate } from "react-router-dom";
+import { Navigate, NavLink } from "react-router-dom";
+import { changeCollection } from "../../../redux/collection";
+import { collectioncardsuits } from "../../../constants/componentsContants/collection/collectionsuit";
 
 const GucciLido = () => {
+  const dispatch = useDispatch();
   const { value } = useSelector((store) => store.language);
   const order = useSelector((store) => store.order);
   console.log(value, "odx");
@@ -35,18 +38,15 @@ const GucciLido = () => {
           ? exploreKids
           : explorePerfumes
         ).map((v, i) => (
-          <Button
-            onClick={<Navigate to="/collection" />}
-            style={{ background: "white" }}
-            type="gucci"
-            key={i}
-          >
-            {value == "ENG"
-              ? v.title[0]
-              : value == "UZB"
-              ? v.title[1]
-              : v.title[2]}
-          </Button>
+          <NavLink style={{textDecoration: "none"}} to="/collection" onClick={()=>dispatch(changeCollection(collectioncardsuits))}>
+            <Button style={{ background: "white" }} type="gucci" key={i}>
+              {value == "ENG"
+                ? v.title[0]
+                : value == "UZB"
+                ? v.title[1]
+                : v.title[2]}
+            </Button>
+          </NavLink>
         ))}
       </Content>
     </Container>

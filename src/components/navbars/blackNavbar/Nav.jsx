@@ -32,9 +32,11 @@ const BlackNav = () => {
   return (
     <Main className="columnCenter">
       <Container>
-        <Title color="black" id="mainTitle" type="xonTitle">
-          {language.value == "RUS" ? "ХОН" : "XON"}
-        </Title>
+        <NavLink to="/" style={{ textDecoration: "none" }}>
+          <Title color="black" id="mainTitle" type="xonTitle">
+            {language.value == "RUS" ? "ХОН" : "XON"}
+          </Title>
+        </NavLink>
         <List className="">
           {links.map((v, i) => (
             <Item

@@ -32,18 +32,16 @@ const Home = () => {
   console.log(value, ": this is the title");
   return (
     <div>
-      {/* <ScrollWatcher /> */}
-      {/* {turn.value != 3 && <GucciLido />} */}
-      {/* {turn.value != 3 && <TextSlider />} */}
-      {/* <Add /> */}
-      {/* <Nav /> */}
-      {/* <BigSlider /> */}
-      {/* <Account /> */}
-      {/* <Genders /> */}
-      {/* <MostSellers /> */}
-      {/* <TripleSlider /> */}
-      {/* <Sneakers /> */}
-      {/* <Singin /> */}
+      <ScrollWatcher />
+      {turn.value != 3 && <GucciLido />}
+      {turn.value != 3 && <TextSlider />}
+      <Add />
+      <Nav />
+      <BigSlider />
+      <Genders />
+      <MostSellers />
+      <TripleSlider />
+      <Sneakers />
       <ClothTab />
       {value == "SHOE" ? (
         <ProductSlider />
@@ -52,7 +50,7 @@ const Home = () => {
       ) : (
         <BotProductSlider />
       )}
-      {/* <Footer /> */}
+      <Footer />
       <FootNav />
     </div>
   );

@@ -3,10 +3,13 @@ import { Container, Content, Main, Wrapper } from "./style";
 import "./triple.css";
 import tripleSliderElements from "../../../constants/slideConstants/tripleSliderElements";
 import Button from "../../generics/button/Button";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { TextWrapper, Text, Info } from "../../mini/pokerTextSlider/style.js";
+import { NavLink } from "react-router-dom";
+import { changeCollection } from "../../../redux/collection";
 
 const TripleSlider = () => {
+  const dispatch = useDispatch()
   const { value } = useSelector((store) => store.language);
   return (
     <Main className="center">
@@ -27,13 +30,15 @@ const TripleSlider = () => {
                   ))}
                 </Text>
               </TextWrapper>
-              <Button type="gucci">
-                {value == "ENG"
-                  ? v.btn[0]
-                  : value == "UZB"
-                  ? v.btn[1]
-                  : v.btn[2]}
-              </Button>
+              <NavLink to="/collection" style={{textDecoration: "none"}} onClick={()=>dispatch(changeCollection(v.l))}>
+                <Button type="gucci">
+                  {value == "ENG"
+                    ? v.btn[0]
+                    : value == "UZB"
+                    ? v.btn[1]
+                    : v.btn[2]}
+                </Button>
+              </NavLink>
             </Content>
           </Container>
         ))}

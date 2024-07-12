@@ -28,7 +28,7 @@ export const Back = styled.div`
   flex: 1;
   height: 100%;
   padding-bottom: 30px;
-  /*  gap: 20px; */
+  cursor: pointer;
   background: red;
   background-image: url(${({ backimg }) => backimg});
   background-position: bottom;
