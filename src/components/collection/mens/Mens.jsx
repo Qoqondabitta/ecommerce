@@ -30,6 +30,12 @@ import Footer from "../../footer/Footer";
 import { collectioncardsuits } from "../../../constants/componentsContants/collection/collectionsuit";
 import { collectioncardsport } from "../../../constants/componentsContants/collection/collectionsport";
 import { shoes } from "../../../constants/componentsContants/collection/shoes";
+import { red } from "../../../constants/componentsContants/collection/colors/red";
+import { black } from "../../../constants/componentsContants/collection/colors/black";
+import { orange } from "../../../constants/componentsContants/collection/colors/orange";
+// import { mixed } from "../../../constants/componentsContants/collection/colors/mixed";
+import { white } from "../../../constants/componentsContants/collection/colors/white";
+import { blue } from "../../../constants/componentsContants/collection/colors/blue";
 
 const Mens = () => {
   const { value } = useSelector((store) => store.language);
@@ -46,7 +52,7 @@ const Mens = () => {
       <Wrapper>
         <Box>
           <Collection>
-            <CollectionCard list={shoes}></CollectionCard>
+            <CollectionCard list={collectioncardconstants}></CollectionCard>
           </Collection>
           {/* <TwoHalf>
             <Left>

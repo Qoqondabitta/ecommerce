@@ -147,7 +147,7 @@ export const menscollection = [
 ];
 export const collectioncardsport = [
   {
-    f: ["Men's T-Shirt", "To'q Ko'k Futbolka", "Мужская футболка"],
+    f: ["Men's Orange T-Shirt", "To'q Ko'k Futbolka", "Мужская футболка"],
     s: "10$",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg1,
@@ -174,7 +174,7 @@ export const collectioncardsport = [
     place: "top",
   },
   {
-    f: ["Men's White T-shirts", "Oq Futbolkalar", "Мужская футболка"],
+    f: ["Black Sport Pants", "Oq Futbolkalar", "Мужская футболка"],
     s: "10$",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg4,
@@ -183,7 +183,7 @@ export const collectioncardsport = [
     place: "center",
   },
   {
-    f: ["Men's Black Trousers", "Qora shimlar", "Мужские черные брюки"],
+    f: ["Red Sport Pants", "Qora shimlar", "Мужские черные брюки"],
     s: "10$",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg5,
@@ -219,7 +219,7 @@ export const collectioncardsport = [
     place: "center",
   },
   {
-    f: ["Men's Classic Jeans", "Klassik Jinsi Shimlar", "Мужская футболка"],
+    f: ["WhiteLong Sleeve T-Shirts ", "Klassik Jinsi Shimlar", "Мужская футболка"],
     s: "10$",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: threbg2,
@@ -228,7 +228,7 @@ export const collectioncardsport = [
     place: "center",
   },
   {
-    f: ["Men's T-Shirt", "To'q Ko'k Futbolka", "Мужская футболка"],
+    f: ["Men's White SHort", "To'q Ko'k Futbolka", "Мужская футболка"],
     s: "10$",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: threbg1,
@@ -242,7 +242,7 @@ export const collectioncardsport = [
     w: "660px",
   },
   {
-    f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
+    f: ["Male Orange Sport Pants", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg9,
@@ -258,7 +258,7 @@ export const collectioncardsport = [
     place: "center",
   },
   {
-    f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
+    f: ["White Sport Pants", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg11,
@@ -275,7 +275,7 @@ export const collectioncardsport = [
     place: "center",
   },
   {
-    f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
+    f: ["Male White T-Shirts", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg13,
@@ -283,7 +283,7 @@ export const collectioncardsport = [
     place: "center",
   },
   {
-    f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
+    f: ["Male Blue T-Shirts", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg14,
@@ -297,7 +297,7 @@ export const collectioncardsport = [
     w: "660px",
   },
   {
-    f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
+    f: ["Male Blue T-Shirts", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg15,
@@ -305,7 +305,7 @@ export const collectioncardsport = [
     place: "center",
   },
   {
-    f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
+    f: ["Male Black T-Shirts", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg16,
@@ -345,7 +345,7 @@ export const collectioncardsport = [
     place: "center",
   },
   {
-    f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
+    f: ["Male Red T-Shirts", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg21,
@@ -353,7 +353,7 @@ export const collectioncardsport = [
     place: "center",
   },
   {
-    f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
+    f: ["Male Red Caps", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg22,
@@ -361,7 +361,7 @@ export const collectioncardsport = [
     place: "center",
   },
   {
-    f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
+    f: ["Male Orange Lakers", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg23alternative,
@@ -369,7 +369,7 @@ export const collectioncardsport = [
     place: "center",
   },
   {
-    f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
+    f: ["Male White Lakers", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg24alternative,
@@ -391,7 +391,7 @@ export const collectioncardsport = [
     place: "center",
   },
   {
-    f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
+    f: ["Male Blue Lakers", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg26,
@@ -399,7 +399,7 @@ export const collectioncardsport = [
     place: "center",
   },
   {
-    f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
+    f: ["Male Black Lakers", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg27,

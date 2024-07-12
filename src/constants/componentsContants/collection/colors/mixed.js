@@ -1,9 +1,9 @@
-import bg50 from "../../../assets/images/collection/men/sport40.jpeg";
-import bg51 from "../../../assets/images/collection/men/sport41.jpeg";
-import bg52 from "../../../assets/images/collection/men/sport42.jpeg";
-import bg52alternative from "../../../assets/images/collection/men/sport42alternative.jpeg";
-import bg50alternative from "../../../assets/images/collection/men/sport40alternative.jpeg";
-import bg51alternative from "../../../assets/images/collection/men/sport41alternative.jpeg";
+import bg50 from "../../../../assets/images/collection/men/sport40.jpeg";
+import bg51 from "../../../../assets/images/collection/men/sport41.jpeg";
+import bg52 from "../../../../assets/images/collection/men/sport42.jpeg";
+import bg52alternative from "../../../../assets/images/collection/men/sport42alternative.jpeg";
+import bg50alternative from "../../../../assets/images/collection/men/sport40alternative.jpeg";
+import bg51alternative from "../../../../assets/images/collection/men/sport41alternative.jpeg";
 
 export const mixed = [
   {
