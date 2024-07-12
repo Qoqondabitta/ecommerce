@@ -18,7 +18,6 @@ export const Container = styled.div`
   &:hover {
     background-image: url(${({ alternative }) => alternative});
     background-position: ${({ position }) => position};
-    /* height: 523px; */
     margin-bottom: ${({ width }) => !width && "100px"};
   }
 `;
@@ -34,14 +33,13 @@ export const Data = styled.div`
   justify-content: flex-start;
   gap: 10px;
   padding-block: 10px;
-  height: 100px;
+  height: 110px;
+  padding-bottom: 10px;
   display: none;
   z-index: 10000000000000000;
 
   ${Container}:hover & {
     display: ${({ width }) => !width && "flex"};
-    /* position: relative; */
-    /* bottom: -100px; */
   }
 `;
 

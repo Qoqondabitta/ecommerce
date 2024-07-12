@@ -7,6 +7,7 @@ import burger from "./burger";
 import search from "./search";
 import page from "./page";
 import like from "./like";
+import collection from "./collection";
 
 export const store = configureStore({
   reducer: {
@@ -17,7 +18,8 @@ export const store = configureStore({
     burger,
     search,
     page,
-    like
+    like,
+    collection
   },
 });
 // console.log(store.language);

@@ -1,0 +1,13 @@
+.category-item{
+    background-color: white;
+}
+
+.category-active-item{
+    background-color: black;
+    color: white;
+}
+
+.category-menu::-webkit-scrollbar {
+  width: 1px;
+  height: 5px;
+}

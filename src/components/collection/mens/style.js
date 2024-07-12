@@ -24,34 +24,87 @@ export const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   padding: 5px;
-  /* margin: 5px; */
   gap: 0px;
 `;
 
 export const Box = styled(Wrapper)`
-  /* border: 1px solid rgb(223, 218, 218); */
+  padding: 5px;
+  gap: 20px;
+  align-items: flex-end;
+  position: relative;
+  height: ${({length})=>length};
+  overflow: hidden;
 `;
+
 export const Collection = styled.div`
   display: flex;
   align-items: flex-start;
-  margin-block: 50px;
+  /* margin-block: 10px; */
   justify-content: center;
   gap: 0px;
+  padding: 0px;
   flex-wrap: wrap;
   width: 100%;
 `;
 
-export const TwoHalf = styled.div`
+export const Drop = styled.div`
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+  border: 1px solid rgb(223, 218, 218);
+  width: 250px;
+  height: 250px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 57px;
+  right: 0px;
+  z-index: 20000;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+`;
+
+export const Category = styled.div`
+  margin-top: 10px;
+  font-style: "DM Serif Display", serif;
+  width: 250px;
+  cursor: pointer;
+  margin-right: 70px;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: black;
+  text-transform: uppercase;
+  padding-bottom: 3px;
+`;
+
+export const Items = styled.div`
+  font-size: 14px;
+  font-weight: 400;
+  border-bottom: 1px solid rgb(223, 218, 218);
   width: 100%;
-  gap: 0px;
+  font-style: "DM Serif Display", serif;
+  padding: 8px 14px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(223, 218, 218);
+  }
 `;
 
-export const Left = styled(TwoHalf)`
-  width: 50%;
-`;
-
-export const Right = styled.div`
-  width: 50%;
-  background-image: url(${({ backimg }) => backimg});
+export const Button = styled.button`
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-style: "DM Serif Display", serif;
+  width: fit-content;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  margin-block: 30px;
 `;
