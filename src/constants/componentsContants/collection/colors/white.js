@@ -43,6 +43,8 @@ export const white = [
   {
     f: ["Male White Suits", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    color: "white",
+    size: "n",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg33,
     a: bg33alternative,
@@ -51,6 +53,8 @@ export const white = [
   {
     f: ["Men's T-Shirt", "To'q Ko'k Futbolka", "Мужская футболка"],
     s: "10$",
+    color: "white",
+    size: "s",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg10,
     a: bg10alternative,
@@ -59,6 +63,8 @@ export const white = [
   {
     f: ["Male White Suit", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    color: "white",
+    size: "l",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg29,
     a: bg29alternative,
@@ -67,6 +73,8 @@ export const white = [
   {
     f: ["Male White Suits", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    color: "white",
+    size: "xl",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg19alternative,
     a: bg19,
@@ -75,6 +83,8 @@ export const white = [
   {
     f: ["Men's White Tracksuits", "Oq Sportifkalar", "Белые спортивки"],
     s: "10$",
+    color: "white",
+    size: "xxl",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg7,
     a: bg7alternative,
@@ -84,6 +94,8 @@ export const white = [
   {
     f: ["Men's White Tracksuits", "Oq Sportifkalar", "Белые спортивки"],
     s: "10$",
+    color: "white",
+    size: "s",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg7sport,
     a: bg7alternativesport,
@@ -97,6 +109,8 @@ export const white = [
       "Мужская футболка",
     ],
     s: "10$",
+    color: "white",
+    size: "n",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: threbg2,
     a: threbg3alternative,
@@ -106,6 +120,8 @@ export const white = [
   {
     f: ["Male White T-Shirts", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    color: "white",
+    size: "l",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg13,
     a: bg13alternative,
@@ -114,6 +130,8 @@ export const white = [
   {
     f: ["Male White Lakers", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    color: "white",
+    size: "xl",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg24alternative,
     a: bg24,
@@ -122,6 +140,8 @@ export const white = [
   {
     f: ["Male White Shoes", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    color: "white",
+    size: "42",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg47,
     a: bg47alternative,
@@ -131,6 +151,8 @@ export const white = [
   {
     f: ["Men's White Sneakers", "Oq Krasovkalar", "белые кроссовки"],
     s: "10$",
+    color: "white",
+    size: "42",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg3,
     a: bg3alternative,
@@ -140,6 +162,8 @@ export const white = [
   {
     f: ["Men's White SHort", "To'q Ko'k Futbolka", "Мужская футболка"],
     s: "10$",
+    color: "white",
+    size: "xxl",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: threbg1,
     a: threbg1alternative,
@@ -148,6 +172,8 @@ export const white = [
   {
     f: ["White Sport Pants", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    color: "white",
+    size: "s",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg11,
     a: bg11alternative,
@@ -157,6 +183,8 @@ export const white = [
   {
     f: ["Male White Sandals", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    color: "white",
+    size: "43",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg31,
     a: bg31alternative,
@@ -165,6 +193,8 @@ export const white = [
   {
     f: ["Male White Sneakers", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    color: "white",
+    size: "41",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg39shoes,
     a: bg39alternativeshoes,
@@ -173,6 +203,8 @@ export const white = [
   {
     f: ["Male White&Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    color: "white",
+    size: "40",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg43,
     a: bg43alternative,
@@ -181,6 +213,8 @@ export const white = [
   {
     f: ["Male White Shoes", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    color: "white",
+    size: "43",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg55,
     a: bg55alternative,
@@ -189,6 +223,8 @@ export const white = [
   {
     f: ["Male White Tie", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    color: "white",
+    size: "n",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg39,
     a: bg39alternative,
@@ -197,6 +233,8 @@ export const white = [
   {
     f: ["Male White Bow Tie", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    color: "white",
+    size: "l",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg40,
     a: bg40alternative,
@@ -208,6 +246,8 @@ export const whiteShoes = [
   {
     f: ["Male White Shoes", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    color: "white",
+    size: "42",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg47,
     a: bg47alternative,
@@ -217,6 +257,8 @@ export const whiteShoes = [
   {
     f: ["Men's White Sneakers", "Oq Krasovkalar", "белые кроссовки"],
     s: "10$",
+    color: "white",
+    size: "42",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg3,
     a: bg3alternative,
@@ -226,6 +268,8 @@ export const whiteShoes = [
   {
     f: ["Male White Sandals", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    color: "white",
+    size: "42",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg31,
     a: bg31alternative,
@@ -234,6 +278,8 @@ export const whiteShoes = [
   {
     f: ["Male White Sneakers", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    color: "white",
+    size: "42",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg39,
     a: bg39alternative,
@@ -242,6 +288,8 @@ export const whiteShoes = [
   {
     f: ["Male White&Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    color: "white",
+    size: "42",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg43,
     a: bg43alternative,

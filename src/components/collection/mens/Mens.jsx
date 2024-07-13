@@ -3,6 +3,7 @@ import {
   Box,
   Button,
   Category,
+  CategoryWrapper,
   Collection,
   Container,
   Drop,
@@ -31,21 +32,30 @@ import { shoes } from "../../../constants/componentsContants/collection/shoes";
 import sportgif from "../../../assets/images/backgrounds/sportgif.gif";
 import { collectioncardsport } from "../../../constants/componentsContants/collection/collectionsport";
 import { collectioncardsuits } from "../../../constants/componentsContants/collection/collectionsuit";
-import { red } from "../../../constants/componentsContants/collection/colors/red";
-import { blue } from "../../../constants/componentsContants/collection/colors/blue";
-import { black } from "../../../constants/componentsContants/collection/colors/black";
-import { orange } from "../../../constants/componentsContants/collection/colors/orange";
+import { FindTool, Input, InputWrappers, Label, SearchButton } from "./filter";
+import { Alarm } from "./alarm";
+import { IoClose } from "react-icons/io5";
 
 const Mens = () => {
-  const [display, setDisplay] = useState("red")
-  const [show, setShow] = useState(false);
-  const [length, setLength] = useState("fit-content");
-  const dispatch = useDispatch();
   const collection = useSelector((store) => store.collection);
   const { value } = useSelector((store) => store.language);
-  console.log(display, collection.value==black);
+  const [color, setColor] = useState("");
+  const [here, setHere] = useState(false);
+  const [display, setDisplay] = useState("red");
+  const [show, setShow] = useState(false);
+  const [length, setLength] = useState("fit-content");
+  const [list, setList] = useState([]);
+  const dispatch = useDispatch();
+  const [keyword, setKeyword] = useState("");
+  const [warn, setWarn] = useState(false);
+  const changeHere = () => {
+    setHere(!here);
+  };
   const changeShow = () => {
     setShow(!show);
+  };
+  const changeWarn = () => {
+    setWarn(!warn);
   };
   const changeLength = () => {
     if (length === "4288px") {
@@ -57,8 +67,58 @@ const Mens = () => {
   const hackLength = () => {
     setLength("fit-content");
   };
+  const changeColor = (e) => {
+    let result = e.target.value.toLowerCase();
+    setColor(result);
+  };
+  const changeKeyword = (e) => {
+    let res = "";
+    if (e.target.value.toLowerCase() == "m") {
+      setKeyword("n");
+    } else {
+      res = e.target.value.toLowerCase();
+      setKeyword(res);
+    }
+  };
+  const checkSize = () => {
+    if (color == "") {
+      let res = collection.value.filter((v) => {
+        return v.size == keyword
+      });
+      setList(res);
+    } else if (keyword == "") {
+      let res = collection.value.filter((v) => {
+        return v.color == color
+      });
+      setList(res);
+    } else if (keyword != "" && color != "") {
+      let res = collection.value.filter((v) => {
+        return v.color == color && v.size == keyword
+
+      });
+      setList(res);
+    } else {
+      setHere(!here);
+    }
+    setHere(!here);
+    setKeyword("");
+    setColor("");
+  };
+  // console.log(keyword=="", keyword);
+  console.log(color == "", "color empty", color);
+  console.log(color != "", "color full", color);
+
   return (
     <Main>
+      {warn && (
+        <Alarm onClick={changeWarn}>
+          <IoClose className="warning-closer" size="1.5rem" color="red" />
+          Check the size: (s | m |l | xl | xxl) and color: ( blue / orange /
+          black / white / red). Or unfortunately right now we do not have what
+          you are looking for, so please check back later or search for other
+          options. Thanks! Click to close this tab.
+        </Alarm>
+      )}
       <Nav />
       <Container
         bg={
@@ -82,18 +142,51 @@ const Mens = () => {
       </Container>
       <Wrapper className="columnCenter">
         <Box length={length}>
-          <Category className="justifyEnd" onClick={changeShow}>
-            {value == "ENG"
-              ? "Category"
-              : value == "UZB"
-              ? "Turlar"
-              : "Категория"}
-            {show ? (
-              <IoIosArrowUp size="1.2rem" />
-            ) : (
-              <IoIosArrowDown size="1.2rem" />
-            )}
-          </Category>
+          <CategoryWrapper>
+            <Category className="center" onClick={changeHere}>
+              {value == "ENG"
+                ? "Filter"
+                : value == "UZB"
+                ? "Yordamlar"
+                : "Фильтр"}
+              {here ? (
+                <IoIosArrowUp size="1.2rem" />
+              ) : (
+                <IoIosArrowDown size="1.2rem" />
+              )}
+            </Category>
+            <Category className="justifyEnd" onClick={changeShow}>
+              {value == "ENG"
+                ? "Category"
+                : value == "UZB"
+                ? "Turlar"
+                : "Категория"}
+              {show ? (
+                <IoIosArrowUp size="1.2rem" />
+              ) : (
+                <IoIosArrowDown size="1.2rem" />
+              )}
+            </Category>
+          </CategoryWrapper>
+          {here && (
+            <FindTool className="columnCenter">
+              <InputWrappers>
+                <Label>Size any: s/m/48/36</Label>
+                <Input onChange={changeKeyword} />
+              </InputWrappers>
+              <InputWrappers>
+                <Label>Color any: blue/black</Label>
+                <Input onChange={changeColor} />
+              </InputWrappers>
+              <SearchButton
+                onClick={() => {
+                  checkSize();
+                }}
+              >
+                Search
+              </SearchButton>
+            </FindTool>
+          )}
           {show && (
             <Drop className="categorymenu">
               {show &&
@@ -106,6 +199,7 @@ const Mens = () => {
                     onClick={() => {
                       dispatch(changeCollection(v.l));
                       setDisplay(v.c[0]);
+                      setList([]);
                       changeShow();
                       v.c[0] == "red" ||
                       v.c[0] == "blue" ||
@@ -124,11 +218,18 @@ const Mens = () => {
                 ))}
             </Drop>
           )}
-          <Collection>
-            <CollectionCard list={collection.value}></CollectionCard>
-          </Collection>
+          {list.length == 0 && (
+            <Collection>
+              <CollectionCard list={collection.value}></CollectionCard>
+            </Collection>
+          )}
+          {list.length > 0 && (
+            <Collection>
+              <CollectionCard list={list}></CollectionCard>
+            </Collection>
+          )}
         </Box>
-        {(display == "suits" || display == "sport" || display == "men") ? (
+        {display == "suits" || display == "sport" || display == "men" ? (
           <Button onClick={changeLength}>
             {length == "4288px"
               ? value == "ENG"

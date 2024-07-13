@@ -64,13 +64,11 @@ export const Box = styled(Wrapper)`
 export const Collection = styled.div`
   display: flex;
   align-items: flex-start;
-  /* margin-block: 10px; */
   justify-content: center;
   gap: 0px;
   padding: 0px;
   flex-wrap: wrap;
   width: 100%;
-  background-color: red;
 `;
 
 export const Drop = styled.div`
@@ -92,18 +90,30 @@ export const Drop = styled.div`
     width: 10px;
   }
 
-  @media only screen and (max-width: 600px){
+  @media only screen and (max-width: 600px) {
     top: 52px;
+  }
+`;
+
+export const CategoryWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0px;
+  padding: 0px 20px 0px 0px;
+
+  @media only screen and (max-width: 600px) {
+    justify-content: space-between;
   }
 `;
 
 export const Category = styled.div`
   margin-top: 10px;
   font-style: "DM Serif Display", serif;
-  width: 250px;
+  width: 120px;
   cursor: pointer;
-  margin-right: 70px;
-  gap: 10px;
+  gap: 5px;
   font-weight: 600;
   font-size: 14px;
   color: black;
@@ -138,7 +148,7 @@ export const Button = styled.button`
   height: 50px;
   margin-block: 30px;
 
-  @media only screen and (max-width){
+  @media only screen and (max-width) {
     width: 110px;
   }
 `;

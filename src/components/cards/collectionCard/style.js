@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   position: relative;
   background-color: white;
   background-image: url(${({ bgimg }) => bgimg});
@@ -23,15 +23,15 @@ export const Container = styled.div`
 
   @media only screen and (max-width: 600px) {
     width: ${({ width }) => (width ? "100%" : "210px")};
-    height: ${({ width }) => (width ? "264px" : "330px")};
+    height: ${({ width }) => (width ? "264px" : "270px")};
   }
   @media only screen and (max-width: 420px) {
     width: ${({ width }) => (width ? "100%" : "185px")};
-    height: ${({ width }) => (width ? "233px" : "313px")};
+    height: ${({ width }) => (width ? "233px" : "240px")};
   }
   @media only screen and (max-width: 350px) {
     width: ${({ width }) => (width ? "100%" : "160px")};
-    height: ${({ width }) => (width ? "197px" : "267px")};
+    height: ${({ width }) => (width ? "197px" : "205px")};
   }
 `;
 

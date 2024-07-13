@@ -11,3 +11,8 @@
   width: 1px;
   height: 5px;
 }
+
+.warning-closer{
+  position: relative;
+  top: 6px;
+}

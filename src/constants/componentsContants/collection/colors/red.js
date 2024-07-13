@@ -25,16 +25,20 @@ import bg22 from "../../../../assets/images/collection/men/collectioncard24.jpeg
 
 export const red = [
   {
-    f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
+    f: ["Red Sneakers", "Qizil Krasovkalar", "Мужские черные туфли"],
     s: "10$",
+    size: "40",
+    color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg40,
     a: bg40alternative,
     place: "center",
   },
   {
-    f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
+    f: ["Red Sneakers", "Qizil Krasovkalar", "Мужские черные туфли"],
     s: "10$",
+    size: "41",
+    color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg42alternative,
     a: bg42,
@@ -42,16 +46,20 @@ export const red = [
     position: "top",
   },
   {
-    f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
+    f: ["Red Sneakers", "Qizil Krasovkalar", "Мужские черные туфли"],
     s: "10$",
+    size: "42",
+    color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg41,
     a: bg41alternative,
     place: "center",
   },
   {
-    f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
+    f: ["Red Sneakers", "Qizil Krasovkalar", "Мужские черные туфли"],
     s: "10$",
+    size: "43",
+    color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg44,
     a: bg44alternative,
@@ -60,6 +68,8 @@ export const red = [
   {
     f: ["Male Red T-Shirts", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    size: "s",
+    color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg21,
     a: bg21alternative,
@@ -68,6 +78,8 @@ export const red = [
   {
     f: ["Male Red Caps", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    size: "n",
+    color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg22,
     a: bg22alternative,
@@ -76,6 +88,8 @@ export const red = [
   {
     f: ["Red Sport Pants", "Qora shimlar", "Мужские черные брюки"],
     s: "10$",
+    size: "l",
+    color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg5,
     a: bg5alternative,
@@ -85,6 +99,8 @@ export const red = [
   {
     f: ["Red Dotted Tie", "Erkaklar Oyoq Kiyimi", "Мужские черные туфли"],
     s: "10$",
+    size: "xl",
+    color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg15,
     a: bg15alternative,
@@ -93,6 +109,8 @@ export const red = [
   {
     f: ["Red Tie", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    size: "xxl",
+    color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg43tie,
     a: bg43alternativetie,
@@ -101,6 +119,8 @@ export const red = [
   {
     f: ["Red Blow Tie", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    size: "s",
+    color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg44tie,
     a: bg44alternativetie,
@@ -109,6 +129,8 @@ export const red = [
   {
     f: ["Male Red Belts", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    size: "n",
+    color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg53,
     a: bg53alternative,
@@ -121,6 +143,8 @@ export const redshoes = [
   {
     f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    size: "40",
+    color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg40,
     a: bg40alternative,
@@ -129,6 +153,8 @@ export const redshoes = [
   {
     f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    size: "41",
+    color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg42alternative,
     a: bg42,
@@ -138,6 +164,8 @@ export const redshoes = [
   {
     f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    size: "42",
+    color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg41,
     a: bg41alternative,
@@ -146,6 +174,8 @@ export const redshoes = [
   {
     f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
+    size: "43",
+    color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg44,
     a: bg44alternative,
