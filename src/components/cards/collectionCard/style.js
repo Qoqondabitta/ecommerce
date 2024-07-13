@@ -20,6 +20,19 @@ export const Container = styled.div`
     background-position: ${({ position }) => position};
     margin-bottom: ${({ width }) => !width && "100px"};
   }
+
+  @media only screen and (max-width: 600px) {
+    width: ${({ width }) => (width ? "100%" : "210px")};
+    height: ${({ width }) => (width ? "264px" : "330px")};
+  }
+  @media only screen and (max-width: 420px) {
+    width: ${({ width }) => (width ? "100%" : "185px")};
+    height: ${({ width }) => (width ? "233px" : "313px")};
+  }
+  @media only screen and (max-width: 350px) {
+    width: ${({ width }) => (width ? "100%" : "160px")};
+    height: ${({ width }) => (width ? "197px" : "267px")};
+  }
 `;
 
 export const Data = styled.div`

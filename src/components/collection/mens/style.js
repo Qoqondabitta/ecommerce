@@ -17,6 +17,23 @@ export const Container = styled.div`
   justify-content: flex-end;
   gap: 30px;
   padding-bottom: 150px;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    height: 230px;
+    padding: 0px 30px;
+    gap: 5px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  @media only screen and (max-width: 420px) {
+    height: 202px;
+  }
+
+  @media only screen and (max-width: 350px) {
+    height: 172px;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -25,6 +42,10 @@ export const Wrapper = styled.div`
   width: 100%;
   padding: 5px;
   gap: 0px;
+
+  @media only screen and (max-width: 600px) {
+    padding: 0px;
+  }
 `;
 
 export const Box = styled(Wrapper)`
@@ -32,8 +53,12 @@ export const Box = styled(Wrapper)`
   gap: 20px;
   align-items: flex-end;
   position: relative;
-  height: ${({length})=>length};
+  height: ${({ length }) => length};
   overflow: hidden;
+
+  @media only screen and (max-width: 600px) {
+    padding: 0px;
+  }
 `;
 
 export const Collection = styled.div`
@@ -45,6 +70,7 @@ export const Collection = styled.div`
   padding: 0px;
   flex-wrap: wrap;
   width: 100%;
+  background-color: red;
 `;
 
 export const Drop = styled.div`
@@ -64,6 +90,10 @@ export const Drop = styled.div`
 
   &::-webkit-scrollbar {
     width: 10px;
+  }
+
+  @media only screen and (max-width: 600px){
+    top: 52px;
   }
 `;
 
@@ -107,4 +137,8 @@ export const Button = styled.button`
   width: 200px;
   height: 50px;
   margin-block: 30px;
+
+  @media only screen and (max-width){
+    width: 110px;
+  }
 `;
