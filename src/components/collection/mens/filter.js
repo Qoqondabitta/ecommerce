@@ -15,6 +15,7 @@ export const FindTool = styled.div`
   
   @media only screen and (max-width: 600px) {
     top: 52px;
+    left: 0;
   }
 `;
 

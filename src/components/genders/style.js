@@ -7,7 +7,9 @@ export const Container = styled.div`
   background-image: url(${({ backimage }) => backimage});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  /* background-position: top; */
+  background-position: ${({ position }) =>
+    position == 1 || position == 0 || position == 2 ? "top" : "center"};
   padding-bottom: 100px;
   position: relative;
 
