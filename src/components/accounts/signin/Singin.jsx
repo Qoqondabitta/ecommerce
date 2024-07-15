@@ -13,19 +13,26 @@ import {
 } from "./style";
 import { useSelector } from "react-redux";
 import "./signin.css";
-import { useNavigate } from "react-router-dom";
-import { usersList } from "../../../constants/users/in";
+import { NavLink, useNavigate } from "react-router-dom";
+import { usersList, validEmails } from "../../../constants/users/in";
 // import { Button } from "../../generics/button/Button";
 
 const Singin = () => {
+  const [path, setPath] = useState("");
   const navigate = useNavigate();
   const { value } = useSelector((stroe) => stroe.language);
   const [inputValue, setInputValue] = useState(null);
+  const [password, setPassword] = useState(null);
   const [users, setUsers] = useState(null);
   const getValue = (e) => {
     setInputValue(e.target.value);
   };
-console.log(inputValue, "email");
+  const changeValue = (e) => {
+    setPassword(e.target.value);
+  };
+  let a = [];
+  let b = [];
+  let c = [];
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/users`)
       .then((res) => res.json())
@@ -34,27 +41,23 @@ console.log(inputValue, "email");
         setUsers(res);
       });
   }, []);
-    // let list = [...users, ...usersList];
-    // let list = users.push(...usersList);
-    // let list = users.push({me:"me"})
-    // console.log(list);
-    console.log(usersList[0].name==inputValue);
   const checkUser = () => {
-    usersList.map((v, i) => {
-    //   if (inputValue == v.name) {
-    //     navigate("/account");
-    //   } else {
-    //     navigate("/home");
-        //   }
-        v.email==inputValue?navigate("/account"):navigate("/home")
-
-    });
+    users.map((v) => a.push(v.email));
+    validEmails.push(...a);
+    usersList.map((v) => b.push(v.name));
+    users.map((v) => c.push(v.username));
+    b = [...b, ...c];
+    console.log(validEmails);
+    if (validEmails.includes(inputValue) && b.includes(password)) {
+      setPath("/account");
+    } else {
+      setPath("/collection");
+    }
   };
 
-  console.log(users);
   return (
     <Container>
-      <Form >
+      <Form>
         <Title>
           Join
           <Title style={{ display: "flex", gap: "10px" }}>
@@ -73,7 +76,7 @@ console.log(inputValue, "email");
         </InputWrappers>
 
         <InputWrappers className="email-group">
-          <Inputs className="password" type="password" />
+          <Inputs className="password" type="password" onChange={changeValue} />
           <p className="password-label">
             {value == "ENG"
               ? "Create Password"
@@ -89,9 +92,11 @@ console.log(inputValue, "email");
           </Remember>
           <Subtitles>Forgot Password?</Subtitles>
         </Box>
-        <Button onClick={()=>checkUser()}>
-          {value == "ENG" ? "SIGNIN" : value == "UZB" ? "KIRISH" : "ВОЙТИ"}
-        </Button>
+        <NavLink to={path} style={{ textDecoration: "none" }}>
+          <Button onClick={() => checkUser()}>
+            {value == "ENG" ? "SIGNIN" : value == "UZB" ? "KIRISH" : "ВОЙТИ"}
+          </Button>
+        </NavLink>
         <Subtitles style={{ color: "black", marginTop: "10px" }}>
           Not a member yet? <Subtitles> Sign up</Subtitles>
         </Subtitles>
