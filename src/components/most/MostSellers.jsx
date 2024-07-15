@@ -1,21 +1,57 @@
 import React from "react";
-import { Back, Container, Main, Content } from "./style";
+import { Back, Container, Main, Content, Darkening } from "./style";
 import Button from "..//generics/button/Button";
 import Title from "../generics/title";
 import { Bunker } from "../generics";
-import { mostconstants } from "../../constants/componentsContants/most";
+import {
+  mostconstants,
+  mostkids,
+  mostperfume,
+  mostwoman,
+} from "../../constants/componentsContants/most";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { changeCollection } from "../../redux/collection";
+import { Blur } from "../video/style";
+import { Blurs } from "../sliders/doubleSlider/style";
 
 const MostSellers = () => {
+  const order = useSelector((store) => store.order);
   const dispatch = useDispatch();
   const { value } = useSelector((store) => store.language);
   return (
     <Main>
       <Container className="center ">
-        {mostconstants.map((v, i) => (
-          <Back className={v.p} backimg={v.b} key={i}>
+        {(order.value == 0
+          ? mostwoman
+          : order.value == 1
+          ? mostconstants
+          : order.value == 2
+          ? mostkids
+          : mostperfume
+        ).map((v, i) => (
+          <Back
+            className={v.p}
+            backimg={
+              order.value == 0
+                ? v.b.source
+                : order.value == 1
+                ? v.b.source
+                : order.value == 2
+                ? v.b.source
+                : v.b.source
+            }
+            key={i}
+            position={
+              order.value == 0
+                ? v.b.placement
+                : order.value == 1
+                ? v.b.placement
+                : order.value == 2
+                ? v.b.placement
+                : v.b.placement
+            }
+          >
             <Bunker type={v.ty} className={v.sp}>
               <Title type={v.te.t}>
                 {value == "ENG"

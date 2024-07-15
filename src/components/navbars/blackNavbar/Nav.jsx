@@ -41,7 +41,10 @@ const BlackNav = () => {
           {links.map((v, i) => (
             <Item
               className="cursor"
-              onClick={() => dispatch(changePage(v.title[0]))}
+              onClick={() => {
+                dispatch(changePage(v.title[0]));
+                dispatch(customOrder(i));
+              }}
               key={i}
             >
               <Link className={i == order.value && "BlackactiveNavbarLink"}>

@@ -18,9 +18,12 @@ export const order = createSlice({
         state.value -= 1;
       }
     },
+    customOrder: (state, action) => {
+      state.value = action.payload
+    }
   },
 });
 
-export const { increment, decrement } = order.actions;
+export const { increment, decrement, customOrder } = order.actions;
 
 export default order.reducer;

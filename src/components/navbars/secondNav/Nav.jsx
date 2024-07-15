@@ -19,6 +19,7 @@ import Search from "../../mini/search/Search";
 import { toggleSearch } from "../../../redux/search";
 import { changePage } from "../../../redux/page";
 import { NavLink } from "react-router-dom";
+import { customOrder } from "../../../redux/order";
 
 const Nav = () => {
   const search = useSelector((store) => store.search);
@@ -41,7 +42,7 @@ const Nav = () => {
           {links.map((v, i) => (
             <Item
               className="cursor"
-              onClick={() => dispatch(changePage(v.title[0]))}
+              onClick={() => { dispatch(changePage(v.title[0])); dispatch(customOrder(i))}}
               key={i}
             >
               <Link className={i == order.value && "activeNavbarLink"}>
