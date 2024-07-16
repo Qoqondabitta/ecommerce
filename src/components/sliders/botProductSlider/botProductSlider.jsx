@@ -56,17 +56,17 @@ const BotProductSlider = () => {
           <BotProSliderCard
             key={v.id}
             id={v.id}
-            price={v.price}
+            price={v.s}
             desc={value == "ENG" ? v.desc[0] : value == "UZB" ? v.desc[1] : v.desc[2]}
             title={
               value == "ENG"
-                ? v.title[0]
+                ? v.f[0]
                 : value == "UZB"
-                ? v.title[1]
-                : v.title[2]
+                ? v.f[1]
+                : v.f[2]
             }
-            img={v.img}
-            color={v?.color}
+            img={v.bg}
+            color={v?.c}
             move={move}
           ></BotProSliderCard>
         ))}

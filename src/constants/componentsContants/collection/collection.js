@@ -121,6 +121,7 @@ export const threcollectioncard = [
 
 export const collectioncardconstants = [
   {
+    id: 1,
     f: ["Men's T-Shirt", "To'q Ko'k Futbolka", "Мужская футболка"],
     s: "10$",
     size: "n",

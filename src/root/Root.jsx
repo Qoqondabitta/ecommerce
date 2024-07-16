@@ -1,9 +1,10 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Home from '../pages/Home'
-import Singin from '../components/accounts/signin/Singin'
-import Account from '../components/accounts/account/Account'
-import Mens from '../components/collection/mens/Mens'
+import React, { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "../pages/Home";
+import Singin from "../components/accounts/signin/Singin";
+import Account from "../components/accounts/account/Account";
+import Mens from "../components/collection/mens/Mens";
+import Product from "../components/products/Product";
 
 const Root = () => {
   return (
@@ -13,12 +14,13 @@ const Root = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/signin" element={<Singin />} />
         <Route path="/collection" element={<Mens />} />
+        <Route path="/collection/:id" element={<Product />} />
         <Route path="/account" element={<Account />} />
         <Route path="*" element={<h1>404 Page Not Found</h1>} />
         {/* <Route path="/signup" element={<Signup />} /> */}
       </Routes>
     </div>
   );
-}
+};
 
-export default Root
+export default Root;

@@ -7,7 +7,7 @@ import { BsFillSuitHeartFill as Red } from "react-icons/bs";
 import { BsCartPlus as Plus } from "react-icons/bs";
 import { addLike } from "../../../redux/like";
 
-const LikeCard = ({ id, title, desc, img, price, move, color="black" }) => {
+const LikeCard = ({ id, f, desc, bg, s, move, color="black" }) => {
   const [show, setShow] = useState(true);
   const [display, setDisplay] = useState(true);
   const Color = () => {
@@ -19,8 +19,8 @@ const LikeCard = ({ id, title, desc, img, price, move, color="black" }) => {
   };
   return (
     <Container key={id} className={move ? "move" : ""}>
-      <Image src={img} alt={title} />
-      <Price>{price}</Price>
+      <Image src={bg} alt={f} />
+      <Price>{s}</Price>
       {show ? (
         <Heart onClick={Color} color={color} size="1.4em" className="heartlike" />
       ) : (

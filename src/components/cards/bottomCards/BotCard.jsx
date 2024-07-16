@@ -7,19 +7,40 @@ import { BsFillSuitHeartFill as Red } from "react-icons/bs";
 import { BsCartPlus as Plus } from "react-icons/bs";
 import { addLike } from "../../../redux/like";
 import { useDispatch, useSelector } from "react-redux";
+import { botCardDetails } from "../../../mock/botProductSlider";
 
-const BotProSliderCard = ({ id, title, desc, img, price, move, color="black" }) => {
+const BotProSliderCard = ({
+  id,
+  title,
+  desc,
+  img,
+  price,
+  move,
+  color = "black",
+}) => {
   const [show, setShow] = useState(true);
-  const dispatch = useDispatch()
-  const [list, setList]= useState(null)
+  const dispatch = useDispatch();
+  const [list, setList] = useState(null);
   const [display, setDisplay] = useState(true);
-  const like = useSelector(store=>store.like)
+  const like = useSelector((store) => store.like);
+  let a = [];
+  let b = [];
   const Color = () => {
     setShow(!show);
-    // show && addLike({ id, title, desc, img, price, move, color})
   };
   const Display = () => {
     setDisplay(!display);
+  };
+  const clickLike = () => {
+    botCardDetails.map((v, i) => {
+      return v.id === id? a.push(v) : b.push(v);
+    });
+    dispatch(addLike(a));
+    console.log(like);
+  };
+  const removeLike = () => {
+    a.filter((v) => v.id != id)
+    dispatch(addLike(a))
   };
   return (
     <Container key={id} className={move ? "move" : ""}>
@@ -29,11 +50,8 @@ const BotProSliderCard = ({ id, title, desc, img, price, move, color="black" }) 
         <Heart
           onClick={() => {
             Color();
-            dispatch(addLike({ id, title, desc, img, price, move, color }));
-            // localStorage.setItem("list", ...like)
-            // console.log(like, "checking the like")
-            setList(like)
-            console.log(list, "list checking");
+            removeLike()
+            setList(like);
           }}
           color={color}
           size="1.4em"
@@ -42,8 +60,8 @@ const BotProSliderCard = ({ id, title, desc, img, price, move, color="black" }) 
       ) : (
         <Red
           onClick={() => {
-            Color();
-            // return addLike({ id, title, desc, img, price, move, color });
+              Color();
+              clickLike()
           }}
           color="red"
           size="1.4em"

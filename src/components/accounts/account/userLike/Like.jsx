@@ -9,8 +9,8 @@ const Like = () => {
   const { value } = useSelector((store) => store.language);
   const like = useSelector((store) => store.like);
   const [list, setList] = useState(like);
-  console.log(like.value, "like");
-  console.log(list, "kist");
+  // console.log(like.value, "like");
+  // console.log(list, "kist");
   return (
     <Container>
       {list.value.map((v, i) => (
