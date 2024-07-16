@@ -4,7 +4,8 @@ import Home from "../pages/Home";
 import Singin from "../components/accounts/signin/Singin";
 import Account from "../components/accounts/account/Account";
 import Mens from "../components/collection/mens/Mens";
-import Product from "../components/products/Product";
+// import Product from "../components/products/Products";
+import Products from "../components/products/Products";
 
 const Root = () => {
   return (
@@ -14,7 +15,7 @@ const Root = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/signin" element={<Singin />} />
         <Route path="/collection" element={<Mens />} />
-        <Route path="/collection/:id" element={<Product />} />
+        {/* <Route path="/collection/:id" element={<Products />} /> */}
         <Route path="/account" element={<Account />} />
         <Route path="*" element={<h1>404 Page Not Found</h1>} />
         {/* <Route path="/signup" element={<Signup />} /> */}

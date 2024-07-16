@@ -5,11 +5,19 @@ import top12 from "../assets/images/bottomCard/bottom9.jpg";
 export const like = createSlice({
   name: "like",
   initialState: {
-    value: "",
+    value: [],
   },
   reducers: {
     addLike: (state, action) => {
-      state.value = action.payload;
+      const { productId, quantity } = action.payload;
+      const index = state.value.findIndex(
+        (item) => item.productId === productId
+      );
+      if (index >= 0) {
+        state.value[index].quantity += quantity;
+      } else {
+        state.value.push({ productId, quantity });
+      }
     },
   },
 });

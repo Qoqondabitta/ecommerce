@@ -31,12 +31,12 @@ const BotProSliderCard = ({
   const Display = () => {
     setDisplay(!display);
   };
-  const clickLike = () => {
+  const clickLike = (id) => {
     botCardDetails.map((v, i) => {
       return v.id === id? a.push(v) : b.push(v);
     });
     dispatch(addLike(a));
-    console.log(like);
+    console.log(like, id);
   };
   const removeLike = () => {
     a.filter((v) => v.id != id)
@@ -61,7 +61,7 @@ const BotProSliderCard = ({
         <Red
           onClick={() => {
               Color();
-              clickLike()
+              clickLike(id)
           }}
           color="red"
           size="1.4em"
