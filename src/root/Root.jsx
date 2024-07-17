@@ -15,7 +15,7 @@ const Root = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/signin" element={<Singin />} />
         <Route path="/collection" element={<Mens />} />
-        {/* <Route path="/collection/:id" element={<Products />} /> */}
+        <Route path="/collection/:id" element={<Products />} />
         <Route path="/account" element={<Account />} />
         <Route path="*" element={<h1>404 Page Not Found</h1>} />
         {/* <Route path="/signup" element={<Signup />} /> */}

@@ -97,7 +97,7 @@ export const threcollectioncard = [
   {
     two: [
       {
-        f: ["Men's T-Shirt", "To'q Ko'k Futbolka", "Мужская футболка"],
+        f: ["Men's Dark Blue T-Shirt", "To'q Ko'k Futbolka", "Мужская футболка"],
         s: "10$",
         // size: "M",
         t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
@@ -115,21 +115,35 @@ export const threcollectioncard = [
         place: "bottom",
       },
     ],
-    one: [{ s: ["Shop Now", "Hozir Olmoq", "купить сейчас"], bgimg: onehalf1, w: "660px" }],
+    one: [
+      {
+        s: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+        bgimg: onehalf1,
+        w: "660px",
+      },
+    ],
   },
 ];
 
 export const collectioncardconstants = [
   {
     id: 1,
-    f: ["Men's T-Shirt", "To'q Ko'k Futbolka", "Мужская футболка"],
-    s: "10$",
+    clothId: "t-shirt",
+    e: "men's clothing",
+    eng: "Men's Dark Blue T-Shirt",
+    uzb: "To'q Ko'k Futbolka",
+    rus: "Мужская футболка",
+    s: "112.0 $",
     size: "n",
     color: "blue",
-    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg1,
     a: bg1alternative,
     place: "center",
+    description: `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
   },
   {
     f: ["Men's Classic Jeans", "Klassik Jinsi Shimlar", "Мужская футболка"],
@@ -141,17 +155,6 @@ export const collectioncardconstants = [
     a: bg2alternative,
     position: "bottom",
     place: "center",
-  },
-  {
-    f: ["Men's White Sneakers", "Oq Krasovkalar", "белые кроссовки"],
-    s: "10$",
-    size: 42,
-    color: "white",
-    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
-    bg: bg3,
-    a: bg3alternative,
-    position: "center",
-    place: "top",
   },
   {
     f: ["Men's White T-shirts", "Oq Futbolkalar", "Мужская футболка"],
@@ -230,12 +233,6 @@ export const collectioncardconstants = [
     place: "center",
   },
   {
-    su: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
-    bg: onehalf2,
-    a: onehalf2,
-    w: "660px",
-  },
-  {
     f: ["Male Black Shoes", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
     size: 44,
@@ -243,16 +240,6 @@ export const collectioncardconstants = [
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg9,
     a: bg9alternative,
-    place: "center",
-  },
-  {
-    f: ["Male Sneakers", "Erkaklar Oyoq Kiyimi", "Мужские черные туфли"],
-    s: "10$",
-    size: 41,
-    color: "black",
-    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
-    bg: bg10alternative,
-    a: bg10,
     place: "center",
   },
   {
@@ -297,22 +284,6 @@ export const collectioncardconstants = [
     place: "center",
   },
   {
-    su: ["Shop This TrackSuit Now", "Hozir Sportivkani Olmoq", "купить сейчас"],
-    bg: onehalf1,
-    a: onehalf1,
-    w: "660px",
-  },
-  {
-    f: ["Red Tie", "Qora Tuflilar", "Мужские черные туфли"],
-    s: "10$",
-    size: "l",
-    color: "red",
-    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
-    bg: bg15,
-    a: bg15alternative,
-    place: "center",
-  },
-  {
     f: ["Blue Dotted Bow Tie", "Qora Tuflilar", "Мужские черные туфли"],
     s: "10$",
     size: "s",
@@ -330,16 +301,6 @@ export const collectioncardconstants = [
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
     bg: bg17,
     a: bg17alternative,
-    place: "center",
-  },
-  {
-    f: ["Golden Bracelets", "Tila Bilaguziklar", "Мужские черные туфли"],
-    s: "10$",
-    size: "l",
-    color: "golden",
-    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
-    bg: bg18,
-    a: bg18alternative,
     place: "center",
   },
   {
@@ -403,12 +364,6 @@ export const collectioncardconstants = [
     place: "center",
   },
   {
-    su: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
-    bg: onehalf2,
-    a: onehalf2,
-    w: "660px",
-  },
-  {
     f: ["Male Green Caps", "Yashil Boshkiyimlar", "Мужские черные туфли"],
     s: "10$",
     size: "xl",
@@ -439,7 +394,11 @@ export const collectioncardconstants = [
     place: "center",
   },
   {
-    f: ["Male Black&Orange Sneakers", "Qora&Olovrang Oyoqkiyimlar", "Мужские черные туфли"],
+    f: [
+      "Male Black&Orange Sneakers",
+      "Qora&Olovrang Oyoqkiyimlar",
+      "Мужские черные туфли",
+    ],
     s: "10$",
     size: 41,
     color: "black",
@@ -514,5 +473,4 @@ export const collectioncardconstants = [
     a: bg34alternative,
     place: "center",
   },
-  
 ];

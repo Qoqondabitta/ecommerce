@@ -65,7 +65,7 @@ export const Collection = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  gap: 0px;
+  gap: 10px;
   padding: 0px;
   flex-wrap: wrap;
   width: 100%;
