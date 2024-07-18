@@ -129,25 +129,41 @@ export const collectioncardconstants = [
   {
     id: 1,
     clothId: "t-shirt",
-    e: "men's clothing",
-    eng: "Men's Dark Blue T-Shirt",
-    uzb: "To'q Ko'k Futbolka",
-    rus: "Мужская футболка",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    f: ["Men's Dark Blue T-Shirt", "To'q Ko'k Futbolka", "Мужская футболка"],
     s: "112.0 $",
     size: "n",
     color: "blue",
     bg: bg1,
     a: bg1alternative,
     place: "center",
-    description: `Dark Blue T-Shirt with short sleeves is good fit for
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
        look better and stylish. It worths its cost and you will not regret
        after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
   },
   {
-    f: ["Men's Classic Jeans", "Klassik Jinsi Shimlar", "Мужская футболка"],
-    s: "10$",
+    id: 2,
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    f: [
+      "Men's Blue Classic Jeans",
+      "Klassik Jinsi Shimlar",
+      "Мужская футболка",
+    ],
+    s: "117.50 $",
     size: 36,
     color: "blue",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
@@ -155,6 +171,23 @@ export const collectioncardconstants = [
     a: bg2alternative,
     position: "bottom",
     place: "center",
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
   },
   {
     f: ["Men's White T-shirts", "Oq Futbolkalar", "Мужская футболка"],

@@ -11,33 +11,41 @@ import { addLike } from "../../../redux/like";
 const CollectionCard = ({ list }) => {
   const { value } = useSelector((store) => store.language);
   const like = useSelector((store) => store.like);
-  const [a] = useState(list.f);
-  const { id } = list;
   const dispatch = useDispatch();
-  const clickLike = () => {
-    dispatch(addLike({ productId: id, quantity: id }));
+
+  const clickLike = (digit) => {
+    let a = list.filter((v)=>v.id==digit)
+    dispatch(addLike(a));
+    console.log(a);
   };
-  console.log(like, a, "yes");
+  // console.log(like, "yes");
+  // console.log(list, "waw");
   return (
-    <Container>
-      <NavLink to={`/collection/${id}`}>
-        <Imgs src={list?.bg} />
-      </NavLink>
-      <Data width={list?.w}>
-        <Desc>
-          <Subtitle main="true">
-            {(value == "ENG" ? list.eng : value == "UZB" ? list.uzb : list.rus)||"Air Force"}
-          </Subtitle>
-          <Subtitle className="center">
-            {value == "ENG" ? "Price: " : value == "UZB" ? "Narx: " : "Sena: "}
-            <Subtitle main="true"> {list.s}</Subtitle>
-          </Subtitle>
-        </Desc>
-        <Icon onClick={clickLike}>
-          <Heart color="black" size="1.4rem" />
-        </Icon>
-      </Data>
-    </Container>
+    <>
+      {list.map((v, i) => (
+        <Container key={i}>
+          <NavLink to={`/collection/${v.id}`}>
+            <Imgs src={v?.bg} />
+          </NavLink>
+          <Data>
+            <Desc>
+              <Subtitle main="true">Air Force</Subtitle>
+              <Subtitle className="center">
+                {value == "ENG"
+                  ? "Price: "
+                  : value == "UZB"
+                  ? "Narx: "
+                  : "Sena: "}
+                <Subtitle main="true"> {v.s}</Subtitle>
+              </Subtitle>
+            </Desc>
+            <Icon onClick={()=>clickLike(v.id)}>
+              <Heart color="black" size="1.4rem" />
+            </Icon>
+          </Data>
+        </Container>
+      ))}
+    </>
   );
 };
 

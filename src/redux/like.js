@@ -7,14 +7,10 @@ export const like = createSlice({
   },
   reducers: {
     addLike: (state, action) => {
-      const { productId, quantity } = action.payload;
-      const index = state.value.findIndex(
-        (item) => item.productId === productId
-      );
-      if (index >= 0) {
-        state.value[index].quantity += quantity;
+      if (!state.value.includes(action.payload)) {
+        state.value.push(action.payload);
       } else {
-        state.value.push({ productId, quantity });
+        state.value = state.value.filter((item) => item !== action.payload);
       }
     },
   },
@@ -23,3 +19,12 @@ export const like = createSlice({
 export const { addLike } = like.actions;
 
 export default like.reducer;
+// const { productId, quantity, bg, f, s } = action.payload;
+// const index = state.value.findIndex(
+//   (item) => item.id === productId
+// );
+// if (index >= 0) {
+//   state.value[index].quantity += quantity;
+// } else {
+//   state.value.push({ productId, quantity, bg, f, s });
+// }

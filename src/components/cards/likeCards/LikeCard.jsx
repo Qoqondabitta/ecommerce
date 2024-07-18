@@ -1,45 +1,53 @@
 import React, { useState } from "react";
-import { Bottom, Container, H1, Image, P, Price, Shop, Title } from "./style";
+// import { Bottom, Container, H1, Image, P, Price, Shop, Title } from "./style";
 import { BsCart as Cart } from "react-icons/bs";
 import "./likeCard.css";
 import { GoHeart as Heart } from "react-icons/go";
 import { BsFillSuitHeartFill as Red } from "react-icons/bs";
 import { BsCartPlus as Plus } from "react-icons/bs";
 import { addLike } from "../../../redux/like";
+import { Container, Data, Desc, Icon, Imgs, Subtitle } from "../collectionCard/style";
+import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { BsFillSuitHeartFill as RedHeart } from "react-icons/bs";
 
-const LikeCard = ({ id, f, desc, bg, s, move, color="black" }) => {
+
+const LikeCard = ({list }) => {
   const [show, setShow] = useState(true);
   const [display, setDisplay] = useState(true);
+  const {value} = useSelector(store=>store.language)
   const Color = () => {
     setShow(!show);
-    // show && addLike({ id, title, desc, img, price, move, color})
   };
   const Display = () => {
     setDisplay(!display);
   };
   return (
-    <Container key={id} className={move ? "move" : ""}>
-      <Image src={bg} alt={f} />
-      <Price>{s}</Price>
-      {show ? (
-        <Heart onClick={Color} color={color} size="1.4em" className="heartlike" />
-      ) : (
-        <Red onClick={Color} color="red" size="1.4em" className="heartlike" />
-      )}
-      <Shop className="center">
-        {display ? (
-          <Plus onClick={Display} size="1.3em" />
-        ) : (
-          <Cart className="" size="1.3em" onClick={Display} />
-        )}
-      </Shop>
-      <Title>
-        <H1>{title}</H1>
-        <Bottom>
-          <P>{desc}</P>
-        </Bottom>
-      </Title>
-    </Container>
+    <>
+      {list.map((v, i) => (
+        <Container key={i}>
+          <NavLink to={`/collection/${v.id}`}>
+            <Imgs src={v?.bg} />
+          </NavLink>
+          <Data>
+            <Desc>
+              <Subtitle main="true">Air Force</Subtitle>
+              <Subtitle className="center">
+                {value == "ENG"
+                  ? "Price: "
+                  : value == "UZB"
+                  ? "Narx: "
+                  : "Sena: "}
+                <Subtitle main="true"> {v.s}</Subtitle>
+              </Subtitle>
+            </Desc>
+            <Icon onClick={() => clickLike(v.id)}>
+              <Heart color="black" size="1.4rem" />
+            </Icon>
+          </Data>
+        </Container>
+      ))}
+    </>
   );
 };
 
