@@ -7,19 +7,18 @@ import { useDispatch, useSelector } from "react-redux";
 import { collectioncardconstants } from "../../../constants/componentsContants/collection/collection";
 import { NavLink } from "react-router-dom";
 import { addLike } from "../../../redux/like";
+import { BsFillSuitHeartFill as RedHeart } from "react-icons/bs";
 
 const CollectionCard = ({ list }) => {
+  const [that, setThat] = useState(true);
   const { value } = useSelector((store) => store.language);
   const like = useSelector((store) => store.like);
   const dispatch = useDispatch();
 
   const clickLike = (digit) => {
-    let a = list.filter((v)=>v.id==digit)
+    let a = list.filter((v) => v.id == digit);
     dispatch(addLike(a));
-    console.log(a);
   };
-  // console.log(like, "yes");
-  // console.log(list, "waw");
   return (
     <>
       {list.map((v, i) => (
@@ -39,7 +38,12 @@ const CollectionCard = ({ list }) => {
                 <Subtitle main="true"> {v.s}</Subtitle>
               </Subtitle>
             </Desc>
-            <Icon onClick={()=>clickLike(v.id)}>
+            <Icon
+              className="cursor"
+              onClick={() => {
+                clickLike(v?.id);
+              }}
+            >
               <Heart color="black" size="1.4rem" />
             </Icon>
           </Data>

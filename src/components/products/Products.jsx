@@ -9,8 +9,8 @@ import FootNav from '../footNav/FootNav'
 const Products = () => {
     const location = useLocation()
     const id = location.pathname.split("/")[2]
-    const a = []
     const lists = collectioncardconstants.filter(v=>v.id==id)
+    // const a = lists.filter()
     console.log(lists, id);
 
     const isLoading = () => {

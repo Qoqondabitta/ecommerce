@@ -41,8 +41,12 @@ const LikeCard = ({list }) => {
                 <Subtitle main="true"> {v.s}</Subtitle>
               </Subtitle>
             </Desc>
-            <Icon onClick={() => clickLike(v.id)}>
-              <Heart color="black" size="1.4rem" />
+            <Icon className="cursor" onClick={() =>{ Color()}}>
+              {show ? (
+                <RedHeart color="red" size="1.4rem" />
+              ) : (
+                <Heart color="black" size="1.4rem" />
+              )}
             </Icon>
           </Data>
         </Container>

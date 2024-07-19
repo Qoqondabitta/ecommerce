@@ -6,16 +6,21 @@ import LikeCard from "../../../cards/likeCards/LikeCard";
 import CollectionCard from "../../../cards/collectionCard/CollectionCard";
 
 const Like = () => {
-  const [move, setMove] = useState(true);
-  const { value } = useSelector((store) => store.language);
   const like = useSelector((store) => store.like);
-  const [list, setList] = useState(like);
-  console.log(like.value, "value");
+  // console.log(like.value, "value");
+  // let a = []
+  const b = like.value.filter(
+    (value, index, self) => index === self.findIndex((t) => t.id === value.id)
+  );
+  // let c = {};
+  // console.log(a);
+  // let sortedList = like.value.filter(v => !a.includes(v.id))
+  // console.log(sortedList);
   return (
     <Container>
-      {like.value.map((v) => (
-        <LikeCard list={v}></LikeCard>
-      ))}
+      {/* {like.value.map((v) => ( */}
+      <LikeCard list={b}></LikeCard>
+      {/* ))} */}
     </Container>
   );
 };
