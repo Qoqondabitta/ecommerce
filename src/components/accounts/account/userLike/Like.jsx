@@ -12,15 +12,17 @@ const Like = () => {
   const b = like.value.filter(
     (value, index, self) => index === self.findIndex((t) => t.id === value.id)
   );
+  console.log(b, "it is b");
+  console.log(like.value, "this is value of like");
   // let c = {};
   // console.log(a);
   // let sortedList = like.value.filter(v => !a.includes(v.id))
   // console.log(sortedList);
   return (
     <Container>
-      {/* {like.value.map((v) => ( */}
-      <LikeCard list={b}></LikeCard>
-      {/* ))} */}
+      {b.value.map((v) => (
+      <LikeCard list={v}></LikeCard>
+      ))}
     </Container>
   );
 };
