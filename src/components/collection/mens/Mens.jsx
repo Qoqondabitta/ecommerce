@@ -220,9 +220,9 @@ const Mens = () => {
           )}
           {list.length == 0 && (
             <Collection>
-              {/* {collection.value.map((v, i) => ( */}
-                <CollectionCard list={collection.value}></CollectionCard>
-              {/* ))} */}
+              {collection.value.map((v, i) => (
+                <CollectionCard list={v}></CollectionCard>
+              ))}
             </Collection>
           )}
           {list.length > 0 && (

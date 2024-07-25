@@ -14,17 +14,20 @@ const CollectionCard = ({ list }) => {
   const { value } = useSelector((store) => store.language);
   const like = useSelector((store) => store.like);
   const dispatch = useDispatch();
-
+const {id, f, s, bg} = list
   const clickLike = (digit) => {
-    let a = list.filter((v) => v.id == digit);
-    dispatch(addLike(a));
+    // let a = list.filter((v) => v.id == digit);
+    dispatch(
+      addLike(id, id, bg, f, s)
+    );
   };
   return (
     <>
-      {list.map((v, i) => (
-        <Container key={i}>
-          <NavLink to={`/collection/${v.id}`}>
-            <Imgs src={v?.bg} />
+      {/* {list.map((v, i) => ( */}
+        {/* <Container key={i}> */}
+        <Container>
+          <NavLink to={`/collection/${id}`}>
+            <Imgs src={bg} />
           </NavLink>
           <Data>
             <Desc>
@@ -35,20 +38,20 @@ const CollectionCard = ({ list }) => {
                   : value == "UZB"
                   ? "Narx: "
                   : "Sena: "}
-                <Subtitle main="true"> {v.s}</Subtitle>
+                <Subtitle main="true"> {s}</Subtitle>
               </Subtitle>
             </Desc>
             <Icon
               className="cursor"
               onClick={() => {
-                clickLike(v?.id);
+                clickLike(id);
               }}
             >
               <Heart color="black" size="1.4rem" />
             </Icon>
           </Data>
         </Container>
-      ))}
+      {/* ))} */}
     </>
   );
 };
