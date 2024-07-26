@@ -1,12 +1,20 @@
 import { createSlice } from "@reduxjs/toolkit";
-import {produce} from "immer"
+import { produce } from "immer";
 
 export const like = createSlice({
   name: "like",
   initialState: { value: [] },
   reducers: {
     addLike: (state, action) => {
-      state.value.push(action.payload)
+      const exist = state.value.find((v) => v.id == action.payload.id);
+      if (exist) {
+        state.value.map((v) =>
+          v.id == action.payload.id ? { ...v, id: v.id + 1 } : v
+        );
+      } else {
+        state.value.push(action.payload);
+      }
+      // state.value.push(action.payload);
     },
   },
 });
@@ -15,11 +23,3 @@ export const like = createSlice({
 export const { addLike } = like.actions;
 
 export default like.reducer;
-      // const exist = state.value.find((v) => v.id == res.id);
-      // if (exist) {
-      //   return state.value.map((v) =>
-      //     v.id == res.id ? { ...v, id: v.id + 1 } : v
-      //   );
-      // } else {
-      //   return state.value.push(action.payload);
-      // }

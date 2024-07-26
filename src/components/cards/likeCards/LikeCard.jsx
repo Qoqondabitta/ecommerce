@@ -34,10 +34,10 @@ const LikeCard = ({ list }) => {
   };
   return (
     <>
-      {list.map((v, i) => (
-        <Container key={i}>
-          <NavLink to={`/collection/${v.id}`}>
-            <Imgs src={v?.bg} />
+      {/* {list.map((v, i) => ( */}
+        <Container key={list.id}>
+          <NavLink to={`/collection/${list.id}`}>
+            <Imgs src={list?.bg} />
           </NavLink>
           <Data>
             <Desc>
@@ -48,7 +48,7 @@ const LikeCard = ({ list }) => {
                   : value == "UZB"
                   ? "Narx: "
                   : "Sena: "}
-                <Subtitle main="true"> {v.s}</Subtitle>
+                <Subtitle main="true"> {list.s}</Subtitle>
               </Subtitle>
             </Desc>
             <Icon
@@ -65,7 +65,7 @@ const LikeCard = ({ list }) => {
             </Icon>
           </Data>
         </Container>
-      ))}
+      {/* // ))} */}
     </>
   );
 };

@@ -16,12 +16,12 @@ const Product = ({ list }) => {
   const like = useSelector(store=>store.like.value)
   const dispatch = useDispatch()
   const value = useSelector((store) => store.language.value);
-  console.log(list);
-  const LikeProduct = (product) => {
-    console.log(...product, ":");
-    dispatch(addLike(...product));
-    console.log(like, "likevalue");
+  // console.log(list);
+  const LikeProduct = () => {
+    console.log(list, ":");
+    dispatch(addLike(...list));
   };
+  console.log(like, "likevalue");
   return (
     <>
       {list.map((v) => (
@@ -56,7 +56,7 @@ const Product = ({ list }) => {
                 : v?.description[2]}
             </CardDetails>
             <BtnWrapper className="center">
-              <Button add="true" onClick={()=>LikeProduct(list)}>
+              <Button add="true" onClick={LikeProduct}>
                 {value == "ENG"
                   ? "Add To Cart"
                   : value == "UZB"
