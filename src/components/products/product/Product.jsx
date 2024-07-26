@@ -9,11 +9,17 @@ import {
   Img,
   Title,
 } from "./style";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { addLike } from "../../../redux/like";
 
 const Product = ({ list }) => {
+  const dispatch = useDispatch()
   const value = useSelector((store) => store.language.value);
   console.log(list);
+  const LikeProduct = (product) => {
+    console.log(product, ":");
+    dispatch(addLike(product));
+  };
   return (
     <>
       {list.map((v) => (
@@ -48,7 +54,7 @@ const Product = ({ list }) => {
                 : v?.description[2]}
             </CardDetails>
             <BtnWrapper className="center">
-              <Button add="true">
+              <Button add="true" onClick={()=>LikeProduct(list)}>
                 {value == "ENG"
                   ? "Add To Cart"
                   : value == "UZB"

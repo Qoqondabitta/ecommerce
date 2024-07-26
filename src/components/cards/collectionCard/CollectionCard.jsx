@@ -15,12 +15,9 @@ const CollectionCard = ({ list }) => {
   const like = useSelector((store) => store.like);
   const dispatch = useDispatch();
 const {id, f, s, bg} = list
-  const clickLike = (digit) => {
-    // let a = list.filter((v) => v.id == digit);
-    dispatch(
-      addLike(id, id, bg, f, s)
-    );
-  };
+    const clickLike = (product) => {
+      dispatch(addLike(product));
+    };
   return (
     <>
       {/* {list.map((v, i) => ( */}

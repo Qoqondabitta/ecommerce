@@ -7,43 +7,30 @@ export const like = createSlice({
   },
   reducers: {
     addLike: (state, action) => {
-      const { productId, quantity, background, titles, price } = action.payload;
-      const index = state.value.findIndex((item) => item.id === productId);
-      if (index >= 0) {
-        state.value[index].quantity += quantity;
+      const res = action.payload.map(v=>v);
+      const exist = state.value.find((v) => v.id == res.id);
+      if (exist) {
+        return state.value.map((v) =>
+          v.id == res.id ? { ...v, qty: v.qty + 1 } : v
+        );
       } else {
-        state.value.push({ productId, quantity, background, titles, price });
+        // const res = action.payload.map((v) => v);
+        const res = action.payload;
+        // return state.value.push(res)
+        return [...state.value, { ...res, qty: 1 }];
       }
-
-      // let b =[]
-      // if (!state.value.includes(action.payload)) {
-      // state.value.push(action.payload);
-      // } else {
-      //   b.push(action.payload);
-      // }
-      // state.value.map((v) => {
-      //   if (!v.includes(action.payload)) {
-      //     state.value.push(v)
-      //   } else {
-      //     b.push(v)
-      //   }
-      // })
-      // const b = like.value.map((v) => v.id)
-      // let a = state.value.filter(v => {
-      //  v.id !== action.payload.id && state.value.push(action.payload)
-      // })
-      // return state.value = [...a]
     },
     removeLike: (state, action) => {
-      state.value = state.value.filter((item) => item.id !== action.payload);
+      const exist1 = state.find((v) => v.id === action.payload.id);
+      if (exist1.qty === 1) {
+        return state.filter((v) => v.id !== exist1.id);
+      } else {
+        return state.map((v) =>
+          v.id === action.payload.id ? { ...v, qty: v.qty - 1 } : v
+        );
+      }
     },
-    changeLike: (state, action) => {
-      // let b = state.value.filter(
-      //   (value, index, self) =>
-      //     index === self.findIndex((t) => t.id === value.id)
-      // );
-      // state.value = [...b]
-    },
+    changeLike: (state, action) => {},
   },
 });
 
