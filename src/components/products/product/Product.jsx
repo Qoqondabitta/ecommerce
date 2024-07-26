@@ -13,12 +13,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { addLike } from "../../../redux/like";
 
 const Product = ({ list }) => {
+  const like = useSelector(store=>store.like.value)
   const dispatch = useDispatch()
   const value = useSelector((store) => store.language.value);
   console.log(list);
   const LikeProduct = (product) => {
-    console.log(product, ":");
-    dispatch(addLike(product));
+    console.log(...product, ":");
+    dispatch(addLike(...product));
+    console.log(like, "likevalue");
   };
   return (
     <>

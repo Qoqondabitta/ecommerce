@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 // import BotProSliderCard from '../../../cards/bottomCards/BotCard'
 import LikeCard from "../../../cards/likeCards/LikeCard";
 import CollectionCard from "../../../cards/collectionCard/CollectionCard";
-import { changeLike } from "../../../../redux/like";
+// import { changeLike } from "../../../../redux/like";
 
 const Like = () => {
   const dispatch = useDispatch()
