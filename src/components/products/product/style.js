@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 30px 20px 30px;
+  padding: 0px 30px;
 
   @media only screen and (max-width: 1200px) {
     height: fit-content;
@@ -24,7 +24,7 @@ export const Left = styled.div`
 `;
 
 export const Img = styled.img`
-  height: 80%;
+  height: 100%;
   width: 40%;
   object-fit: cover;
   object-position: center;
@@ -63,7 +63,6 @@ export const CardDetails = styled.p`
 `;
 
 export const Headline = styled.h3`
-  color: grey;
   color: ${({ cost }) => (cost ? "rgb(64, 65, 65)" : "grey")};
   font-weight: ${({ cost }) => (cost ? "600" : "400")};
   text-transform: uppercase;
@@ -82,7 +81,6 @@ export const Title = styled.h1`
 `;
 
 export const BtnWrapper = styled.div`
-  /* width: fit-content; */
   gap: 10px;
   @media only screen and (max-width: 600px){
     width: 100%;
@@ -93,6 +91,7 @@ export const BtnWrapper = styled.div`
 export const Button = styled.button`
   padding: 10px 30px;
   border: none;
+  white-space: nowrap;
   text-align: center;
   color: ${({ add }) => (add ? "black" : "white")};
   background-color: ${({ add }) => (add ? "white" : "black")};

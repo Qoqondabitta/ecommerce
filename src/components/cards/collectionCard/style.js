@@ -2,19 +2,17 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: ${({ width }) => (width ? width : "250px")};
-  /* height: 423px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
   gap: 0px;
-  /* background-color: white; */
   background-image: url(${({ bgimg }) => bgimg});
   background-position: ${({ place }) => (place ? place : "top")};
   border-radius: 10px;
   background-repeat: no-repeat;
-  border: 1px solid rgb(223, 218, 218);
+  border: 2px solid rgb(223, 218, 218);
   z-index: 0;
   background-size: ${({ width }) => width && "cover"};
 
@@ -36,11 +34,12 @@ export const Container = styled.div`
 
 export const Imgs = styled.img`
   width: ${({ width }) => (width ? width : "100%")};
-  border: 1px solid rgb(223, 218, 218);
+  /* border: 1px solid rgb(223, 218, 218); */
   height: 300px;
   object-fit: cover;
   object-position: center;
-  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 
   @media only screen and (max-width: 600px) {
     width: ${({ width }) => (width ? "100%" : "175px")};
@@ -58,14 +57,14 @@ export const Imgs = styled.img`
 `;
 
 export const Data = styled.div`
-  border-bottom: 1px solid rgb(223, 218, 218);
+  border-top: 2px solid rgb(223, 218, 218);
   background-color: white;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  padding: 0px 20px 10px 10px;
+  padding: 3px 20px 10px 10px;
   height: fit-content;
   z-index: 10000000000000000;
 `;

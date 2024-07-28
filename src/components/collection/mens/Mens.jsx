@@ -49,9 +49,15 @@ const Mens = () => {
   const [keyword, setKeyword] = useState("");
   const [warn, setWarn] = useState(false);
   const changeHere = () => {
+    if (show) {
+      setShow(false);
+    }
     setHere(!here);
   };
   const changeShow = () => {
+    if (here) {
+      setHere(false);
+    }
     setShow(!show);
   };
   const changeWarn = () => {
@@ -83,18 +89,18 @@ const Mens = () => {
   const checkSize = () => {
     if (color == "") {
       let res = collection.value.filter((v) => {
-        return v.size == keyword
+        return v.size == keyword;
       });
+      console.log(res, "res array");
       setList(res);
     } else if (keyword == "") {
       let res = collection.value.filter((v) => {
-        return v.color == color
+        return v.color == color;
       });
       setList(res);
     } else if (keyword != "" && color != "") {
       let res = collection.value.filter((v) => {
-        return v.color == color && v.size == keyword
-
+        return v.color == color && v.size == keyword;
       });
       setList(res);
     } else {
@@ -104,9 +110,14 @@ const Mens = () => {
     setKeyword("");
     setColor("");
   };
-  // console.log(keyword=="", keyword);
-  console.log(color == "", "color empty", color);
-  console.log(color != "", "color full", color);
+
+  const closeDrops = (e) => {
+    if (here) {
+      setHere(false);
+    } else if (show) {
+      setShow(false);
+    }
+  };
 
   return (
     <Main>
@@ -169,7 +180,7 @@ const Mens = () => {
             </Category>
           </CategoryWrapper>
           {here && (
-            <FindTool className="columnCenter">
+            <FindTool className="findTool columnCenter">
               <InputWrappers>
                 <Label>Size any: s/m/48/36</Label>
                 <Input onChange={changeKeyword} />
@@ -178,17 +189,11 @@ const Mens = () => {
                 <Label>Color any: blue/black</Label>
                 <Input onChange={changeColor} />
               </InputWrappers>
-              <SearchButton
-                onClick={() => {
-                  checkSize();
-                }}
-              >
-                Search
-              </SearchButton>
+              <SearchButton onClick={checkSize}>Search</SearchButton>
             </FindTool>
           )}
           {show && (
-            <Drop className="categorymenu">
+            <Drop className="dropTool categorymenu">
               {show &&
                 category.map((v, i) => (
                   <Items
@@ -227,7 +232,9 @@ const Mens = () => {
           )}
           {list.length > 0 && (
             <Collection>
-              <CollectionCard list={list}></CollectionCard>
+              {list.map((v) => (
+                <CollectionCard list={v}></CollectionCard>
+              ))}
             </Collection>
           )}
         </Box>

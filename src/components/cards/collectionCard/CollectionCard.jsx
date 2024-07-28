@@ -17,14 +17,10 @@ const CollectionCard = ({ list }) => {
   const { id, f, s, bg } = list;
   const dislikeProduct = () => {
     setThat(!that);
-    // localStorage.removeItem("red");
-    // localStorage.setItem("red", false)
     dispatch(removeLike(list))
 }
   const LikeProduct = () => {
     setThat(!that);
-    // localStorage.removeItem("red")
-    // localStorage.setItem("red", true)
     dispatch(addLike(list));
   };
   return (

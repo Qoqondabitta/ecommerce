@@ -14,14 +14,12 @@ import { addLike } from "../../../redux/like";
 import { NavLink } from "react-router-dom";
 
 const Product = ({ list }) => {
-  const like = useSelector(store=>store.like.value)
   const dispatch = useDispatch()
   const value = useSelector((store) => store.language.value);
   const LikeProduct = () => {
     console.log(list, ":");
     dispatch(addLike(...list));
   };
-  console.log(like, "likevalue");
   return (
     <>
       {list.map((v) => (

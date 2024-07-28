@@ -29,7 +29,6 @@ const Nav = () => {
   const order = useSelector((store) => store.order);
   const page = useSelector((store) => store.page);
   const burger = useSelector((store) => store.burger);
-  console.log(page.value, "page");
   return (
     <Main className="columnCenter">
       <Container>
