@@ -11,12 +11,12 @@ import {
 } from "./style";
 import { useDispatch, useSelector } from "react-redux";
 import { addLike } from "../../../redux/like";
+import { NavLink } from "react-router-dom";
 
 const Product = ({ list }) => {
   const like = useSelector(store=>store.like.value)
   const dispatch = useDispatch()
   const value = useSelector((store) => store.language.value);
-  // console.log(list);
   const LikeProduct = () => {
     console.log(list, ":");
     dispatch(addLike(...list));
@@ -63,13 +63,15 @@ const Product = ({ list }) => {
                   ? "Savatga Qo'shish"
                   : "Добавить в корзину"}
               </Button>
-              <Button>
-                {value == "ENG"
-                  ? "Go To Cart"
-                  : value == "UZB"
-                  ? "Savatga Kirish"
-                  : "Перейти в корзину"}
-              </Button>
+              <NavLink style={{textDecoration: "none"}} to="/account">
+                <Button>
+                  {value == "ENG"
+                    ? "Go To Cart"
+                    : value == "UZB"
+                    ? "Savatga Kirish"
+                    : "Перейти в корзину"}
+                </Button>
+              </NavLink>
             </BtnWrapper>
           </Details>
         </Container>

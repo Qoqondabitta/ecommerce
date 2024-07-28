@@ -5,7 +5,7 @@ import "./likeCard.css";
 import { GoHeart as Heart } from "react-icons/go";
 import { BsFillSuitHeartFill as Red } from "react-icons/bs";
 import { BsCartPlus as Plus } from "react-icons/bs";
-import { addLike } from "../../../redux/like";
+import { addLike, removeLike } from "../../../redux/like";
 import {
   Container,
   Data,
@@ -23,48 +23,42 @@ const LikeCard = ({ list }) => {
   const [display, setDisplay] = useState(true);
   const dispatch = useDispatch();
   const { value } = useSelector((store) => store.language);
-  const Color = () => {
+  const dislikeProduct = () => {
     setShow(!show);
+    dispatch(removeLike(list));
   };
-  const Display = () => {
-    setDisplay(!display);
-  };
-  const LikeProduct = (product) => {
-    dispatch(addLike(product));
+  const LikeProduct = () => {
+    setShow(!show);
+    dispatch(addLike(list));
   };
   return (
     <>
       {/* {list.map((v, i) => ( */}
-        <Container key={list.id}>
-          <NavLink to={`/collection/${list.id}`}>
-            <Imgs src={list?.bg} />
-          </NavLink>
-          <Data>
-            <Desc>
-              <Subtitle main="true">Air Force</Subtitle>
-              <Subtitle className="center">
-                {value == "ENG"
-                  ? "Price: "
-                  : value == "UZB"
-                  ? "Narx: "
-                  : "Sena: "}
-                <Subtitle main="true"> {list.s}</Subtitle>
-              </Subtitle>
-            </Desc>
-            <Icon
-              className="cursor"
-              onClick={() => {
-                Color();
-              }}
-            >
-              {show ? (
-                <RedHeart color="red" size="1.4rem" />
-              ) : (
-                <Heart color="black" size="1.4rem" />
-              )}
-            </Icon>
-          </Data>
-        </Container>
+      <Container key={list.id}>
+        <NavLink to={`/collection/${list.id}`}>
+          <Imgs src={list?.bg} />
+        </NavLink>
+        <Data>
+          <Desc>
+            <Subtitle main="true">Air Force</Subtitle>
+            <Subtitle className="center">
+              {value == "ENG"
+                ? "Price: "
+                : value == "UZB"
+                ? "Narx: "
+                : "Sena: "}
+              <Subtitle main="true"> {list.s}</Subtitle>
+            </Subtitle>
+          </Desc>
+          <Icon className="cursor">
+            {show ? (
+              <RedHeart color="red" onClick={dislikeProduct} size="1.4rem" />
+            ) : (
+              <Heart onClick={LikeProduct} color="black" size="1.4rem" />
+            )}
+          </Icon>
+        </Data>
+      </Container>
       {/* // ))} */}
     </>
   );

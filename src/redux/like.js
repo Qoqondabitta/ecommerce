@@ -14,12 +14,13 @@ export const like = createSlice({
       } else {
         state.value.push(action.payload);
       }
-      // state.value.push(action.payload);
     },
+    removeLike: (state, action) => {
+      state.value = state.value.filter((v) => v.id !== action.payload.id);
+    }
   },
 });
 
-// export const { addLike, changeLike, removeLike } = like.actions;
-export const { addLike } = like.actions;
+export const { addLike, removeLike } = like.actions;
 
 export default like.reducer;
