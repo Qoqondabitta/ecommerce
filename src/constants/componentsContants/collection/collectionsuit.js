@@ -144,7 +144,7 @@ export const menscollection = [
 
 export const collectioncardsuits = [
   {
-    id: 101,
+    id: "suit1",
     
     e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
 
