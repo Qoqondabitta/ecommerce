@@ -82,6 +82,19 @@ export const Subtitle = styled.h3`
   }
 `;
 
+export const SubSectitle = styled.p`
+  font-size: ${({ main }) => (main ? "16px" : "14px")};
+  height: ${({ main }) => (main ? "20px" : "16px")};
+  font-weight: ${({ main }) => (main ? "bold" : "400")};
+  font-style: "DM Serif Display", serif;
+  color: ${({ main }) => (main ? "black" : "grey")};
+  overflow: ${({ main }) => (main ? "hidden" : null)};
+
+  @media only screen and (max-width: 600px) {
+    font-size: ${({ main }) => (main ? "16px" : "14px")};
+  }
+`;
+
 export const Desc = styled.div`
   display: flex;
   flex-direction: column;

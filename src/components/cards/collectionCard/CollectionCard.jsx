@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Data, Desc, Icon, Imgs, Subtitle } from "./style";
+import { Container, Data, Desc, Icon, Imgs, Subtitle, SubSectitle } from "./style";
 import { GoHeart as Heart } from "react-icons/go";
 import cardimg from "../../../assets/images/collection/men/collectioncard10.jpeg";
 import cardimg2 from "../../../assets/images/collection/men/collectioncard10alternative.webp";
@@ -43,7 +43,7 @@ const CollectionCard = ({ list }) => {
                 : value == "UZB"
                 ? "Narx: "
                 : "Sena: "}
-              <Subtitle main="true"> {s}</Subtitle>
+              <SubSectitle main="true"> {s}</SubSectitle>
             </Subtitle>
           </Desc>
           <Icon className="cursor">
