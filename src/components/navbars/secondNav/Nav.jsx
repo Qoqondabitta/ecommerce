@@ -32,7 +32,7 @@ const Nav = () => {
   return (
     <Main className="columnCenter">
       <Container>
-        <NavLink to="/" style={{textDecoration: "none", zIndex:"1001"}}>
+        <NavLink exact="true" to="/" style={{textDecoration: "none", zIndex:"1001"}}>
           <Title color="white" id="mainTitle" type="xonTitle">
             {language.value == "RUS" ? "ХОН" : "XON"}
           </Title>

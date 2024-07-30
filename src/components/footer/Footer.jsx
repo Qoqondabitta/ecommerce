@@ -32,8 +32,8 @@ const Footer = () => {
                 key={id}
                 botmar={v.botMar}
                 underline={v.underline}
-                // capital={v.capital}
-                capital
+                capital={v.capital}
+                // capital
                 color={v.color}
                 heights="20px"
                 fontSize={v?.size}
@@ -53,8 +53,8 @@ const Footer = () => {
                 key={id}
                 botmar={v.botMar}
                 underline={v.underline}
-                // capital={v.capital}
-                capital
+                capital={v.capital}
+                // capital
                 color={v.color}
                 heights="20px"
                 fontSize={v?.size}
@@ -75,8 +75,8 @@ const Footer = () => {
                 color={v.color}
                 botmar={v.botMar}
                 underline={v.underline}
-                // capital={v.capital}
-                capital
+                capital={v.capital}
+                // capital
                 gap="20px"
                 className="columnStart"
               >

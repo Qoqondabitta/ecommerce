@@ -146,7 +146,7 @@ const Mens = () => {
         className="columnCenter"
       >
         {menscollection.map((v, i) => (
-          <Title type={v.ty} color={v?.color}>
+          <Title type={v.ty} key={i} color={v?.color}>
             {value == "ENG" ? v.c[0] : value == "UZB" ? v.c[1] : v.c[2]}
           </Title>
         ))}
@@ -226,14 +226,14 @@ const Mens = () => {
           {list.length == 0 && (
             <Collection>
               {collection.value.map((v, i) => (
-                <CollectionCard list={v}></CollectionCard>
+                <CollectionCard key={i} list={v}></CollectionCard>
               ))}
             </Collection>
           )}
           {list.length > 0 && (
             <Collection>
-              {list.map((v) => (
-                <CollectionCard list={v}></CollectionCard>
+              {list.map((v, i) => (
+                <CollectionCard key={i} list={v}></CollectionCard>
               ))}
             </Collection>
           )}

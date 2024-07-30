@@ -17,8 +17,8 @@ const CollectionCard = ({ list }) => {
   const { id, f, s, bg } = list;
   const dislikeProduct = () => {
     setThat(!that);
-    dispatch(removeLike(list))
-}
+    dispatch(removeLike(list));
+  };
   const LikeProduct = () => {
     setThat(!that);
     dispatch(addLike(list));
@@ -33,7 +33,10 @@ const CollectionCard = ({ list }) => {
         </NavLink>
         <Data>
           <Desc>
-            <Subtitle main="true">Air Force</Subtitle>
+            {/* <Subtitle main="true">{f[0]}</Subtitle> */}
+            <Subtitle main="true">
+              {value == "ENG" ? f[0] : value == "UZB" ? f[1] : f[2]}
+            </Subtitle>
             <Subtitle className="center">
               {value == "ENG"
                 ? "Price: "

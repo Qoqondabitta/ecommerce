@@ -18,17 +18,21 @@ export const Container = styled.div`
   }
 `;
 export const Left = styled.div`
-@media only screen and (max-width: 600px){
-  height: 100%;
-}
+  @media only screen and (max-width: 600px) {
+    height: 100%;
+  }
+`;
+
+export const ImgWrapper = styled.div`
+  flex: 1;
 `;
 
 export const Img = styled.img`
-  height: 100%;
-  width: 40%;
-  object-fit: cover;
-  object-position: center;
-  
+  /* height: 50%; */
+  /* width: 50%; */
+  /* object-fit: cover; */
+  /* object-position: center; */
+
   @media only screen and (max-width: 600px) {
     width: 100%;
   }
@@ -44,7 +48,7 @@ export const Details = styled.div`
   align-items: flex-start;
   gap: 20px;
 
-  @media only screen and (max-width: 600px){
+  @media only screen and (max-width: 600px) {
     width: 100%;
   }
 `;
@@ -57,7 +61,7 @@ export const CardDetails = styled.p`
   margin-bottom: 5px;
   height: fit-content;
 
-  @media only screen and (max-width: 1200px){
+  @media only screen and (max-width: 1200px) {
     width: 100%;
   }
 `;
@@ -75,14 +79,14 @@ export const Title = styled.h1`
   font-style: "DM Serif Display", serif;
   color: ${({ cost }) => (cost ? "black" : "rgb(64, 65, 65)")};
   font-size: 40px;
-  @media only screen and (max-width: 900px){
+  @media only screen and (max-width: 900px) {
     margin-block: 0px;
   }
 `;
 
 export const BtnWrapper = styled.div`
   gap: 10px;
-  @media only screen and (max-width: 600px){
+  @media only screen and (max-width: 600px) {
     width: 100%;
     justify-content: flex-start;
   }

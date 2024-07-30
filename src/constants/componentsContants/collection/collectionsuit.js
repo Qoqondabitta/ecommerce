@@ -145,9 +145,7 @@ export const menscollection = [
 export const collectioncardsuits = [
   {
     id: "suit1",
-    
     e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
-
     description: [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.

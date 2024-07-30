@@ -61,38 +61,41 @@ export const Data = styled.div`
   background-color: white;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 10px;
-  padding: 3px 20px 10px 10px;
-  height: fit-content;
+  gap: 0px;
+  padding: 10px 20px 10px 10px;
+  height: 70px;
   z-index: 10000000000000000;
 `;
 
-export const Subtitle = styled.p`
+export const Subtitle = styled.h3`
   font-size: ${({ main }) => (main ? "16px" : "14px")};
-  font-weight: ${({main})=>main?"bold":"400"};
+  height: ${({ main }) => (main ? "20px" : "16px")};
+  font-weight: ${({ main }) => (main ? "bold" : "400")};
   font-style: "DM Serif Display", serif;
-  color: ${({main})=>main?"black":"grey"};
+  color: ${({ main }) => (main ? "black" : "grey")};
+  overflow: ${({ main }) => (main ? "hidden" : null)};
 
-  @media only screen and (max-width: 600px){
-    font-size: ${({ main }) => (main ? "16px" : "14px")}
+  @media only screen and (max-width: 600px) {
+    font-size: ${({ main }) => (main ? "16px" : "14px")};
   }
 `;
 
 export const Desc = styled.div`
-display: flex;
-flex-direction: column;
-align-items: flex-start;  
-justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 10px;
-
-  @media only screen and (max-width: 600px){
+width: 89%;
+  @media only screen and (max-width: 600px) {
     gap: 5px;
   }
 `;
 
 export const Icon = styled.div`
+  width: 10%;
   /* position: absolute; */
   /* top: 3%; */
   /* right: 3%; */

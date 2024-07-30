@@ -7,6 +7,7 @@ import {
   Details,
   Headline,
   Img,
+  ImgWrapper,
   Title,
 } from "./style";
 import { useDispatch, useSelector } from "react-redux";
@@ -14,7 +15,7 @@ import { addLike } from "../../../redux/like";
 import { NavLink } from "react-router-dom";
 
 const Product = ({ list }) => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const value = useSelector((store) => store.language.value);
   const LikeProduct = () => {
     console.log(list, ":");
@@ -24,10 +25,14 @@ const Product = ({ list }) => {
     <>
       {list.map((v) => (
         <Container key={v?.id}>
-          <Img
-            src={v.bg}
-            alt={value == "ENG" ? v?.f[0] : value == "UZB" ? v?.f[1] : v?.f[2]}
-          />
+          <ImgWrapper className="center">
+            <Img
+              src={v.bg}
+              alt={
+                value == "ENG" ? v?.f[0] : value == "UZB" ? v?.f[1] : v?.f[2]
+              }
+            />
+          </ImgWrapper>
           <Details>
             <Headline>
               {value == "ENG" ? v?.e[0] : value == "UZB" ? v?.e[1] : v?.e[2]}
@@ -61,7 +66,7 @@ const Product = ({ list }) => {
                   ? "Savatga Qo'shish"
                   : "Добавить в корзину"}
               </Button>
-              <NavLink style={{textDecoration: "none"}} to="/account">
+              <NavLink style={{ textDecoration: "none" }} to="/account">
                 <Button>
                   {value == "ENG"
                     ? "Go To Cart"
