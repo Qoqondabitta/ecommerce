@@ -1,6 +1,6 @@
 import { collectioncardconstants } from "../componentsContants/collection/collection";
-import { collectioncardsport } from "../componentsContants/collection/collectionsport";
-import { collectioncardsuits } from "../componentsContants/collection/collectionsuit";
+import { cardfrank, collectioncardsport } from "../componentsContants/collection/collectionsport";
+// import { collectioncardsuits } from "../componentsContants/collection/collectionsuit";
 import { casual, classic, formal, sport } from "../pokerTextSlider";
 
 export const tripleSLiderElements = [
@@ -14,7 +14,7 @@ export const tripleSLiderElements = [
     player: "lionel",
     btn: ["Explore Smart", "Rasmiy Kiyimlar", "Формальный"],
     t: classic,
-    l: collectioncardsuits,
+    l: cardfrank,
   },
   {
     player: "neymar",
@@ -26,7 +26,7 @@ export const tripleSLiderElements = [
     player: "suarez",
     btn: ["Explore Suits", "Kastyumlar", "Костюмы"],
     t: formal,
-    l: collectioncardsuits,
+    l: cardfrank,
   },
 ];
 

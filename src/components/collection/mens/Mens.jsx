@@ -30,11 +30,12 @@ import suitsmain from "../../../assets/images/collection/men/suitshalf3.jpg";
 import shoesgif from "../../../assets/images/backgrounds/shoesgif.gif";
 import { shoes } from "../../../constants/componentsContants/collection/shoes";
 import sportgif from "../../../assets/images/backgrounds/sportgif.gif";
-import { collectioncardsport } from "../../../constants/componentsContants/collection/collectionsport";
-import { collectioncardsuits } from "../../../constants/componentsContants/collection/collectionsuit";
+import { cardfrank, collectioncardsport } from "../../../constants/componentsContants/collection/collectionsport";
+// import { collectioncardsuits } from "../../../constants/componentsContants/collection/collectionsuit";
 import { FindTool, Input, InputWrappers, Label, SearchButton } from "./filter";
 import { Alarm } from "./alarm";
 import { IoClose } from "react-icons/io5";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Mens = () => {
   const collection = useSelector((store) => store.collection);
@@ -47,6 +48,7 @@ const Mens = () => {
   const [list, setList] = useState([]);
   const dispatch = useDispatch();
   const [keyword, setKeyword] = useState("");
+  const navigate = useNavigate()
   const [warn, setWarn] = useState(false);
   const changeHere = () => {
     if (show) {
@@ -139,7 +141,7 @@ const Mens = () => {
             ? shoesgif
             : collection.value == collectioncardsport
             ? sportgif
-            : collection.value == collectioncardsuits
+            : collection.value == cardfrank
             ? suitsmain
             : main
         }
@@ -202,6 +204,7 @@ const Mens = () => {
                     } category-item`}
                     key={i}
                     onClick={() => {
+                      // v.c[0]=="suits"&&navigate("/suit")
                       dispatch(changeCollection(v.l));
                       setDisplay(v.c[0]);
                       setList([]);

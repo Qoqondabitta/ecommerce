@@ -7,12 +7,13 @@ import { Bunker } from "../generics";
 import { genderkidssuits, genderperfume, gendersuits, genderwomen } from "../../constants/componentsContants/gender";
 import { useDispatch, useSelector } from "react-redux";
 import Button from "..//generics/button/Button";
-import { collectioncardsuits } from "../../constants/componentsContants/collection/collectionsuit";
+// import { collectioncardsuits } from "../../constants/componentsContants/collection/collectionsuit";
 import { NavLink } from "react-router-dom";
 import { changeCollection } from "../../redux/collection";
 import perfumemain from "../../assets/images/backgrounds/perfumemain.jpg";
 import genderwomenmain from "../../assets/images/backgrounds/genderwomenmain.jpg"
 import genderskidsmain from "../../assets/images/backgrounds/genderskidsmain.jpg";
+import { cardfrank } from "../../constants/componentsContants/collection/collectionsport";
 
 const Genders = () => {
   const order = useSelector((store) => store.order);
@@ -52,7 +53,7 @@ const Genders = () => {
           <NavLink
             to="/collection"
             style={{ textDecoration: "none" }}
-            onClick={() => dispatch(changeCollection(collectioncardsuits))}
+            onClick={() => dispatch(changeCollection(cardfrank))}
           >
             <Button type={v.title.t}>
               {value == "ENG"

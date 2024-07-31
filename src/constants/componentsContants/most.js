@@ -1,7 +1,7 @@
 import back from "../../assets/images/bottomCard/bottom11png.webp";
 import back1 from "../../assets/images/topCard/left.jpg";
-import { collectioncardsport } from "./collection/collectionsport";
-import { collectioncardsuits } from "./collection/collectionsuit";
+import { cardfrank, collectioncardsport } from "./collection/collectionsport";
+// import { cardfrank } from "./collection/collectionsuit";
 import mostperfumeleft from "../../assets/images/backgrounds/mostperfumeright.jpg";
 import mostperfumeright from "../../assets/images/backgrounds/mostperfumeright.png";
 import mostwomanright from "../../assets/images/backgrounds/mostwomenright.jpeg";
@@ -21,7 +21,7 @@ export const mostconstants = [
       "To'plamlarni Ko'rish",
       "Смотреть коллекцию",
     ],
-    l: collectioncardsuits,
+    l: cardfrank,
   },
   {
     p: "alignEnd",
@@ -52,7 +52,7 @@ export const mostperfume = [
       "Dezodarantlar To'plami",
       "Смотреть коллекцию",
     ],
-    l: collectioncardsuits,
+    l: cardfrank,
   },
   {
     p: "alignEnd",
@@ -73,7 +73,7 @@ export const mostwoman = [
     sp: "columnAlignEnd",
     te: { ch: ["Pre-FALL 2024", "2024 KUZ", "До ОСЕНИ 2024"], t: "gucci" },
     btn: ["Explore Fall Collection", "Kuzgi To'plam", "Смотреть коллекцию"],
-    l: collectioncardsuits,
+    l: cardfrank,
   },
   {
     p: "alignEnd",
@@ -94,7 +94,7 @@ export const mostkids = [
     sp: "columnAlignEnd",
     te: { ch: ["Pre-FALL 2024", "2024 KUZ", "До ОСЕНИ 2024"], t: "gucci" },
     btn: ["Explore Fall Collection", "Kuzgi To'plam", "Смотреть коллекцию"],
-    l: collectioncardsuits,
+    l: cardfrank,
   },
   {
     p: "alignEnd",

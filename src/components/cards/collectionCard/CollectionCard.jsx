@@ -1,10 +1,15 @@
 import React, { useState } from "react";
-import { Container, Data, Desc, Icon, Imgs, Subtitle, SubSectitle } from "./style";
+import {
+  Container,
+  Data,
+  Desc,
+  Icon,
+  Imgs,
+  Subtitle,
+  SubSectitle,
+} from "./style";
 import { GoHeart as Heart } from "react-icons/go";
-import cardimg from "../../../assets/images/collection/men/collectioncard10.jpeg";
-import cardimg2 from "../../../assets/images/collection/men/collectioncard10alternative.webp";
 import { useDispatch, useSelector } from "react-redux";
-import { collectioncardconstants } from "../../../constants/componentsContants/collection/collection";
 import { NavLink } from "react-router-dom";
 import { addLike, removeLike } from "../../../redux/like";
 import { BsFillSuitHeartFill as RedHeart } from "react-icons/bs";
@@ -25,17 +30,18 @@ const CollectionCard = ({ list }) => {
   };
   return (
     <>
-      {/* {list.map((v, i) => ( */}
-      {/* <Container key={i}> */}
       <Container>
         <NavLink to={`/collection/${id}`}>
           <Imgs src={bg} />
         </NavLink>
         <Data>
           <Desc>
-            {/* <Subtitle main="true">{f[0]}</Subtitle> */}
             <Subtitle main="true">
-              {value == "ENG" ? f[0] : value == "UZB" ? f[1] : f[2]}
+              {value == "ENG"
+                ? list.f[0]
+                : value == "UZB"
+                ? list.f[1]
+                : list.f[2]}
             </Subtitle>
             <Subtitle className="center">
               {value == "ENG"
@@ -55,7 +61,6 @@ const CollectionCard = ({ list }) => {
           </Icon>
         </Data>
       </Container>
-      {/* ))} */}
     </>
   );
 };

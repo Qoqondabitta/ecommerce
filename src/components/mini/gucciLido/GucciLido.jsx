@@ -11,7 +11,8 @@ import {
 import Title from "../../generics/title";
 import { Navigate, NavLink } from "react-router-dom";
 import { changeCollection } from "../../../redux/collection";
-import { collectioncardsuits } from "../../../constants/componentsContants/collection/collectionsuit";
+// import { collectioncardsuits } from "../../../constants/componentsContants/collection/collectionsuit";
+import { cardfrank } from "../../../constants/componentsContants/collection/collectionsport";
 
 const GucciLido = () => {
   const dispatch = useDispatch();
@@ -38,7 +39,7 @@ const GucciLido = () => {
           ? exploreKids
           : explorePerfumes
         ).map((v, i) => (
-          <NavLink style={{textDecoration: "none"}} to="/collection" onClick={()=>dispatch(changeCollection(collectioncardsuits))}>
+          <NavLink style={{textDecoration: "none"}} to="/collection" onClick={()=>dispatch(changeCollection(cardfrank))}>
             <Button style={{ background: "white" }} type="gucci" key={i}>
               {value == "ENG"
                 ? v.title[0]

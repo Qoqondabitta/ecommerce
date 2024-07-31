@@ -1502,3 +1502,1199 @@ export const collectioncardsport = [
     place: "center",
   },
 ];
+
+
+
+
+// ===============================suit==========================================
+import bgsuit1 from "../../../assets/images/collection/men/suits6.jpeg";
+import bgsuit1alternative from "../../../assets/images/collection/men/suits6alternative.jpeg";
+import bgsuit2alternative from "../../../assets/images/collection/men/suits27.jpg";
+import bgsuit2 from "../../../assets/images/collection/men/suits27alternative.jpeg";
+import bgsuit3alternative from "../../../assets/images/collection/men/suits25alternative.jpeg";
+import bgsuit3 from "../../../assets/images/collection/men/suits25.jpeg";
+import bgsuit4 from "../../../assets/images/collection/men/suits26.jpeg";
+import bgsuit5 from "../../../assets/images/collection/men/suits29.jpeg";
+import bgsuit6 from "../../../assets/images/collection/men/suits30.jpeg";
+import bgsuit7 from "../../../assets/images/collection/men/suits3.jpeg";
+import bgsuit8 from "../../../assets/images/collection/men/suits31.webp";
+import bgsuit4alternative from "../../../assets/images/collection/men/suits26alternative.jpeg";
+import bgsuit5alternative from "../../../assets/images/collection/men/suits29alternative.jpeg";
+import bgsuit6alternative from "../../../assets/images/collection/men/suits30alternative.jpeg";
+import bgsuit7alternative from "../../../assets/images/collection/men/suits28alternative.jpg";
+import bgsuit8alternative from "../../../assets/images/collection/men/suits31alternative.jpg";
+import bgsuit9alternative from "../../../assets/images/collection/men/suits32alternative.jpg";
+import bgsuit10alternative from "../../../assets/images/collection/men/suits24alternative.jpeg";
+import bgsuit11alternative from "../../../assets/images/collection/men/suits34.jpeg";
+import bgsuit12alternative from "../../../assets/images/collection/men/collectioncard14alternative.jpeg";
+import bgsuit13alternative from "../../../assets/images/collection/men/collectioncard15alternative.webp";
+import bgsuit14alternative from "../../../assets/images/collection/men/collectioncard16alternative.jpeg";
+import bgsuit15alternative from "../../../assets/images/collection/men/collectioncard17alternative.jpeg";
+import bgsuit16alternative from "../../../assets/images/collection/men/collectioncard18alternative.jpeg";
+import bgsuit17alternative from "../../../assets/images/collection/men/collectioncard19alternative.jpeg";
+import bgsuit18alternative from "../../../assets/images/collection/men/collectioncard20altternative.jpeg";
+import bgsuit19alternative from "../../../assets/images/collection/men/suits24alternative.jpeg";
+import bgsuit20alternative from "../../../assets/images/collection/men/suits8alternative.jpeg";
+import bgsuit21alternative from "../../../assets/images/collection/men/suits9alternative.jpeg";
+import bgsuit22alternative from "../../../assets/images/collection/men/suits10alternative.jpeg";
+import bgsuit23alternative from "../../../assets/images/collection/men/suits11alternative.jpeg";
+import bgsuit24alternative from "../../../assets/images/collection/men/suits13alternative.jpeg";
+import bgsuit25alternative from "../../../assets/images/collection/men/suits14alternative.jpeg";
+import bgsuit26alternative from "../../../assets/images/collection/men/suits15alternative.jpeg";
+import bgsuit27alternative from "../../../assets/images/collection/men/suits16alternative.jpeg";
+import bgsuit28alternative from "../../../assets/images/collection/men/suits17alternative.jpeg";
+import bgsuit29alternative from "../../../assets/images/collection/men/suits18alternative.jpeg";
+import bgsuit30alternative from "../../../assets/images/collection/men/suits19alternative.png";
+import bgsuit31alternative from "../../../assets/images/collection/men/suits20alternative.jpeg";
+import bgsuit32alternative from "../../../assets/images/collection/men/suits21alternative.jpeg";
+import bgsuit33alternative from "../../../assets/images/collection/men/suits22alternative.jpeg";
+import bgsuit34alternative from "../../../assets/images/collection/men/suits23.jpeg";
+import bgsuit35alternative from "../../../assets/images/collection/men/suits35alternative.jpeg";
+import bgsuit36alternative from "../../../assets/images/collection/men/suits36alternative.jpeg";
+import bgsuit37alternative from "../../../assets/images/collection/men/suits37alternative.jpeg";
+import bgsuit38alternative from "../../../assets/images/collection/men/suits38.webp";
+import bgsuit39alternative from "../../../assets/images/collection/men/suits39alternative.jpeg";
+import bgsuit40alternative from "../../../assets/images/collection/men/suits40alternative.jpeg";
+import bgsuit41alternative from "../../../assets/images/collection/men/suits41alternative.jpeg";
+import bgsuit42alternative from "../../../assets/images/collection/men/suits42alternative.jpeg";
+import bgsuit43alternative from "../../../assets/images/collection/men/suits43alternative.jpeg";
+import bgsuit44alternative from "../../../assets/images/collection/men/suits44alternative.jpeg";
+import bgsuit45alternative from "../../../assets/images/collection/men/suits45alternative.jpeg";
+import bgsuit46alternative from "../../../assets/images/collection/men/suits46alternative.jpeg";
+import bgsuit47alternative from "../../../assets/images/collection/men/suits47alternative.jpeg";
+import bgsuit48alternative from "../../../assets/images/collection/men/suits48alternative.jpeg";
+import bgsuit49alternative from "../../../assets/images/collection/men/suits49alternative.jpeg";
+import bgsuit50alternative from "../../../assets/images/collection/men/suits50alternative.jpeg";
+import bgsuit51alternative from "../../../assets/images/collection/men/suits51alternative.jpeg";
+import bgsuit52alternative from "../../../assets/images/collection/men/suits52alternative.jpeg";
+import bgsuit53alternative from "../../../assets/images/collection/men/suits53alternative.jpeg";
+import bgsuit54alternative from "../../../assets/images/collection/men/suits54alternative.jpeg";
+import bgsuit57alternative from "../../../assets/images/collection/men/suits55alternative.jpeg";
+import bgsuit56alternative from "../../../assets/images/collection/men/suits56alternative.jpeg";
+import bgsuit9 from "../../../assets/images/collection/men/suits32.jpeg";
+import bgsuit10 from "../../../assets/images/collection/men/suits24.avif";
+import bgsuit11 from "../../../assets/images/collection/men/suits34alternative.jpeg";
+import bgsuit12 from "../../../assets/images/collection/men/collectioncard14.jpeg";
+import bgsuit13 from "../../../assets/images/collection/men/collectioncard15.jpg";
+import bgsuit14 from "../../../assets/images/collection/men/collectioncard16.webp";
+import bgsuit15 from "../../../assets/images/collection/men/collectioncard17.jpeg";
+import bgsuit16 from "../../../assets/images/collection/men/collectioncard18.jpeg";
+import bgsuit17 from "../../../assets/images/collection/men/collectioncard19.jpeg";
+import bgsuit18 from "../../../assets/images/collection/men/collectioncard20.jpeg";
+import bgsuit19 from "../../../assets/images/collection/men/suits7alternative.avif";
+import bgsuit20 from "../../../assets/images/collection/men/suits8.jpeg";
+import bgsuit21 from "../../../assets/images/collection/men/suits9.jpeg";
+import bgsuit22 from "../../../assets/images/collection/men/suits10.jpeg";
+import bgsuit23 from "../../../assets/images/collection/men/suits11.jpeg";
+import bgsuit24 from "../../../assets/images/collection/men/suits12.jpeg";
+import bgsuit25 from "../../../assets/images/collection/men/suits14.jpeg";
+import bgsuit26 from "../../../assets/images/collection/men/suits13alternative.jpeg";
+import bgsuit27 from "../../../assets/images/collection/men/suits16.jpeg";
+import bgsuit28 from "../../../assets/images/collection/men/suits17.jpeg";
+import bgsuit29 from "../../../assets/images/collection/men/suits18.jpeg";
+import bgsuit30 from "../../../assets/images/collection/men/suits19.jpeg";
+import bgsuit31 from "../../../assets/images/collection/men/suits20.jpeg";
+import bgsuit32 from "../../../assets/images/collection/men/suits21.jpeg";
+import bgsuit33 from "../../../assets/images/collection/men/suits22.jpeg";
+import bgsuit34 from "../../../assets/images/collection/men/suits23alternative.jpeg";
+import bgsuit35 from "../../../assets/images/collection/men/suits35.jpeg";
+import bgsuit36 from "../../../assets/images/collection/men/suits36.jpeg";
+import bgsuit37 from "../../../assets/images/collection/men/suits37.jpeg";
+import bgsuit38 from "../../../assets/images/collection/men/suits38alternative.jpeg";
+import bgsuit39 from "../../../assets/images/collection/men/suits39.jpeg";
+import bgsuit40 from "../../../assets/images/collection/men/suits40.jpeg";
+import bgsuit41 from "../../../assets/images/collection/men/suits41.jpeg";
+import bgsuit42 from "../../../assets/images/collection/men/suits42.jpeg";
+import bgsuit43 from "../../../assets/images/collection/men/suits43.jpeg";
+import bgsuit44 from "../../../assets/images/collection/men/suits44.jpeg";
+import bgsuit45 from "../../../assets/images/collection/men/suits45.jpeg";
+import bgsuit46 from "../../../assets/images/collection/men/suits46.jpeg";
+import bgsuit47 from "../../../assets/images/collection/men/suits47.jpeg";
+import bgsuit48 from "../../../assets/images/collection/men/suits48.jpeg";
+import bgsuit49 from "../../../assets/images/collection/men/suits49.jpeg";
+import bgsuit50 from "../../../assets/images/collection/men/suits50.jpeg";
+import bgsuit51 from "../../../assets/images/collection/men/suits51.jpeg";
+import bgsuit52 from "../../../assets/images/collection/men/suits52.jpeg";
+import bgsuit57 from "../../../assets/images/collection/men/suits53.jpeg";
+import bgsuit54 from "../../../assets/images/collection/men/suits54.jpeg";
+import bgsuit55 from "../../../assets/images/collection/men/suits55.jpeg";
+import bgsuit56 from "../../../assets/images/collection/men/suits56.jpeg";
+
+
+export const cardfrank = [
+  {
+    id: "suit1",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["White&Purple Suit", "Olovrang Futbolkalar", "Мужская футболка"],
+    s: "10$",
+    size: "s",
+    color: "white",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit19,
+    a: bgsuit1alternative,
+    place: "center",
+    position: "center",
+  },
+  {
+    id: "suit2",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Blue Suits", "Ko'k Kastyumlar", "Мужская Kastyum"],
+    s: "10$",
+    size: "xl",
+    color: "blue",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit24alternative,
+    a: bgsuit4alternative,
+    position: "center",
+    place: "center",
+  },
+  {
+    id: "suit3",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Navy Suits", "To'q Ko'kimtir Kastyumlar", "Мужские siniyi брюки"],
+    s: "10$",
+    size: "xxl",
+    color: "blue",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit27,
+    a: bgsuit5alternative,
+    position: "center",
+    place: "center",
+  },
+  {
+    id: "suit4",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Blue&White Suits", "Ko'k&Oq Kastymlar", "Siniyi Kastyumi"],
+    s: "10$",
+    size: "s",
+    color: "blue",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit28,
+    a: bgsuit6alternative,
+    position: "center",
+    place: "center",
+  },
+
+  {
+    id: "suit8",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Blue Suits", "Ko'k Kastyumlar", "Мужские черные туфли"],
+    s: "10$",
+    size: "xxl",
+    color: "blue",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit23alternative,
+    a: bgsuit23,
+    place: "center",
+  },
+  {
+    id: "suit32",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["White Suits", "Oq Kastyumlar", "Мужские Beliye Kastyumi"],
+    s: "10$",
+    size: "l",
+    color: "white",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit33,
+    a: bgsuit33alternative,
+    place: "center",
+  },
+  {
+    id: "suit9",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Blue&Grey Suits", "Ko'k&Seriy Kastyumlar", "Мужская Sinaya Kastyum"],
+    s: "10$",
+    size: "xxl",
+    color: "blue",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit24,
+    a: threbg1alternative,
+    place: "center",
+  },
+  {
+    id: "suit8",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["White Suits", "Oq Kastyumlar", "Мужская belaya kastyum"],
+    s: "10$",
+    size: "xl",
+    color: "white",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit19alternative,
+    a: threbg3alternative,
+    position: "center",
+    place: "center",
+  },
+  {
+    id: "suit9",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Black Suits", "Qora Kastyumlar", "Мужские черные kastyumi"],
+    s: "10$",
+    size: "n",
+    color: "black",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit25,
+    a: bgsuit25alternative,
+    place: "center",
+  },
+
+  {
+    id: "suit31",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Grey Suits", "Kulrang Kasstyumlar", "Мужские seriye Kastyumi"],
+    s: "10$",
+    size: "n",
+    color: "grey",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit32,
+    a: bgsuit32alternative,
+    place: "center",
+  },
+  {
+    id: "suit7",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Yellow Suits", "Sariq kastyumlar", "Мужские jeltiye Kastymi"],
+    s: "10$",
+    size: "42",
+    color: "yellow",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit31,
+    a: bgsuit31alternative,
+    place: "top",
+  },
+  {
+    id: "suit34",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Light Grey Suits", "Kulirang kastyumlar", "Мужские seriye kastyumi"],
+    s: "10$",
+    size: "s",
+    color: "grey",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit32alternative,
+    a: bgsuit36alternative,
+    place: "center",
+  },
+  {
+    id: "suit5",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Dark Blue&Black Suits", "To'q Ko'k Kastyum", "Мужская suit"],
+    s: "10$",
+    size: "n",
+    color: "blue",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit21,
+    a: bgsuit2alternative,
+    position: "center",
+    place: "center",
+  },
+  {
+    id: "suit6",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Black&Blue Suits", "Qora&Ko'k Kastyumlar", "Мужские черные&siniyi"],
+    s: "10$",
+    size: "xl",
+    color: "blue",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit22,
+    a: bgsuit22alternative,
+    place: "center",
+  },
+
+  {
+    id: "suit27",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["SkyBlue Shirts", "havorang ko'ylaklar", "Мужские siniyi bryuki"],
+    s: "10$",
+    size: "xl",
+    color: "blue",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit5,
+    a: bgsuit27alternative,
+    place: "center",
+  },
+  {
+    id: "suit100",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Men's White Shirts", "Oq Koylaklar", "Белые bryuki"],
+    s: "10$",
+    size: "n",
+    color: "white",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit7,
+    a: bgsuit7alternative,
+    position: "center",
+    place: "center",
+  },
+  {
+    id: "suit7",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Grey Shirts", "Kulrang Koylaklar", "Seriye Futbolki"],
+    s: "10$",
+    size: "l",
+    color: "grey",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit8,
+    a: bgsuit8alternative,
+    position: "center",
+    place: "center",
+  },
+  {
+    id: "suit28",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Green Shirts", "Yashil Ko'ylaklar", "Мужские Zelyoniye Bryuki"],
+    s: "10$",
+    size: "n",
+    color: "green",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit6,
+    a: bgsuit28alternative,
+    place: "center",
+  },
+  {
+    id: "suit21",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Male Black T-Shirts", "Qora Futbolkalar", "Мужские черные Futbolki"],
+    s: "10$",
+    size: "l",
+    color: "black",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit2,
+    a: bgsuit21alternative,
+    place: "center",
+  },
+  {
+    id: "suit10",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: [
+      "Male Orange Shirts",
+      "Olovrang Koylaklar",
+      "Мужские oranjeviye bryuki",
+    ],
+    s: "10$",
+    size: "n",
+    color: "orange",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit9,
+    a: bgsuit9alternative,
+    place: "center",
+  },
+  {
+    id: "suit12",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Black Wallets", "Qora Hamyonlar", "Мужские черные kawelki"],
+    s: "10$",
+    size: "xl",
+    color: "black",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit12,
+    a: bgsuit12alternative,
+    place: "center",
+  },
+  {
+    id: "suit13",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Black Sunglasses", "Qora Ko'zoynaklar", "Мужские черные ochki"],
+    s: "10$",
+    size: "xxl",
+    color: "black",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit13alternative,
+    a: bgsuit13alternative,
+    place: "center",
+  },
+  {
+    id: "suit14",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Black Gloves", "Qora Qo'lqoplar", "Мужские черные perchatki"],
+    s: "10$",
+    size: "s",
+    color: "black",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit14,
+    a: bgsuit14alternative,
+    place: "center",
+  },
+  {
+    id: "suit15",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: [
+      "Red White-Dotted Ties",
+      "Qizil Oq-Dog'li Galstuklar",
+      "Мужские krasniye galstuki",
+    ],
+    s: "10$",
+    size: "n",
+    color: "red",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit15,
+    a: bgsuit15,
+    place: "center",
+  },
+  {
+    id: "suit16",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: [
+      "Blue White-Dotted BOw Ties",
+      "Ko'k Bo'yinboglar",
+      "Мужские siniyi babochki",
+    ],
+    s: "10$",
+    size: "l",
+    color: "blue",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit16,
+    a: bgsuit16alternative,
+    place: "center",
+  },
+  {
+    id: "suit17",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: [
+      "Silver Bracelets",
+      "Kumushrang Brasletlar",
+      "Мужские serebryanniye brasleti",
+    ],
+    s: "10$",
+    size: "xl",
+    color: "grey",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit17,
+    a: bgsuit17alternative,
+    place: "center",
+  },
+  {
+    id: "suit19",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Rolex Watches", "Rolex Soatlari", "Мужские чaci"],
+    s: "10$",
+    size: "s",
+    color: "brown",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit1,
+    a: bgsuit19alternative,
+    place: "center",
+  },
+  // ===============================
+  {
+    id: "suit24",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Purple Tie", "Siyohrang Bo'yinbog'lar", "Fioletoviye Galstuki"],
+    s: "10$",
+    size: "s",
+    color: "blue",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit4,
+    a: bgsuit24,
+    place: "center",
+  },
+  {
+    id: "suit26",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Male Blue Suits", "Ko'k Kastyumlar", "Мужские Siniyi Kastyumi"],
+    s: "10$",
+    size: "l",
+    color: "blue",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit26alternative,
+    a: bgsuit26alternative,
+    place: "center",
+  },
+  // =====================================
+  {
+    id: "suit36",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Red Tie", "Qizl Galstuklar", "Krasniye Galstuki"],
+    s: "10$",
+    size: "n",
+    color: "red",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit43,
+    a: bgsuit43alternative,
+    place: "center",
+  },
+  {
+    id: "suit37",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Blue Tie", "Ko'k Galstuklar", "Мужские siniyi galstuki"],
+    s: "10$",
+    size: "xl",
+    color: "blue",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit42,
+    a: bgsuit42,
+    place: "center",
+    position: "top",
+  },
+  {
+    id: "suit38",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Red Bow Tie", "Qizil Babochkalar", "Мужские krasniye babochki"],
+    s: "10$",
+    size: "l",
+    color: "red",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit44,
+    a: bgsuit44alternative,
+    place: "center",
+  },
+
+  {
+    id: "suit39",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Orange Bow Tie", "Olovrang Babpchkalar", "Мужские oranjeviye babochki"],
+    s: "10$",
+    size: "n",
+    color: "orange",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit45alternative,
+    a: bgsuit45alternative,
+    place: "center",
+  },
+  {
+    id: "suit42",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Blue Belts", "Ko'k Kamarlar", "Мужские siniyi remeni"],
+    s: "10$",
+    size: "s",
+    color: "blue",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit50,
+    a: bgsuit50alternative,
+    place: "center",
+  },
+  {
+    id: "suit45",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["Golden Rolex Watches", "Tilla Rang Rolex Qo'l Soatlari", "Мужские zolotiye chasi"],
+    s: "10$",
+    size: "s",
+    color: "orange",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit56,
+    a: bgsuit56alternative,
+    place: "center",
+  },
+  {
+    id: "suit46",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    description: [
+      `Dark Blue T-Shirt with short sleeves is good fit for
+       various of occasions like jogging, regular meetings and even at home.
+       They can fit with classic, sport and half-classic pants and make you
+       look better and stylish. It worths its cost and you will not regret
+       after owning this awesome clothing.`,
+      `Qisqa yengli to'q moviy futbolka juda mos keladi
+       yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
+       Ular klassik, sport va yarim klassik shimlarga mos kelishi va sizni qilishlari mumkin
+       yaxshiroq va zamonaviy ko'ring. Bu uning narxiga arziydi va siz afsuslanmaysiz
+       bu ajoyib kiyimga ega bo'lgandan keyin.`,
+      `Темно-синяя футболка с короткими рукавами хорошо подойдет для
+       различные случаи, такие как пробежка, регулярные встречи и даже дома.
+       Они подойдут к классическим, спортивным и полуклассическим брюкам и сделают вас
+       выглядеть лучше и стильнее. Оно стоит своих денег и вы не пожалеете.
+       после владения этой потрясающей одеждой.`,
+    ],
+    f: ["White Sneakers", "Oq Krasovkalar", "Мужские beliye krasovki"],
+    s: "10$",
+    size: "42",
+    color: "white",
+    t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
+    bg: bgsuit57alternative,
+    a: bgsuit57alternative,
+    place: "center",
+  },
+];

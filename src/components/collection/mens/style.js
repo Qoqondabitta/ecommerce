@@ -79,7 +79,8 @@ export const Drop = styled.div`
   background-color: white;
   border: 1px solid rgb(223, 218, 218);
   width: 250px;
-  height: 250px;
+  height: 130px;
+  /* height: 200px; */
   overflow-y: scroll;
   position: absolute;
   top: 57px;
