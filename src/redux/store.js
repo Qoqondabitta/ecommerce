@@ -8,6 +8,8 @@ import search from "./search";
 import page from "./page";
 import like from "./like";
 import collection from "./collection";
+import cart from "./cart";
+import properties from "./properties";
 
 export const store = configureStore({
   reducer: {
@@ -19,7 +21,9 @@ export const store = configureStore({
     search,
     page,
     like,
-    collection
+    collection,
+    cart,
+    properties
   },
 });
 // console.log(store.language);

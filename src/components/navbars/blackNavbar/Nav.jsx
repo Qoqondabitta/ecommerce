@@ -19,6 +19,7 @@ import Search from "../../mini/search/Search";
 import { toggleSearch } from "../../../redux/search";
 import { changePage } from "../../../redux/page";
 import { NavLink } from "react-router-dom";
+import { changeProperty } from "../../../redux/properties";
 
 const BlackNav = () => {
   const search = useSelector((store) => store.search);
@@ -71,7 +72,7 @@ const BlackNav = () => {
           </NavLink>
           <Icon className="">
             <NavLink to="/account">
-              <IoCartOutline className="navIcons" color="black" size="1.8em" />
+              <IoCartOutline onClick={()=>dispatch(changeProperty("cart"))} className="navIcons" color="black" size="1.8em" />
               <Round className="center">{counter.data}</Round>
             </NavLink>
           </Icon>

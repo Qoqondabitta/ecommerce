@@ -9,22 +9,24 @@ import {
   Orders,
   ProfilePhoto,
 } from "./style";
-import { IoCameraOutline } from "react-icons/io5";
 import main from "../../../assets/images/just/main.jpg";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Item, Link, List } from "../../navbars/secondNav/style";
 import Footer from "../../footer/Footer";
 import BlackNav from "../../navbars/blackNavbar/Nav";
 import Like from "./userLike/Like";
-// import { Title } from "../../generics/title/Title";
+// import a from "../"
+import { accountProperties } from "../../../constants/account/basket.js";
+import { changeProperty } from "../../../redux/properties";
+import Cart from "./userCart/Cart";
 
 const Account = () => {
   const { value } = useSelector((store) => store.language);
-  const fileref = useRef();
+  const {data} = useSelector((store) => store.properties);
+  const dispatch = useDispatch();
   const [show, setShow] = useState(false);
-  const [file, setFile] = useState(null);
-  const getFile = (e) => {
-    setFile(e.target.value, "file");
+  const defineproperty = (property) => {
+    dispatch(changeProperty(property));
   };
   const changeURL = () => {
     const picture = document.getElementById("img-file");
@@ -41,7 +43,7 @@ const Account = () => {
       <Hero>
         <ProfilePhoto className="columnCenter">
           <Image src={main} id="img-file" className="cursor" />
-          <Mask for="bg-file" className="cursor" onClick={showFile}>
+          <Mask htmlFor="bg-file" className="cursor" onClick={showFile}>
             {value == "ENG"
               ? "Update Photo"
               : value == "UZB"
@@ -59,18 +61,24 @@ const Account = () => {
         </ProfilePhoto>
         <Orders>
           <Title>Abdulakhad Turgunaliev</Title>
-          <List style={{ width: "100%"}} className="justifyEnd">
-            <Item className="cursor">
-              <Link style={{ color: "black" }}>Liked Products</Link>
-            </Item>
-            <Item>
-              <Link style={{ color: "black" }}>Chosen Products</Link>
-            </Item>
-            <Item>
-              <Link style={{ color: "black" }}>Orders</Link>
-            </Item>
+          <List style={{ width: "100%" }} className="justifyEnd">
+            {accountProperties.map((v, i) => (
+              <Item
+                className="cursor"
+                key={i}
+                onClick={() => defineproperty(v.definers)}
+              >
+                <Link style={{ color: "black" }}>
+                  {value == "ENG"
+                    ? v.properties[0]
+                    : value == "UZB"
+                    ? v.properties[1]
+                    : v.properties[2]}
+                </Link>
+              </Item>
+            ))}
           </List>
-          <Like />
+          {data == "like" ?<Like /> : data=="cart"? <Cart /> : <Like />}
         </Orders>
       </Hero>
       <Footer />

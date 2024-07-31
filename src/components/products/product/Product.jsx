@@ -13,6 +13,8 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { addLike } from "../../../redux/like";
 import { NavLink } from "react-router-dom";
+import { addToCart } from "../../../redux/cart";
+import { changeProperty } from "../../../redux/properties";
 
 const Product = ({ list }) => {
   const dispatch = useDispatch();
@@ -21,6 +23,10 @@ const Product = ({ list }) => {
     console.log(list, ":");
     dispatch(addLike(...list));
   };
+  const SaveProduct = () => {
+    console.log(list, "for cart");
+    dispatch(addToCart(...list))
+  }
   return (
     <>
       {list.map((v) => (
@@ -59,7 +65,7 @@ const Product = ({ list }) => {
                 : v?.description[2]}
             </CardDetails>
             <BtnWrapper className="center">
-              <Button add="true" onClick={LikeProduct}>
+              <Button add="true" onClick={SaveProduct}>
                 {value == "ENG"
                   ? "Add To Cart"
                   : value == "UZB"
@@ -67,7 +73,7 @@ const Product = ({ list }) => {
                   : "Добавить в корзину"}
               </Button>
               <NavLink style={{ textDecoration: "none" }} to="/account">
-                <Button>
+                <Button onClick={()=>dispatch(changeProperty("cart"))}>
                   {value == "ENG"
                     ? "Go To Cart"
                     : value == "UZB"
