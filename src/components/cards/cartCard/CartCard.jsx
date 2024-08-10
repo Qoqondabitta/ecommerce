@@ -7,26 +7,29 @@ import {
   Right,
   Size,
   Texts,
+  Title,
 } from "./style";
 import boom from "../../../assets/images/backgrounds/boom.png";
 
-const CartCard = () => {
+const CartCard = ({info}) => {
   const [quantity, setQuantity] = useState(1);
   const [size, setSize] = useState("m");
   const [color, setColor] = useState("red");
+  console.log(info, "INFO");
   return (
     <Container className="center">
       <Left>
-        <Productimage src={boom} />
+        <Productimage src={info.bg} />
         <Button buy="true">Buy</Button>
       </Left>
       <Right>
+        <Title>{ info.f[0]}</Title>
         <Size>
-          <Texts width="true">Color: {color}</Texts>
+          <Texts width="true">Color: {info.color}</Texts>
           <Button buy="true">Edit</Button>
         </Size>
         <Size>
-          <Texts width="true">Size: {size.toUpperCase()}</Texts>
+          <Texts width="true">Size: {info.size}</Texts>
           <Button buy="true">Edit</Button>
         </Size>
         <Size>

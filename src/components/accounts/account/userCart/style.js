@@ -7,7 +7,7 @@ export const Container = styled.div`
   gap: 5px;
   flex-wrap: wrap;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
 
   /* background-color: red; */
 `;

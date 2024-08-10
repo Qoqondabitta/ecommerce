@@ -22,7 +22,7 @@ const Product = ({ list }) => {
   const value = useSelector((store) => store.language.value);
   const SaveProduct = () => {
     console.log(list, "for cart");
-    dispatch(addToCart(list))
+    dispatch(addToCart(...list))
   }
   console.log(cart, "for collection");
   return (
