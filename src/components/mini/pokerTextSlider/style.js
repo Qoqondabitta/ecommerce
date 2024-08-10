@@ -29,7 +29,6 @@ export const Text = styled.div`
 export const Info = styled.p`
   color: ${({ colors }) => colors};
   font-size: 19px;
-  font-weight: 600;
   font-weight: bolder;
   width: 20%;
   text-align: center;

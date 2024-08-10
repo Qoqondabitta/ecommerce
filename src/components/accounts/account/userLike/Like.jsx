@@ -9,6 +9,7 @@ import CollectionCard from "../../../cards/collectionCard/CollectionCard";
 const Like = () => {
   const dispatch = useDispatch();
   const like = useSelector((store) => store.like);
+  console.log(like, "liking");
   // console.log(like.map(v=>v), "like");
   return (
     <Container>

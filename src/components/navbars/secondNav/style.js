@@ -41,7 +41,7 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  color: white;
+  color: ${({color})=>color?"black":"white"};
   font-size: 18px;
   /* font-weight: 600; */
   background: #ffffff1a;

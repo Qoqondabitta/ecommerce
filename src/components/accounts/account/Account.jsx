@@ -19,6 +19,7 @@ import Like from "./userLike/Like";
 import { accountProperties } from "../../../constants/account/basket.js";
 import { changeProperty } from "../../../redux/properties";
 import Cart from "./userCart/Cart";
+import "./account.css"
 
 const Account = () => {
   const { value } = useSelector((store) => store.language);
@@ -37,6 +38,7 @@ const Account = () => {
   const showFile = () => {
     setShow(!show);
   };
+  console.log(data, "data name");
   return (
     <Container>
       <BlackNav />
@@ -64,11 +66,15 @@ const Account = () => {
           <List style={{ width: "100%" }} className="justifyEnd">
             {accountProperties.map((v, i) => (
               <Item
+                color="true"
                 className="cursor"
                 key={i}
+                id={v.definers == data && "activeData"}
                 onClick={() => defineproperty(v.definers)}
               >
-                <Link style={{ color: "black" }}>
+                <Link
+                  // style={{ color: "black" }}
+                >
                   {value == "ENG"
                     ? v.properties[0]
                     : value == "UZB"
@@ -78,7 +84,7 @@ const Account = () => {
               </Item>
             ))}
           </List>
-          {data == "like" ?<Like /> : data=="cart"? <Cart /> : <Like />}
+          {data == "like" ? <Like /> : data == "cart" ? <Cart /> : <Like />}
         </Orders>
       </Hero>
       <Footer />

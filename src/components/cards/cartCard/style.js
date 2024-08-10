@@ -17,9 +17,10 @@ export const Left = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex: 1;
   width: 250px;
+  height: 100%;
 
   @media only screen and (max-width: 600px) {
     width: ${({ width }) => (width ? "100%" : "175px")};
@@ -39,12 +40,13 @@ export const Right = styled.div`
 export const Size = styled.div`
   display: flex;
   align-items: center;
+  width: 100%;
   justify-content: center;
   gap: 10px;
 `;
 
 export const Productimage = styled.img`
-  height: 300px;
+  height: 200px;
   width: 250px;
   object-fit: cover;
   object-position: center;
@@ -61,15 +63,17 @@ export const Button = styled.button`
   background-color: black;
   color: white;
   border: none;
-  border-radius: 10px;
-  width: ${({ buy }) => (buy ? "100%" : "fit-content")};
+  border-radius: 5px;
+  width: ${({ buy }) => (buy ? "100%" : "35px")};
   padding: ${({ buy }) => (buy ? "0px" : "10px")};
-  height: 35px;
+  height: ${({ buy }) => (buy ? "35px" : "30px")};
   text-align: center;
 `;
 
 export const Texts = styled.p`
   font-size: 16px;
+  width: ${({ width }) => width && "50%"};
+  color: black;
   font-weight: ${({ main }) => main && "600"};
 `;
 

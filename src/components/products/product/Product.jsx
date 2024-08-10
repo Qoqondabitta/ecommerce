@@ -17,16 +17,14 @@ import { addToCart } from "../../../redux/cart";
 import { changeProperty } from "../../../redux/properties";
 
 const Product = ({ list }) => {
+  const cart = useSelector(store=>store.cart.value)
   const dispatch = useDispatch();
   const value = useSelector((store) => store.language.value);
-  const LikeProduct = () => {
-    console.log(list, ":");
-    dispatch(addLike(...list));
-  };
   const SaveProduct = () => {
     console.log(list, "for cart");
-    dispatch(addToCart(...list))
+    dispatch(addToCart(list))
   }
+  console.log(cart, "for collection");
   return (
     <>
       {list.map((v) => (
