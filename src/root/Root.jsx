@@ -6,6 +6,7 @@ import Account from "../components/accounts/account/Account";
 import Mens from "../components/collection/mens/Mens";
 // import Product from "../components/products/Products";
 import Products from "../components/products/Products";
+import PaymentForm from "../components/pay/Payment";
 
 const Root = () => {
   return (
@@ -15,6 +16,7 @@ const Root = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/signin" element={<Singin />} />
         <Route path="/collection" element={<Mens />} />
+        <Route path="/pay" element={<PaymentForm />} />
         <Route path="/collection/:id" element={<Products />} />
         <Route path="/account" element={<Account />} />
         <Route path="*" element={<h1>404 Page Not Found</h1>} />

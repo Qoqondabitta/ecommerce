@@ -13,6 +13,7 @@ import {
 import boom from "../../../assets/images/backgrounds/boom.png";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteFromCart } from "../../../redux/cart";
+import { NavLink } from "react-router-dom";
 
 const CartCard = ({ info }) => {
   const [quantity, setQuantity] = useState(1);
@@ -50,7 +51,9 @@ const CartCard = ({ info }) => {
     <Container className="center">
       <Left>
         <Productimage src={info.bg} />
-        <Button buy="true">Buy</Button>
+        <NavLink style={{ textDecoration: "none" }} to="/pay">
+          <Button buy="true">Buy</Button>
+        </NavLink>
       </Left>
       <Right>
         <Title>{info.f[0]}</Title>
