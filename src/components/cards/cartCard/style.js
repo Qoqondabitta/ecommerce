@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 500px;
+  width: 600px;
   height: 300px;
   border-radius: 10px;
   border: 1px solid rgb(223, 218, 218);
@@ -68,8 +68,9 @@ export const Button = styled.button`
   color: white;
   border: none;
   cursor: pointer;
+  text-align: center;
   border-radius: 5px;
-  width: ${({ buy }) => (buy ? "100%" : "35px")};
+  width: ${({ buy, edit }) => (buy ? "100%" : edit ? "50%" : "35px")};
   padding: ${({ buy }) => (buy ? "0px" : "10px")};
   height: ${({ buy }) => (buy ? "35px" : "30px")};
   text-align: center;
