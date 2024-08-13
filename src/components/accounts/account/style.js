@@ -67,3 +67,19 @@ font-size: 40px;
 font-family: "DM Serif Display", serif;
 letter-spacing: 0.1rem;
 `
+
+
+export const List = styled.ul`
+  list-style-type: none;
+  z-index: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  gap: 20px;
+  margin-bottom: 45px;
+
+  @media only screen and (max-width: 1000px) {
+    display: none;
+  }
+`;

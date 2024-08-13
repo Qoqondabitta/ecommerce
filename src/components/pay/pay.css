@@ -1,0 +1,29 @@
+#cardelement{
+    border: 1px solid grey;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+#pay-label{
+    position: absolute;
+    top: 5px;
+    background-color: white;
+    left: 10px;
+    width: 95%;
+    font-size: 16px;
+}
+
+#pay-div #pay-input:focus + #pay-label, 
+#pay-input:not(:placeholder-shown) #pay-label{
+    transform: translateY(-18px);
+    padding: 0px 5px;
+    width: fit-content;
+    font-size: 14px;
+}
+
+#pay-input:invalid{
+    border: 1px solid red;
+}

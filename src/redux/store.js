@@ -10,6 +10,7 @@ import like from "./like";
 import collection from "./collection";
 import cart from "./cart";
 import properties from "./properties";
+import purchase  from "./purchase";
 
 export const store = configureStore({
   reducer: {
@@ -23,7 +24,8 @@ export const store = configureStore({
     like,
     collection,
     cart,
-    properties
+    properties,
+    purchase
   },
 });
 // console.log(store.language);

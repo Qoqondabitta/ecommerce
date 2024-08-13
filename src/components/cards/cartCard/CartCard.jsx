@@ -14,12 +14,14 @@ import boom from "../../../assets/images/backgrounds/boom.png";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteFromCart } from "../../../redux/cart";
 import { NavLink } from "react-router-dom";
+import PaymentForm from "../../pay/Payment";
 
 const CartCard = ({ info }) => {
   const [quantity, setQuantity] = useState(1);
   const [size, setSize] = useState(info.size);
   const [color, setColor] = useState(info.color);
   const [edit, setEdit] = useState(false);
+  const [show, setShow] = useState(false);
   const [theme, setTheme] = useState(false);
   const dispatch = useDispatch();
   const l = useSelector((store) => store.language.value);
@@ -38,10 +40,6 @@ const CartCard = ({ info }) => {
     sort == "plus"
       ? setQuantity(quantity + 1)
       : quantity > 0 && setQuantity(quantity - 1);
-    // if (quantity >= 0) {
-    // } else if(quantity<0||quantity==-1) {
-    //   setQuantity(0);
-    // }
   };
   const removeItemFromCart = () => {
     dispatch(deleteFromCart(info));
@@ -51,9 +49,11 @@ const CartCard = ({ info }) => {
     <Container className="center">
       <Left>
         <Productimage src={info.bg} />
-        <NavLink style={{ textDecoration: "none" }} to="/pay">
-          <Button buy="true">Buy</Button>
-        </NavLink>
+        {/* <NavLink style={{ textDecoration: "none" }} to="/pay"> */}
+          <Button onClick={() => setShow(!show)} buy="true">
+            Buy
+          </Button>
+        {/* </NavLink> */}
       </Left>
       <Right>
         <Title>{info.f[0]}</Title>
@@ -96,6 +96,7 @@ const CartCard = ({ info }) => {
           Remove From Cart
         </Button>
       </Right>
+      {show&&<PaymentForm goods={info} />}
     </Container>
   );
 };

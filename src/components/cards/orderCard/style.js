@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 600px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 10px;
   border: 1px solid rgb(223, 218, 218);
-  gap: 10px;
   position: relative;
-  z-index: 0;
+  /* z-index: 0; */
   /* padding-block: 10px; */
   @media only screen and (max-width: 600px) {
     flex-direction: column;
@@ -21,10 +20,9 @@ export const Left = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  flex: 1;
+  /* flex: 1; */
   width: 250px;
-  height: 100%;
-  padding-block: 10px;
+  height: 200px;
 
   @media only screen and (max-width: 600px) {
     width: ${({ width }) => (width ? "100%" : "175px")};
@@ -34,13 +32,11 @@ export const Left = styled.div`
 
 export const Right = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex: 1;
-  height: 100%;
+  align-items: flex-end;
+  /* flex: 1; */
+  height: 50px;
   gap: 10px;
-  padding: 10px 10px 10px 0px;
+  padding: 10px;
 `;
 
 export const Size = styled.div`
@@ -53,7 +49,7 @@ export const Size = styled.div`
 
 export const Productimage = styled.img`
   height: 200px;
-  width: 250px;
+  width: 245px;
   object-fit: cover;
   object-position: center;
   border-radius: 10px;
@@ -79,7 +75,7 @@ export const Button = styled.button`
 `;
 
 export const Texts = styled.p`
-  font-size: 14px;
+  font-size: 18px;
   text-align: left;
   width: ${({ width }) => width && "50%"};
   color: black;

@@ -8,10 +8,11 @@ import {
   Mask,
   Orders,
   ProfilePhoto,
+  List
 } from "./style";
 import main from "../../../assets/images/just/main.jpg";
 import { useDispatch, useSelector } from "react-redux";
-import { Item, Link, List } from "../../navbars/secondNav/style";
+import { Item, Link } from "../../navbars/secondNav/style";
 import Footer from "../../footer/Footer";
 import BlackNav from "../../navbars/blackNavbar/Nav";
 import Like from "./userLike/Like";
@@ -20,6 +21,7 @@ import { accountProperties } from "../../../constants/account/basket.js";
 import { changeProperty } from "../../../redux/properties";
 import Cart from "./userCart/Cart";
 import "./account.css"
+import UserOrder from "./userOrder/UserOrder";
 
 const Account = () => {
   const { value } = useSelector((store) => store.language);
@@ -84,10 +86,9 @@ const Account = () => {
               </Item>
             ))}
           </List>
-          {data == "like" ? <Like /> : data == "cart" ? <Cart /> : <Like />}
+          {data == "like" ? <Like /> : data == "cart" ? <Cart /> : <UserOrder />}
         </Orders>
       </Hero>
-      <Footer />
     </Container>
   );
 };

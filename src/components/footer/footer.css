@@ -42,6 +42,7 @@ section{
     font-size: 18px;
     /* padding: 0 10px; */
     color: #acacac;
+    z-index: 0;
     pointer-events: none;
     transition:0.15s all ease;
 }

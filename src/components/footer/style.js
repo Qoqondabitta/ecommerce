@@ -5,6 +5,7 @@ export const Main = styled.div`
   height: fit-content;
   margin: 0 auto;
   background-color: black;
+  z-index: 0;
   @media only screen and (max-width: 800px) {
     /* height: 235vh; */
   }
