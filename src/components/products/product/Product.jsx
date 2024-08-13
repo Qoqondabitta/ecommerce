@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   BtnWrapper,
   Button,
@@ -15,15 +15,20 @@ import { addLike } from "../../../redux/like";
 import { NavLink } from "react-router-dom";
 import { addToCart } from "../../../redux/cart";
 import { changeProperty } from "../../../redux/properties";
+import Metric from "./metrics/Metric";
 
 const Product = ({ list }) => {
-  const cart = useSelector(store=>store.cart.value)
+  const [show, setShow] = useState(false);
+  const cart = useSelector((store) => store.cart.value);
   const dispatch = useDispatch();
   const value = useSelector((store) => store.language.value);
   const SaveProduct = () => {
     console.log(list, "for cart");
-    dispatch(addToCart(...list))
-  }
+    dispatch(addToCart(...list));
+  };
+  const chnageShow = () => {
+    setShow(!show);
+  };
   console.log(cart, "for collection");
   return (
     <>
@@ -63,7 +68,7 @@ const Product = ({ list }) => {
                 : v?.description[2]}
             </CardDetails>
             <BtnWrapper className="center">
-              <Button add="true" onClick={SaveProduct}>
+              <Button add="true" onClick={chnageShow}>
                 {value == "ENG"
                   ? "Add To Cart"
                   : value == "UZB"
@@ -71,7 +76,7 @@ const Product = ({ list }) => {
                   : "Добавить в корзину"}
               </Button>
               <NavLink style={{ textDecoration: "none" }} to="/account">
-                <Button onClick={()=>dispatch(changeProperty("cart"))}>
+                <Button onClick={() => dispatch(changeProperty("cart"))}>
                   {value == "ENG"
                     ? "Go To Cart"
                     : value == "UZB"
@@ -81,6 +86,7 @@ const Product = ({ list }) => {
               </NavLink>
             </BtnWrapper>
           </Details>
+          {show && <Metric mail={list} photo={v.bg}></Metric>}
         </Container>
       ))}
     </>

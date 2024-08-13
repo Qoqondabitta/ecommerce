@@ -15,16 +15,18 @@ import { useDispatch, useSelector } from "react-redux";
 import { deleteFromCart } from "../../../redux/cart";
 import { NavLink } from "react-router-dom";
 import PaymentForm from "../../pay/Payment";
+import { setSize } from "../../../redux/size";
 
 const CartCard = ({ info }) => {
   const [quantity, setQuantity] = useState(1);
-  const [size, setSize] = useState(info.size);
+  // const [size, setSize] = useState(info.size);
   const [color, setColor] = useState(info.color);
   const [edit, setEdit] = useState(false);
   const [show, setShow] = useState(false);
   const [theme, setTheme] = useState(false);
   const dispatch = useDispatch();
   const l = useSelector((store) => store.language.value);
+  const size = useSelector(store=>store.size.value)
   const changeEdit = () => {
     setEdit(!edit);
   };
@@ -33,7 +35,7 @@ const CartCard = ({ info }) => {
   };
   const changeInputValues = (e) => {
     e.target.name == "size"
-      ? setSize(e.target.value)
+      ? dispatch(setSize(e.target.value))
       : setColor(e.target.value);
   };
   const changeQuantity = (sort) => {

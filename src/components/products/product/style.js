@@ -7,6 +7,7 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0px 30px;
+  position: relative;
 
   @media only screen and (max-width: 1200px) {
     height: fit-content;

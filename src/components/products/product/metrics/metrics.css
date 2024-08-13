@@ -1,0 +1,11 @@
+.sm::-webkit-scrollbar {
+  width: 1px;
+  height: 5px;
+}
+
+.activeSize{
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
