@@ -16,17 +16,19 @@ import { deleteFromCart } from "../../../redux/cart";
 import { NavLink } from "react-router-dom";
 import PaymentForm from "../../pay/Payment";
 import { setSize } from "../../../redux/size";
+import { setPaint } from "../../../redux/paint";
 
 const CartCard = ({ info }) => {
   const [quantity, setQuantity] = useState(1);
   // const [size, setSize] = useState(info.size);
-  const [color, setColor] = useState(info.color);
+  // const [color, setColor] = useState(info.color);
+  const color = useSelector((store) => store.paint.value);
   const [edit, setEdit] = useState(false);
   const [show, setShow] = useState(false);
   const [theme, setTheme] = useState(false);
   const dispatch = useDispatch();
   const l = useSelector((store) => store.language.value);
-  const size = useSelector(store=>store.size.value)
+  const size = useSelector((store) => store.size.value);
   const changeEdit = () => {
     setEdit(!edit);
   };
@@ -35,8 +37,9 @@ const CartCard = ({ info }) => {
   };
   const changeInputValues = (e) => {
     e.target.name == "size"
-      ? dispatch(setSize(e.target.value))
-      : setColor(e.target.value);
+      ? // ? info.size=e.target.value
+        dispatch(setSize(e.target.value))
+      : dispatch(setPaint(e.target.value));
   };
   const changeQuantity = (sort) => {
     sort == "plus"
@@ -46,21 +49,23 @@ const CartCard = ({ info }) => {
   const removeItemFromCart = () => {
     dispatch(deleteFromCart(info));
   };
-  console.log(info, "INFO");
+  const FinalCLick = (sort) => {
+    sort == "color" ? (info.color = color) : (info.size = size);
+  };
   return (
     <Container className="center">
       <Left>
         <Productimage src={info.bg} />
         {/* <NavLink style={{ textDecoration: "none" }} to="/pay"> */}
-          <Button onClick={() => setShow(!show)} buy="true">
-            Buy
-          </Button>
+        <Button onClick={() => setShow(!show)} buy="true">
+          Buy
+        </Button>
         {/* </NavLink> */}
       </Left>
       <Right>
         <Title>{info.f[0]}</Title>
         <Size>
-          <Texts width="true">Color: {color}</Texts>
+          <Texts width="true">Color: {info.color}</Texts>
           {theme && (
             <Input
               name="color"
@@ -68,12 +73,19 @@ const CartCard = ({ info }) => {
               placeholder="type color"
             />
           )}
-          <Button onClick={changeTheme} className="center" edit="true">
+          <Button
+            onClick={() => {
+              changeTheme();
+              FinalCLick("color");
+            }}
+            className="center"
+            edit="true"
+          >
             {theme ? "Choose" : "Edit"}
           </Button>
         </Size>
         <Size>
-          <Texts width="true">Size: {size}</Texts>
+          <Texts width="true">Size: {info.size}</Texts>
           {edit && (
             <Input
               name="size"
@@ -81,7 +93,14 @@ const CartCard = ({ info }) => {
               placeholder="type size"
             />
           )}
-          <Button className="center" onClick={changeEdit} edit="true">
+          <Button
+            className="center"
+            onClick={() => {
+              changeEdit();
+              FinalCLick("color");
+            }}
+            edit="true"
+          >
             {edit ? "Choose" : "Edit"}
           </Button>
         </Size>
@@ -98,7 +117,7 @@ const CartCard = ({ info }) => {
           Remove From Cart
         </Button>
       </Right>
-      {show&&<PaymentForm goods={info} />}
+      {show && <PaymentForm goods={info} />}
     </Container>
   );
 };

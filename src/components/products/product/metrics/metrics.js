@@ -25,6 +25,7 @@ export const MetricsWrapper = styled.div`
   border-radius: 5px;
   font-size: 12px;
   font-weight: 400;
+  cursor: pointer;
 
   text-transform: uppercase;
   &:hover {
