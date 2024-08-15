@@ -7,7 +7,7 @@ export const Container = styled.div`
   border: 1px solid rgb(223, 218, 218);
   gap: 10px;
   position: relative;
-  z-index: 0;
+  /* z-index: 0; */
   /* padding-block: 10px; */
   @media only screen and (max-width: 600px) {
     flex-direction: column;
@@ -49,6 +49,13 @@ export const Size = styled.div`
   width: 100%;
   justify-content: flex-start;
   gap: 10px;
+`;
+
+export const PriceTag = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 `;
 
 export const Productimage = styled.img`

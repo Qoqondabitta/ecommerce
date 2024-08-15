@@ -4,42 +4,39 @@ import {
   Container,
   Input,
   Left,
+  PriceTag,
   Productimage,
   Right,
   Size,
   Texts,
   Title,
 } from "./style";
-import boom from "../../../assets/images/backgrounds/boom.png";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteFromCart } from "../../../redux/cart";
-import { NavLink } from "react-router-dom";
 import PaymentForm from "../../pay/Payment";
-import { setSize } from "../../../redux/size";
-import { setPaint } from "../../../redux/paint";
 
 const CartCard = ({ info }) => {
   const [quantity, setQuantity] = useState(1);
-  // const [size, setSize] = useState(info.size);
-  // const [color, setColor] = useState(info.color);
-  const color = useSelector((store) => store.paint.value);
+  const [list, setList] = useState(info);
+  const [newSize, setNewSize] = useState(info.size);
+  const [newColor, setNewColor] = useState(info.color);
   const [edit, setEdit] = useState(false);
   const [show, setShow] = useState(false);
   const [theme, setTheme] = useState(false);
   const dispatch = useDispatch();
+const numberValue = parseInt(list.s.replace("$", ""));
   const l = useSelector((store) => store.language.value);
-  const size = useSelector((store) => store.size.value);
   const changeEdit = () => {
     setEdit(!edit);
   };
   const changeTheme = () => {
     setTheme(!theme);
   };
-  const changeInputValues = (e) => {
-    e.target.name == "size"
-      ? // ? info.size=e.target.value
-        dispatch(setSize(e.target.value))
-      : dispatch(setPaint(e.target.value));
+  const changeNewSize = (e) => {
+    setNewSize(e.target.value);
+  };
+  const changeNewColor = (e) => {
+    setNewColor(e.target.value);
   };
   const changeQuantity = (sort) => {
     sort == "plus"
@@ -49,14 +46,16 @@ const CartCard = ({ info }) => {
   const removeItemFromCart = () => {
     dispatch(deleteFromCart(info));
   };
-  const FinalCLick = (sort) => {
-    sort == "color" ? (info.color = color) : (info.size = size);
+  const editColor = () => {
+    setList({ ...list, color: newColor });
+  };
+  const editSize = () => {
+    setList({ ...list, size: newSize });
   };
   return (
     <Container className="center">
       <Left>
         <Productimage src={info.bg} />
-        {/* <NavLink style={{ textDecoration: "none" }} to="/pay"> */}
         <Button onClick={() => setShow(!show)} buy="true">
           Buy
         </Button>
@@ -65,18 +64,18 @@ const CartCard = ({ info }) => {
       <Right>
         <Title>{info.f[0]}</Title>
         <Size>
-          <Texts width="true">Color: {info.color}</Texts>
+          <Texts width="true">Color: {list.color}</Texts>
           {theme && (
             <Input
               name="color"
-              onChange={changeInputValues}
+              onChange={changeNewColor}
               placeholder="type color"
             />
           )}
           <Button
             onClick={() => {
               changeTheme();
-              FinalCLick("color");
+              editColor();
             }}
             className="center"
             edit="true"
@@ -85,11 +84,11 @@ const CartCard = ({ info }) => {
           </Button>
         </Size>
         <Size>
-          <Texts width="true">Size: {info.size}</Texts>
+          <Texts width="true">Size: {list.size}</Texts>
           {edit && (
             <Input
               name="size"
-              onChange={changeInputValues}
+              onChange={changeNewSize}
               placeholder="type size"
             />
           )}
@@ -97,22 +96,25 @@ const CartCard = ({ info }) => {
             className="center"
             onClick={() => {
               changeEdit();
-              FinalCLick("color");
+              editSize();
             }}
             edit="true"
           >
             {edit ? "Choose" : "Edit"}
           </Button>
         </Size>
-        <Size>
-          <Button onClick={() => changeQuantity("minus")} className="center">
-            -
-          </Button>
-          <Texts>{quantity}</Texts>
-          <Button onClick={() => changeQuantity("plus")} className="center">
-            +
-          </Button>
-        </Size>
+        <PriceTag>
+          <Size>
+            <Button onClick={() => changeQuantity("minus")} className="center">
+              -
+            </Button>
+            <Texts>{quantity}</Texts>
+            <Button onClick={() => changeQuantity("plus")} className="center">
+              +
+            </Button>
+          </Size>{" "}
+          <Texts width="true">Price: {numberValue * quantity}$</Texts>
+        </PriceTag>
         <Button buy="true" onClick={removeItemFromCart}>
           Remove From Cart
         </Button>

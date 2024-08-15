@@ -8,6 +8,4 @@ export const Container = styled.div`
   flex-wrap: wrap;
   width: 100%;
   height: fit-content;
-
-  /* background-color: red; */
 `;

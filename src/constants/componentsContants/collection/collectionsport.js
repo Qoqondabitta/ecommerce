@@ -148,6 +148,7 @@ export const menscollection = [
 export const collectioncardsport = [
   {
     id: "sport1",
+    index: parseInt(this?.id.match(/\d+/)[0], 10),
     e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
     description: [
       `Dark Blue T-Shirt with short sleeves is good fit for
