@@ -11,7 +11,7 @@ import {
   Wrapper,
 } from "./style";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addPurchase } from "../../redux/purchase";
 import { changeProperty } from "../../redux/properties";
 
@@ -24,6 +24,7 @@ const PaymentForm = ({ goods }) => {
   const [color, setColor] = useState("geen");
   const [address, setAddress] = useState("");
   const dispatch = useDispatch();
+  const l = useSelector(store=>store.language.value)
 
   console.log(goods);
 
@@ -73,7 +74,13 @@ const PaymentForm = ({ goods }) => {
     <>
       <Wrapper className="center">
         <Container className="column-center">
-          <Instruction>Fill Out The Form</Instruction>
+          <Instruction>
+            {l == "ENG"
+              ? "Fill Out The Form"
+              : l == "UZB"
+              ? "Anketani To'ldiring"
+              : "Заполните форму"}
+          </Instruction>
           {/* <form onSubmit={handleSubmit}> */}
           <InputBox id="pay-div" className="column-center">
             <Input
@@ -82,7 +89,9 @@ const PaymentForm = ({ goods }) => {
               id="pay-input"
               type="text"
             />
-            <Label id="pay-label">Name</Label>
+            <Label id="pay-label">
+              {l == "ENG" ? "Name" : l == "UZB" ? "Ism" : "Имя"}
+            </Label>
           </InputBox>
           <InputBox id="pay-div" className="column-center">
             <Input
@@ -91,7 +100,9 @@ const PaymentForm = ({ goods }) => {
               id="pay-input"
               type="email"
             />
-            <Label id="pay-label">Email</Label>
+            <Label id="pay-label">
+              {l == "RUS" ? "Электронная почта" : "Email"}
+            </Label>
           </InputBox>
           <InputBox id="pay-div" className="column-center">
             <Input
@@ -100,7 +111,13 @@ const PaymentForm = ({ goods }) => {
               id="pay-input"
               type="text"
             />
-            <Label id="pay-label">Full Address, including flat number</Label>
+            <Label id="pay-label">
+              {l == "ENG"
+                ? "Full Address, including flat number"
+                : l == "UZB"
+                ? "To'liq Manzil, Honadon Raqami"
+                : "Полный адрес, номер квартиры"}
+            </Label>
           </InputBox>
           <CardElement id="cardelement" />
           <Pay
@@ -112,7 +129,7 @@ const PaymentForm = ({ goods }) => {
             type="submit"
             disabled={!stripe}
           >
-            Pay
+            {l == "ENG" ? "Pay" : l == "UZB" ? "To'lamoq" : "Платить"}
           </Pay>
           {/* </form> */}
           {show && (

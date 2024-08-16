@@ -11,10 +11,17 @@ const OrderCard = ({info}) => {
   return (
     <Container className="column-center">
       <Left className="center">
-        <Productimage src={info?.bg||boom} />
+        <Productimage src={info?.bg || boom} />
       </Left>
       <Right className="column-center">
-        <Texts>Expected Arrival Date: {day + 7}</Texts>
+        <Texts>
+          {l == "ENG"
+            ? "Expected Arrival Date"
+            : l == "UZB"
+            ? "Kelishi Kutilayotgan Sana"
+            : "Ожидаемая дата прибытия"}
+          : {day + 7}
+        </Texts>
       </Right>
     </Container>
   );
