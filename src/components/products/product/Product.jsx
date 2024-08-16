@@ -55,8 +55,44 @@ const Product = ({ list }) => {
                   ? "O'lcham"
                   : "Razmer"}
                 : {v.size == "n" ? "M" : v.size},{" "}
-                {value == "ENG" ? "Color" : value == "UZB" ? "Rang" : "Svet"}:{" "}
-                {v.color}
+                {value == "ENG" ? "Color" : value == "UZB" ? "Rang" : "Цвет"}:{" "}
+                {value == "ENG"
+                  ? v.color
+                  : value == "UZB"
+                  ? `${
+                      v.color == "white"
+                        ? "oq"
+                        : v.color == "red"
+                        ? "qizil"
+                        : v.color == "blue"
+                        ? "ko'k"
+                        : v.color == "green"
+                        ? "yashil"
+                        : v.color == "black"
+                        ? "qora"
+                        : v.color == "grey"
+                        ? "kulrang"
+                        : v.color == "orange"
+                        ? "olovrang"
+                        : "sariq"
+                    }`
+                  : `${
+                      v.color == "white"
+                        ? "белый"
+                        : v.color == "red"
+                        ? "красный"
+                        : v.color == "blue"
+                        ? "синий"
+                        : v.color == "green"
+                        ? "зеленый"
+                        : v.color == "black"
+                        ? "черный"
+                        : v.color == "grey"
+                        ? "серый"
+                        : v.color == "orange"
+                        ? "оранжевый"
+                        : "желтый"
+                    }`}
               </Title>
             </Title>
             <Title cost="true">{v.s}</Title>
