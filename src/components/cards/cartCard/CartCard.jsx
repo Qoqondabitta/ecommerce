@@ -24,7 +24,7 @@ const CartCard = ({ info }) => {
   const [show, setShow] = useState(false);
   const [theme, setTheme] = useState(false);
   const dispatch = useDispatch();
-const numberValue = parseInt(list.s.replace("$", ""));
+  const numberValue = parseInt(list.s.replace("$", ""));
   const l = useSelector((store) => store.language.value);
   const changeEdit = () => {
     setEdit(!edit);
@@ -57,19 +57,65 @@ const numberValue = parseInt(list.s.replace("$", ""));
       <Left>
         <Productimage src={info.bg} />
         <Button onClick={() => setShow(!show)} buy="true">
-          Buy
+          {l == "ENG" ? "Buy" : l == "UZB" ? "Olmoq" : "Купить"}
         </Button>
-        {/* </NavLink> */}
       </Left>
       <Right>
-        <Title>{info.f[0]}</Title>
+        <Title>
+          {l == "ENG" ? info.f[0] : l == "UZB" ? info.f[1] : info.f[2]}
+        </Title>
         <Size>
-          <Texts width="true">Color: {list.color}</Texts>
+          <Texts width="true">
+            {l == "ENG" ? "Color" : l == "UZB" ? "Rang" : "Цвет"}:{" "}
+            {l == "ENG"
+              ? list.color
+              : l == "UZB"
+              ? `${
+                  list.color == "white"
+                    ? "oq"
+                    : list.color == "red"
+                    ? "qizil"
+                    : list.color == "blue"
+                    ? "ko'k"
+                    : list.color == "green"
+                    ? "yashil"
+                    : list.color == "black"
+                    ? "qora"
+                    : list.color == "grey"
+                    ? "kulrang"
+                    : list.color == "orange"
+                    ? "olovrang"
+                    : "sariq"
+                }`
+              : `${
+                  list.color == "white"
+                    ? "белый"
+                    : list.color == "red"
+                    ? "красный"
+                    : list.color == "blue"
+                    ? "синий"
+                    : list.color == "green"
+                    ? "зеленый"
+                    : list.color == "black"
+                    ? "черный"
+                    : list.color == "grey"
+                    ? "серый"
+                    : list.color == "orange"
+                    ? "оранжевый"
+                    : "желтый"
+                }`}
+          </Texts>
           {theme && (
             <Input
               name="color"
               onChange={changeNewColor}
-              placeholder="type color"
+              placeholder={
+                l == "ENG"
+                  ? "type color"
+                  : l == "UZB"
+                  ? "rangni kiriting"
+                  : "выбрать цвет"
+              }
             />
           )}
           <Button
@@ -80,16 +126,27 @@ const numberValue = parseInt(list.s.replace("$", ""));
             className="center"
             edit="true"
           >
-            {theme ? "Choose" : "Edit"}
+            {theme
+              ? `${l == "ENG" ? "Choose" : l == "UZB" ? "Tanlamoq" : "Bыбрать"}`
+              : `${l == "ENG" ? "Edit" : l == "UZB" ? "Boshqa" : "Изменять"}`}
           </Button>
         </Size>
         <Size>
-          <Texts width="true">Size: {list.size}</Texts>
+          <Texts width="true">
+            {l == "ENG" ? "Size" : l == "UZB" ? "O'lcham" : "Pазмер"}:{" "}
+            {list.size == "n" ? "M" : list.size}
+          </Texts>
           {edit && (
             <Input
               name="size"
               onChange={changeNewSize}
-              placeholder="type size"
+              placeholder={
+                l == "ENG"
+                  ? "type size"
+                  : l == "UZB"
+                  ? "o'lchamni kiriting"
+                  : "Bыбрать Pазмер"
+              }
             />
           )}
           <Button
@@ -100,7 +157,9 @@ const numberValue = parseInt(list.s.replace("$", ""));
             }}
             edit="true"
           >
-            {edit ? "Choose" : "Edit"}
+            {edit
+              ? `${l == "ENG" ? "Choose" : l == "UZB" ? "Tanlamoq" : "Bыбрать"}`
+              : `${l == "ENG" ? "Edit" : l == "UZB" ? "Boshqa" : "Изменять"}`}
           </Button>
         </Size>
         <PriceTag>
@@ -113,10 +172,17 @@ const numberValue = parseInt(list.s.replace("$", ""));
               +
             </Button>
           </Size>{" "}
-          <Texts width="true">Price: {numberValue * quantity}$</Texts>
+          <Texts width="true">
+            {l == "ENG" ? "Price" : l == "UZB" ? "Narx" : "Цена"}:{" "}
+            {numberValue * quantity}$
+          </Texts>
         </PriceTag>
         <Button buy="true" onClick={removeItemFromCart}>
-          Remove From Cart
+          {l == "ENG"
+            ? "Remove From Cart"
+            : l == "UZB"
+            ? "Savatdan O'chirish"
+            : "Удалить продукт"}
         </Button>
       </Right>
       {show && <PaymentForm goods={info} />}
