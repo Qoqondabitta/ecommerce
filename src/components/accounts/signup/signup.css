@@ -1,0 +1,67 @@
+.ups-group p {
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: grey;
+  font-family: "DM Serif Display", serif;
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+  pointer-events: none;
+  background-color: white;
+  transition: 0.15s all ease;
+}
+
+.ups-group input:focus + p{
+/* .emails-group input:not(:placeholder-shown) + p { */
+  transform: translateY(-25px);
+  padding: 5px;
+  font-size: 14px;
+  color: black;
+}
+
+.up-group p {
+    position: absolute;
+    top: 10px;
+    font-family: "DM Serif Display", serif;
+    left: 10px;
+    letter-spacing: 0.1rem;
+    color: grey;
+    font-weight: bold;
+    font-size: 16px;
+    pointer-events: none;
+    background-color: white;
+    transition: 0.15s all ease;
+}
+
+.up-group input:focus + p {
+  transform: translateY(-25px);
+  padding: 5px;
+  color: black;
+  font-size: 14px;
+}
+
+.password-group p {
+  pointer-events: none;
+  position: absolute;
+  top: 12px;
+  color: grey;
+  left: 10px;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.15s all ease;
+}
+
+.password-group input:focus + p {
+  transform: translateY(-25px);
+  font-weight: bold;
+  position: absolute;
+  padding: 5px;
+  top: 10px;
+  color: black;
+  font-size: 12px;
+  background-color: white;
+}
+
+

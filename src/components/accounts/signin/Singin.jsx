@@ -18,12 +18,15 @@ import { usersList, validEmails } from "../../../constants/users/in";
 // import { Button } from "../../generics/button/Button";
 
 const Singin = () => {
+  const l = useSelector((store) => store.language.value);
   const [path, setPath] = useState("");
   const navigate = useNavigate();
   const { value } = useSelector((stroe) => stroe.language);
   const [inputValue, setInputValue] = useState(null);
   const [password, setPassword] = useState(null);
   const [users, setUsers] = useState(null);
+  const localemail = localStorage.getItem("email");
+  const localepassword = localStorage.getItem("password");
   const getValue = (e) => {
     setInputValue(e.target.value);
   };
@@ -44,11 +47,13 @@ const Singin = () => {
   const checkUser = () => {
     users.map((v) => a.push(v.email));
     validEmails.push(...a);
+    validEmails.push(localemail)
     usersList.map((v) => b.push(v.name));
     users.map((v) => c.push(v.username));
+    b.push(localepassword)
     b = [...b, ...c];
     console.log(validEmails);
-    if (validEmails.includes(inputValue) && b.includes(password)) {
+    if (validEmails.includes(inputValue)  && b.includes(password)) {
       setPath("/account");
     } else {
       setPath("/collection");
@@ -59,9 +64,10 @@ const Singin = () => {
     <Container>
       <Form>
         <Title>
-          Join
+          {l == "ENG" ? "Join" : l == "UZB" ? "Qo'shiling" : "Присоединись"}
           <Title style={{ display: "flex", gap: "10px" }}>
-            <Title>XON</Title> Community
+            <Title>{l == "RUS" ? "XOH" : "XON"}</Title>{" "}
+            {l == "ENG" ? "Community" : l == "UZB" ? "Jamoasiga" : "Командe"}
           </Title>
         </Title>
         <InputWrappers className="emails-group">

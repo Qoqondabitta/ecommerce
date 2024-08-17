@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
 import Singin from "../components/accounts/signin/Singin";
+import Singup from "../components/accounts/signup/Signup";
 import Account from "../components/accounts/account/Account";
 import Mens from "../components/collection/mens/Mens";
 // import Product from "../components/products/Products";
@@ -19,8 +20,8 @@ const Root = () => {
         <Route path="/pay" element={<PaymentForm />} />
         <Route path="/collection/:id" element={<Products />} />
         <Route path="/account" element={<Account />} />
+        <Route path="/signup" element={<Singup />} />
         <Route path="*" element={<h1>404 Page Not Found</h1>} />
-        {/* <Route path="/signup" element={<Signup />} /> */}
       </Routes>
     </div>
   );

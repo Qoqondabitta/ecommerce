@@ -28,6 +28,7 @@ const Account = () => {
   const {data} = useSelector((store) => store.properties);
   const dispatch = useDispatch();
   const [show, setShow] = useState(false);
+  const fullname = localStorage.getItem("fullname")
   const defineproperty = (property) => {
     dispatch(changeProperty(property));
   };
@@ -64,7 +65,14 @@ const Account = () => {
           )}
         </ProfilePhoto>
         <Orders>
-          <Title>Abdulakhad Turgunaliev</Title>
+          <Title>
+            {value == "ENG"
+              ? "Welcome "
+              : value == "UZB "
+              ? "Xush Kelibsiz"
+              : "Добро пожаловать "}
+            {fullname}
+          </Title>
           <List style={{ width: "100%" }} className="justifyEnd">
             {accountProperties.map((v, i) => (
               <Item
@@ -75,7 +83,7 @@ const Account = () => {
                 onClick={() => defineproperty(v.definers)}
               >
                 <Link
-                  // style={{ color: "black" }}
+                // style={{ color: "black" }}
                 >
                   {value == "ENG"
                     ? v.properties[0]
@@ -86,7 +94,13 @@ const Account = () => {
               </Item>
             ))}
           </List>
-          {data == "like" ? <Like /> : data == "cart" ? <Cart /> : <UserOrder />}
+          {data == "like" ? (
+            <Like />
+          ) : data == "cart" ? (
+            <Cart />
+          ) : (
+            <UserOrder />
+          )}
         </Orders>
       </Hero>
     </Container>
