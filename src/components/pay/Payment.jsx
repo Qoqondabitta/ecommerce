@@ -16,6 +16,7 @@ import { addPurchase } from "../../redux/purchase";
 import { changeProperty } from "../../redux/properties";
 
 const PaymentForm = ({ goods }) => {
+  const { data } = useSelector((store) => store.properties);
   const stripe = useStripe();
   const elements = useElements();
   const [show, setShow] = useState(false);
