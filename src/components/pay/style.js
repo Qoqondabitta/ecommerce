@@ -35,18 +35,14 @@ export const Pay = styled.button`
 `;
 
 export const AlertBox = styled.div`
-  /* display: block; */
   position: fixed;
   top: 50%;
   left: 50%;
-  /* transform: translate(-50%, -50%); */
   background-color: ${({ color }) => color};
   color: white;
   padding: 10px 40px;
   border-radius: 5px;
   text-align: center;
-  /* width: 300px; */
-  /* z-index: 999; */
 `;
 
 export const Input = styled.input`

@@ -47,13 +47,13 @@ const Singin = () => {
   const checkUser = () => {
     users.map((v) => a.push(v.email));
     validEmails.push(...a);
-    validEmails.push(localemail)
+    validEmails.push(localemail);
     usersList.map((v) => b.push(v.name));
     users.map((v) => c.push(v.username));
-    b.push(localepassword)
+    b.push(localepassword);
     b = [...b, ...c];
     console.log(validEmails);
-    if (validEmails.includes(inputValue)  && b.includes(password)) {
+    if (validEmails.includes(inputValue) && b.includes(password)) {
       setPath("/account");
     } else {
       setPath("/collection");
@@ -94,9 +94,23 @@ const Singin = () => {
         <Box>
           <Remember>
             <input type="checkbox" />
-            <Subtitles style={{ color: "black" }}>Remember Me</Subtitles>
+            <Subtitles style={{ color: "black" }}>
+              {l == "ENG"
+                ? "Remember Me"
+                : l == "UZB"
+                ? "Eslab Qolish"
+                : "Запомнить меня"}
+            </Subtitles>
           </Remember>
-          <Subtitles>Forgot Password?</Subtitles>
+          <NavLink to="/signup" style={{ textDecoration: "none" }}>
+            <Subtitles>
+              {l == "ENG"
+                ? "Forgot Passowrd?"
+                : l == "UZB"
+                ? "Parolni Eslolmayapsizmi?"
+                : "Забыли пароль?"}
+            </Subtitles>
+          </NavLink>
         </Box>
         <NavLink to={path} style={{ textDecoration: "none" }}>
           <Button onClick={() => checkUser()}>
@@ -104,7 +118,21 @@ const Singin = () => {
           </Button>
         </NavLink>
         <Subtitles style={{ color: "black", marginTop: "10px" }}>
-          Not a member yet? <Subtitles> Sign up</Subtitles>
+          {l == "ENG"
+            ? "Not a member yet?"
+            : l == "UZB"
+            ? "Hali Azo Bo'lmaganmisiz?"
+            : "Еще не присоединился?"}
+          <NavLink to="/signup" style={{ textDecoration: "none" }}>
+            <Subtitles>
+              {" "}
+              {value == "ENG"
+                ? "SIGN UP"
+                : value == "UZB"
+                ? "AKAUNT YARATISH"
+                : "ЗАРЕГИСТРИРОВАТЬСЯ"}
+            </Subtitles>
+          </NavLink>
         </Subtitles>
       </Form>
     </Container>

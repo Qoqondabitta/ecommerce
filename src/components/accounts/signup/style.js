@@ -6,6 +6,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding-top: 80px;
+  position: relative;
 
   @media only screen and (max-width: 600px) {
     padding-top: 20px;
