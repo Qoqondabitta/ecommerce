@@ -68,10 +68,10 @@ export const Suggestions = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   z-index: 1000000000000;
-padding-left: 20px;
+  padding-left: 20px;
 
-  @media only screen and (max-width: 600px){
-padding-left: 0px;
+  @media only screen and (max-width: 600px) {
+    padding-left: 0px;
   }
 `;
 

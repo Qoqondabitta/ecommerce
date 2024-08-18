@@ -128,8 +128,9 @@ export const MediaLook = styled.div`
   align-items: center;
   justify-content: space-between;
   background: white;
-  padding: 7px 15px;
-  border-radius: 20px;
+  padding: 7px 10px;
+  border-radius: 7px;
+  border: 1px solid black;
   display: none;
   margin-bottom: 12px;
 
