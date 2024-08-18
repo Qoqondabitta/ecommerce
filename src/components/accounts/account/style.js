@@ -13,11 +13,18 @@ export const Hero = styled.div`
   justify-content: center;
   padding: 50px;
   position: relative;
-  /* background-color: orange; */
+
+  @media only screen and (max-width: 600px){
+    padding: 40px 20px;
+  }
 `;
 
 export const ProfilePhoto = styled.div`
   gap: 20px;
+
+  @media only screen and (max-width: 1000px){
+    display: none;
+  }
 `;
 
 export const Orders = styled.div`
@@ -27,8 +34,12 @@ export const Orders = styled.div`
   justify-content: flex-start;
   gap: 20px;
   width: 100%;
-  /* background-color: red; */
   padding: 0px 50px;
+
+  @media only screen and (max-width: 600px){
+    padding: 0px;
+    width: 100%;
+  }
 `;
 
 export const Input = styled.input``;
@@ -66,6 +77,12 @@ export const Title = styled.div`
 font-size: 40px;
 font-family: "DM Serif Display", serif;
 letter-spacing: 0.1rem;
+
+@media only screen and (max-width: 600px){
+  font-size: 24px;
+  line-height: 28px;
+  width: 100%;
+}
 `
 
 
@@ -79,7 +96,7 @@ export const List = styled.ul`
   gap: 20px;
   margin-bottom: 45px;
 
-  @media only screen and (max-width: 1000px) {
+  /* @media only screen and (max-width: 1000px) {
     display: none;
-  }
+  } */
 `;

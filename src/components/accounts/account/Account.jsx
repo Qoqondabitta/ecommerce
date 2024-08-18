@@ -48,7 +48,7 @@ const Account = () => {
       <Hero>
         <ProfilePhoto className="columnCenter">
           <Image src={main} id="img-file" className="cursor" />
-          <Mask htmlFor="bg-file" className="cursor" onClick={showFile}>
+          <Mask for="bg-file" className="cursor" onClick={showFile}>
             {value == "ENG"
               ? "Update Photo"
               : value == "UZB"
@@ -69,7 +69,7 @@ const Account = () => {
             {value == "ENG"
               ? "Welcome "
               : value == "UZB "
-              ? "Xush Kelibsiz"
+              ? "Xush Kelibsiz "
               : "Добро пожаловать "}
             {fullname}
           </Title>
