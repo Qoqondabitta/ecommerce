@@ -18,6 +18,6 @@ export const Container = styled.div`
     padding-bottom: 80px;
   }
   @media only screen and (max-width: 600px) {
-    height: 464px;
+    height: 434px;
   }
 `;

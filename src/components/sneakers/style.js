@@ -8,7 +8,7 @@ export const Main = styled.div`
   position: relative;
   background-color: white;
   @media only screen and (max-width: 600px) {
-    height: 464px;
+    height: 434px;
   }
 `;
 

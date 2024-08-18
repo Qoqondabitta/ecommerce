@@ -33,7 +33,7 @@ const Genders = () => {
           : perfumemain
       }
     >
-      <Blur></Blur>
+      {/* <Blur></Blur> */}
       {(order.value == 0
         ? genderwomen
         : order.value == 1

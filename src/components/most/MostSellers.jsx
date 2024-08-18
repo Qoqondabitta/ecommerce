@@ -12,8 +12,6 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { changeCollection } from "../../redux/collection";
-import { Blur } from "../video/style";
-import { Blurs } from "../sliders/doubleSlider/style";
 
 const MostSellers = () => {
   const order = useSelector((store) => store.order);
