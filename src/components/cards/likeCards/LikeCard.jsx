@@ -1,26 +1,14 @@
 import React, { useState } from "react";
-// import { Bottom, Container, H1, Image, P, Price, Shop, Title } from "./style";
-import { BsCart as Cart } from "react-icons/bs";
 import "./likeCard.css";
 import { GoHeart as Heart } from "react-icons/go";
-import { BsFillSuitHeartFill as Red } from "react-icons/bs";
-import { BsCartPlus as Plus } from "react-icons/bs";
 import { addLike, removeLike } from "../../../redux/like";
-import {
-  Container,
-  Data,
-  Desc,
-  Icon,
-  Imgs,
-  Subtitle,
-} from "../collectionCard/style";
+import { Container, Data, Desc, Icon, Imgs, Subtitle } from "./style";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { BsFillSuitHeartFill as RedHeart } from "react-icons/bs";
 
 const LikeCard = ({ list }) => {
   const [show, setShow] = useState(true);
-  const [display, setDisplay] = useState(true);
   const dispatch = useDispatch();
   const { value } = useSelector((store) => store.language);
   const dislikeProduct = () => {
@@ -33,14 +21,19 @@ const LikeCard = ({ list }) => {
   };
   return (
     <>
-      {/* {list.map((v, i) => ( */}
       <Container key={list.id}>
         <NavLink to={`/collection/${list.id}`}>
           <Imgs src={list?.bg} />
         </NavLink>
         <Data>
           <Desc>
-            <Subtitle main="true">Air Force</Subtitle>
+            <Subtitle main="true">
+              {value == "ENG"
+                ? list.f[0]
+                : value == "UZB"
+                ? list.f[1]
+                : list.f[2]}
+            </Subtitle>
             <Subtitle className="center">
               {value == "ENG"
                 ? "Price: "
@@ -59,7 +52,6 @@ const LikeCard = ({ list }) => {
           </Icon>
         </Data>
       </Container>
-      {/* // ))} */}
     </>
   );
 };

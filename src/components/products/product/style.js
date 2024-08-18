@@ -15,7 +15,8 @@ export const Container = styled.div`
   @media only screen and (max-width: 600px) {
     flex-direction: column;
     height: fit-content;
-    padding-bottom: 60px;
+    padding-block: 60px;
+    gap: 30px;
   }
 `;
 export const Left = styled.div`

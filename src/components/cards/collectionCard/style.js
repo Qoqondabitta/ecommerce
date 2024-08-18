@@ -17,18 +17,7 @@ export const Container = styled.div`
   background-size: ${({ width }) => width && "cover"};
 
   @media only screen and (max-width: 600px) {
-    /* margin-bottom: 120px; */
     width: ${({ width }) => (width ? "100%" : "175px")};
-
-    /* height: ${({ width }) => (width ? "264px" : "270px")}; */
-  }
-  @media only screen and (max-width: 420px) {
-    /* width: ${({ width }) => (width ? "100%" : "150px")}; */
-    /* height: ${({ width }) => (width ? "233px" : "240px")}; */
-  }
-  @media only screen and (max-width: 350px) {
-    /* width: ${({ width }) => (width ? "100%" : "175px")}; */
-    /* height: ${({ width }) => (width ? "197px" : "205px")}; */
   }
 `;
 

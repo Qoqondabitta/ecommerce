@@ -10,6 +10,7 @@ export const Container = styled.div`
   height: 100%;
 
   @media only screen and (max-width: 600px) {
+    gap: 50px;
     justify-content: center;
   }
 `;

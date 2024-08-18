@@ -94,3 +94,99 @@
     background-image: url("../../../assets/images/triple/third6.jpg");
   }
 }
+
+.spray {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: top;
+  animation: spraySlider 13s linear infinite;
+}
+
+@keyframes spraySlider {
+  0%,
+  100% {
+    background-image: url("../../../assets/images/perfumes/deodarantsformen.jpg");
+  }
+  25% {
+    background-image: url("../../../assets/images/perfumes/deodarantsformen.jpeg");
+  }
+  50% {
+    background-image: url("../../../assets/images/perfumes/spraysforwomen.webp");
+  }
+  75% {
+    background-image: url("../../../assets/images/perfumes/sprayformen.jpg");
+  }
+}
+
+.floral {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: top;
+  animation: floralSlider 10s linear infinite;
+}
+
+@keyframes floralSlider {
+  0%,
+  100% {
+    background-image: url("../../../assets/images/perfumes/floralwomenperfume.jpg");
+  }
+  25% {
+    background-image: url("../../../assets/images/perfumes/floralmenperfume.jpg");
+  }
+  50% {
+    background-image: url("../../../assets/images/perfumes/floralkidsperfume.jpg");
+  }
+  75% {
+    background-image: url("../../../assets/images/perfumes/floralallperfume.jpg");
+  }
+}
+
+.cytrus {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: top;
+  animation: floralSlider 10s linear infinite;
+}
+
+@keyframes floralSlider {
+  0%,
+  100% {
+    background-image: url("../../../assets/images/perfumes/citrusformenblue.jpg");
+  }
+  25% {
+    background-image: url("../../../assets/images/perfumes/citrusperfume.webp");
+  }
+  50% {
+    background-image: url("../../../assets/images/perfumes/citruswomenperfume.avif");
+  }
+  75% {
+    background-image: url("../../../assets/images/perfumes/grapefruitformen.jpeg");
+  }
+}
+
+.spicy {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: top;
+  animation: spicySlider 10s linear infinite;
+}
+
+@keyframes spicySlider {
+  0%,
+  100% {
+    background-image: url("../../../assets/images/perfumes/spicyforall.jpg");
+  }
+  25% {
+    background-image: url("../../../assets/images/perfumes/spicyformen.jpeg");
+  }
+  50% {
+    background-image: url("../../../assets/images/perfumes/spicyforwomen.jpg");
+  }
+  75% {
+    background-image: url("../../../assets/images/perfumes/grpefruitperfume.webp");
+  }
+}

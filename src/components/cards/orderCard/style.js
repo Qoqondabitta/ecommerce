@@ -11,7 +11,7 @@ export const Container = styled.div`
   @media only screen and (max-width: 600px) {
     flex-direction: column;
     align-items: center;
-    width: 220px;
+    width: 300px;
     /* height: 200px; */
   }
 `;
