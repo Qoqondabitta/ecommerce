@@ -22,6 +22,7 @@ import { changeProperty } from "../../../redux/properties";
 import Cart from "./userCart/Cart";
 import "./account.css"
 import UserOrder from "./userOrder/UserOrder";
+import FootNav from "../../footNav/FootNav";
 
 const Account = () => {
   const { value } = useSelector((store) => store.language);
@@ -71,7 +72,14 @@ const Account = () => {
               : value == "UZB "
               ? "Xush Kelibsiz "
               : "Добро пожаловать "}
-            {fullname}
+            {fullname ||
+              `${
+                value == "ENG"
+                  ? "Our Dear Guest"
+                  : value == "UZB"
+                  ? "Bizning Hurmatli Mexmonimiz"
+                  : "Наш дорогой гость"
+              }`}
           </Title>
           <List style={{ width: "100%" }} className="justifyEnd">
             {accountProperties.map((v, i) => (
@@ -103,6 +111,7 @@ const Account = () => {
           )}
         </Orders>
       </Hero>
+      <FootNav />
     </Container>
   );
 };

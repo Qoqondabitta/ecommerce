@@ -10,8 +10,9 @@ export const Container = styled.div`
   /* padding-block: 10px; */
   @media only screen and (max-width: 600px) {
     flex-direction: column;
-    width: 300px;
-    height: 200px;
+    align-items: center;
+    width: 220px;
+    /* height: 200px; */
   }
 `;
 
@@ -25,8 +26,8 @@ export const Left = styled.div`
   height: 200px;
 
   @media only screen and (max-width: 600px) {
-    width: ${({ width }) => (width ? "100%" : "175px")};
-    height: ${({ width }) => (width ? "264px" : "200px")};
+    align-items: center;
+    width: 100%;
   }
 `;
 

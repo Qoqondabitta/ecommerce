@@ -7,25 +7,40 @@ import "../navbars/secondNav/secondNav.css";
 import { GrHomeRounded } from "react-icons/gr";
 import { toggleBurger } from "../../redux/burger";
 import { useDispatch } from "react-redux";
-import { Container } from "./style";
+import { Container, IconBox } from "./style";
 import { NavLink } from "react-router-dom";
 
 const FootNav = () => {
   const dispatch = useDispatch();
   return (
-    <Container>
-      <NavLink to="/account" style={{ textDecoration: "none" }}>
-        <FaRegHeart color="black" size="1.1em" />
-      </NavLink>
-      <LuUser color="black" size="1.2em" style={{ width: "20%" }} />
-      <GrHomeRounded color="black" size="1.2em" style={{ width: "20%" }} />
-      <HiOutlineMenu
-        color="black"
-        onClick={() => dispatch(toggleBurger())}
-        size="1.2em"
-        style={{ width: "20%" }}
-      />
-      <IoCartOutline color="black" size="1.2em" style={{ width: "20%" }} />
+    <Container className="center">
+      <IconBox className="center">
+        <NavLink to="/account" style={{ textDecoration: "none" }}>
+          <FaRegHeart color="black" size="1em" />
+        </NavLink>
+      </IconBox>
+      <IconBox className="center">
+        <NavLink to="/signup" style={{ textDecoration: "none" }}>
+          <LuUser color="black" size="1.2em" />
+        </NavLink>
+      </IconBox>
+      <IconBox className="center">
+        <NavLink to="/" style={{ textDecoration: "none" }}>
+          <GrHomeRounded color="black" size="1.2em" />
+        </NavLink>
+      </IconBox>
+      <IconBox className="center">
+        <HiOutlineMenu
+          color="black"
+          onClick={() => dispatch(toggleBurger())}
+          size="1.2em"
+        />
+      </IconBox>
+      <IconBox className="center">
+        <NavLink to="/account" style={{ textDecoration: "none" }}>
+          <IoCartOutline color="black" size="1.2em" />
+        </NavLink>
+      </IconBox>
     </Container>
   );
 };

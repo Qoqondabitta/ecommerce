@@ -58,6 +58,7 @@ const Singin = () => {
     } else {
       setPath("/collection");
     }
+    localStorage.setItem("name", )
   };
 
   return (
