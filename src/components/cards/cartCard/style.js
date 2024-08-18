@@ -7,12 +7,10 @@ export const Container = styled.div`
   border: 1px solid rgb(223, 218, 218);
   gap: 10px;
   position: relative;
-  /* z-index: 0; */
-  /* padding-block: 10px; */
   @media only screen and (max-width: 600px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 300px;
-    height: 200px;
+    height: 600px;
   }
 `;
 
@@ -27,7 +25,9 @@ export const Left = styled.div`
   padding-block: 10px;
 
   @media only screen and (max-width: 600px) {
-    width: ${({ width }) => (width ? "100%" : "175px")};
+    width: 100%;
+    align-items: center;
+    padding: 10px;
     height: ${({ width }) => (width ? "264px" : "200px")};
   }
 `;
@@ -41,6 +41,12 @@ export const Right = styled.div`
   height: 100%;
   gap: 10px;
   padding: 10px 10px 10px 0px;
+
+  @media only screen and (max-width: 600px){
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+  }
 `;
 
 export const Size = styled.div`

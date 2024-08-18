@@ -16,6 +16,11 @@ export const Container = styled.div`
   padding: 10px;
   z-index: 100;
   background-color: white;
+
+  @media only screen and (max-width: 1000px){
+    left: 7%;
+    top: 80%;
+  }
 `;
 
 export const MetricsWrapper = styled.div`

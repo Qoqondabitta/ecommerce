@@ -36,6 +36,7 @@ import { FindTool, Input, InputWrappers, Label, SearchButton } from "./filter";
 import { Alarm } from "./alarm";
 import { IoClose } from "react-icons/io5";
 import { Navigate, useNavigate } from "react-router-dom";
+import FootNav from "../../footNav/FootNav"
 
 const Mens = () => {
   const collection = useSelector((store) => store.collection);
@@ -271,6 +272,7 @@ const Mens = () => {
           </Button>
         )}
       </Wrapper>
+      <FootNav />
       <Footer />
     </Main>
   );

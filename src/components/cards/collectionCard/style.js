@@ -42,17 +42,8 @@ export const Imgs = styled.img`
   border-top-left-radius: 10px;
 
   @media only screen and (max-width: 600px) {
-    width: ${({ width }) => (width ? "100%" : "175px")};
-    /* width: ${({ width }) => (width ? "100%" : "85px")}; */
+    width: ${({ width }) => (width ? "100%" : "173px")};
     height: ${({ width }) => (width ? "264px" : "200px")};
-  }
-  @media only screen and (max-width: 420px) {
-    /* width: ${({ width }) => (width ? "100%" : "185px")}; */
-    /* height: ${({ width }) => (width ? "233px" : "100px")}; */
-  }
-  @media only screen and (max-width: 350px) {
-    /* width: ${({ width }) => (width ? "100%" : "160px")}; */
-    /* height: ${({ width }) => (width ? "197px" : "100px")}; */
   }
 `;
 
@@ -109,7 +100,4 @@ width: 89%;
 
 export const Icon = styled.div`
   width: 10%;
-  /* position: absolute; */
-  /* top: 3%; */
-  /* right: 3%; */
 `;

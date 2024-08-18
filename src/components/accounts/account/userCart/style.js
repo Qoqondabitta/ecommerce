@@ -8,4 +8,8 @@ export const Container = styled.div`
   flex-wrap: wrap;
   width: 100%;
   height: fit-content;
+
+  @media only screen and (max-width: 600px) {
+    justify-content: center;
+  }
 `;

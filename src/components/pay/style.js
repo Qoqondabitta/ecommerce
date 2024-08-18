@@ -22,6 +22,11 @@ export const Container = styled.div`
   position: relative;
   height: 400px;
   padding-top: 50px;
+
+  @media only screen and (max-width: 600px){
+    height: 320px;
+    padding-top: 25px;
+  }
 `;
 
 export const Pay = styled.button`

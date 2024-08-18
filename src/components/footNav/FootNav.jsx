@@ -8,15 +8,23 @@ import { GrHomeRounded } from "react-icons/gr";
 import { toggleBurger } from "../../redux/burger";
 import { useDispatch } from "react-redux";
 import { Container } from "./style";
+import { NavLink } from "react-router-dom";
 
 const FootNav = () => {
-    const dispatch = useDispatch()
+  const dispatch = useDispatch();
   return (
     <Container>
-      <FaRegHeart color="black" style={{ width: "20%" }} size="1.1em" />
+      <NavLink to="/account" style={{ textDecoration: "none" }}>
+        <FaRegHeart color="black" size="1.1em" />
+      </NavLink>
       <LuUser color="black" size="1.2em" style={{ width: "20%" }} />
       <GrHomeRounded color="black" size="1.2em" style={{ width: "20%" }} />
-      <HiOutlineMenu color="black" onClick={()=>dispatch(toggleBurger())} size="1.2em" style={{ width: "20%" }} />
+      <HiOutlineMenu
+        color="black"
+        onClick={() => dispatch(toggleBurger())}
+        size="1.2em"
+        style={{ width: "20%" }}
+      />
       <IoCartOutline color="black" size="1.2em" style={{ width: "20%" }} />
     </Container>
   );
