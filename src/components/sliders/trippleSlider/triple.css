@@ -190,3 +190,195 @@
     background-image: url("../../../assets/images/perfumes/grpefruitperfume.webp");
   }
 }
+
+.stylehijab {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: top;
+  animation: styleSlider 10s linear infinite;
+}
+
+@keyframes styleSlider {
+  0%,
+  100% {
+    background-image: url("../../../assets/images/hijab/hijabcoolstyle1.jpg");
+  }
+  25% {
+    background-image: url("../../../assets/images/hijab/hijabcoolstyle2.jpg");
+  }
+  50% {
+    background-image: url("../../../assets/images/hijab/hijabcoolstyle3.jpg");
+  }
+  75% {
+    background-image: url("../../../assets/images/hijab/hijabcoolstyle4.jpeg");
+  }
+}
+
+.kidshijab {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: top;
+  animation: kidshijabSlider 10s linear infinite;
+}
+
+@keyframes kidshijabSlider {
+  0%,
+  100% {
+    background-image: url("../../../assets/images/hijab/hijabkids1.jpg");
+  }
+  25% {
+    background-image: url("../../../assets/images/hijab/hijabkids2.webp");
+  }
+  50% {
+    background-image: url("../../../assets/images/hijab/hijabkids3.jpg");
+  }
+  75% {
+    background-image: url("../../../assets/images/hijab/hijabkids4.jpg");
+  }
+}
+
+.coolhijab {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: top;
+  animation: coolhijabSlider 10s linear infinite;
+}
+
+@keyframes coolhijabSlider {
+  0%,
+  100% {
+    background-image: url("../../../assets/images/hijab/hijabstyle4.avif");
+  }
+  25% {
+    background-image: url("../../../assets/images/hijab/hijabstyles1.avif");
+  }
+  50% {
+    background-image: url("../../../assets/images/hijab/hijabstyles2.jpg");
+  }
+  75% {
+    background-image: url("../../../assets/images/hijab/hijabstyles3.webp");
+  }
+}
+
+.familyhijab {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: top;
+  animation: familyhijabSlider 10s linear infinite;
+}
+
+@keyframes familyhijabSlider {
+  0%,
+  100% {
+    background-image: url("../../../assets/images/hijab/hijabwide2.jpg");
+  }
+  25% {
+    background-image: url("../../../assets/images/hijab/hijabwide4.jpeg");
+  }
+  50% {
+    background-image: url("../../../assets/images/hijab/hijabwife1.jpeg");
+  }
+  75% {
+    background-image: url("../../../assets/images/hijab/hijabwife3.jpeg");
+  }
+}
+
+.kidssuits {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: top;
+  animation: kidssuitsSlider 10s linear infinite;
+}
+
+@keyframes kidssuitsSlider {
+  0%,
+  100% {
+    background-image: url("../../../assets/images/kids/kidssuits1.webp");
+  }
+  25% {
+    background-image: url("../../../assets/images/kids/kidssuits2.webp");
+  }
+  50% {
+    background-image: url("../../../assets/images/kids/kidssuits4.jpg");
+  }
+  75% {
+    background-image: url("../../../assets/images/kids/kidssuits5.jpg");
+  }
+}
+
+.kidssmart {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: top;
+  animation: kidssmartSlider 10s linear infinite;
+}
+
+@keyframes kidssmartSlider {
+  0%,
+  100% {
+    background-image: url("../../../assets/images/kids/kidssmart1.jpg");
+  }
+  25% {
+    background-image: url("../../../assets/images/kids/kidssmart2.jpg");
+  }
+  50% {
+    background-image: url("../../../assets/images/kids/kidssmart3.jpg");
+  }
+  75% {
+    background-image: url("../../../assets/images/kids/kidssmart4.jpg");
+  }
+}
+
+.kidscasual {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: top;
+  animation: kidscasualSlider 10s linear infinite;
+}
+
+@keyframes kidscasualSlider {
+  0%,
+  100% {
+    background-image: url("../../../assets/images/kids/kidscasual1.jpg");
+  }
+  25% {
+    background-image: url("../../../assets/images/kids/kidscasual2.jpg");
+  }
+  50% {
+    background-image: url("../../../assets/images/kids/kidscasual3.jpg");
+  }
+  75% {
+    background-image: url("../../../assets/images/kids/kidscasual4.jpg");
+  }
+}
+
+.kidssport {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: top;
+  animation: kidssportSlider 10s linear infinite;
+}
+
+@keyframes kidssportSlider {
+  0%,
+  100% {
+    background-image: url("../../../assets/images/kids/kidssport1.jpg");
+  }
+  25% {
+    background-image: url("../../../assets/images/kids/kidssport2.webp");
+  }
+  50% {
+    background-image: url("../../../assets/images/kids/kidssport3.jpg");
+  }
+  75% {
+    background-image: url("../../../assets/images/kids/kidssport4.webp");
+  }
+}

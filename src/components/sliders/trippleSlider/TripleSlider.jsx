@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { TextWrapper, Text, Info } from "../../mini/pokerTextSlider/style.js";
 import { NavLink } from "react-router-dom";
 import { changeCollection } from "../../../redux/collection";
-import { pokerSliderPerfume } from "../../../constants/slideConstants/pokerSliderElements";
+import { pokerSliderKids, pokerSliderPerfume, pokerSliderWomen } from "../../../constants/slideConstants/pokerSliderElements";
 
 const TripleSlider = () => {
   const o = useSelector(store=>store.order.value)
@@ -16,7 +16,7 @@ const TripleSlider = () => {
   return (
     <Main className="center">
       <Wrapper className="center">
-        {(o==3?pokerSliderPerfume:tripleSliderElements).map((v, i) => (
+        {(o==0?pokerSliderWomen:o==2?pokerSliderKids:o==3?pokerSliderPerfume:tripleSliderElements).map((v, i) => (
           <Container key={i} className="center">
             <Content className={v.player}>
               <TextWrapper>
