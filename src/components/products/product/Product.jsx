@@ -37,6 +37,7 @@ const Product = ({ list }) => {
           <ImgWrapper className="center">
             <Img
               src={v.bg}
+              small={v?.small}
               alt={
                 value == "ENG" ? v?.f[0] : value == "UZB" ? v?.f[1] : v?.f[2]
               }

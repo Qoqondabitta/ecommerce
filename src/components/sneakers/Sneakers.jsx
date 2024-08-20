@@ -30,7 +30,7 @@ const Sneakers = () => {
           ))}
           <Bunker type="sneakersBtn" className="justifyStart">
             {sneakersBtnconstants.map(({ m }, i) => (
-              <NavLink style={{ textDecoration: "none" }} to="/collection">
+              <NavLink key={i} style={{ textDecoration: "none" }} to="/collection">
                 <Button
                   type="black"
                   key={i}

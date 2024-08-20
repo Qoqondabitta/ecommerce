@@ -30,7 +30,8 @@ export const ImgWrapper = styled.div`
 `;
 
 export const Img = styled.img`
-  /* height: 50%; */
+  height: ${({small})=>small&&"500px"};
+  width: ${({small})=>small&&"450px"};
   /* width: 50%; */
   /* object-fit: cover; */
   /* object-position: center; */
