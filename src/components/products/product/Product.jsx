@@ -55,42 +55,42 @@ const Product = ({ list }) => {
                   : value == "UZB"
                   ? "O'lcham"
                   : "Razmer"}
-                : {v.size == "n" ? "M" : v.size},{" "}
+                : {v?.size == "n" ? "M" : v?.size},{" "}
                 {value == "ENG" ? "Color" : value == "UZB" ? "Rang" : "Цвет"}:{" "}
                 {value == "ENG"
-                  ? v.color
+                  ? v?.color
                   : value == "UZB"
                   ? `${
-                      v.color == "white"
+                      v?.color == "white"
                         ? "oq"
-                        : v.color == "red"
+                        : v?.color == "red"
                         ? "qizil"
-                        : v.color == "blue"
+                        : v?.color == "blue"
                         ? "ko'k"
-                        : v.color == "green"
+                        : v?.color == "green"
                         ? "yashil"
-                        : v.color == "black"
+                        : v?.color == "black"
                         ? "qora"
-                        : v.color == "grey"
+                        : v?.color == "grey"
                         ? "kulrang"
-                        : v.color == "orange"
+                        : v?.color == "orange"
                         ? "olovrang"
                         : "sariq"
                     }`
                   : `${
-                      v.color == "white"
+                      v?.color == "white"
                         ? "белый"
-                        : v.color == "red"
+                        : v?.color == "red"
                         ? "красный"
-                        : v.color == "blue"
+                        : v?.color == "blue"
                         ? "синий"
-                        : v.color == "green"
+                        : v?.color == "green"
                         ? "зеленый"
-                        : v.color == "black"
+                        : v?.color == "black"
                         ? "черный"
-                        : v.color == "grey"
+                        : v?.color == "grey"
                         ? "серый"
-                        : v.color == "orange"
+                        : v?.color == "orange"
                         ? "оранжевый"
                         : "желтый"
                     }`}

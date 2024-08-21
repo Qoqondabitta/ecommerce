@@ -68,39 +68,39 @@ const CartCard = ({ info }) => {
           <Texts width="true">
             {l == "ENG" ? "Color" : l == "UZB" ? "Rang" : "Цвет"}:{" "}
             {l == "ENG"
-              ? list.color
+              ? list?.color
               : l == "UZB"
               ? `${
-                  list.color == "white"
+                  list?.color == "white"
                     ? "oq"
-                    : list.color == "red"
+                    : list?.color == "red"
                     ? "qizil"
-                    : list.color == "blue"
+                    : list?.color == "blue"
                     ? "ko'k"
-                    : list.color == "green"
+                    : list?.color == "green"
                     ? "yashil"
-                    : list.color == "black"
+                    : list?.color == "black"
                     ? "qora"
-                    : list.color == "grey"
+                    : list?.color == "grey"
                     ? "kulrang"
-                    : list.color == "orange"
+                    : list?.color == "orange"
                     ? "olovrang"
                     : "sariq"
                 }`
               : `${
-                  list.color == "white"
+                  list?.color == "white"
                     ? "белый"
-                    : list.color == "red"
+                    : list?.color == "red"
                     ? "красный"
-                    : list.color == "blue"
+                    : list?.color == "blue"
                     ? "синий"
-                    : list.color == "green"
+                    : list?.color == "green"
                     ? "зеленый"
-                    : list.color == "black"
+                    : list?.color == "black"
                     ? "черный"
-                    : list.color == "grey"
+                    : list?.color == "grey"
                     ? "серый"
-                    : list.color == "orange"
+                    : list?.color == "orange"
                     ? "оранжевый"
                     : "желтый"
                 }`}
@@ -134,7 +134,7 @@ const CartCard = ({ info }) => {
         <Size>
           <Texts width="true">
             {l == "ENG" ? "Size" : l == "UZB" ? "O'lcham" : "Pазмер"}:{" "}
-            {list.size == "n" ? "M" : list.size}
+            {list?.size == "n" ? "M" : list?.size}
           </Texts>
           {edit && (
             <Input

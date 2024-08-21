@@ -92,18 +92,18 @@ const Mens = () => {
   const checkSize = () => {
     if (color == "") {
       let res = collection.value.filter((v) => {
-        return v.size == keyword;
+        return v?.size == keyword;
       });
       console.log(res, "res array");
       setList(res);
     } else if (keyword == "") {
       let res = collection.value.filter((v) => {
-        return v.color == color;
+        return v?.color == color;
       });
       setList(res);
     } else if (keyword != "" && color != "") {
       let res = collection.value.filter((v) => {
-        return v.color == color && v.size == keyword;
+        return v?.color == color && v?.size == keyword;
       });
       setList(res);
     } else {

@@ -18,11 +18,6 @@ import kidsnavysuit6 from "../../../../assets/images/kids/kidsnavysuit6.png";
 import kidsblacksuit5 from "../../../../assets/images/kids/kidsblacksuit5.png";
 import kidsbrownsuit from "../../../../assets/images/kids/kidsbrownsuit.png";
 import kidsblacksuit6 from "../../../../assets/images/kids/kidsblacksuit6.png";
-// import kidsblacksuit4 from "../../../../assets/images/kids/kidsblacksuit4.png";
-// import kidsblacksuit4 from "../../../../assets/images/kids/kidsblacksuit4.png";
-// import kidsblacksuit4 from "../../../../assets/images/kids/kidsblacksuit4.png";
-// import kidsblacksuit4 from "../../../../assets/images/kids/kidsblacksuit4.png";
-// import kidsblacksuit4 from "../../../../assets/images/kids/kidsblacksuit4.png";
 
 export const formalkids = [
   {
