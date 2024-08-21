@@ -2,12 +2,13 @@ import { collectioncardconstants } from "../collection";
 import { cardfrank, collectioncardsport } from "../collectionsport";
 import { black } from "../colors/black";
 import { blue } from "../colors/blue";
+import { formalkids } from "../kids/formalkids";
 import { shoes } from "../shoes";
 import { hijabforhead } from "../women/hijabhead";
 import { hijabstyleconstants } from "../women/stylehijab";
 
 export const category = [
-  { c: ["men", "erkaklar", "Мужчины"], l: hijabforhead },
+  { c: ["men", "erkaklar", "Мужчины"], l: formalkids },
   { c: ["suits", "kastyumlar", "костюмы"], l: cardfrank },
   { c: ["sport", "sport", "спорт"], l: collectioncardsport },
   { c: ["shoes", "oyoq kiyim", "обувь"], l: shoes },
