@@ -16,6 +16,6 @@ export const category = [
   { c: ["suits", "kastyumlar", "костюмы"], l: cardfrank },
   { c: ["sport", "sport", "спорт"], l: collectioncardsport },
   { c: ["shoes", "oyoq kiyim", "обувь"], l: shoes },
-  // { c: ["women", "ko'ayollar", "женщины"], l: blue },
-  // { c: ["kids", "bolalar", "Дети"], l: black },
+  { c: ["women", "ko'ayollar", "женщины"], l: blue },
+  { c: ["kids", "bolalar", "Дети"], l: black },
 ];
