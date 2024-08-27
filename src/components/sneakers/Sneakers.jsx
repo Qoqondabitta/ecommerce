@@ -15,13 +15,20 @@ import {
 import { NavLink } from "react-router-dom";
 import { changeCollection } from "../../redux/collection";
 import { shoes } from "../../constants/componentsContants/collection/shoes";
+import sprayforlegs from "../../assets/images/perfumes/sprayforlegs.avif";
+import womensneakers from "../../assets/images/shoes/womensneakers.webp";
+import kidssneakers from "../../assets/images/shoes/kidssneakers.jpg";
 
 const Sneakers = () => {
-  const dispatch = useDispatch()
+  const o = useSelector((store) => store.order.value);
+  const dispatch = useDispatch();
   const { value } = useSelector((store) => store.language);
   return (
     <Main>
-      <Container img={background} sneakersimg={sneakers}>
+      <Container
+        img={o == 0 ? womensneakers : o == 2 ? kidssneakers : background}
+        sneakersimg={sneakers}
+      >
         <Content>
           {sneakersTitleconstants.map((v, i) => (
             <Title type={v.s} key={i} color={v?.color} fontWeight={v?.weight}>
@@ -30,7 +37,11 @@ const Sneakers = () => {
           ))}
           <Bunker type="sneakersBtn" className="justifyStart">
             {sneakersBtnconstants.map(({ m }, i) => (
-              <NavLink key={i} style={{ textDecoration: "none" }} to="/collection">
+              <NavLink
+                key={i}
+                style={{ textDecoration: "none" }}
+                to="/collection"
+              >
                 <Button
                   type="black"
                   key={i}
