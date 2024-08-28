@@ -18,6 +18,7 @@ const BotProSliderCard = ({
   move,
   color = "black",
 }) => {
+  const order = useSelector((store) => store.order.value);
   const [show, setShow] = useState(true);
   const dispatch = useDispatch();
   const [list, setList] = useState(null);
@@ -33,14 +34,14 @@ const BotProSliderCard = ({
   };
   const clickLike = (id) => {
     botCardDetails.map((v, i) => {
-      return v.id === id? a.push(v) : b.push(v);
+      return v.id === id ? a.push(v) : b.push(v);
     });
     dispatch(addLike(a));
     console.log(like, id);
   };
   const removeLike = () => {
-    a.filter((v) => v.id != id)
-    dispatch(addLike(a))
+    a.filter((v) => v.id != id);
+    dispatch(addLike(a));
   };
   return (
     <Container key={id} className={move ? "move" : ""}>
@@ -50,7 +51,7 @@ const BotProSliderCard = ({
         <Heart
           onClick={() => {
             Color();
-            removeLike()
+            removeLike();
             setList(like);
           }}
           color={color}
@@ -60,8 +61,8 @@ const BotProSliderCard = ({
       ) : (
         <Red
           onClick={() => {
-              Color();
-              clickLike(id)
+            Color();
+            clickLike(id);
           }}
           color="red"
           size="1.4em"
@@ -70,9 +71,9 @@ const BotProSliderCard = ({
       )}
       <Shop className="center">
         {display ? (
-          <Plus onClick={Display} size="1.3em" />
+          <Plus onClick={Display} size="1.4em" />
         ) : (
-          <Cart className="" size="1.3em" onClick={Display} />
+          <Cart className="" size="1.4em" onClick={Display} />
         )}
       </Shop>
       <Title>

@@ -54,7 +54,7 @@ export const H1 = styled.h1`
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  height: 20px;
+  height: 24px;
 `;
 export const P = styled.p`
   color: grey;
@@ -71,8 +71,8 @@ export const Shop = styled.div`
   background: transparent;
   border: none;
   position: absolute;
-  top: 88%;
-  right: 0.5%;
+  top: 0%;
+  right: 0%;
   padding: 10px 12px;
   cursor: pointer;
   z-index: 500000;

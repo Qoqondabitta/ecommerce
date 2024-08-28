@@ -6,11 +6,13 @@ import { FaArrowRight as Right } from "react-icons/fa6";
 import BotProSliderCard from "../../cards/bottomCards/BotCard";
 import { useSelector } from "react-redux";
 import { womenBotProducts } from "../../../mock/womenProductScroll";
+import { secondPerfumeCategory } from "../../../mock/perfumeProductSlider";
 
 const BotProductSlider = () => {
   const { value } = useSelector((store) => store.language);
   const [digit, setDigit] = useState(0);
   const scrollRef = useRef(null);
+  const order = useSelector((store) => store.order.value);
   const [move, setMove] = useState(true);
   const handleScroll = () => {
     console.log(scrollRef);
@@ -39,33 +41,35 @@ const BotProductSlider = () => {
         <Right size="1.5em" color="black" />
       </Arrow>
       {/* {digit != 0 && ( */}
-        <Arrow
-          rotate="true"
-          position="left"
-          className="center"
-          onClick={SetBack}
-        >
-          <Right size="1.5em" color="black" />
-        </Arrow>
+      <Arrow rotate="true" position="left" className="center" onClick={SetBack}>
+        <Right size="1.5em" color="black" />
+      </Arrow>
       {/* )} */}
       <Container
         ref={scrollRef}
         className="scrollExample"
         position="flex-start"
       >
-        {womenBotProducts.map((v) => (
+        {(order == 3
+          ? secondPerfumeCategory
+          : order == 1
+          ? product
+          : order == 0
+          ? womenBotProducts
+          : product
+        ).map((v) => (
           <BotProSliderCard
             key={v.id}
             id={v.id}
             price={v.s}
-            desc={value == "ENG" ? v.desc[0] : value == "UZB" ? v.desc[1] : v.desc[2]}
-            title={
+            desc={
               value == "ENG"
-                ? v.f[0]
+                ? v.desc[0]
                 : value == "UZB"
-                ? v.f[1]
-                : v.f[2]
+                ? v.desc[1]
+                : v.desc[2]
             }
+            title={value == "ENG" ? v.f[0] : value == "UZB" ? v.f[1] : v.f[2]}
             img={v.bg}
             color={v?.c}
             move={move}

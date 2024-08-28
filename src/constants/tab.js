@@ -23,3 +23,27 @@ export const TabTitels = [
     function: bottom(),
   },
 ];
+
+export const perfumeTitles = [
+  {
+    name: ["Floral", "Gullik", "Цветочный"],
+    id: 1,
+    class: "top",
+    check: "TOP",
+    function: top(),
+  },
+  {
+    name: ["Cytrus", "Sitrus", "Цитрусовые"],
+    id: 2,
+    class: "shoe",
+    check: "SHOE",
+    function: shoe(),
+  },
+  {
+    name: ["Narcotic", "Pas", "Наркотический"],
+    id: 3,
+    class: "bottom",
+    check: "BOT",
+    function: bottom(),
+  },
+];

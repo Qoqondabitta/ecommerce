@@ -5,10 +5,11 @@ import { ProductCardDetails as product } from "../../../mock/productSliderMock";
 import "./productSlider.css";
 import { FaArrowRight as Right } from "react-icons/fa6";
 import { useSelector } from "react-redux";
-
+import { thirdPerfumeCategory } from "../../../mock/perfumeProductSlider";
 
 const ProductSlider = () => {
-  const { value }=useSelector((store)=>store.language)
+  const { value } = useSelector((store) => store.language);
+  const order = useSelector((store) => store.order.value);
   const [digit, setDigit] = useState(0);
   const scrollRef = useRef(null);
   const [move, setMove] = useState(true);
@@ -39,33 +40,32 @@ const ProductSlider = () => {
         <Right size="1.5em" color="black" />
       </Arrow>
       {/* {digit != 0 && ( */}
-        <Arrow
-          rotate="true"
-          position="left"
-          className="center"
-          onClick={SetBack}
-        >
-          <Right size="1.5em" color="black" />
-        </Arrow>
+      <Arrow rotate="true" position="left" className="center" onClick={SetBack}>
+        <Right size="1.5em" color="black" />
+      </Arrow>
       {/* )} */}
       <Container
         ref={scrollRef}
         className="scrollExample"
         position="flex-start"
       >
-        {product.map(({ id, title, img, desc, price }) => (
-          <ProSliderCard
-            key={id}
-            id={id}
-            price={price}
-            desc={value == "ENG" ? desc[0] : value == "UZB" ? desc[1] : desc[2]}
-            title={
-              value == "ENG" ? title[0] : value == "UZB" ? title[1] : title[2]
-            }
-            img={img}
-            move={move}
-          ></ProSliderCard>
-        ))}
+        {(order == 3 ? thirdPerfumeCategory : product).map(
+          ({ id, f, bg, desc, s }) => (
+            <ProSliderCard
+              key={id}
+              id={id}
+              price={s}
+              desc={
+                value == "ENG" ? desc[0] : value == "UZB" ? desc[1] : desc[2]
+              }
+              title={
+                value == "ENG" ? f[0] : value == "UZB" ? f[1] : f[2]
+              }
+              img={bg}
+              move={move}
+            ></ProSliderCard>
+          )
+        )}
       </Container>
     </Main>
   );

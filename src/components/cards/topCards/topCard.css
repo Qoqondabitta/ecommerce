@@ -1,6 +1,7 @@
-.heart {
+.hearts {
     position: absolute;
-    top: 3%;
-    right: 6%;
+    top: 78%;
+    right: 4%;
+  z-index: 500000;
     cursor: pointer;
 }

@@ -6,10 +6,13 @@ import { topCardDetails as product } from "../../../mock/topProductSlider";
 import "./topProductSlider.css";
 import { FaArrowRight as Right } from "react-icons/fa6";
 import { useSelector } from "react-redux";
+import { womenTopProducts } from "../../../mock/womenProductScroll";
+import { firstPerfumeCategory } from "../../../mock/perfumeProductSlider";
 
 const TopProductSlider = () => {
-  const { value } = useSelector((store) => store.language)
+  const { value } = useSelector((store) => store.language);
   const [digit, setDigit] = useState(0);
+  const order = useSelector((store) => store.order.value);
   const scrollRef = useRef(null);
   const [move, setMove] = useState(true);
   const handleScroll = () => {
@@ -20,8 +23,8 @@ const TopProductSlider = () => {
         behavior: "smooth",
       });
     }
-    setDigit(1)
-    //  setDigit(digit + 2) 
+    setDigit(1);
+    //  setDigit(digit + 2)
   };
   const SetBack = () => {
     let node = scrollRef.current;
@@ -31,7 +34,7 @@ const TopProductSlider = () => {
         behavior: "smooth",
       });
     }
-    setDigit(0)
+    setDigit(0);
     //  digit==1||2 ?setDigit(digit - 1) : digit;
   };
   return (
@@ -39,32 +42,37 @@ const TopProductSlider = () => {
       <Arrow className="center" position="right" onClick={handleScroll}>
         <Right size="1.5em" color="black" />
       </Arrow>
-        <Arrow
-          rotate="true"
-          position="left"
-          className="center"
-          onClick={SetBack}
-        >
-          <Right size="1.5em" color="black" />
-        </Arrow>
+      <Arrow rotate="true" position="left" className="center" onClick={SetBack}>
+        <Right size="1.5em" color="black" />
+      </Arrow>
       <Container
         ref={scrollRef}
         className="scrollExample"
         position="flex-start"
       >
-        {product.map(({ id, title, img, desc, price }) => (
+        {(order == 0
+          ? womenTopProducts
+          : order == 3
+          ? firstPerfumeCategory
+          : product
+        ).map((v) => (
           <ProSliderCard
-            key={id}
-            id={id}
-            price={price}
+            key={v.id}
+            id={v.id}
+            price={v?.s}
             desc={
-              value == "ENG" ? desc[0] : value == "UZB" ? desc[1] : desc[2]
+              value == "ENG"
+                ? v?.desc[0]
+                : value == "UZB"
+                ? v?.desc[1]
+                : v?.desc[2]
             }
             title={
-              value == "ENG" ? title[0] : value == "UZB" ? title[1] : title[2]
+              value == "ENG" ? v?.f[0] : value == "UZB" ? v?.f[1] : v?.f[2]
             }
-            img={img}
+            img={v.bg}
             move={move}
+            color={v.c}
           ></ProSliderCard>
         ))}
       </Container>

@@ -6,7 +6,7 @@ import { GoHeart as Heart } from "react-icons/go";
 import { BsFillSuitHeartFill as Red } from "react-icons/bs";
 import { BsCartPlus as Plus } from "react-icons/bs";
 
-const ProSliderCard = ({ id, title, desc, img, price, move }) => {
+const ProSliderCard = ({ id, title, desc, img, price, move, color }) => {
   const [show, setShow] = useState(true);
   const [display, setDisplay] = useState(true);
   const Color = () => {
@@ -20,7 +20,7 @@ const ProSliderCard = ({ id, title, desc, img, price, move }) => {
       <Image src={img} alt={title} />
       <Price>{price}</Price>
       {show ? (
-        <Heart onClick={Color} color="" size="1.4em" className="heart" />
+        <Heart onClick={Color} color={color} size="1.4em" className="heart" />
       ) : (
         <Red onClick={Color} color="red" size="1.4em" className="heart" />
       )}

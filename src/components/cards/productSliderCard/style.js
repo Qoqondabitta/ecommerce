@@ -52,7 +52,7 @@ export const H1 = styled.h1`
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  height: 20px;
+  height: 24px;
 `;
 export const P = styled.p`
   color: grey;
