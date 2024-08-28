@@ -90,3 +90,17 @@ width: 89%;
 export const Icon = styled.div`
   width: 10%;
 `;
+
+
+export const Price = styled.p`
+  padding: 2px;
+  position: absolute;
+  top: 66%;
+  left: 2%;
+  background-color: white;
+  font-size: 17px;
+  padding: 3px 7px;
+  padding-bottom: 9px;
+  font-weight: 400;
+  transition: all 0.5s;
+`;

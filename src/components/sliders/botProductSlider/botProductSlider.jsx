@@ -5,6 +5,7 @@ import "./botProductSlider.css";
 import { FaArrowRight as Right } from "react-icons/fa6";
 import BotProSliderCard from "../../cards/bottomCards/BotCard";
 import { useSelector } from "react-redux";
+import { womenBotProducts } from "../../../mock/womenProductScroll";
 
 const BotProductSlider = () => {
   const { value } = useSelector((store) => store.language);
@@ -52,7 +53,7 @@ const BotProductSlider = () => {
         className="scrollExample"
         position="flex-start"
       >
-        {product.map((v) => (
+        {womenBotProducts.map((v) => (
           <BotProSliderCard
             key={v.id}
             id={v.id}

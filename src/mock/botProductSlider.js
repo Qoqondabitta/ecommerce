@@ -10,11 +10,12 @@ import top8 from "../assets/images/bottomCard/bottom8.webp";
 import top10 from "../assets/images/bottomCard/bottom12.webp";
 import top11 from "../assets/images/bottomCard/bottom11.webp";
 import top12 from "../assets/images/bottomCard/bottom9.jpg";
+import longskirt1 from "../assets/images/hijab/longskirt1.png";
 
 export const botCardDetails = [
   {
     id: 4,
-    bg: top5,
+    bg: longskirt1,
     f: ["White Trousers", "Oq Shim", "Белые Брюки"],
     desc: ["Spring Sales", "Bahorgi Takliflar", "Весенние распродажи"],
 
