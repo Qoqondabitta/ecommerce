@@ -26,10 +26,10 @@ import hijabsuit from "../assets/images/hijab/hijabsuit.webp";
 export const womenBotProducts = [
   {
     id: "longskirt4",
-    e: ["women's clothing", "ayollar kiyimi", "женская одежда"],
     bg: longskirt1,
-    gender: "women",
     f: ["Black Long Skirt", "Qora Uzun Yupka", "Черная длинная юбка"],
+    e: ["women's clothing", "ayollar kiyimi", "женская одежда"],
+    gender: "women",
     description: [
       "Pink Hijab is good choice for hot or warm up days like nowadays and only just for 39.99$. This for top part clothing can fit with any for bottom clohings and can make you look better in any event or place giving you an outstanding differece among many others. Hurry up only a few are available for this kind of super combo price. We have mainly this hijab in various color and size ranges so do not worry what you are looking for already is on the our stores.",
       "Pushti hijob hozirgi kabi issiq yoki isinish kunlari uchun yaxshi tanlovdir va atigi 39,99 dollarga. Bu kiyimning yuqori qismi uchun har qanday pastki kiyimlarga mos kelishi mumkin va sizni har qanday hodisa yoki joyda yaxshiroq ko'rinishga olib kelishi mumkin, bu sizga boshqalardan ajoyib farq qiladi. Shoshiling, bunday super kombinat narxiga faqat bir nechtasi mavjud. Bizda asosan bu hijob turli xil rang va o'lchamlarda mavjud, shuning uchun siz qidirayotgan narsangiz bizning do'konlarda allaqachon mavjud ekan, tashvishlanmang.",

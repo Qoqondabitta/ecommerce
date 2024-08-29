@@ -13,14 +13,20 @@ import top12 from "../assets/images/bottomCard/bottom9.jpg";
 
 export const botCardDetails = [
   {
-    id: 4,
+    id: "bottom4",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    gender: "men",
+    description: [
+      "White Trousers is good choice for hot or warm up days like nowadays and only just for 39.99$. This for top part clothing can fit with any for bottom clohings and can make you look better in any event or place giving you an outstanding differece among many others. Hurry up only a few are available for this kind of super combo price. We have mainly this hijab in various color and size ranges so do not worry what you are looking for already is on the our stores.",
+      "Oq Shim hozirgi kabi issiq yoki isinish kunlari uchun yaxshi tanlovdir va atigi 39,99 dollarga. Bu kiyimning yuqori qismi uchun har qanday pastki kiyimlarga mos kelishi mumkin va sizni har qanday hodisa yoki joyda yaxshiroq ko'rinishga olib kelishi mumkin, bu sizga boshqalardan ajoyib farq qiladi. Shoshiling, bunday super kombinat narxiga faqat bir nechtasi mavjud. Bizda asosan bu hijob turli xil rang va o'lchamlarda mavjud, shuning uchun siz qidirayotgan narsangiz bizning do'konlarda allaqachon mavjud ekan, tashvishlanmang.",
+      "Белые Брюки — хороший выбор для жарких или теплых дней, как сейчас, всего за 39,99 долларов. Эта одежда для верхней части может сочетаться с любой одеждой для нижней части и поможет вам выглядеть лучше на любом мероприятии или в любом месте, выделяя вас среди многих других. Спешите, по такой супер-комбо-цене доступно всего несколько экземпляров. В основном у нас есть хиджабы различных цветов и размеров, поэтому не волнуйтесь, то, что вы ищете, уже есть в наших магазинах.",
+    ],
     bg: top5,
     f: ["White Trousers", "Oq Shim", "Белые Брюки"],
     desc: ["Spring Sales", "Bahorgi Takliflar", "Весенние распродажи"],
-
     place: "center",
     position: "center",
-    s: "128 zl",
+    s: "128.99 zl",
     size: "n",
     color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
@@ -29,11 +35,17 @@ export const botCardDetails = [
   {
     place: "center",
     position: "center",
-
     size: "n",
     color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
-    id: 12,
+    id: "bottom12",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    gender: "men",
+    description: [
+      "Black Formal Trousers is good choice for hot or warm up days like nowadays and only just for 39.99$. This for top part clothing can fit with any for bottom clohings and can make you look better in any event or place giving you an outstanding differece among many others. Hurry up only a few are available for this kind of super combo price. We have mainly this hijab in various color and size ranges so do not worry what you are looking for already is on the our stores.",
+      "Qora Polu Klasika hozirgi kabi issiq yoki isinish kunlari uchun yaxshi tanlovdir va atigi 39,99 dollarga. Bu kiyimning yuqori qismi uchun har qanday pastki kiyimlarga mos kelishi mumkin va sizni har qanday hodisa yoki joyda yaxshiroq ko'rinishga olib kelishi mumkin, bu sizga boshqalardan ajoyib farq qiladi. Shoshiling, bunday super kombinat narxiga faqat bir nechtasi mavjud. Bizda asosan bu hijob turli xil rang va o'lchamlarda mavjud, shuning uchun siz qidirayotgan narsangiz bizning do'konlarda allaqachon mavjud ekan, tashvishlanmang.",
+      "Черные Классические Брюки — хороший выбор для жарких или теплых дней, как сейчас, всего за 39,99 долларов. Эта одежда для верхней части может сочетаться с любой одеждой для нижней части и поможет вам выглядеть лучше на любом мероприятии или в любом месте, выделяя вас среди многих других. Спешите, по такой супер-комбо-цене доступно всего несколько экземпляров. В основном у нас есть хиджабы различных цветов и размеров, поэтому не волнуйтесь, то, что вы ищете, уже есть в наших магазинах.",
+    ],
     bg: top,
     f: [
       "Black Formal Trousers",
@@ -47,11 +59,17 @@ export const botCardDetails = [
   {
     place: "center",
     position: "center",
-
     size: "n",
     color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
-    id: 2,
+    id: "bottom2",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    gender: "men",
+    description: [
+      "Zara Jinsi is good choice for hot or warm up days like nowadays and only just for 39.99$. This for top part clothing can fit with any for bottom clohings and can make you look better in any event or place giving you an outstanding differece among many others. Hurry up only a few are available for this kind of super combo price. We have mainly this hijab in various color and size ranges so do not worry what you are looking for already is on the our stores.",
+      "Zara Jinsilari hozirgi kabi issiq yoki isinish kunlari uchun yaxshi tanlovdir va atigi 39,99 dollarga. Bu kiyimning yuqori qismi uchun har qanday pastki kiyimlarga mos kelishi mumkin va sizni har qanday hodisa yoki joyda yaxshiroq ko'rinishga olib kelishi mumkin, bu sizga boshqalardan ajoyib farq qiladi. Shoshiling, bunday super kombinat narxiga faqat bir nechtasi mavjud. Bizda asosan bu hijob turli xil rang va o'lchamlarda mavjud, shuning uchun siz qidirayotgan narsangiz bizning do'konlarda allaqachon mavjud ekan, tashvishlanmang.",
+      "Зара Джинсы — хороший выбор для жарких или теплых дней, как сейчас, всего за 39,99 долларов. Эта одежда для верхней части может сочетаться с любой одеждой для нижней части и поможет вам выглядеть лучше на любом мероприятии или в любом месте, выделяя вас среди многих других. Спешите, по такой супер-комбо-цене доступно всего несколько экземпляров. В основном у нас есть хиджабы различных цветов и размеров, поэтому не волнуйтесь, то, что вы ищете, уже есть в наших магазинах.",
+    ],
     bg: top2,
     f: ["Zara Jeans", "Zara Jinsilari", "Зара Джинсы"],
     desc: ["Spring Sales", "Bahorgi Takliflar", "Весенние распродажи"],
@@ -60,11 +78,17 @@ export const botCardDetails = [
   {
     place: "center",
     position: "center",
-
     size: "n",
     color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
-    id: 5,
+    id: "bottom5",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    gender: "men",
+    description: [
+      "Casual Trousers is good choice for hot or warm up days like nowadays and only just for 39.99$. This for top part clothing can fit with any for bottom clohings and can make you look better in any event or place giving you an outstanding differece among many others. Hurry up only a few are available for this kind of super combo price. We have mainly this hijab in various color and size ranges so do not worry what you are looking for already is on the our stores.",
+      "Kundalik Shimlar hozirgi kabi issiq yoki isinish kunlari uchun yaxshi tanlovdir va atigi 39,99 dollarga. Bu kiyimning yuqori qismi uchun har qanday pastki kiyimlarga mos kelishi mumkin va sizni har qanday hodisa yoki joyda yaxshiroq ko'rinishga olib kelishi mumkin, bu sizga boshqalardan ajoyib farq qiladi. Shoshiling, bunday super kombinat narxiga faqat bir nechtasi mavjud. Bizda asosan bu hijob turli xil rang va o'lchamlarda mavjud, shuning uchun siz qidirayotgan narsangiz bizning do'konlarda allaqachon mavjud ekan, tashvishlanmang.",
+      "Повседневные Брюки — хороший выбор для жарких или теплых дней, как сейчас, всего за 39,99 долларов. Эта одежда для верхней части может сочетаться с любой одеждой для нижней части и поможет вам выглядеть лучше на любом мероприятии или в любом месте, выделяя вас среди многих других. Спешите, по такой супер-комбо-цене доступно всего несколько экземпляров. В основном у нас есть хиджабы различных цветов и размеров, поэтому не волнуйтесь, то, что вы ищете, уже есть в наших магазинах.",
+    ],
     bg: top6,
     f: ["Casual Trousers", "Kundalik Shim", "Повседневные Брюки"],
     desc: ["Spring Sales", "Bahorgi Takliflar", "Весенние распродажи"],
@@ -73,11 +97,17 @@ export const botCardDetails = [
   {
     place: "center",
     position: "center",
-
     size: "n",
     color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
-    id: 3,
+    id: "bottom3",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    gender: "men",
+    description: [
+      "Beach Shorts is good choice for hot or warm up days like nowadays and only just for 39.99$. This for top part clothing can fit with any for bottom clohings and can make you look better in any event or place giving you an outstanding differece among many others. Hurry up only a few are available for this kind of super combo price. We have mainly this hijab in various color and size ranges so do not worry what you are looking for already is on the our stores.",
+      "Sohilbob Shortik hozirgi kabi issiq yoki isinish kunlari uchun yaxshi tanlovdir va atigi 39,99 dollarga. Bu kiyimning yuqori qismi uchun har qanday pastki kiyimlarga mos kelishi mumkin va sizni har qanday hodisa yoki joyda yaxshiroq ko'rinishga olib kelishi mumkin, bu sizga boshqalardan ajoyib farq qiladi. Shoshiling, bunday super kombinat narxiga faqat bir nechtasi mavjud. Bizda asosan bu hijob turli xil rang va o'lchamlarda mavjud, shuning uchun siz qidirayotgan narsangiz bizning do'konlarda allaqachon mavjud ekan, tashvishlanmang.",
+      "Пляжные Шорты — хороший выбор для жарких или теплых дней, как сейчас, всего за 39,99 долларов. Эта одежда для верхней части может сочетаться с любой одеждой для нижней части и поможет вам выглядеть лучше на любом мероприятии или в любом месте, выделяя вас среди многих других. Спешите, по такой супер-комбо-цене доступно всего несколько экземпляров. В основном у нас есть хиджабы различных цветов и размеров, поэтому не волнуйтесь, то, что вы ищете, уже есть в наших магазинах.",
+    ],
     bg: top3,
     f: ["Beach Shorts", "Sohilbob Shortik", "Пляжные Шорты"],
     desc: ["Spring Sales", "Bahorgi Takliflar", "Весенние распродажи"],
@@ -86,11 +116,17 @@ export const botCardDetails = [
   {
     place: "center",
     position: "center",
-
     size: "n",
     color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
-    id: 8,
+    id: "bottom8",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    gender: "men",
+    description: [
+      "Sport Pants is good choice for hot or warm up days like nowadays and only just for 39.99$. This for top part clothing can fit with any for bottom clohings and can make you look better in any event or place giving you an outstanding differece among many others. Hurry up only a few are available for this kind of super combo price. We have mainly this hijab in various color and size ranges so do not worry what you are looking for already is on the our stores.",
+      "Shalvarlar hozirgi kabi issiq yoki isinish kunlari uchun yaxshi tanlovdir va atigi 39,99 dollarga. Bu kiyimning yuqori qismi uchun har qanday pastki kiyimlarga mos kelishi mumkin va sizni har qanday hodisa yoki joyda yaxshiroq ko'rinishga olib kelishi mumkin, bu sizga boshqalardan ajoyib farq qiladi. Shoshiling, bunday super kombinat narxiga faqat bir nechtasi mavjud. Bizda asosan bu hijob turli xil rang va o'lchamlarda mavjud, shuning uchun siz qidirayotgan narsangiz bizning do'konlarda allaqachon mavjud ekan, tashvishlanmang.",
+      "Тренировочные Штаны — хороший выбор для жарких или теплых дней, как сейчас, всего за 39,99 долларов. Эта одежда для верхней части может сочетаться с любой одеждой для нижней части и поможет вам выглядеть лучше на любом мероприятии или в любом месте, выделяя вас среди многих других. Спешите, по такой супер-комбо-цене доступно всего несколько экземпляров. В основном у нас есть хиджабы различных цветов и размеров, поэтому не волнуйтесь, то, что вы ищете, уже есть в наших магазинах.",
+    ],
     bg: top9,
     f: ["Training Trousers", "Shalvar", "Тренировочные Штаны"],
     desc: ["Spring Sales", "Bahorgi Takliflar", "Весенние распродажи"],
@@ -99,28 +135,40 @@ export const botCardDetails = [
   {
     place: "center",
     position: "center",
-
     size: "n",
     color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
-    id: 13,
+    id: "bottom13",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    gender: "men",
+    description: [
+      "Under Wears is good choice for hot or warm up days like nowadays and only just for 39.99$. This for top part clothing can fit with any for bottom clohings and can make you look better in any event or place giving you an outstanding differece among many others. Hurry up only a few are available for this kind of super combo price. We have mainly this hijab in various color and size ranges so do not worry what you are looking for already is on the our stores.",
+      "Ichki Kiyimlar hozirgi kabi issiq yoki isinish kunlari uchun yaxshi tanlovdir va atigi 39,99 dollarga. Bu kiyimning yuqori qismi uchun har qanday pastki kiyimlarga mos kelishi mumkin va sizni har qanday hodisa yoki joyda yaxshiroq ko'rinishga olib kelishi mumkin, bu sizga boshqalardan ajoyib farq qiladi. Shoshiling, bunday super kombinat narxiga faqat bir nechtasi mavjud. Bizda asosan bu hijob turli xil rang va o'lchamlarda mavjud, shuning uchun siz qidirayotgan narsangiz bizning do'konlarda allaqachon mavjud ekan, tashvishlanmang.",
+      "Нижнее белье — хороший выбор для жарких или теплых дней, как сейчас, всего за 39,99 долларов. Эта одежда для верхней части может сочетаться с любой одеждой для нижней части и поможет вам выглядеть лучше на любом мероприятии или в любом месте, выделяя вас среди многих других. Спешите, по такой супер-комбо-цене доступно всего несколько экземпляров. В основном у нас есть хиджабы различных цветов и размеров, поэтому не волнуйтесь, то, что вы ищете, уже есть в наших магазинах.",
+    ],
     bg: top12,
-    f: ["Under Wears", "Tursiklar", "Нижнее белье"],
+    f: ["Under Wears", "Ichki Kiyimlar", "Нижнее белье"],
     desc: ["Spring Sales", "Bahorgi Takliflar", "Весенние распродажи"],
     s: "128 zl",
   },
   {
     place: "center",
     position: "center",
-
     size: "n",
     color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
-    id: 6,
+    id: "bottom6",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    gender: "men",
+    description: [
+      "Black Casual Trousers is good choice for hot or warm up days like nowadays and only just for 39.99$. This for top part clothing can fit with any for bottom clohings and can make you look better in any event or place giving you an outstanding differece among many others. Hurry up only a few are available for this kind of super combo price. We have mainly this hijab in various color and size ranges so do not worry what you are looking for already is on the our stores.",
+      "Qora Kocha Shim hozirgi kabi issiq yoki isinish kunlari uchun yaxshi tanlovdir va atigi 39,99 dollarga. Bu kiyimning yuqori qismi uchun har qanday pastki kiyimlarga mos kelishi mumkin va sizni har qanday hodisa yoki joyda yaxshiroq ko'rinishga olib kelishi mumkin, bu sizga boshqalardan ajoyib farq qiladi. Shoshiling, bunday super kombinat narxiga faqat bir nechtasi mavjud. Bizda asosan bu hijob turli xil rang va o'lchamlarda mavjud, shuning uchun siz qidirayotgan narsangiz bizning do'konlarda allaqachon mavjud ekan, tashvishlanmang.",
+      "Черные повседневные брюки — хороший выбор для жарких или теплых дней, как сейчас, всего за 39,99 долларов. Эта одежда для верхней части может сочетаться с любой одеждой для нижней части и поможет вам выглядеть лучше на любом мероприятии или в любом месте, выделяя вас среди многих других. Спешите, по такой супер-комбо-цене доступно всего несколько экземпляров. В основном у нас есть хиджабы различных цветов и размеров, поэтому не волнуйтесь, то, что вы ищете, уже есть в наших магазинах.",
+    ],
     bg: top7,
     f: [
       "Black Casual Trousers",
-      "Qora Ko'cha Shim",
+      "Qora Kocha Shim",
       "Черные повседневные брюки",
     ],
     desc: ["Spring Sales", "Bahorgi Takliflar", "Весенние распродажи"],
@@ -130,11 +178,17 @@ export const botCardDetails = [
   {
     place: "center",
     position: "center",
-
     size: "n",
     color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
-    id: 10,
+    id: "bottom10",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    gender: "men",
+    description: [
+      "Formal Shorts is good choice for hot or warm up days like nowadays and only just for 39.99$. This for top part clothing can fit with any for bottom clohings and can make you look better in any event or place giving you an outstanding differece among many others. Hurry up only a few are available for this kind of super combo price. We have mainly this hijab in various color and size ranges so do not worry what you are looking for already is on the our stores.",
+      "Klassik Shortiklar hozirgi kabi issiq yoki isinish kunlari uchun yaxshi tanlovdir va atigi 39,99 dollarga. Bu kiyimning yuqori qismi uchun har qanday pastki kiyimlarga mos kelishi mumkin va sizni har qanday hodisa yoki joyda yaxshiroq ko'rinishga olib kelishi mumkin, bu sizga boshqalardan ajoyib farq qiladi. Shoshiling, bunday super kombinat narxiga faqat bir nechtasi mavjud. Bizda asosan bu hijob turli xil rang va o'lchamlarda mavjud, shuning uchun siz qidirayotgan narsangiz bizning do'konlarda allaqachon mavjud ekan, tashvishlanmang.",
+      "Классические шорты — хороший выбор для жарких или теплых дней, как сейчас, всего за 39,99 долларов. Эта одежда для верхней части может сочетаться с любой одеждой для нижней части и поможет вам выглядеть лучше на любом мероприятии или в любом месте, выделяя вас среди многих других. Спешите, по такой супер-комбо-цене доступно всего несколько экземпляров. В основном у нас есть хиджабы различных цветов и размеров, поэтому не волнуйтесь, то, что вы ищете, уже есть в наших магазинах.",
+    ],
     bg: top11,
     f: ["Formal Shorts", "Klasik Shortiklar", "Классические шорты"],
     desc: ["Spring Sales", "Bahorgi Takliflar", "Весенние распродажи"],
@@ -144,11 +198,17 @@ export const botCardDetails = [
   {
     place: "center",
     position: "center",
-
     size: "n",
     color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
-    id: 1,
+    id: "bottom1",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    gender: "men",
+    description: [
+      "Old Style Jeans is good choice for hot or warm up days like nowadays and only just for 39.99$. This for top part clothing can fit with any for bottom clohings and can make you look better in any event or place giving you an outstanding differece among many others. Hurry up only a few are available for this kind of super combo price. We have mainly this hijab in various color and size ranges so do not worry what you are looking for already is on the our stores.",
+      "Odiy Jinsilar hozirgi kabi issiq yoki isinish kunlari uchun yaxshi tanlovdir va atigi 39,99 dollarga. Bu kiyimning yuqori qismi uchun har qanday pastki kiyimlarga mos kelishi mumkin va sizni har qanday hodisa yoki joyda yaxshiroq ko'rinishga olib kelishi mumkin, bu sizga boshqalardan ajoyib farq qiladi. Shoshiling, bunday super kombinat narxiga faqat bir nechtasi mavjud. Bizda asosan bu hijob turli xil rang va o'lchamlarda mavjud, shuning uchun siz qidirayotgan narsangiz bizning do'konlarda allaqachon mavjud ekan, tashvishlanmang.",
+      "Обычные джинсы — хороший выбор для жарких или теплых дней, как сейчас, всего за 39,99 долларов. Эта одежда для верхней части может сочетаться с любой одеждой для нижней части и поможет вам выглядеть лучше на любом мероприятии или в любом месте, выделяя вас среди многих других. Спешите, по такой супер-комбо-цене доступно всего несколько экземпляров. В основном у нас есть хиджабы различных цветов и размеров, поэтому не волнуйтесь, то, что вы ищете, уже есть в наших магазинах.",
+    ],
     bg: top4,
     f: ["Old Style Jeans", "Odiy Jinsilar", "Обычные джинсы"],
     desc: ["Spring Sales", "Bahorgi Takliflar", "Весенние распродажи"],
@@ -157,15 +217,21 @@ export const botCardDetails = [
   {
     place: "center",
     position: "center",
-
     size: "n",
     color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
-    id: 7,
+    id: "bottom7",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    gender: "men",
+    description: [
+      "Black Training Shorts is good choice for hot or warm up days like nowadays and only just for 39.99$. This for top part clothing can fit with any for bottom clohings and can make you look better in any event or place giving you an outstanding differece among many others. Hurry up only a few are available for this kind of super combo price. We have mainly this hijab in various color and size ranges so do not worry what you are looking for already is on the our stores.",
+      "Qora Shortiklar Sportga hozirgi kabi issiq yoki isinish kunlari uchun yaxshi tanlovdir va atigi 39,99 dollarga. Bu kiyimning yuqori qismi uchun har qanday pastki kiyimlarga mos kelishi mumkin va sizni har qanday hodisa yoki joyda yaxshiroq ko'rinishga olib kelishi mumkin, bu sizga boshqalardan ajoyib farq qiladi. Shoshiling, bunday super kombinat narxiga faqat bir nechtasi mavjud. Bizda asosan bu hijob turli xil rang va o'lchamlarda mavjud, shuning uchun siz qidirayotgan narsangiz bizning do'konlarda allaqachon mavjud ekan, tashvishlanmang.",
+      "Черные тренировочные шорты — хороший выбор для жарких или теплых дней, как сейчас, всего за 39,99 долларов. Эта одежда для верхней части может сочетаться с любой одеждой для нижней части и поможет вам выглядеть лучше на любом мероприятии или в любом месте, выделяя вас среди многих других. Спешите, по такой супер-комбо-цене доступно всего несколько экземпляров. В основном у нас есть хиджабы различных цветов и размеров, поэтому не волнуйтесь, то, что вы ищете, уже есть в наших магазинах.",
+    ],
     bg: top8,
     f: [
       "Black Training Shorts",
-      "Qora Shortiklar",
+      "Qora Shortiklar Sportga",
       "Черные тренировочные шорты",
     ],
     desc: ["Spring Sales", "Bahorgi Takliflar", "Весенние распродажи"],
@@ -174,11 +240,17 @@ export const botCardDetails = [
   {
     place: "center",
     position: "center",
-
     size: "n",
     color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
-    id: 11,
+    id: "bottom11",
+    e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
+    gender: "men",
+    description: [
+      "Pijamas Hijab is good choice for hot or warm up days like nowadays and only just for 39.99$. This for top part clothing can fit with any for bottom clohings and can make you look better in any event or place giving you an outstanding differece among many others. Hurry up only a few are available for this kind of super combo price. We have mainly this hijab in various color and size ranges so do not worry what you are looking for already is on the our stores.",
+      "Pijamalar hijob hozirgi kabi issiq yoki isinish kunlari uchun yaxshi tanlovdir va atigi 39,99 dollarga. Bu kiyimning yuqori qismi uchun har qanday pastki kiyimlarga mos kelishi mumkin va sizni har qanday hodisa yoki joyda yaxshiroq ko'rinishga olib kelishi mumkin, bu sizga boshqalardan ajoyib farq qiladi. Shoshiling, bunday super kombinat narxiga faqat bir nechtasi mavjud. Bizda asosan bu hijob turli xil rang va o'lchamlarda mavjud, shuning uchun siz qidirayotgan narsangiz bizning do'konlarda allaqachon mavjud ekan, tashvishlanmang.",
+      "Пижамы — хороший выбор для жарких или теплых дней, как сейчас, всего за 39,99 долларов. Эта одежда для верхней части может сочетаться с любой одеждой для нижней части и поможет вам выглядеть лучше на любом мероприятии или в любом месте, выделяя вас среди многих других. Спешите, по такой супер-комбо-цене доступно всего несколько экземпляров. В основном у нас есть хиджабы различных цветов и размеров, поэтому не волнуйтесь, то, что вы ищете, уже есть в наших магазинах.",
+    ],
     bg: top10,
     f: ["Pijamas", "Pijamalar", "Пижамы"],
     desc: ["Spring Sales", "Bahorgi Takliflar", "Весенние распродажи"],

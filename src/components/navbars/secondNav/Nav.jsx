@@ -23,6 +23,7 @@ import { customOrder } from "../../../redux/order";
 
 const Nav = () => {
   const search = useSelector((store) => store.search);
+  const cart = useSelector(store=>store.cart.value)
   const dispatch = useDispatch();
   const language = useSelector((store) => store.language);
   const counter = useSelector((store) => store.counter);
@@ -71,7 +72,7 @@ const Nav = () => {
           <Icon className="">
             <NavLink to="/account">
               <IoCartOutline className="navIcons" color="white" size="1.8em" />
-              <Round className="center">{counter.data}</Round>
+              <Round className="center">{cart.length}</Round>
             </NavLink>
           </Icon>
           <HiOutlineMenu

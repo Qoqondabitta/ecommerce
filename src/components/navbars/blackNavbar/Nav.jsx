@@ -23,6 +23,7 @@ import { changeProperty } from "../../../redux/properties";
 
 const BlackNav = () => {
   const search = useSelector((store) => store.search);
+  const cart = useSelector((store) => store.cart.value);
   const dispatch = useDispatch();
   const language = useSelector((store) => store.language);
   const counter = useSelector((store) => store.counter);
@@ -72,8 +73,13 @@ const BlackNav = () => {
           </NavLink>
           <Icon className="">
             <NavLink to="/account">
-              <IoCartOutline onClick={()=>dispatch(changeProperty("cart"))} className="navIcons" color="black" size="1.8em" />
-              <Round className="center">{counter.data}</Round>
+              <IoCartOutline
+                onClick={() => dispatch(changeProperty("cart"))}
+                className="navIcons"
+                color="black"
+                size="1.8em"
+              />
+              <Round className="center">{cart.length}</Round>
             </NavLink>
           </Icon>
           <HiOutlineMenu

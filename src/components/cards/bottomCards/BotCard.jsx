@@ -8,6 +8,7 @@ import { BsCartPlus as Plus } from "react-icons/bs";
 import { addLike } from "../../../redux/like";
 import { useDispatch, useSelector } from "react-redux";
 import { botCardDetails } from "../../../mock/botProductSlider";
+import { NavLink } from "react-router-dom";
 
 const BotProSliderCard = ({
   id,
@@ -45,7 +46,9 @@ const BotProSliderCard = ({
   };
   return (
     <Container key={id} className={move ? "move" : ""}>
-      <Image src={img} alt={title} />
+      <NavLink style={{textDecoration: "none"}} to={`/${id}`}>
+        <Image src={img} alt={title} />
+      </NavLink>
       <Price>{price}</Price>
       {show ? (
         <Heart
