@@ -37,6 +37,7 @@ export const Container = styled.div`
 export const Image = styled.img`
   width: 250px;
   height: 250px;
+  z-index: 500000;
   cursor: pointer;
   border-radius: 5px;
   object-position: bottom;

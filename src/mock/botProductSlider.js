@@ -30,7 +30,7 @@ export const botCardDetails = [
     size: "n",
     color: "red",
     t: ["Shop Now", "Hozir Olmoq", "купить сейчас"],
-    c: "white",
+    c: "black",
   },
   {
     place: "center",
@@ -54,7 +54,7 @@ export const botCardDetails = [
     ],
     desc: ["Spring Sales", "Bahorgi Takliflar", "Весенние распродажи"],
     s: "128 zl",
-    c: "white",
+    c: "black",
   },
   {
     place: "center",
@@ -173,7 +173,7 @@ export const botCardDetails = [
     ],
     desc: ["Spring Sales", "Bahorgi Takliflar", "Весенние распродажи"],
     s: "128 zl",
-    c: "white",
+    c: "black",
   },
   {
     place: "center",
@@ -193,7 +193,7 @@ export const botCardDetails = [
     f: ["Formal Shorts", "Klasik Shortiklar", "Классические шорты"],
     desc: ["Spring Sales", "Bahorgi Takliflar", "Весенние распродажи"],
     s: "128 zl",
-    c: "white",
+    c: "black",
   },
   {
     place: "center",
