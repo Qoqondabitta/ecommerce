@@ -27,6 +27,7 @@ const CollectionCard = ({ list }) => {
   const LikeProduct = () => {
     setThat(!that);
     dispatch(addLike(list));
+    console.log(list, "inside");
   };
   return (
     <>

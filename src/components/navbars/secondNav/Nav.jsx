@@ -23,7 +23,7 @@ import { customOrder } from "../../../redux/order";
 
 const Nav = () => {
   const search = useSelector((store) => store.search);
-  const cart = useSelector(store=>store.cart.value)
+  const cart = useSelector((store) => store.cart.value);
   const dispatch = useDispatch();
   const language = useSelector((store) => store.language);
   const counter = useSelector((store) => store.counter);
@@ -33,7 +33,7 @@ const Nav = () => {
   return (
     <Main className="columnCenter">
       <Container>
-        <NavLink exact="true" to="/" style={{textDecoration: "none", zIndex:"1001"}}>
+        <NavLink to="/home" style={{ textDecoration: "none", zIndex: "1001" }}>
           <Title color="white" id="mainTitle" type="xonTitle">
             {language.value == "RUS" ? "ХОН" : "XON"}
           </Title>
@@ -42,7 +42,10 @@ const Nav = () => {
           {links.map((v, i) => (
             <Item
               className="cursor"
-              onClick={() => { dispatch(changePage(v.title[0])); dispatch(customOrder(i))}}
+              onClick={() => {
+                dispatch(changePage(v.title[0]));
+                dispatch(customOrder(i));
+              }}
               key={i}
             >
               <Link className={i == order.value && "activeNavbarLink"}>

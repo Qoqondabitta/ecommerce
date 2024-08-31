@@ -29,7 +29,6 @@ const Product = ({ list }) => {
   const chnageShow = () => {
     setShow(!show);
   };
-  console.log(cart, "for collection");
   return (
     <>
       {list.map((v) => (

@@ -8,7 +8,6 @@ const ClothTab = () => {
   const { value } = useSelector((store) => store.title);
   const language = useSelector((store) => store.language);
   const order = useSelector((store) => store.order.value);
-  console.log(value);
   const dispatch = useDispatch();
 
   return (

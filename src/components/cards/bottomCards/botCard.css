@@ -3,4 +3,5 @@
     top: 80%;
     right: 4%;
     cursor: pointer;
+    z-index: 10;
 }

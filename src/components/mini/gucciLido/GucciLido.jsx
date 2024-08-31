@@ -18,7 +18,6 @@ const GucciLido = () => {
   const dispatch = useDispatch();
   const { value } = useSelector((store) => store.language);
   const order = useSelector((store) => store.order);
-  console.log(value, "odx");
   const mapItem =
     order.value == 0
       ? exploreWomen
@@ -39,7 +38,7 @@ const GucciLido = () => {
           ? exploreKids
           : explorePerfumes
         ).map((v, i) => (
-          <NavLink style={{textDecoration: "none"}} to="/collection" onClick={()=>dispatch(changeCollection(cardfrank))}>
+          <NavLink key={i} style={{textDecoration: "none"}} to="/collection" onClick={()=>dispatch(changeCollection(cardfrank))}>
             <Button style={{ background: "white" }} type="gucci" key={i}>
               {value == "ENG"
                 ? v.title[0]

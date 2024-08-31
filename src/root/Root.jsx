@@ -13,7 +13,7 @@ const Root = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" exact="true" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/signin" element={<Singin />} />
         <Route path="/collection" element={<Mens />} />

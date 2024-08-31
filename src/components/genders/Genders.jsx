@@ -42,7 +42,7 @@ const Genders = () => {
         ? genderkidssuits
         : genderperfume
       ).map((v, i) => (
-        <Bunker type={v.bn.t} className={v.bn.cln}>
+        <Bunker key={i} type={v.bn.t} className={v.bn.cln}>
           <Title type={v.title.t}>
             {value == "ENG"
               ? v.title.ch[0]

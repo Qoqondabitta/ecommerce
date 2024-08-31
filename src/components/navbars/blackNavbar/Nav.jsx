@@ -33,7 +33,7 @@ const BlackNav = () => {
   return (
     <Main className="columnCenter">
       <Container>
-        <NavLink to="/" exact="true" style={{ textDecoration: "none" }}>
+        <NavLink to="/home" style={{ textDecoration: "none" }}>
           <Title color="black" id="mainTitle" type="xonTitle">
             {language.value == "RUS" ? "ХОН" : "XON"}
           </Title>

@@ -29,7 +29,6 @@ import Account from "../components/accounts/account/Account";
 const Home = () => {
   const { value } = useSelector((store) => store.title);
   const turn = useSelector((store) => store.order);
-  console.log(value, ": this is the title");
   return (
     <div>
       <ScrollWatcher />

@@ -62,6 +62,7 @@ const BotProductSlider = () => {
             key={v.id}
             id={v.id}
             price={v.s}
+            lists={v}
             desc={
               value == "ENG"
                 ? v.desc[0]
