@@ -43,6 +43,14 @@ import { FindTool, Input, InputWrappers, Label, SearchButton } from "./filter";
 import { Alarm } from "./alarm";
 import { IoClose } from "react-icons/io5";
 import FootNav from "../../footNav/FootNav";
+import hijabbackground from "../../../assets/images/backgrounds/hijabbackground.jpg";
+import { hijabstyleconstants } from "../../../constants/componentsContants/collection/women/stylehijab";
+import fragrancy from "../../../assets/images/backgrounds/fragrancy.jpg";
+import { perfumecollection } from "../../../constants/componentsContants/collection/perfume/perfumecollection";
+import kids from "../../../assets/images/backgrounds/kids.webp"
+import { casualkids } from "../../../constants/componentsContants/collection/kids/casualkids";
+import accessories from "../../../assets/images/backgrounds/accessories.jpg";
+import { accessoryConstants } from "../../../constants/componentsContants/collection/accessories/watches";
 
 const Mens = () => {
   const collection = useSelector((store) => store.collection);
@@ -141,6 +149,14 @@ const Mens = () => {
             ? sportgif
             : collection.value == cardfrank
             ? suitsmain
+            : collection.value == hijabstyleconstants
+            ? hijabbackground
+            : collection.value == perfumecollection
+            ? fragrancy
+            : collection.value == casualkids
+            ? kids
+            : collection.value == accessoryConstants
+            ? accessories
             : main
         }
         className="columnCenter"
