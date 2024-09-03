@@ -12,7 +12,6 @@ import { HiOutlineMenu } from "react-icons/hi";
 import { toggleBurger } from "../../../redux/burger";
 import Categories from "../../Category/Categories";
 import { CiSearch } from "react-icons/ci";
-import { Bunker } from "../../generics";
 import { Input } from "../../generics";
 import { IoSearch } from "react-icons/io5";
 import Search from "../../mini/search/Search";
@@ -20,6 +19,7 @@ import { toggleSearch } from "../../../redux/search";
 import { changePage } from "../../../redux/page";
 import { NavLink } from "react-router-dom";
 import { customOrder } from "../../../redux/order";
+import { changeCollection } from "../../../redux/collection";
 
 const Nav = () => {
   const search = useSelector((store) => store.search);
@@ -44,6 +44,7 @@ const Nav = () => {
               className="cursor"
               onClick={() => {
                 dispatch(changePage(v.title[0]));
+                dispatch(changeCollection(v.l));
                 dispatch(customOrder(i));
               }}
               key={i}

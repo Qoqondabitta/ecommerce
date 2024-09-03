@@ -20,11 +20,11 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 20px;
+  /* gap: 20px; */
   width: 300px;
   position: relative;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid grey;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
@@ -62,6 +62,7 @@ export const Data = styled.div`
   justify-content: space-between;
   gap: 0px;
   padding: 10px 20px 10px 10px;
+  border-bottom: 1px solid rgb(223, 218, 218);
   height: 70px;
   z-index: 10000000000000000;
 `;
@@ -107,7 +108,7 @@ export const Icon = styled.div`
 
 
 export const Imgs = styled.img`
-width: 299px;
+width: 298px;
   height: 300px;
   object-fit: cover;
   object-position: center;

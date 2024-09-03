@@ -17,7 +17,12 @@ import { Title } from "../../generics";
 import { useDispatch, useSelector } from "react-redux";
 import CollectionCard from "../../cards/collectionCard/CollectionCard";
 import Footer from "../../footer/Footer";
-import { category } from "../../../constants/componentsContants/collection/category/category";
+import {
+  category,
+  categoryForKids,
+  categoryForPErfumes,
+  categoryForWomen,
+} from "../../../constants/componentsContants/collection/category/category";
 import { changeCollection } from "../../../redux/collection";
 import "./mencollection.css";
 import {
@@ -30,16 +35,18 @@ import suitsmain from "../../../assets/images/collection/men/suitshalf3.jpg";
 import shoesgif from "../../../assets/images/backgrounds/shoesgif.gif";
 import { shoes } from "../../../constants/componentsContants/collection/shoes";
 import sportgif from "../../../assets/images/backgrounds/sportgif.gif";
-import { cardfrank, collectioncardsport } from "../../../constants/componentsContants/collection/collectionsport";
-// import { collectioncardsuits } from "../../../constants/componentsContants/collection/collectionsuit";
+import {
+  cardfrank,
+  collectioncardsport,
+} from "../../../constants/componentsContants/collection/collectionsport";
 import { FindTool, Input, InputWrappers, Label, SearchButton } from "./filter";
 import { Alarm } from "./alarm";
 import { IoClose } from "react-icons/io5";
-import { Navigate, useNavigate } from "react-router-dom";
-import FootNav from "../../footNav/FootNav"
+import FootNav from "../../footNav/FootNav";
 
 const Mens = () => {
   const collection = useSelector((store) => store.collection);
+  const order = useSelector((store) => store.order.value);
   const { value } = useSelector((store) => store.language);
   const [color, setColor] = useState("");
   const [here, setHere] = useState(false);
@@ -49,7 +56,6 @@ const Mens = () => {
   const [list, setList] = useState([]);
   const dispatch = useDispatch();
   const [keyword, setKeyword] = useState("");
-  const navigate = useNavigate()
   const [warn, setWarn] = useState(false);
   const changeHere = () => {
     if (show) {
@@ -113,15 +119,6 @@ const Mens = () => {
     setKeyword("");
     setColor("");
   };
-
-  const closeDrops = (e) => {
-    if (here) {
-      setHere(false);
-    } else if (show) {
-      setShow(false);
-    }
-  };
-
   return (
     <Main>
       {warn && (
@@ -198,7 +195,14 @@ const Mens = () => {
           {show && (
             <Drop className="dropTool categorymenu">
               {show &&
-                category.map((v, i) => (
+                (order == 0
+                  ? categoryForWomen
+                  : order == 1
+                  ? category
+                  : order == 2
+                  ? categoryForKids
+                  : categoryForPErfumes
+                ).map((v, i) => (
                   <Items
                     className={`${
                       collection.value == v.l && "category-active-item"

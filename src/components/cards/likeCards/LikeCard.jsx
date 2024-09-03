@@ -19,7 +19,6 @@ const LikeCard = ({ list }) => {
     setShow(!show);
     dispatch(addLike(list));
   };
-  console.log(list);
   return (
     <>
       <Container key={list.id}>

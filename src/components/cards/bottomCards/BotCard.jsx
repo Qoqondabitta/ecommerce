@@ -40,7 +40,7 @@ const BotProSliderCard = ({
   const removeLike = () => {};
   return (
     <Container key={id} className={move ? "move" : ""}>
-      <NavLink style={{ textDecoration: "none" }} to={`/collection/${lists.id}`}>
+      <NavLink to={`/collection`}>
         <Image src={img} alt={title} />
       </NavLink>
       <Price>{price}</Price>

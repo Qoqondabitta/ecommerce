@@ -13,7 +13,7 @@ import top12 from "../assets/images/bottomCard/bottom9.jpg";
 
 export const botCardDetails = [
   {
-    id: "bottom4",
+    id: "bottomproductslider4",
     e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
     gender: "men",
     description: [

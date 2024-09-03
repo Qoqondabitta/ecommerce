@@ -2,7 +2,10 @@ import rus from "../../assets/images/rus.png";
 import eng from "../../assets/images/usa.png";
 import uz from "../../assets/images/uzbek.png";
 import { english, russian, uzbek } from "../../redux/language";
-// import net from "../../assets/images"
+import { collectioncardconstants } from "../componentsContants/collection/collection";
+import { casualkids } from "../componentsContants/collection/kids/casualkids";
+import { perfumecollection } from "../componentsContants/collection/perfume/perfumecollection";
+import { hijabstyleconstants } from "../componentsContants/collection/women/stylehijab";
 
 export const tongues = [
   {
@@ -23,8 +26,8 @@ export const tongues = [
 ];
 
 export const links = [
-  { title: ["Women", "Ayol", "Женщины"] },
-  { title: ["Men", "Erkaklarga", "Мужчины"] },
-  { title: ["Kids", "Bolalarga", "Дети"] },
-  { title: ["Perfume", "Atirlar", "Духи"] },
+  { title: ["Women", "Ayol", "Женщины"], l: hijabstyleconstants },
+  { title: ["Men", "Erkaklarga", "Мужчины"], l: collectioncardconstants },
+  { title: ["Kids", "Bolalarga", "Дети"], l: casualkids },
+  { title: ["Perfume", "Atirlar", "Духи"], l: perfumecollection },
 ];
