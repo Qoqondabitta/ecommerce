@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Item, Link, List, Main, MediaLook } from "./style";
 import { Icon, Round, Shop } from "./style";
 import { FaRegHeart } from "react-icons/fa";
@@ -12,7 +12,6 @@ import { HiOutlineMenu } from "react-icons/hi";
 import { toggleBurger } from "../../../redux/burger";
 import Categories from "../../Category/Categories";
 import { CiSearch } from "react-icons/ci";
-import { Bunker } from "../../generics";
 import { Input } from "../../generics";
 import { IoSearch } from "react-icons/io5";
 import Search from "../../mini/search/Search";
@@ -28,7 +27,6 @@ const BlackNav = () => {
   const language = useSelector((store) => store.language);
   const counter = useSelector((store) => store.counter);
   const order = useSelector((store) => store.order);
-  const page = useSelector((store) => store.page);
   const burger = useSelector((store) => store.burger);
   return (
     <Main className="columnCenter">
