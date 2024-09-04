@@ -1,3 +1,5 @@
+import { toggleContact } from "../redux/contact";
+
 export const helpFooter = [
   {
     name: ["MayWe Help You?", "Yordam Berolamizmi?", "Можемли помочь?"],
@@ -13,6 +15,7 @@ export const helpFooter = [
     underline: "underline",
     capital: "none",
     botMar: "false",
+    func: toggleContact(),
   },
   {
     name: ["FAQs", "FAQs", "FAQs"],

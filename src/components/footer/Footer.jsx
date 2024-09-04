@@ -17,11 +17,15 @@ import {
   helpFooter,
   serviceFooter,
 } from "../../constants/footer";
-import "./footer.css"
-import { useSelector } from "react-redux";
+import "./footer.css";
+import { useDispatch, useSelector } from "react-redux";
+import Contact from "../mini/contact/Contact";
+import { toggleContact } from "../../redux/contact";
 
 const Footer = () => {
-  const {value} = useSelector((store) => store.language)
+  const { value } = useSelector((store) => store.language);
+  const c = useSelector((store) => store.contactSlice.value);
+  const dispatch = useDispatch();
   return (
     <Main>
       <Container>
@@ -33,7 +37,8 @@ const Footer = () => {
                 botmar={v.botMar}
                 underline={v.underline}
                 capital={v.capital}
-                // capital
+                onClick={()=>v.name[0]=="Contact Us"&&dispatch(toggleContact())}
+                className="pointer"
                 color={v.color}
                 heights="20px"
                 fontSize={v?.size}
@@ -157,6 +162,7 @@ const Footer = () => {
         </FooterRows>
         <XON>{value == "RUS" ? "XOH БРЕНД" : "XON BRAND"}</XON>
       </Container>
+      <Contact classHeadline={c==true&&"openContact"} />
     </Main>
   );
 };

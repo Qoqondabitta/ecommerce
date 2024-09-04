@@ -1,0 +1,113 @@
+.contact {
+  position: fixed;
+  top: -30px;
+  left: 100%;
+  /* overflow-y: scroll; */
+}
+.openContact {
+  left: 63%;
+}
+
+.contact::-webkit-scrollbar {
+  display: none;
+}
+
+.closeContact {
+  background-color: black;
+  border-radius: 50%;
+  padding: 5px;
+  position: relative;
+  left: 110%;
+}
+
+@media only screen and (max-width: 1300px) {
+  .openContact {
+    left: 30%;
+  }
+  .closeContact {
+    left: 85%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .openContact {
+    left: 60%;
+  }
+  .closeContact {
+    left: 85%;
+  }
+}
+
+
+@media only screen and (max-width: 920px) {
+  .openContact {
+    left: 50%;
+  }
+  .closeContact {
+    left: 95%;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .openContact {
+    left: 45%;
+  }
+  .closeContact {
+    left: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .openContact {
+    left: 35%;
+  }
+  .closeContact {
+    scale: 0.8;
+    padding: 3px;
+    left: 115%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .openContact {
+    left: 50%;
+  }
+  .closeContact {
+    scale: 0.8;
+    padding: 3px;
+    left: 105%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .openContact {
+    left: 30%;
+  }
+  .closeContact {
+    scale: 0.8;
+    padding: 3px;
+    left: 120%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .openContact {
+    left: 30%;
+  }
+  .closeContact {
+    scale: 0.8;
+    padding: 3px;
+    left: 105%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .openContact {
+    left: 30%;
+  }
+  .closeContact {
+    scale: 0.8;
+    padding: 3px;
+    left: 95%;
+  }
+}

@@ -5,6 +5,7 @@ export const Main = styled.div`
   height: fit-content;
   margin: 0 auto;
   background-color: black;
+  position: relative;
   z-index: 0;
   @media only screen and (max-width: 800px) {
     /* height: 235vh; */
@@ -81,6 +82,7 @@ export const Item = styled.li`
   font-weight: ${({ capital }) => (capital == "uppercase" ? "600" : "normal")};
   font-size: ${({ fontSize }) => (fontSize ? fontSize : "14px")};
   color: ${({ color }) => color};
+  cursor: pointer;
   text-transform: ${({ capital }) =>
     capital == "uppercase" ? "uppercase" : "none"};
   margin-bottom: ${({ botmar }) => (botmar ? "10px" : "0px")};
