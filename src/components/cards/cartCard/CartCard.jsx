@@ -64,73 +64,88 @@ const CartCard = ({ info }) => {
         <Title>
           {l == "ENG" ? info.f[0] : l == "UZB" ? info.f[1] : info.f[2]}
         </Title>
-        <Size>
-          <Texts width="true">
-            {l == "ENG" ? "Color" : l == "UZB" ? "Rang" : "Цвет"}:{" "}
-            {l == "ENG"
-              ? list?.color
-              : l == "UZB"
-              ? `${
-                  list?.color == "white"
-                    ? "oq"
-                    : list?.color == "red"
-                    ? "qizil"
-                    : list?.color == "blue"
-                    ? "ko'k"
-                    : list?.color == "green"
-                    ? "yashil"
-                    : list?.color == "black"
-                    ? "qora"
-                    : list?.color == "grey"
-                    ? "kulrang"
-                    : list?.color == "orange"
-                    ? "olovrang"
-                    : "sariq"
-                }`
-              : `${
-                  list?.color == "white"
-                    ? "белый"
-                    : list?.color == "red"
-                    ? "красный"
-                    : list?.color == "blue"
-                    ? "синий"
-                    : list?.color == "green"
-                    ? "зеленый"
-                    : list?.color == "black"
-                    ? "черный"
-                    : list?.color == "grey"
-                    ? "серый"
-                    : list?.color == "orange"
-                    ? "оранжевый"
-                    : "желтый"
-                }`}
-          </Texts>
-          {theme && (
-            <Input
-              name="color"
-              onChange={changeNewColor}
-              placeholder={
-                l == "ENG"
-                  ? "type color"
-                  : l == "UZB"
-                  ? "rangni kiriting"
-                  : "выбрать цвет"
-              }
-            />
-          )}
-          <Button
-            onClick={() => {
-              changeTheme();
-              editColor();
-            }}
-            className="center"
-            edit="true"
-          >
-            {theme
-              ? `${l == "ENG" ? "Choose" : l == "UZB" ? "Tanlamoq" : "Bыбрать"}`
-              : `${l == "ENG" ? "Edit" : l == "UZB" ? "Boshqa" : "Изменять"}`}
-          </Button>
-        </Size>
+        {list?.color ? (
+          <Size>
+            <Texts width="true">
+              {l == "ENG" ? "Color" : l == "UZB" ? "Rang" : "Цвет"}:{" "}
+              {l == "ENG"
+                ? list?.color
+                : l == "UZB"
+                ? `${
+                    list?.color == "white"
+                      ? "oq"
+                      : list?.color == "red"
+                      ? "qizil"
+                      : list?.color == "blue"
+                      ? "ko'k"
+                      : list?.color == "green"
+                      ? "yashil"
+                      : list?.color == "black"
+                      ? "qora"
+                      : list?.color == "grey"
+                      ? "kulrang"
+                      : list?.color == "orange"
+                      ? "olovrang"
+                      : "sariq"
+                  }`
+                : `${
+                    list?.color == "white"
+                      ? "белый"
+                      : list?.color == "red"
+                      ? "красный"
+                      : list?.color == "blue"
+                      ? "синий"
+                      : list?.color == "green"
+                      ? "зеленый"
+                      : list?.color == "black"
+                      ? "черный"
+                      : list?.color == "grey"
+                      ? "серый"
+                      : list?.color == "orange"
+                      ? "оранжевый"
+                      : "желтый"
+                  }`}
+            </Texts>
+            {theme && (
+              <Input
+                name="color"
+                onChange={changeNewColor}
+                placeholder={
+                  l == "ENG"
+                    ? "type color"
+                    : l == "UZB"
+                    ? "rangni kiriting"
+                    : "выбрать цвет"
+                }
+              />
+            )}
+            <Button
+              onClick={() => {
+                changeTheme();
+                editColor();
+              }}
+              className="center"
+              edit="true"
+            >
+              {theme
+                ? `${
+                    l == "ENG" ? "Choose" : l == "UZB" ? "Tanlamoq" : "Bыбрать"
+                  }`
+                : `${l == "ENG" ? "Edit" : l == "UZB" ? "Boshqa" : "Изменять"}`}
+            </Button>
+          </Size>
+        ) : (
+          <Size width="true">
+            <Texts width="true">
+              {l == "ENG" ? "Scent" : l == "UZB" ? "Hidi" : "Запах"}: {""}
+              {l == "ENG"
+                ? list?.scent[0]
+                : l == "UZB"
+                ? list?.scent[1]
+                : list?.scent[2]}
+            </Texts>
+          </Size>
+        )}
         <Size>
           <Texts width="true">
             {l == "ENG" ? "Size" : l == "UZB" ? "O'lcham" : "Pазмер"}:{" "}

@@ -26,8 +26,11 @@ import {
 import { changeCollection } from "../../../redux/collection";
 import "./mencollection.css";
 import {
+  allperfumecollection,
   collectioncardconstants,
+  kidscollection,
   menscollection,
+  womenscollection,
 } from "../../../constants/componentsContants/collection/collection";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
@@ -47,10 +50,14 @@ import hijabbackground from "../../../assets/images/backgrounds/hijabbackground.
 import { hijabstyleconstants } from "../../../constants/componentsContants/collection/women/stylehijab";
 import fragrancy from "../../../assets/images/backgrounds/fragrancy.jpg";
 import { perfumecollection } from "../../../constants/componentsContants/collection/perfume/perfumecollection";
-import kids from "../../../assets/images/backgrounds/kids.webp"
+import kids from "../../../assets/images/backgrounds/kids.webp";
 import { casualkids } from "../../../constants/componentsContants/collection/kids/casualkids";
-import accessories from "../../../assets/images/backgrounds/accessories.jpg";
+import accessories from "../../../assets/images/backgrounds/watches.avif";
 import { accessoryConstants } from "../../../constants/componentsContants/collection/accessories/watches";
+import { cytrusperfume } from "../../../constants/componentsContants/collection/perfume/cytrusperfume";
+import { narcoticperfume } from "../../../constants/componentsContants/collection/perfume/narcoticperfume";
+import { hijabforhead } from "../../../constants/componentsContants/collection/women/hijabhead";
+import { customOrder } from "../../../redux/order";
 
 const Mens = () => {
   const collection = useSelector((store) => store.collection);
@@ -151,7 +158,13 @@ const Mens = () => {
             ? suitsmain
             : collection.value == hijabstyleconstants
             ? hijabbackground
+            : collection.value == hijabforhead
+            ? hijabbackground
             : collection.value == perfumecollection
+            ? fragrancy
+            : collection.value == cytrusperfume
+            ? fragrancy
+            : collection.value == narcoticperfume
             ? fragrancy
             : collection.value == casualkids
             ? kids
@@ -161,7 +174,7 @@ const Mens = () => {
         }
         className="columnCenter"
       >
-        {menscollection.map((v, i) => (
+        {(order==0?womenscollection:order==1?menscollection:order==2?kidscollection:allperfumecollection).map((v, i) => (
           <Title type={v.ty} key={i} color={v?.color}>
             {value == "ENG" ? v.c[0] : value == "UZB" ? v.c[1] : v.c[2]}
           </Title>
@@ -227,6 +240,7 @@ const Mens = () => {
                     onClick={() => {
                       // v.c[0]=="suits"&&navigate("/suit")
                       dispatch(changeCollection(v.l));
+                      dispatch(customOrder(v?.turn))
                       setDisplay(v.c[0]);
                       setList([]);
                       changeShow();

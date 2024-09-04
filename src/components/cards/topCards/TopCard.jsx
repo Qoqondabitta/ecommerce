@@ -5,10 +5,20 @@ import "./TopCard.css";
 import { GoHeart as Heart } from "react-icons/go";
 import { BsFillSuitHeartFill as Red } from "react-icons/bs";
 import { BsCartPlus as Plus } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { hijabstyleconstants } from "../../../constants/componentsContants/collection/women/stylehijab";
+import { cardfrank } from "../../../constants/componentsContants/collection/collectionsport";
+import { casualkids } from "../../../constants/componentsContants/collection/kids/casualkids";
+import { perfumecollection } from "../../../constants/componentsContants/collection/perfume/perfumecollection";
+import { changeCollection } from "../../../redux/collection";
 
 const TopProSliderCard = ({ id, title, desc, img, price, move, color }) => {
   const [show, setShow] = useState(true);
   const [display, setDisplay] = useState(true);
+  const dispatch = useDispatch()
+  const o = useSelector(store => store.order.value);
+  const col = o==0?hijabstyleconstants:o==1?cardfrank:o==2?casualkids:perfumecollection
   const Color = () => {
     setShow(!show);
   };
@@ -17,7 +27,9 @@ const TopProSliderCard = ({ id, title, desc, img, price, move, color }) => {
   };
   return (
     <Container key={id} className={move ? "move" : ""}>
-      <Image src={img} alt={title} />
+      <NavLink onClick={()=>dispatch(changeCollection(col))} to="/collection" style={{textDecoration: "none"}}>
+        <Image src={img} alt={title} />
+      </NavLink>
       <Price>{price}</Price>
       {show ? (
         <Heart onClick={Color} color={color} size="1.4em" className="hearts" />

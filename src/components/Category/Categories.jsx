@@ -8,6 +8,7 @@ import { IoClose } from "react-icons/io5";
 import { toggleBurger } from "../../redux/burger";
 import { NavLink } from "react-router-dom";
 import { changeCollection } from "../../redux/collection";
+import { customOrder } from "../../redux/order";
 
 const Categories = ({ classTitle }) => {
   const dispatch = useDispatch();
@@ -25,7 +26,7 @@ const Categories = ({ classTitle }) => {
         <Drop />
         {burgerInfo.map((v, i) => (
           <NavLink to={v?.urltopage} style={{ textDecoration: "none" }}>
-            <Item className="pointer" key={i} onClick={()=>dispatch(changeCollection(v?.l))}>
+            <Item className="pointer" key={i} onClick={() => { dispatch(changeCollection(v?.l)); dispatch(customOrder(v?.digit))}}>
               {language.value == "ENG"
                 ? v.title[0]
                 : language.value == "UZB"

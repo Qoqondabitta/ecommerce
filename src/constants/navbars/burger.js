@@ -11,21 +11,25 @@ export const burgerInfo = [
     title: ["Men", "Erkaklar Bo'limi", "Мужчины"],
     l: collectioncardconstants,
     urltopage: "/collection",
+    digit: 1,
   },
   {
     title: ["Women", "Ayollar Bo'limi", "Женщины"],
     l: hijabstyleconstants,
     urltopage: "/collection",
+    digit: 0,
   },
   {
     title: ["Kids", "Bolalar Bo'limi", "Дети"],
     l: casualkids,
     urltopage: "/collection",
+    digit: 2,
   },
   {
-    title: ["Fragrances", "Atirlar", "Духи"],
+    title: ["Perfume", "Atirlar", "Духи"],
     l: perfumecollection,
     urltopage: "/collection",
+    digit: 3,
   },
   {
     title: ["Accessories", "Aksesuarlar", "Aксессуары"],

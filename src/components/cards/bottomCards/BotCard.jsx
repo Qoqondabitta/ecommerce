@@ -9,6 +9,11 @@ import { addLike } from "../../../redux/like";
 import { useDispatch, useSelector } from "react-redux";
 import { botCardDetails } from "../../../mock/botProductSlider";
 import { NavLink } from "react-router-dom";
+import { changeCollection } from "../../../redux/collection";
+import { hijabstyleconstants } from "../../../constants/componentsContants/collection/women/stylehijab";
+import { cardfrank } from "../../../constants/componentsContants/collection/collectionsport";
+import { casualkids } from "../../../constants/componentsContants/collection/kids/casualkids";
+import { perfumecollection } from "../../../constants/componentsContants/collection/perfume/perfumecollection";
 
 const BotProSliderCard = ({
   id,
@@ -25,6 +30,15 @@ const BotProSliderCard = ({
   const [list, setList] = useState(null);
   const [display, setDisplay] = useState(true);
   const like = useSelector((store) => store.like);
+  const o = useSelector((store) => store.order.value);
+  const col =
+    o == 0
+      ? hijabstyleconstants
+      : o == 1
+      ? cardfrank
+      : o == 2
+      ? casualkids
+      : perfumecollection;
   const Color = () => {
     setShow(!show);
   };
@@ -40,7 +54,7 @@ const BotProSliderCard = ({
   const removeLike = () => {};
   return (
     <Container key={id} className={move ? "move" : ""}>
-      <NavLink to={`/collection`}>
+      <NavLink to={`/collection`} onClick={()=>dispatch(changeCollection(col))}>
         <Image src={img} alt={title} />
       </NavLink>
       <Price>{price}</Price>

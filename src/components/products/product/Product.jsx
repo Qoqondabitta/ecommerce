@@ -25,6 +25,7 @@ const Product = ({ list }) => {
   const SaveProduct = () => {
     console.log(list, "for cart");
     dispatch(addToCart(...list));
+    setShow(true)
   };
   const chnageShow = () => {
     setShow(!show);
@@ -104,12 +105,22 @@ const Product = ({ list }) => {
                 : v?.description[2]}
             </CardDetails>
             <BtnWrapper className="center">
-              <Button add="true" onClick={chnageShow}>
-                {value == "ENG"
-                  ? "Add To Cart"
-                  : value == "UZB"
-                  ? "Savatga Qo'shish"
-                  : "Добавить в корзину"}
+              <Button add="true" onClick={SaveProduct}>
+                {show
+                  ? `${
+                      value == "ENG"
+                        ? "Added To Cart"
+                        : value == "UZB"
+                        ? "Savatga Qo'shildi"
+                        : "Добавлeнo в корзину"
+                    }`
+                  : `${
+                      value == "ENG"
+                        ? "Add To Cart"
+                        : value == "UZB"
+                        ? "Savatga Qo'shish"
+                        : "Добавить в корзину"
+                    }`}
               </Button>
               <NavLink style={{ textDecoration: "none" }} to="/account">
                 <Button onClick={() => dispatch(changeProperty("cart"))}>
@@ -122,7 +133,7 @@ const Product = ({ list }) => {
               </NavLink>
             </BtnWrapper>
           </Details>
-          {show && <Metric mail={list} photo={v.bg}></Metric>}
+          {/* {show && <Metric mail={list} photo={v.bg}></Metric>} */}
         </Container>
       ))}
     </>

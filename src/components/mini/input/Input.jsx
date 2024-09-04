@@ -1,11 +1,15 @@
-import React from 'react'
-import "./input.css"
+import React from "react";
+import "./input.css";
+import { useSelector } from "react-redux";
 
-const InputGroup = ({onChange}) => {
+const InputGroup = ({ onChange }) => {
+  const l = useSelector((store) => store.language.value);
   return (
     <div className="input-group">
       <input placeholder="Search" onChange={onChange} />
-      <label className="inputLabel">Search</label>
+      <label className="inputLabel">
+        {l == "ENG" ? "Search" : l == "UZB" ? "Qidiring" : "Искать"}
+      </label>
     </div>
   );
 };

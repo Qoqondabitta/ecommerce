@@ -69,7 +69,7 @@ const Account = () => {
           <Title>
             {value == "ENG"
               ? "Welcome "
-              : value == "UZB "
+              : value == "UZB"
               ? "Xush Kelibsiz "
               : "Добро пожаловать "}
             {fullname ||

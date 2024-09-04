@@ -24,6 +24,6 @@ export const sneakersBtnconstants = [
     m: ["Shop", "Olmoq", "Купить"],
   },
   {
-    m: ["See Other Offers", "Olmoq", "Купить"],
+    m: ["See Other Offers", "Ko'proq Tanlovlar", "Посмотреть больше"],
   },
 ];

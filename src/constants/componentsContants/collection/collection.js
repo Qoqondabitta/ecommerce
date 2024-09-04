@@ -71,6 +71,63 @@ export const menscollection = [
     color: "white",
   },
 ];
+export const womenscollection = [
+  {
+    ty: "soonTitle",
+    c: [
+      "WOMEN’S FALL WINTER 2024 COLLECTION",
+      "2024 Kuzga Ayollarning To'plami ",
+      "ЖЕНСКАЯ КОЛЛЕКЦИЯ ОСЕНЬ-ЗИМА 2024",
+    ],
+  },
+  {
+    ty: "videoText",
+    c: [
+      "New silhouettes and details redefine men’s ready-to-wear while introducing the Gucci Horsebit creeper loafers.",
+      "Yangi siluetlar va detallar XON-ni taqdim etgan holda erkaklarning tayyor kiyimlarini qayta belgilaydi.",
+      "Новые силуэты и детали меняют представление о мужской готовой одежде, представляя XON.",
+    ],
+    color: "white",
+  },
+];
+export const allperfumecollection = [
+  {
+    ty: "soonTitle",
+    c: [
+      "FALL WINTER 2024 Perfumes",
+      "2024 Kuzga Atirlar To'plami ",
+      "НАБОР ПАРФЮМЕРИИ ОСЕНЬ-ЗИМА 2024",
+    ],
+  },
+  {
+    ty: "videoText",
+    c: [
+      "New silhouettes and details redefine men’s ready-to-wear while introducing the Gucci Horsebit creeper loafers.",
+      "Yangi siluetlar va detallar XON-ni taqdim etgan holda erkaklarning tayyor kiyimlarini qayta belgilaydi.",
+      "Новые силуэты и детали меняют представление о мужской готовой одежде, представляя XON.",
+    ],
+    color: "white",
+  },
+];
+export const kidscollection = [
+  {
+    ty: "soonTitle",
+    c: [
+      "KIDS FALL WINTER 2024 COLLECTION",
+      "2024 Kuzga Bolalarning To'plami",
+      "НАБОР ДЕТСКАЯ ОСЕНЬ-ЗИМА 2024",
+    ],
+  },
+  {
+    ty: "videoText",
+    c: [
+      "New silhouettes and details redefine men’s ready-to-wear while introducing the Gucci Horsebit creeper loafers.",
+      "Yangi siluetlar va detallar XON-ni taqdim etgan holda erkaklarning tayyor kiyimlarini qayta belgilaydi.",
+      "Новые силуэты и детали меняют представление о мужской готовой одежде, представляя XON.",
+    ],
+    color: "white",
+  },
+];
 export const threcollectioncard = [
   {
     two: [

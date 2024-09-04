@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   BottomBox,
   Button,
@@ -20,6 +20,9 @@ import {
 import { setPaint } from "../../../../redux/paint";
 
 const Metric = ({ mail, photo }) => {
+  const list = useState()
+  const newSize = useState(null)
+  const newColor = useState(null)
   const l = useSelector((store) => store.language.value);
   const navigate = useNavigate();
   const dispatch = useDispatch();

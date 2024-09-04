@@ -38,22 +38,23 @@ const BlackNav = () => {
         </NavLink>
         <List className="">
           {links.map((v, i) => (
-            <Item
-              className="cursor"
-              onClick={() => {
-                dispatch(changePage(v.title[0]));
-                dispatch(customOrder(i));
-              }}
-              key={i}
-            >
-              <Link className={i == order.value && "BlackactiveNavbarLink"}>
-                {language.value == "ENG"
-                  ? v.title[0]
-                  : language.value == "UZB"
-                  ? v.title[1]
-                  : v.title[2]}
-              </Link>
-            </Item>
+            <NavLink style={{textDecoration: "none"}} to="/collection" key={i}>
+              <Item
+                className="cursor"
+                onClick={() => {
+                  dispatch(changePage(v.title[0]));
+                  dispatch(customOrder(i));
+                }}
+              >
+                <Link className={i == order.value && "BlackactiveNavbarLink"}>
+                  {language.value == "ENG"
+                    ? v.title[0]
+                    : language.value == "UZB"
+                    ? v.title[1]
+                    : v.title[2]}
+                </Link>
+              </Item>
+            </NavLink>
           ))}
         </List>
         <Shop>
@@ -88,7 +89,16 @@ const BlackNav = () => {
           />
         </Shop>
         <MediaLook onClick={() => dispatch(toggleSearch())}>
-          <Input type="search" placeholder="Search Anything" />
+          <Input
+            type="search"
+            placeholder={
+              language.value == "ENG"
+                ? "Search Anything"
+                : language.value == "UZB"
+                ? "Hohlaganingizni Qidiring"
+                : "Искать что угодно"
+            }
+          />
           <CiSearch color="black" />
         </MediaLook>
       </Container>

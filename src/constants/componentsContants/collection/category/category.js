@@ -11,41 +11,61 @@ import { hijabforhead } from "../women/hijabhead";
 import { hijabstyleconstants } from "../women/stylehijab";
 
 export const category = [
-  { c: ["casual", "kundalik", "повседневный"], l: collectioncardconstants },
-  { c: ["suits", "kastyumlar", "костюмы"], l: cardfrank },
-  { c: ["sport", "sport", "спорт"], l: collectioncardsport },
-  { c: ["shoes", "oyoq kiyim", "обувь"], l: shoes },
-  { c: ["women", "ayollar", "женщины"], l: hijabstyleconstants },
-  { c: ["kids", "bolalar", "Дети"], l: casualkids },
-  { c: ["perfume", "atirlar", "духи"], l: perfumecollection },
-  { c: ["accessories", "aksesuarlar", "аксессуары"], l: accessoryConstants },
+  {
+    c: ["casual", "kundalik", "повседневный"],
+    l: collectioncardconstants,
+    turn: 1,
+  },
+  { c: ["suits", "kastyumlar", "костюмы"], l: cardfrank, turn: 1 },
+  { c: ["sport", "sport", "спорт"], l: collectioncardsport, turn: 1 },
+  { c: ["shoes", "oyoq kiyim", "обувь"], l: shoes, turn: 1 },
+  { c: ["women", "ayollar", "женщины"], l: hijabstyleconstants, turn: 0 },
+  { c: ["kids", "bolalar", "Дети"], l: casualkids, turn: 2 },
+  { c: ["perfume", "atirlar", "духи"], l: perfumecollection, turn: 3 },
+  {
+    c: ["accessories", "aksesuarlar", "аксессуары"],
+    l: accessoryConstants,
+    turn: 1,
+  },
 ];
 
 export const categoryForWomen = [
-  { c: ["dresses", "ko'ylaklar", "платья"], l: hijabstyleconstants },
-  { c: ["for head", "bosh kiyim", "для головы"], l: hijabforhead },
-  { c: ["shoes", "oyoq kiyim", "обувь"], l: shoes },
-  { c: ["men", "erkaklar", "Мужчины"], l: collectioncardconstants },
-  { c: ["kids", "bolalar", "Дети"], l: casualkids },
-  { c: ["perfume", "atirlar", "духи"], l: perfumecollection },
-  { c: ["accessories", "aksesuarlar", "аксессуары"], l: accessoryConstants },
+  { c: ["dresses", "ko'ylaklar", "платья"], l: hijabstyleconstants, turn: 0 },
+  { c: ["for head", "bosh kiyim", "для головы"], l: hijabforhead, turn: 0 },
+  { c: ["shoes", "oyoq kiyim", "обувь"], l: shoes, turn: 0 },
+  { c: ["men", "erkaklar", "Мужчины"], l: collectioncardconstants, turn: 1 },
+  { c: ["kids", "bolalar", "Дети"], l: casualkids, turn: 2 },
+  { c: ["perfume", "atirlar", "духи"], l: perfumecollection, turn: 3 },
+  {
+    c: ["accessories", "aksesuarlar", "аксессуары"],
+    l: accessoryConstants,
+    turn: 1,
+  },
 ];
 
 export const categoryForPErfumes = [
-  { c: ["cytrus", "sitrusli", "цитрусовые"], l: cytrusperfume },
-  { c: ["floral", "gulli", "цветочный"], l: perfumecollection },
-  { c: ["narcotic", "narkotik", "наркотический"], l: narcoticperfume },
-  { c: ["shoes", "oyoq kiyim", "обувь"], l: shoes },
-  { c: ["women", "ayollar", "женщины"], l: hijabstyleconstants },
-  { c: ["kids", "bolalar", "Дети"], l: casualkids },
-  { c: ["accessories", "aksesuarlar", "аксессуары"], l: accessoryConstants },
+  { c: ["cytrus", "sitrusli", "цитрусовые"], l: perfumecollection, turn: 3 },
+  { c: ["floral", "gulli", "цветочный"], l: cytrusperfume, turn: 3 },
+  { c: ["narcotic", "narkotik", "наркотический"], l: narcoticperfume, turn: 3 },
+  { c: ["shoes", "oyoq kiyim", "обувь"], l: shoes, turn: 1 },
+  { c: ["women", "ayollar", "женщины"], l: hijabstyleconstants, turn: 0 },
+  { c: ["kids", "bolalar", "Дети"], l: casualkids, turn: 2 },
+  {
+    c: ["accessories", "aksesuarlar", "аксессуары"],
+    l: accessoryConstants,
+    turn: 1,
+  },
 ];
 
 export const categoryForKids = [
-  { c: ["formal", "rasmiy", "формальный"], l: formalkids },
-  { c: ["casual", "kundalik", "повседневный"], l: casualkids },
-  { c: ["shoes", "oyoq kiyim", "обувь"], l: shoes },
-  { c: ["men", "erkaklar", "Мужчины"], l: collectioncardconstants },
-  { c: ["perfume", "atirlar", "духи"], l: perfumecollection },
-  { c: ["accessories", "aksesuarlar", "аксессуары"], l: accessoryConstants },
+  { c: ["formal", "rasmiy", "формальный"], l: formalkids, turn: 2 },
+  { c: ["casual", "kundalik", "повседневный"], l: casualkids, turn: 2 },
+  { c: ["shoes", "oyoq kiyim", "обувь"], l: shoes, turn: 1 },
+  { c: ["men", "erkaklar", "Мужчины"], l: collectioncardconstants, turn: 1 },
+  { c: ["perfume", "atirlar", "духи"], l: perfumecollection, turn: 0 },
+  {
+    c: ["accessories", "aksesuarlar", "аксессуары"],
+    l: accessoryConstants,
+    turn: 1,
+  },
 ];

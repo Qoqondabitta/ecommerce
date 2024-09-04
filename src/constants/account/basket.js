@@ -11,7 +11,7 @@ export const accountProperties = [
     definers: "cart",
     properties: [
       "Cart",
-      "Arava",
+      "Savat",
       "Корзина",
     ],
   },
