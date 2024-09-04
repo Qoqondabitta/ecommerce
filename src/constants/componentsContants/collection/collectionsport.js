@@ -1512,8 +1512,6 @@ import bgsuit1 from "../../../assets/images/collection/men/suits6.jpeg";
 import bgsuit1alternative from "../../../assets/images/collection/men/suits6alternative.jpeg";
 import bgsuit2alternative from "../../../assets/images/collection/men/suits27.jpg";
 import bgsuit2 from "../../../assets/images/collection/men/suits27alternative.jpeg";
-import bgsuit3alternative from "../../../assets/images/collection/men/suits25alternative.jpeg";
-import bgsuit3 from "../../../assets/images/collection/men/suits25.jpeg";
 import bgsuit4 from "../../../assets/images/collection/men/suits26.jpeg";
 import bgsuit5 from "../../../assets/images/collection/men/suits29.jpeg";
 import bgsuit6 from "../../../assets/images/collection/men/suits30.jpeg";
@@ -1525,17 +1523,12 @@ import bgsuit6alternative from "../../../assets/images/collection/men/suits30alt
 import bgsuit7alternative from "../../../assets/images/collection/men/suits28alternative.jpg";
 import bgsuit8alternative from "../../../assets/images/collection/men/suits31alternative.jpg";
 import bgsuit9alternative from "../../../assets/images/collection/men/suits32alternative.jpg";
-import bgsuit10alternative from "../../../assets/images/collection/men/suits24alternative.jpeg";
-import bgsuit11alternative from "../../../assets/images/collection/men/suits34.jpeg";
 import bgsuit12alternative from "../../../assets/images/collection/men/collectioncard14alternative.jpeg";
 import bgsuit13alternative from "../../../assets/images/collection/men/collectioncard15alternative.webp";
 import bgsuit14alternative from "../../../assets/images/collection/men/collectioncard16alternative.jpeg";
-import bgsuit15alternative from "../../../assets/images/collection/men/collectioncard17alternative.jpeg";
 import bgsuit16alternative from "../../../assets/images/collection/men/collectioncard18alternative.jpeg";
 import bgsuit17alternative from "../../../assets/images/collection/men/collectioncard19alternative.jpeg";
-import bgsuit18alternative from "../../../assets/images/collection/men/collectioncard20altternative.jpeg";
 import bgsuit19alternative from "../../../assets/images/collection/men/suits24alternative.jpeg";
-import bgsuit20alternative from "../../../assets/images/collection/men/suits8alternative.jpeg";
 import bgsuit21alternative from "../../../assets/images/collection/men/suits9alternative.jpeg";
 import bgsuit22alternative from "../../../assets/images/collection/men/suits10alternative.jpeg";
 import bgsuit23alternative from "../../../assets/images/collection/men/suits11alternative.jpeg";
@@ -1544,81 +1537,37 @@ import bgsuit25alternative from "../../../assets/images/collection/men/suits14al
 import bgsuit26alternative from "../../../assets/images/collection/men/suits15alternative.jpeg";
 import bgsuit27alternative from "../../../assets/images/collection/men/suits16alternative.jpeg";
 import bgsuit28alternative from "../../../assets/images/collection/men/suits17alternative.jpeg";
-import bgsuit29alternative from "../../../assets/images/collection/men/suits18alternative.jpeg";
-import bgsuit30alternative from "../../../assets/images/collection/men/suits19alternative.png";
 import bgsuit31alternative from "../../../assets/images/collection/men/suits20alternative.jpeg";
 import bgsuit32alternative from "../../../assets/images/collection/men/suits21alternative.jpeg";
 import bgsuit33alternative from "../../../assets/images/collection/men/suits22alternative.jpeg";
-import bgsuit34alternative from "../../../assets/images/collection/men/suits23.jpeg";
-import bgsuit35alternative from "../../../assets/images/collection/men/suits35alternative.jpeg";
 import bgsuit36alternative from "../../../assets/images/collection/men/suits36alternative.jpeg";
-import bgsuit37alternative from "../../../assets/images/collection/men/suits37alternative.jpeg";
-import bgsuit38alternative from "../../../assets/images/collection/men/suits38.webp";
-import bgsuit39alternative from "../../../assets/images/collection/men/suits39alternative.jpeg";
-import bgsuit40alternative from "../../../assets/images/collection/men/suits40alternative.jpeg";
-import bgsuit41alternative from "../../../assets/images/collection/men/suits41alternative.jpeg";
-import bgsuit42alternative from "../../../assets/images/collection/men/suits42alternative.jpeg";
 import bgsuit43alternative from "../../../assets/images/collection/men/suits43alternative.jpeg";
 import bgsuit44alternative from "../../../assets/images/collection/men/suits44alternative.jpeg";
 import bgsuit45alternative from "../../../assets/images/collection/men/suits45alternative.jpeg";
-import bgsuit46alternative from "../../../assets/images/collection/men/suits46alternative.jpeg";
-import bgsuit47alternative from "../../../assets/images/collection/men/suits47alternative.jpeg";
-import bgsuit48alternative from "../../../assets/images/collection/men/suits48alternative.jpeg";
-import bgsuit49alternative from "../../../assets/images/collection/men/suits49alternative.jpeg";
 import bgsuit50alternative from "../../../assets/images/collection/men/suits50alternative.jpeg";
-import bgsuit51alternative from "../../../assets/images/collection/men/suits51alternative.jpeg";
-import bgsuit52alternative from "../../../assets/images/collection/men/suits52alternative.jpeg";
-import bgsuit53alternative from "../../../assets/images/collection/men/suits53alternative.jpeg";
-import bgsuit54alternative from "../../../assets/images/collection/men/suits54alternative.jpeg";
 import bgsuit57alternative from "../../../assets/images/collection/men/suits55alternative.jpeg";
 import bgsuit56alternative from "../../../assets/images/collection/men/suits56alternative.jpeg";
 import bgsuit9 from "../../../assets/images/collection/men/suits32.jpeg";
-import bgsuit10 from "../../../assets/images/collection/men/suits24.avif";
-import bgsuit11 from "../../../assets/images/collection/men/suits34alternative.jpeg";
 import bgsuit12 from "../../../assets/images/collection/men/collectioncard14.jpeg";
-import bgsuit13 from "../../../assets/images/collection/men/collectioncard15.jpg";
 import bgsuit14 from "../../../assets/images/collection/men/collectioncard16.webp";
 import bgsuit15 from "../../../assets/images/collection/men/collectioncard17.jpeg";
 import bgsuit16 from "../../../assets/images/collection/men/collectioncard18.jpeg";
 import bgsuit17 from "../../../assets/images/collection/men/collectioncard19.jpeg";
-import bgsuit18 from "../../../assets/images/collection/men/collectioncard20.jpeg";
 import bgsuit19 from "../../../assets/images/collection/men/suits7alternative.avif";
-import bgsuit20 from "../../../assets/images/collection/men/suits8.jpeg";
 import bgsuit21 from "../../../assets/images/collection/men/suits9.jpeg";
 import bgsuit22 from "../../../assets/images/collection/men/suits10.jpeg";
 import bgsuit23 from "../../../assets/images/collection/men/suits11.jpeg";
 import bgsuit24 from "../../../assets/images/collection/men/suits12.jpeg";
 import bgsuit25 from "../../../assets/images/collection/men/suits14.jpeg";
-import bgsuit26 from "../../../assets/images/collection/men/suits13alternative.jpeg";
 import bgsuit27 from "../../../assets/images/collection/men/suits16.jpeg";
 import bgsuit28 from "../../../assets/images/collection/men/suits17.jpeg";
-import bgsuit29 from "../../../assets/images/collection/men/suits18.jpeg";
-import bgsuit30 from "../../../assets/images/collection/men/suits19.jpeg";
 import bgsuit31 from "../../../assets/images/collection/men/suits20.jpeg";
 import bgsuit32 from "../../../assets/images/collection/men/suits21.jpeg";
 import bgsuit33 from "../../../assets/images/collection/men/suits22.jpeg";
-import bgsuit34 from "../../../assets/images/collection/men/suits23alternative.jpeg";
-import bgsuit35 from "../../../assets/images/collection/men/suits35.jpeg";
-import bgsuit36 from "../../../assets/images/collection/men/suits36.jpeg";
-import bgsuit37 from "../../../assets/images/collection/men/suits37.jpeg";
-import bgsuit38 from "../../../assets/images/collection/men/suits38alternative.jpeg";
-import bgsuit39 from "../../../assets/images/collection/men/suits39.jpeg";
-import bgsuit40 from "../../../assets/images/collection/men/suits40.jpeg";
-import bgsuit41 from "../../../assets/images/collection/men/suits41.jpeg";
 import bgsuit42 from "../../../assets/images/collection/men/suits42.jpeg";
 import bgsuit43 from "../../../assets/images/collection/men/suits43.jpeg";
 import bgsuit44 from "../../../assets/images/collection/men/suits44.jpeg";
-import bgsuit45 from "../../../assets/images/collection/men/suits45.jpeg";
-import bgsuit46 from "../../../assets/images/collection/men/suits46.jpeg";
-import bgsuit47 from "../../../assets/images/collection/men/suits47.jpeg";
-import bgsuit48 from "../../../assets/images/collection/men/suits48.jpeg";
-import bgsuit49 from "../../../assets/images/collection/men/suits49.jpeg";
 import bgsuit50 from "../../../assets/images/collection/men/suits50.jpeg";
-import bgsuit51 from "../../../assets/images/collection/men/suits51.jpeg";
-import bgsuit52 from "../../../assets/images/collection/men/suits52.jpeg";
-import bgsuit57 from "../../../assets/images/collection/men/suits53.jpeg";
-import bgsuit54 from "../../../assets/images/collection/men/suits54.jpeg";
-import bgsuit55 from "../../../assets/images/collection/men/suits55.jpeg";
 import bgsuit56 from "../../../assets/images/collection/men/suits56.jpeg";
 
 
@@ -1743,7 +1692,6 @@ export const cardfrank = [
     position: "center",
     place: "center",
   },
-
   {
     id: "suit8",
     e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
@@ -1890,7 +1838,6 @@ export const cardfrank = [
     a: bgsuit25alternative,
     place: "center",
   },
-
   {
     id: "suit31",
     e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
@@ -2037,7 +1984,6 @@ export const cardfrank = [
     a: bgsuit22alternative,
     place: "center",
   },
-
   {
     id: "suit27",
     e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
@@ -2581,7 +2527,6 @@ export const cardfrank = [
     a: bgsuit44alternative,
     place: "center",
   },
-
   {
     id: "suit39",
     e: ["men's clothing", "erkaklar kiyimi", "мужская одежда"],
