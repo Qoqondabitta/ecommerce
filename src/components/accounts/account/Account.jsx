@@ -8,7 +8,7 @@ import {
   Mask,
   Orders,
   ProfilePhoto,
-  List
+  List,
 } from "./style";
 import main from "../../../assets/images/just/main.jpg";
 import { useDispatch, useSelector } from "react-redux";
@@ -20,16 +20,16 @@ import Like from "./userLike/Like";
 import { accountProperties } from "../../../constants/account/basket.js";
 import { changeProperty } from "../../../redux/properties";
 import Cart from "./userCart/Cart";
-import "./account.css"
+import "./account.css";
 import UserOrder from "./userOrder/UserOrder";
 import FootNav from "../../footNav/FootNav";
 
 const Account = () => {
   const { value } = useSelector((store) => store.language);
-  const {data} = useSelector((store) => store.properties);
+  const { data } = useSelector((store) => store.properties);
   const dispatch = useDispatch();
   const [show, setShow] = useState(false);
-  const fullname = localStorage.getItem("fullname")
+  const fullname = localStorage.getItem("fullname");
   const defineproperty = (property) => {
     dispatch(changeProperty(property));
   };
@@ -90,9 +90,7 @@ const Account = () => {
                 id={v.definers == data && "activeData"}
                 onClick={() => defineproperty(v.definers)}
               >
-                <Link
-                // style={{ color: "black" }}
-                >
+                <Link>
                   {value == "ENG"
                     ? v.properties[0]
                     : value == "UZB"

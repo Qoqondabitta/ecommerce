@@ -1,0 +1,8 @@
+.arrow{
+    rotate: 90deg;
+    transition: all 0.5s linear;
+}
+
+.rot{
+    rotate: 0deg;
+}

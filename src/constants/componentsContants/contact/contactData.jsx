@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 
 export const contactConstants = [
   {
-    icon: <FaPhoneAlt color="black" />,
+    icon: <FaPhoneAlt color="greenyellow" />,
     linkingUrl: "tel:+998901116554",
     f: [
       "Call Us +998 (90) 502-400-608",
@@ -20,7 +20,7 @@ export const contactConstants = [
     ],
   },
   {
-    icon: <TbBrandTelegram color="black" />,
+    icon: <TbBrandTelegram color="blue" />,
     linkingUrl: "https://t.me/Hammasi_Ota_Onam_Sababli",
     f: [
       "Contact Us Via Telegram",
@@ -44,7 +44,7 @@ export const contactConstants = [
     ],
   },
   {
-    icon: <FaLinkedin color="black" />,
+    icon: <FaLinkedin color="blue" />,
     linkingUrl: "www.linkedin.com/abdulakhad-turgunaliev",
     f: [
       "Contact Us Via Linkedin",

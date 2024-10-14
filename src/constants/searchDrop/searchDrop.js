@@ -21,7 +21,7 @@ export const searchDropListconstants = [
     h: ["Women Collection", "Ayollar Koleksiyasi", "Женщины Коллекция"],
     l: [
       { n: ["Perfumes", "Atirlar", "Парфюмерия"], d: perfumecollection },
-      { n: ["Handbags", "Sumkalar", "Сумки"], collectioncardconstants },
+      { n: ["Handbags", "Sumkalar", "Сумки"], d: collectioncardconstants },
       { n: ["Clothes", "Ko'ylaklar", "Одежда"], d: hijabstyleconstants },
       { n: ["Hats", "Boshkiyimlar", "Головные уборы"], d: hijabforhead },
       { n: ["Shoes", "Oyoq Kiyimlar", "Обувь"], d: shoes },

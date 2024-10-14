@@ -8,6 +8,7 @@ import Mens from "../components/collection/mens/Mens";
 // import Product from "../components/products/Products";
 import Products from "../components/products/Products";
 import PaymentForm from "../components/pay/Payment";
+import Faqs from "../components/faqs/Faqs";
 
 const Root = () => {
   return (
@@ -20,6 +21,7 @@ const Root = () => {
         <Route path="/pay" element={<PaymentForm />} />
         <Route path="/collection/:id" element={<Products />} />
         <Route path="/account" element={<Account />} />
+        <Route path="/faqs" element={<Faqs />} />
         <Route path="/signup" element={<Singup />} />
         <Route path="*" element={<h1>404 Page Not Found</h1>} />
       </Routes>

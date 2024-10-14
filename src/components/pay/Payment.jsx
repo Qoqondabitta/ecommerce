@@ -33,7 +33,7 @@ const PaymentForm = ({ goods }) => {
     name && email && address && dispatch(addPurchase(goods));
   };
   const EffectProperty = () => {
-    name && email && address && dispatch(changeProperty("purchase"));
+    name && email && address && dispatch(changeProperty("order"));
   };
   const handleSubmit = async (event) => {
     event.preventDefault();
