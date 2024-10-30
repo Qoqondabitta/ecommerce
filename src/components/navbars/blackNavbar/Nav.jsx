@@ -29,7 +29,7 @@ const BlackNav = () => {
   const order = useSelector((store) => store.order);
   const burger = useSelector((store) => store.burger);
   return (
-    <Main className="columnCenter">
+    <Main className="center">
       <Container>
         <NavLink to="/home" style={{ textDecoration: "none" }}>
           <Title color="black" id="mainTitle" type="xonTitle">

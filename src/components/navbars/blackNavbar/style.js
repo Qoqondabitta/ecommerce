@@ -2,13 +2,12 @@ import { styled } from "styled-components";
 
 export const Main = styled.div`
   position: relative;
+  width: 100%;
   margin: 0 auto;
 `;
 
 export const Container = styled.div`
   padding: 0px 50px;
-  /* position: absolute; */
-  /* top: 0px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,7 +42,6 @@ export const List = styled.ul`
 export const Item = styled.li`
   color: black;
   font-size: 18px;
-  /* font-weight: 600; */
   background: #ffffff1a;
   padding: 2px 4px;
   border-radius: 5px;

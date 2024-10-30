@@ -1,29 +1,70 @@
-.starting-position{
-    transition: all 0.5s linear;
+.starting-position {
+  transition: all 0.5s linear;
+  margin-top: 5px;
+  /* color: ; */
 }
 
-.arrow{
-    rotate: 90deg;
+.arrow {
+  rotate: 90deg;
 }
 
-.rot{
-    rotate: 0deg;
+.rot {
+  rotate: 0deg;
 }
 
-#not-answer{
-    z-index: 0;
-    position: absolute;
-    top: 0%;
-    /* transition: all 0.5s linear; */
+#not-answer {
+  z-index: 0;
+  position: absolute;
+  top: -15%;
+  transition: all 0.3s linear;
+  color: white;
 }
 
-#answer{
-    position: absolute;
-    top: 100%;
-    z-index: 100;
-    transition: all 0.5s linear;
+#answer {
+  position: absolute;
+  top: 50%;
+  width: 600px;
+  color: black;
+  text-align: center;
+  transition: height 0.3s linear;
 }
 
-#question{
-    z-index: 1010;
+#wrapper {
+  height: 100px;
+  transition: all 0.3s linear;
+}
+
+#wrapper-up {
+  height: 50px;
+  transition: all 0.3s linear;
+}
+
+@media only screen and (max-width: 600px) {
+  #answer {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  #answer {
+    width: 380px;
+  }
+  #not-answer{
+    top: 5%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #answer {
+    width: 360px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  #answer {
+    width: 340px;
+  }
+}
+@media only screen and (max-width: 361px) {
+  #answer {
+    width: 300px;
+    top: 60%;
+  }
 }
