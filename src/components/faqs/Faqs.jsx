@@ -18,10 +18,13 @@ const Faqs = () => {
   const [newId, setNewId] = useState(null);
   const [show, setShow] = useState(false);
   const l = useSelector((store) => store.language.value);
-  const changeShow = (id) => {
-    setNewId(id);
-    id == newId ? setShow(true):setShow(false);
+  const changeShow = (id, falseId=100) => {
+    console.log(newId==id, falseId);
+    id == setNewId ? setNewId(falseId) : setNewId(id);
+    console.log(id, "id");
+    // id === setNewId ? setShow(false) : setShow(true);
   };
+  console.log(newId, "newId");
   return (
     <>
       <Main>
@@ -34,13 +37,17 @@ const Faqs = () => {
                   {l == "ENG" ? v.q[0] : l == "UZB" ? v.q[1] : v.q[2]}
                   <IoIosArrowDown
                     color="black"
-                    onClick={() => changeShow(i)}
-                    className={`${show && "rot"} arrow`}
+                    // onClick={() => changeShow(i)}
+                    className={`${
+                      newId == i ? "rot" : "arrow"
+                    } starting-position`}
                   />
                 </Question>
-                <Answer>
-                  {l == "ENG" ? v.a[0] : l == "UZB" ? v.a[1] : v.a[2]}
-                </Answer>
+                {newId == i && (
+                  <Answer id={`${newId == i ? "answer" : "not-answer"}`}>
+                    {l == "ENG" ? v.a[0] : l == "UZB" ? v.a[1] : v.a[2]}
+                  </Answer>
+                )}
               </Wrapper>
             ))}
           </QuestionWrapper>

@@ -1,8 +1,25 @@
+.starting-position{
+    transition: all 0.5s linear;
+}
+
 .arrow{
     rotate: 90deg;
-    transition: all 0.5s linear;
 }
 
 .rot{
     rotate: 0deg;
+}
+
+#not-answer{
+    z-index: 0;
+    position: absolute;
+    top: 0%;
+    transition: all 0.5s linear;
+}
+
+#answer{
+    position: absolute;
+    top: 100%;
+    z-index: 100;
+    transition: all 0.5s linear;
 }
