@@ -22,6 +22,7 @@ export const helpFooter = [
     color: "white",
     underline: "underline",
     capital: "none",
+    urlToPage: "/faqs",
     botMar: "false",
   },
   {
@@ -30,6 +31,8 @@ export const helpFooter = [
     underline: "underline",
     capital: "none",
     botMar: "false",
+    urlToPage: "/account",
+    propertyDefiner: "order",
   },
   {
     name: ["Sitemap", "Sayt Haqida", "Карта сайта"],
@@ -37,6 +40,7 @@ export const helpFooter = [
     underline: "underline",
     capital: "none",
     botMar: "false",
+    urlToPage: "/sitemap",
   },
   {
     name: [

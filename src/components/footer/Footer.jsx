@@ -21,6 +21,8 @@ import "./footer.css";
 import { useDispatch, useSelector } from "react-redux";
 import Contact from "../mini/contact/Contact";
 import { toggleContact } from "../../redux/contact";
+import { NavLink } from "react-router-dom";
+import { changeProperty } from "../../redux/properties";
 
 const Footer = () => {
   const { value } = useSelector((store) => store.language);
@@ -32,23 +34,27 @@ const Footer = () => {
         <FooterRows lists="true">
           <List flex="1">
             {helpFooter.map((v, id) => (
-              <Item
-                key={id}
-                botmar={v.botMar}
-                underline={v.underline}
-                capital={v.capital}
-                onClick={()=>v.name[0]=="Contact Us"&&dispatch(toggleContact())}
-                className="pointer"
-                color={v.color}
-                heights="20px"
-                fontSize={v?.size}
-              >
-                {value == "ENG"
-                  ? v.name[0]
-                  : value == "UZB"
-                  ? v.name[1]
-                  : v.name[2]}
-              </Item>
+              <NavLink to={v?.urlToPage} onClick={()=>dispatch(changeProperty(v?.propertyDefiner))} style={{ textDecoration: "none" }}>
+                <Item
+                  key={id}
+                  botmar={v.botMar}
+                  underline={v.underline}
+                  capital={v.capital}
+                  onClick={() =>
+                    v.name[0] == "Contact Us" && dispatch(toggleContact())
+                  }
+                  className="pointer"
+                  color={v.color}
+                  heights="20px"
+                  fontSize={v?.size}
+                >
+                  {value == "ENG"
+                    ? v.name[0]
+                    : value == "UZB"
+                    ? v.name[1]
+                    : v.name[2]}
+                </Item>
+              </NavLink>
             ))}
           </List>
           <List flex="1">
@@ -162,7 +168,7 @@ const Footer = () => {
         </FooterRows>
         <XON>{value == "RUS" ? "XOH БРЕНД" : "XON BRAND"}</XON>
       </Container>
-      <Contact classHeadline={c==true&&"openContact"} />
+      <Contact classHeadline={c == true && "openContact"} />
     </Main>
   );
 };

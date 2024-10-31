@@ -1,0 +1,21 @@
+.list-links {
+  color: black;
+  font-size: 100%;
+  cursor: pointer;
+  font-weight: 100;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 0.05rem;
+  font-family: "Roboto", serif;
+}
+
+@media only screen and (max-width: 420px){
+    .list-links{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .list-links{
+        font-size: 14px;
+    }
+}

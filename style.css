@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Dancing+Script:wght@400..700&family=Lobster&family=Mrs+Saint+Delafield&family=Noto+Serif+Khitan+Small+Script&family=Oleo+Script:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,13 +12,13 @@
   /* font-style: normal; */
 }
 
-.colorTesters{
+.colorTesters {
   color: rgb(223, 218, 218);
   color: rgb(64, 65, 65);
   color: rgb(113, 179, 14);
 }
 
-.cursor{
+.cursor {
   cursor: pointer;
 }
 
@@ -25,7 +26,7 @@
   background-color: red;
 } */
 /* #root{ */
-  /* primaryColor: #fff; */
+/* primaryColor: #fff; */
 /* } */
 
 .display {
@@ -55,67 +56,80 @@
   justify-content: center;
 }
 
-.justifyStart{
+.justifyStart {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.start{
+.start {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
 
-.space{
-    display: flex;
-    align-items: center;
-    /* flex-direction: column; */
-    justify-content: space-between;
+.space {
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+  justify-content: space-between;
 }
 
-.spaceColumn{
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
+.spaceColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
 }
 
-.test{
+.test {
   background-color: rgb(100, 97, 97);
 }
 
-.start{
+.start {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
 }
 
-.columnStart{
+.columnStart {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
 
-.alignEnd{
+.alignEnd {
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
 
-.justifyEnd{
+.justifyEnd {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.columnAlignEnd{
+.columnAlignEnd {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
 }
 
-.pointer{
+.pointer {
   cursor: pointer;
+}
+
+.col-center-start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.start-between {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
