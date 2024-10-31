@@ -1,0 +1,52 @@
+/* .form-for-email{
+
+} */
+
+.email-input {
+  width: 300px;
+  height: 45px;
+  padding: 20px;
+  border: none;
+  background-color: rgb(240, 234, 234);
+  outline: none;
+}
+
+.email-input::placeholder {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 12px;
+  font-family: "Roboto", serif;
+  line-height: 16px;
+}
+
+.email-button {
+  width: 150px;
+  height: 45px;
+  font-weight: 600;
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+  background-color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .email-input {
+    width: 200px;
+  }
+  .email-button {
+    width: 120px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .email-input {
+    width: 180px;
+  }
+  .email-button {
+    width: 120px;
+  }
+}

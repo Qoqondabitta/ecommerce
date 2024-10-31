@@ -51,6 +51,7 @@ export const helpFooter = [
     color: "white",
     underline: "underline",
     capital: "none",
+    urlToPage: "/unsubscribe",
     botMar: "false",
   },
 ];

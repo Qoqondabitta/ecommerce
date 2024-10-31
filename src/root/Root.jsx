@@ -10,6 +10,7 @@ import Products from "../components/products/Products";
 import PaymentForm from "../components/pay/Payment";
 import Faqs from "../components/faqs/Faqs";
 import SiteMap from "../components/sitemap/SiteMap";
+import Unsubscribe from "../components/unsubscribe/Unsubscribe";
 
 const Root = () => {
   return (
@@ -24,6 +25,7 @@ const Root = () => {
         <Route path="/account" element={<Account />} />
         <Route path="/faqs" element={<Faqs />} />
         <Route path="//sitemap" element={<SiteMap />} />
+        <Route path="/unsubscribe" element={<Unsubscribe />} />
         <Route path="/signup" element={<Singup />} />
         <Route path="*" element={<h1>404 Page Not Found</h1>} />
       </Routes>
