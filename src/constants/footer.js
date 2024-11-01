@@ -78,6 +78,7 @@ export const companyFooter = [
     name: ["Xon Equilibrium", "Xon Hilmahilligi", "Разновидности"],
     color: "white",
     capital: "none",
+    urlToPage: "/equilibrium",
     botMar: "false",
     underline: "underline",
   },
