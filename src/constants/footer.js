@@ -69,6 +69,7 @@ export const companyFooter = [
     name: ["About Xon", "Xon Haqida", "О Xоне"],
     color: "white",
     capital: "none",
+    urlToPage: "/about",
     underline: "underline",
     botMar: "false",
     size: "14px",

@@ -34,7 +34,11 @@ const Footer = () => {
         <FooterRows lists="true">
           <List flex="1">
             {helpFooter.map((v, id) => (
-              <NavLink to={v?.urlToPage} onClick={()=>dispatch(changeProperty(v?.propertyDefiner))} style={{ textDecoration: "none" }}>
+              <NavLink
+                to={v?.urlToPage}
+                onClick={() => dispatch(changeProperty(v?.propertyDefiner))}
+                style={{ textDecoration: "none" }}
+              >
                 <Item
                   key={id}
                   botmar={v.botMar}
@@ -60,22 +64,24 @@ const Footer = () => {
           <List flex="1">
             {/* © 2021 - Tod */}
             {companyFooter.map((v, id) => (
-              <Item
-                key={id}
-                botmar={v.botMar}
-                underline={v.underline}
-                capital={v.capital}
-                // capital
-                color={v.color}
-                heights="20px"
-                fontSize={v?.size}
-              >
-                {value == "ENG"
-                  ? v.name[0]
-                  : value == "UZB"
-                  ? v.name[1]
-                  : v.name[2]}
-              </Item>
+              <NavLink to={v?.urlToPage} style={{ textDecoration: "none" }}>
+                <Item
+                  key={id}
+                  botmar={v.botMar}
+                  underline={v.underline}
+                  capital={v.capital}
+                  // capital
+                  color={v.color}
+                  heights="20px"
+                  fontSize={v?.size}
+                >
+                  {value == "ENG"
+                    ? v.name[0]
+                    : value == "UZB"
+                    ? v.name[1]
+                    : v.name[2]}
+                </Item>
+              </NavLink>
             ))}
           </List>
           <List flex="2">

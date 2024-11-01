@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const Main = styled.div``;
+export const Main = styled.div`
+  margin: 0 auto;
+`;
 
 export const Container = styled.div`
   max-width: 1300px;
@@ -41,8 +43,7 @@ export const ListWrap = styled.div`
   width: 70%;
   padding-left: 50px;
 
-
-  @media only screen and (max-width: 800px){
+  @media only screen and (max-width: 800px) {
     padding-left: 20px;
     width: 100%;
   }

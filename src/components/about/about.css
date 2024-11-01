@@ -1,0 +1,11 @@
+.about-link {
+  font-size: 14px;
+  font-family: "DM Serif Display";
+  letter-spacing: 0.05rem;
+  margin: 0px 0px 50px 0px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 0px;
+  border-bottom: 1px solid black;
+  color: black;
+}
