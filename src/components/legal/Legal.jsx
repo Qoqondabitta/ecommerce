@@ -20,7 +20,11 @@ const Legal = () => {
       <Nav />
       <Container className="columnCenter">
         <LegalTableTitle>
-          {l == "ENG" ? "Table of Contents" : l == "UZB" ? "Mundarija" : ""}
+          {l == "ENG"
+            ? "Table of Contents"
+            : l == "UZB"
+            ? "Mundarija"
+            : "Оглавление"}
         </LegalTableTitle>
         <LegalGreyStick></LegalGreyStick>
         <LegalText>
