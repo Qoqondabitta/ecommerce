@@ -52,17 +52,17 @@ const Corporate = () => {
         <Box className="columnStart">
           <h1 className="corporate-second-big-text">
             {l == "ENG"
-              ? "XON BRAND S.P.A"
+              ? "X COMMERCE UZBEKISTAN S.P.A."
               : l == "UZB"
-              ? "XON BRAND S.P.A"
-              : "XON BRAND S.P.A"}
+              ? "X SAVDO O'ZBEKISTON S.P.A."
+              : "X Коммерс Узбекистан С.П.А."}
           </h1>
           <p className="corporate-thick-text">
             {l == "ENG"
-              ? "Xon Brand S.P.A"
+              ? "X Commerce UZBEKISTAN S.P.A."
               : l == "UZB"
-              ? "Xon Brand S.P.A"
-              : "Xon Brand S.P.A"}
+              ? "X Savdo O'ZBEKISTON S.P.A."
+              : "X Коммерс Узбекистан С.П.А."}
           </p>
           {corporatesecondtextstore.map((v, i) => (
             <LegalText key={i}>
