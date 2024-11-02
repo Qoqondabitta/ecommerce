@@ -1,5 +1,4 @@
 import React from "react";
-import "./equilibrium.css";
 import { Main } from "../sitemap/style";
 import Nav from "../navbars/blackNavbar/Nav";
 import Footer from "../footer/Footer";

@@ -13,6 +13,7 @@ import SiteMap from "../components/sitemap/SiteMap";
 import Unsubscribe from "../components/unsubscribe/Unsubscribe";
 import About from "../components/about/About";
 import Equilibrium from "../components/equilibrium/Equilibrium";
+import Ethics from "../components/ethics/Ethics";
 
 const Root = () => {
   return (
@@ -30,6 +31,7 @@ const Root = () => {
         <Route path="/unsubscribe" element={<Unsubscribe />} />
         <Route path="/about" element={<About />} />
         <Route path="/equilibrium" element={<Equilibrium />} />
+        <Route path="/ethics" element={<Ethics />} />
         <Route path="/signup" element={<Singup />} />
         <Route path="*" element={<h1>404 Page Not Found</h1>} />
       </Routes>

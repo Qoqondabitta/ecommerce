@@ -21,11 +21,9 @@ export const EqualTitle = styled.h1`
   }
 `;
 
-
 export const EqualText = styled.p`
   font-size: 15px;
   line-height: 26px;
-  margin-bottom: 10px;
   width: 90%;
   font-family: "Raleway", serif;
   font-weight: 400;

@@ -88,6 +88,7 @@ export const companyFooter = [
     capital: "none",
     underline: "underline",
     botMar: "false",
+    urlToPage: "/ethics",
   },
   {
     name: ["Careers", "Bo'sh Ish O'rni", "Карьера"],
