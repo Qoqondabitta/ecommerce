@@ -102,6 +102,7 @@ export const companyFooter = [
     name: ["Legal", "Qonuniy", "Юридический"],
     color: "white",
     capital: "none",
+    urlToPage: "/legal",
     underline: "underline",
     botMar: "false",
   },
@@ -114,6 +115,7 @@ export const companyFooter = [
     color: "white",
     capital: "none",
     botMar: "false",
+    urlToPage: "/privacy",
     underline: "underline",
   },
   {
@@ -125,6 +127,7 @@ export const companyFooter = [
     color: "white",
     capital: "none",
     botMar: "false",
+    urlToPage: "/corporate",
     underline: "underline",
   },
 ];

@@ -65,6 +65,7 @@ export const EthicText = styled.p`
   font-family: "Raleway", serif;
   font-weight: 400;
   letter-spacing: 0.05rem;
+  vertical-align: baseline;
   text-transform: capitalize;
   text-align: left;
 

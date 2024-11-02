@@ -15,6 +15,7 @@ import About from "../components/about/About";
 import Equilibrium from "../components/equilibrium/Equilibrium";
 import Ethics from "../components/ethics/Ethics";
 import Careers from "../components/careers/Careers";
+import Legal from "../components/legal/Legal";
 
 const Root = () => {
   return (
@@ -34,6 +35,9 @@ const Root = () => {
         <Route path="/equilibrium" element={<Equilibrium />} />
         <Route path="/ethics" element={<Ethics />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/legal" element={<Legal />} />
+        <Route path="/corporate" element={<Legal />} />
+        <Route path="/privacy" element={<Legal />} />
         <Route path="/signup" element={<Singup />} />
         <Route path="*" element={<h1>404 Page Not Found</h1>} />
       </Routes>
