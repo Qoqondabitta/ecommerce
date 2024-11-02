@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-export const Main = styled.div`
-  margin: 0 auto;
-`;
-
 export const Container = styled.div`
   max-width: 1300px;
   width: 100%;
@@ -11,7 +7,8 @@ export const Container = styled.div`
   margin-block: 100px;
 `;
 
-export const Statement = styled.h2`
+
+export const CareerStatement = styled.h2`
   font-size: 22px;
   line-height: 22px;
   font-weight: 100;
@@ -19,6 +16,7 @@ export const Statement = styled.h2`
   letter-spacing: 0.1rem;
   width: 100%;
   text-align: center;
+  margin-bottom: 20px;
 
   @media only screen and (max-width: 1050px) {
     font-size: 20px;
@@ -26,3 +24,4 @@ export const Statement = styled.h2`
     width: 90%;
   }
 `;
+

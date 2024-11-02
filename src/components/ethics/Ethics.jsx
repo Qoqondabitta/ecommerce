@@ -19,7 +19,7 @@ const Ethics = () => {
     <Main className="columnCenter">
       <Nav />
       <Container className="columnCenter">
-        <Box>
+        <Box className="columnStart">
           <EthicFirstTitle>
             {l == "ENG"
               ? "Forword By"

@@ -95,6 +95,7 @@ export const companyFooter = [
     color: "white",
     capital: "none",
     underline: "underline",
+    urlToPage: "/careers",
     botMar: "false",
   },
   {

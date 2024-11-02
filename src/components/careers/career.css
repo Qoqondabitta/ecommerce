@@ -1,0 +1,48 @@
+.career-input {
+  width: 300px;
+  height: 45px;
+  padding: 20px;
+  border: none;
+  background-color: rgb(240, 234, 234);
+  outline: none;
+}
+
+.career-input::placeholder {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 12px;
+  font-family: "Roboto", serif;
+  line-height: 16px;
+}
+
+.career-button {
+  width: 150px;
+  height: 45px;
+  font-weight: 600;
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+  background-color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .career-input {
+    width: 200px;
+  }
+  .career-button {
+    width: 120px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .career-input {
+    width: 180px;
+  }
+  .career-button {
+    width: 120px;
+  }
+}

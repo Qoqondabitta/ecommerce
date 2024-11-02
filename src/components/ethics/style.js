@@ -7,10 +7,6 @@ export const Container = styled.div`
 `;
 
 export const Box = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
   gap: 30px;
   width: 50%;
 
