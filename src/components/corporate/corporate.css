@@ -1,0 +1,36 @@
+.corporate-text-wrapper {
+  gap: 50px;
+}
+
+.corporate-second-big-text {
+  font-family: "Raleway", serif;
+  font-size: 25px;
+  line-height: 50px;
+  margin-top: 40px;
+  width: fit-content;
+  text-align: left;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+}
+
+
+.corporate-thick-text {
+  font-size: 15px;
+  line-height: 15px;
+  font-family: "Raleway", serif;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  width: fit-content;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 600px) {
+  .corporate-second-big-text {
+    line-height: 30px;
+    font-size: 18px;
+    width: 100%;
+    margin-block: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+}
