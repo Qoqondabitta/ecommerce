@@ -18,7 +18,7 @@ const TripleSlider = () => {
       <Wrapper className="center">
         {(o==0?pokerSliderWomen:o==2?pokerSliderKids:o==3?pokerSliderPerfume:tripleSliderElements).map((v, i) => (
           <Container key={i} className="center">
-            <Content className={v.player}>
+            <Content id="content" className={v.player}>
               <TextWrapper>
                 <Text position="left" className="justifyStart textSlides">
                   {v.t.map((val, i) => (

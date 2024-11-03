@@ -5,14 +5,7 @@ import {
   Container,
   Content,
   Main,
-  // Right,
 } from "./style";
-// import suit from "../../../assets/images/triple/hijab.webp";
-// import suit2 from "../../../assets/images/triple/hijab4.jpg";
-// import beckham from "../../../assets/images/triple/hijab5.jpg";
-// import under from "../../../assets/images/triple/hijab3.jpg";
-// import under1 from "../../../assets/images/triple/hijab6.jpg";
-// import neymar from "../../../assets/images/triple/hijab1.jpg";
 import "./fullScreenSlider.css";
 import { fullScreen } from "../../../constants/slideConstants/fullScreen";
 

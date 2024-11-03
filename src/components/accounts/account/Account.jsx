@@ -13,16 +13,14 @@ import {
 import main from "../../../assets/images/just/main.jpg";
 import { useDispatch, useSelector } from "react-redux";
 import { Item, Link } from "../../navbars/secondNav/style";
-import Footer from "../../footer/Footer";
 import BlackNav from "../../navbars/blackNavbar/Nav";
-import Like from "./userLike/Like";
-// import a from "../"
 import { accountProperties } from "../../../constants/account/basket.js";
 import { changeProperty } from "../../../redux/properties";
-import Cart from "./userCart/Cart";
+const Like = React.lazy(() => import("./userLike/Like"));
+const Cart = React.lazy(() => import("./userCart/Cart"));
+const UserOrder = React.lazy(() => import("./userOrder/UserOrder"));
+const FootNav = React.lazy(() => import("../../footNav/FootNav"));
 import "./account.css";
-import UserOrder from "./userOrder/UserOrder";
-import FootNav from "../../footNav/FootNav";
 
 const Account = () => {
   const { value } = useSelector((store) => store.language);
@@ -107,15 +105,29 @@ const Account = () => {
             ))}
           </List>
           {data == "like" ? (
-            <Like />
+            <React.Suspense
+              fallback={<React.Fragment>Loading...</React.Fragment>}
+            >
+              <Like />
+            </React.Suspense>
           ) : data == "cart" ? (
-            <Cart />
+            <React.Suspense
+              fallback={<React.Fragment>Loading...</React.Fragment>}
+            >
+              <Cart />
+            </React.Suspense>
           ) : (
-            <UserOrder />
+            <React.Suspense
+              fallback={<React.Fragment>Loading...</React.Fragment>}
+            >
+              <UserOrder />
+            </React.Suspense>
           )}
         </Orders>
       </Hero>
-      <FootNav />
+      <React.Suspense fallback={<React.Fragment>Loading...</React.Fragment>}>
+        <FootNav />
+      </React.Suspense>
     </Container>
   );
 };

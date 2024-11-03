@@ -12,11 +12,13 @@ import {
   Wrapper,
 } from "./style";
 import main from "../../../assets/images/backgrounds/mens-fashion-2024.webp";
-import Nav from "../../navbars/secondNav/Nav";
+const Nav = React.lazy(() => import("../../navbars/secondNav/Nav"));
 import { Title } from "../../generics";
 import { useDispatch, useSelector } from "react-redux";
-import CollectionCard from "../../cards/collectionCard/CollectionCard";
-import Footer from "../../footer/Footer";
+const CollectionCard = React.lazy(() =>
+  import("../../cards/collectionCard/CollectionCard")
+);
+const Footer = React.lazy(() => import("../../footer/Footer"));
 import {
   category,
   categoryForKids,
@@ -45,7 +47,7 @@ import {
 import { FindTool, Input, InputWrappers, Label, SearchButton } from "./filter";
 import { Alarm } from "./alarm";
 import { IoClose } from "react-icons/io5";
-import FootNav from "../../footNav/FootNav";
+const FootNav = React.lazy(() => import("../../footNav/FootNav"));
 import hijabbackground from "../../../assets/images/backgrounds/hijabbackground.jpg";
 import { hijabstyleconstants } from "../../../constants/componentsContants/collection/women/stylehijab";
 import fragrancy from "../../../assets/images/backgrounds/fragrancy.jpg";
@@ -145,7 +147,9 @@ const Mens = () => {
           options. Thanks! Click to close this tab.
         </Alarm>
       )}
-      <Nav />
+      <React.Suspense fallback={<React.Fragment>Loading...</React.Fragment>}>
+        <Nav />
+      </React.Suspense>
       <Container
         bg={
           collection.value == collectioncardconstants
@@ -174,7 +178,14 @@ const Mens = () => {
         }
         className="columnCenter"
       >
-        {(order==0?womenscollection:order==1?menscollection:order==2?kidscollection:allperfumecollection).map((v, i) => (
+        {(order == 0
+          ? womenscollection
+          : order == 1
+          ? menscollection
+          : order == 2
+          ? kidscollection
+          : allperfumecollection
+        ).map((v, i) => (
           <Title type={v.ty} key={i} color={v?.color}>
             {value == "ENG" ? v.c[0] : value == "UZB" ? v.c[1] : v.c[2]}
           </Title>
@@ -240,7 +251,7 @@ const Mens = () => {
                     onClick={() => {
                       // v.c[0]=="suits"&&navigate("/suit")
                       dispatch(changeCollection(v.l));
-                      dispatch(customOrder(v?.turn))
+                      dispatch(customOrder(v?.turn));
                       setDisplay(v.c[0]);
                       setList([]);
                       changeShow();
@@ -264,7 +275,12 @@ const Mens = () => {
           {list.length == 0 && (
             <Collection>
               {collection.value.map((v, i) => (
-                <CollectionCard key={i} list={v}></CollectionCard>
+                <React.Suspense
+                  key={i}
+                  fallback={<React.Fragment>Loading</React.Fragment>}
+                >
+                  <CollectionCard list={v}></CollectionCard>
+                </React.Suspense>
               ))}
             </Collection>
           )}
@@ -306,8 +322,12 @@ const Mens = () => {
           </Button>
         )}
       </Wrapper>
-      <FootNav />
-      <Footer />
+      <React.Suspense fallback={<React.Fragment>Loading...</React.Fragment>}>
+        <FootNav />
+      </React.Suspense>
+      <React.Suspense fallback={<React.Fragment>Loading...</React.Fragment>}>
+        <Footer />
+      </React.Suspense>
     </Main>
   );
 };

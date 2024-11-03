@@ -6,6 +6,11 @@
   animation: basicSlider 15s ease infinite;
 }
 
+#content{
+  height: 500px;
+}
+
+
 @keyframes basicSlider {
   0%,
   100% {
@@ -380,5 +385,12 @@
   }
   75% {
     background-image: url("../../../assets/images/kids/kidssport4.webp");
+  }
+}
+
+
+@media only screen and (max-width: 700px){
+  #content{
+    height: 400px;
   }
 }

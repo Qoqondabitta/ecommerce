@@ -1,13 +1,9 @@
 import React from "react";
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import {
-  Add,
-  ArrowWrapper,
   Blurs,
   Cards,
   Container,
   Content,
-  Image,
   Left,
   Main,
   Right,

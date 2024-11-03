@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import { Arrow, Container, Main } from "./style";
-import ProSliderCard from "../../cards/productSliderCard/ProSliderCard";
+const ProSliderCard = React.lazy(() =>
+  import("../../cards/productSliderCard/ProSliderCard")
+);
 import { ProductCardDetails as product } from "../../../mock/productSliderMock";
 import "./productSlider.css";
 import { FaArrowRight as Right } from "react-icons/fa6";
@@ -51,19 +53,21 @@ const ProductSlider = () => {
       >
         {(order == 3 ? thirdPerfumeCategory : product).map(
           ({ id, f, bg, desc, s }) => (
-            <ProSliderCard
+            <React.Suspense
               key={id}
-              id={id}
-              price={s}
-              desc={
-                value == "ENG" ? desc[0] : value == "UZB" ? desc[1] : desc[2]
-              }
-              title={
-                value == "ENG" ? f[0] : value == "UZB" ? f[1] : f[2]
-              }
-              img={bg}
-              move={move}
-            ></ProSliderCard>
+              fallback={<React.Fragment>Loading...</React.Fragment>}
+            >
+              <ProSliderCard
+                id={id}
+                price={s}
+                desc={
+                  value == "ENG" ? desc[0] : value == "UZB" ? desc[1] : desc[2]
+                }
+                title={value == "ENG" ? f[0] : value == "UZB" ? f[1] : f[2]}
+                img={bg}
+                move={move}
+              ></ProSliderCard>
+            </React.Suspense>
           )
         )}
       </Container>

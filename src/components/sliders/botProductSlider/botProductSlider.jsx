@@ -3,7 +3,9 @@ import { Arrow, Container, Main } from "./style";
 import { botCardDetails as product } from "../../../mock/botProductSlider";
 import "./botProductSlider.css";
 import { FaArrowRight as Right } from "react-icons/fa6";
-import BotProSliderCard from "../../cards/bottomCards/BotCard";
+const BotProSliderCard = React.lazy(() =>
+  import("../../cards/bottomCards/BotCard")
+);
 import { useSelector } from "react-redux";
 import { womenBotProducts } from "../../../mock/womenProductScroll";
 import { secondPerfumeCategory } from "../../../mock/perfumeProductSlider";
@@ -58,23 +60,27 @@ const BotProductSlider = () => {
           ? womenBotProducts
           : product
         ).map((v) => (
-          <BotProSliderCard
+          <React.Suspense
             key={v.id}
-            id={v.id}
-            price={v.s}
-            lists={v}
-            desc={
-              value == "ENG"
-                ? v.desc[0]
-                : value == "UZB"
-                ? v.desc[1]
-                : v.desc[2]
-            }
-            title={value == "ENG" ? v.f[0] : value == "UZB" ? v.f[1] : v.f[2]}
-            img={v.bg}
-            color={v?.c}
-            move={move}
-          ></BotProSliderCard>
+            fallback={<React.Fragment>Loading...</React.Fragment>}
+          >
+            <BotProSliderCard
+              id={v.id}
+              price={v.s}
+              lists={v}
+              desc={
+                value == "ENG"
+                  ? v.desc[0]
+                  : value == "UZB"
+                  ? v.desc[1]
+                  : v.desc[2]
+              }
+              title={value == "ENG" ? v.f[0] : value == "UZB" ? v.f[1] : v.f[2]}
+              img={v.bg}
+              color={v?.c}
+              move={move}
+            ></BotProSliderCard>
+          </React.Suspense>
         ))}
       </Container>
     </Main>

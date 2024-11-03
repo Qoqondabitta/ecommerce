@@ -1,3 +1,4 @@
+import React from "react";
 const Add = React.lazy(() => import("../components/Announcement/Add"));
 const Nav = React.lazy(() => import("../components/navbars/secondNav/Nav"));
 const BigSlider = React.lazy(() =>
