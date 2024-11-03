@@ -15,7 +15,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addPurchase } from "../../redux/purchase";
 import { changeProperty } from "../../redux/properties";
 
-const PaymentForm = ({ goods }) => {
+const PaymentForm = React.memo(({ goods }) => {
   const { data } = useSelector((store) => store.properties);
   const stripe = useStripe();
   const elements = useElements();
@@ -144,6 +144,6 @@ const PaymentForm = ({ goods }) => {
       </Wrapper>
     </>
   );
-};
+});
 
 export default PaymentForm;

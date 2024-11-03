@@ -2,7 +2,7 @@ import React from "react";
 import "./input.css";
 import { useSelector } from "react-redux";
 
-const InputGroup = ({ onChange }) => {
+const InputGroup = React.memo(({ onChange }) => {
   const l = useSelector((store) => store.language.value);
   return (
     <div className="input-group">
@@ -12,6 +12,6 @@ const InputGroup = ({ onChange }) => {
       </label>
     </div>
   );
-};
+});
 
 export default InputGroup;

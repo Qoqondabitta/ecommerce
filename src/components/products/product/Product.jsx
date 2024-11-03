@@ -11,13 +11,11 @@ import {
   Title,
 } from "./style";
 import { useDispatch, useSelector } from "react-redux";
-import { addLike } from "../../../redux/like";
 import { NavLink } from "react-router-dom";
 import { addToCart } from "../../../redux/cart";
 import { changeProperty } from "../../../redux/properties";
-import Metric from "./metrics/Metric";
 
-const Product = ({ list }) => {
+const Product = React.memo(({ list }) => {
   const [show, setShow] = useState(false);
   const cart = useSelector((store) => store.cart.value);
   const dispatch = useDispatch();
@@ -25,7 +23,7 @@ const Product = ({ list }) => {
   const SaveProduct = () => {
     console.log(list, "for cart");
     dispatch(addToCart(...list));
-    setShow(true)
+    setShow(true);
   };
   const chnageShow = () => {
     setShow(!show);
@@ -138,6 +136,6 @@ const Product = ({ list }) => {
       ))}
     </>
   );
-};
+});
 
 export default Product;

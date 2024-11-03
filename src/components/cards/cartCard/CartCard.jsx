@@ -15,7 +15,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { deleteFromCart } from "../../../redux/cart";
 import PaymentForm from "../../pay/Payment";
 
-const CartCard = ({ info }) => {
+const CartCard = React.memo(({ info }) => {
   const [quantity, setQuantity] = useState(1);
   const [list, setList] = useState(info);
   const [newSize, setNewSize] = useState(info.size);
@@ -203,6 +203,6 @@ const CartCard = ({ info }) => {
       {show && <PaymentForm goods={info} />}
     </Container>
   );
-};
+});
 
 export default CartCard;

@@ -15,7 +15,7 @@ import { cardfrank } from "../../../constants/componentsContants/collection/coll
 import { casualkids } from "../../../constants/componentsContants/collection/kids/casualkids";
 import { perfumecollection } from "../../../constants/componentsContants/collection/perfume/perfumecollection";
 
-const BotProSliderCard = ({
+const BotProSliderCard = React.memo(({
   id,
   title,
   desc,
@@ -95,6 +95,6 @@ const BotProSliderCard = ({
       </Title>
     </Container>
   );
-};
+});
 
 export default BotProSliderCard;

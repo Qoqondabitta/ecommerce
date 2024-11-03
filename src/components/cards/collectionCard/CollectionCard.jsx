@@ -14,7 +14,7 @@ import { NavLink } from "react-router-dom";
 import { addLike, removeLike } from "../../../redux/like";
 import { BsFillSuitHeartFill as RedHeart } from "react-icons/bs";
 
-const CollectionCard = ({ list }) => {
+const CollectionCard = React.memo(({ list }) => {
   const [that, setThat] = useState(false);
   const { value } = useSelector((store) => store.language);
   const like = useSelector((store) => store.like);
@@ -64,6 +64,6 @@ const CollectionCard = ({ list }) => {
       </Container>
     </>
   );
-};
+});
 
 export default CollectionCard;

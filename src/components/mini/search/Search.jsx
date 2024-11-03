@@ -29,7 +29,7 @@ import InputGroup from "../input/Input";
 import { NavLink } from "react-router-dom";
 import { changeCollection } from "../../../redux/collection";
 
-const Search = ({ st }) => {
+const Search = React.memo(({ st }) => {
   const [list, setList] = useState([]);
   const dispatch = useDispatch();
   const [inputValue, setInputValue] = useState(null);
@@ -131,6 +131,6 @@ const Search = ({ st }) => {
       )}
     </SearchDrop>
   );
-};
+});
 
 export default Search;

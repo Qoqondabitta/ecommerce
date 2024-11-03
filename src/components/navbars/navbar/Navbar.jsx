@@ -12,12 +12,9 @@ import {
 } from "./style";
 import "./design.css";
 import { useSelector } from "react-redux";
-// import { increment, decrement } from "../../redux/Counter";
-// import logo from "../../assets/images/logo.jpg";
 import Drop from "../dropdown/Drop";
 import Title from "../generics/title/Title";
 import { FaLocationDot } from "react-icons/fa6";
-// import { navbar } from "../../constants/navbar";
 
 const Navbar = () => {
   const language = useSelector((store) => store.language);

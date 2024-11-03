@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom";
 import { changeCollection } from "../../redux/collection";
 import { customOrder } from "../../redux/order";
 
-const Categories = ({ classTitle }) => {
+const Categories = React.memo(({ classTitle }) => {
   const dispatch = useDispatch();
   const language = useSelector((store) => store.language);
 
@@ -25,8 +25,14 @@ const Categories = ({ classTitle }) => {
         />
         <Drop />
         {burgerInfo.map((v, i) => (
-          <NavLink to={v?.urltopage} style={{ textDecoration: "none" }}>
-            <Item className="pointer" key={i} onClick={() => { dispatch(changeCollection(v?.l)); dispatch(customOrder(v?.digit))}}>
+          <NavLink key={i} to={v?.urltopage} style={{ textDecoration: "none" }}>
+            <Item
+              className="pointer"
+              onClick={() => {
+                dispatch(changeCollection(v?.l));
+                dispatch(customOrder(v?.digit));
+              }}
+            >
               {language.value == "ENG"
                 ? v.title[0]
                 : language.value == "UZB"
@@ -38,6 +44,6 @@ const Categories = ({ classTitle }) => {
       </List>
     </Container>
   );
-};
+});
 
 export default Categories;

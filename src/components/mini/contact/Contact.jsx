@@ -13,7 +13,7 @@ import {contactConstants} from "../../../constants/componentsContants/contact/co
 import { IoClose } from "react-icons/io5";
 import { toggleContact } from "../../../redux/contact";
 
-const Contact = ({ classHeadline }) => {
+const Contact = React.memo(({ classHeadline }) => {
   const dispatch = useDispatch();
   const l = useSelector((store) => store.language.value);
   return (
@@ -45,6 +45,6 @@ const Contact = ({ classHeadline }) => {
       </Container>
     </>
   );
-};
+});
 
 export default Contact;

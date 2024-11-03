@@ -3,7 +3,7 @@ import { Container } from "./style";
 import { Subtitle } from "../style";
 import { useSelector } from "react-redux";
 
-const HalfScreenCard = ({ item }) => {
+const HalfScreenCard = React.memo(({ item }) => {
   const { value } = useSelector((store) => store.language);
   return (
     <>
@@ -16,6 +16,6 @@ const HalfScreenCard = ({ item }) => {
       ))}
     </>
   );
-};
+});
 
 export default HalfScreenCard;

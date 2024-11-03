@@ -87,7 +87,7 @@ export const pokerSliderKids = [
   {
     player: "kidssport",
     btn: ["Sport Clothes", "Sport Kiyimlar", "Спортивная одежда"],
-    t: casualkids,
+    t: kidscasual,
     l: cardfrank,
   },
 ];

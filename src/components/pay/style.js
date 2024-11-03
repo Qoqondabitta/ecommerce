@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Container = styled.div`
-  width: 300px;
+  width: 350px;
   padding: 10px;
   margin: 0 auto;
   border: 1px solid black;
@@ -24,6 +24,7 @@ export const Container = styled.div`
   padding-top: 50px;
 
   @media only screen and (max-width: 600px){
+    width: 300px;
     height: 320px;
     padding-top: 25px;
   }
@@ -64,7 +65,7 @@ export const Input = styled.input`
 `;
 
 export const Label = styled.label`
-  font-size: 14px;
+  font-size: 12px;
 `;
 
 export const InputBox = styled.div`

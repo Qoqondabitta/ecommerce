@@ -8,7 +8,7 @@ import {
   rusmonths,
 } from "../../../constants/account/months";
 
-const OrderCard = ({ info }) => {
+const OrderCard = React.memo(({ info }) => {
   const l = useSelector((store) => store.language.value);
   const time = new Date();
   const day = time.getDate();
@@ -57,6 +57,6 @@ const OrderCard = ({ info }) => {
       </Right>
     </Container>
   );
-};
+});
 
 export default OrderCard;

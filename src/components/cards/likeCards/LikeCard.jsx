@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { BsFillSuitHeartFill as RedHeart } from "react-icons/bs";
 
-const LikeCard = ({ list }) => {
+const LikeCard = React.memo(({ list }) => {
   const [show, setShow] = useState(true);
   const dispatch = useDispatch();
   const { value } = useSelector((store) => store.language);
@@ -54,6 +54,6 @@ const LikeCard = ({ list }) => {
       </Container>
     </>
   );
-};
+});
 
 export default LikeCard;
