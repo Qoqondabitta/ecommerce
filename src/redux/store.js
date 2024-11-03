@@ -14,6 +14,7 @@ import purchase from "./purchase";
 import size from "./size";
 import paint from "./paint";
 import contactSlice from "./contact";
+import countrySlice from "./country";
 
 export const store = configureStore({
   reducer: {
@@ -31,7 +32,8 @@ export const store = configureStore({
     purchase,
     size,
     paint,
-    contactSlice
+    contactSlice,
+    countrySlice,
   },
 });
 // console.log(store.language);

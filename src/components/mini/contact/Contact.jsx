@@ -10,7 +10,6 @@ import {
   List,
 } from "./style";
 import {contactConstants} from "../../../constants/componentsContants/contact/contactData.jsx"
-// import { contactConstants } from "../../../constants/componentsContants/contact/contactData";
 import { IoClose } from "react-icons/io5";
 import { toggleContact } from "../../../redux/contact";
 

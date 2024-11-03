@@ -12,7 +12,6 @@ import {
 } from "./style";
 import {
   companyFooter,
-  countryFooter,
   detailsFooter,
   helpFooter,
   serviceFooter,
@@ -27,6 +26,7 @@ import { changeProperty } from "../../redux/properties";
 const Footer = () => {
   const { value } = useSelector((store) => store.language);
   const c = useSelector((store) => store.contactSlice.value);
+  const co = useSelector((store) => store.countrySlice.value);
   const dispatch = useDispatch();
   return (
     <Main>
@@ -158,22 +158,7 @@ const Footer = () => {
               </NavLink>
             ))}
           </Parts>
-          <Parts className="columnStart">
-            {countryFooter.map((v, id) => (
-              <Item
-                underline={v.underline}
-                key={id}
-                heights="true"
-                color={v.color}
-              >
-                {value == "ENG"
-                  ? v.text[0]
-                  : value == "UZB"
-                  ? v.text[1]
-                  : v.text[2]}
-              </Item>
-            ))}
-          </Parts>
+          <Parts className="columnStart"></Parts>
         </FooterRows>
         <XON>{value == "RUS" ? "XOH БРЕНД" : "XON BRAND"}</XON>
       </Container>
