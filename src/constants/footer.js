@@ -182,6 +182,7 @@ export const serviceFooter = [
     color: "white",
     text: ["Discover our services", "Bizning Xizmatlar", "Hаши Услуги"],
     underline: "underline",
+    urlToPage: "/service"
   },
 ];
 

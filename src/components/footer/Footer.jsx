@@ -37,10 +37,10 @@ const Footer = () => {
               <NavLink
                 to={v?.urlToPage}
                 onClick={() => dispatch(changeProperty(v?.propertyDefiner))}
+                key={id}
                 style={{ textDecoration: "none" }}
               >
                 <Item
-                  key={id}
                   botmar={v.botMar}
                   underline={v.underline}
                   capital={v.capital}
@@ -64,13 +64,15 @@ const Footer = () => {
           <List flex="1">
             {/* © 2021 - Tod */}
             {companyFooter.map((v, id) => (
-              <NavLink to={v?.urlToPage} style={{ textDecoration: "none" }}>
+              <NavLink
+                key={id}
+                to={v?.urlToPage}
+                style={{ textDecoration: "none" }}
+              >
                 <Item
-                  key={id}
                   botmar={v.botMar}
                   underline={v.underline}
                   capital={v.capital}
-                  // capital
                   color={v.color}
                   heights="20px"
                   fontSize={v?.size}
@@ -141,18 +143,19 @@ const Footer = () => {
           {/* {serviceFooter.map(v => <Parts>{serviceFooter.map(v=><Item>v.</Item>) }</Parts>)} */}
           <Parts className="columnStart">
             {serviceFooter.map((v, id) => (
-              <Item
+              <NavLink
                 key={id}
-                underline={v.underline}
-                heights="true"
-                color={v.color}
+                to={v?.urlToPage}
+                style={{ textDecoration: "none" }}
               >
-                {value == "ENG"
-                  ? v.text[0]
-                  : value == "UZB"
-                  ? v.text[1]
-                  : v.text[2]}
-              </Item>
+                <Item underline={v.underline} heights="true" color={v.color}>
+                  {value == "ENG"
+                    ? v.text[0]
+                    : value == "UZB"
+                    ? v.text[1]
+                    : v.text[2]}
+                </Item>
+              </NavLink>
             ))}
           </Parts>
           <Parts className="columnStart">

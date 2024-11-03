@@ -18,6 +18,7 @@ import Careers from "../components/careers/Careers";
 import Legal from "../components/legal/Legal";
 import Privacy from "../components/privacy/Privacy";
 import Corporate from "../components/corporate/Corporate";
+import Services from "../components/xonservices/Service";
 
 const Root = () => {
   return (
@@ -40,6 +41,7 @@ const Root = () => {
         <Route path="/legal" element={<Legal />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/corporate" element={<Corporate />} />
+        <Route path="/service" element={<Services />} />
         <Route path="/signup" element={<Singup />} />
         <Route path="*" element={<h1>404 Page Not Found</h1>} />
       </Routes>
