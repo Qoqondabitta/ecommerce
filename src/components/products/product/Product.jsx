@@ -36,9 +36,8 @@ const Product = React.memo(({ list }) => {
             <Img
               src={v.bg}
               small={v?.small}
-              alt={
-                value == "ENG" ? v?.f[0] : value == "UZB" ? v?.f[1] : v?.f[2]
-              }
+              loading="lazy"
+              alt="XON Online Store"
             />
           </ImgWrapper>
           <Details>

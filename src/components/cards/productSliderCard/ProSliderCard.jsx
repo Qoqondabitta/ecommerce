@@ -35,7 +35,7 @@ const ProSliderCard = React.memo(
           style={{ textDecoration: "none" }}
           to="/collection"
         >
-          <Image src={img} alt={title} />
+          <Image src={img} loading="lazy" alt="XON Online Store" />
         </NavLink>
         <Price>{price}</Price>
         {show ? (

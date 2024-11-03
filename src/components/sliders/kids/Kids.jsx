@@ -19,8 +19,14 @@ const Kids = () => {
               {/* {v.black && <Black></Black>} */}
               {v.photos &&
                 v.gallery.map((value, i) => (
-                  <Image src={value.source} pos={value.positioning} key={i} />
-                  ))}
+                  <Image
+                    loading="lazy"
+                    alt="XON Online Store"
+                    src={value.source}
+                    pos={value.positioning}
+                    key={i}
+                  />
+                ))}
             </ImgContainer>
           ))}
           {/* <ImgContainer pos="top" bg={kids4}></ImgContainer>

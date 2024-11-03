@@ -1,3 +1,4 @@
+import React from "react";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import "./pay.css";
 import {
@@ -25,7 +26,7 @@ const PaymentForm = React.memo(({ goods }) => {
   const [color, setColor] = useState("geen");
   const [address, setAddress] = useState("");
   const dispatch = useDispatch();
-  const l = useSelector(store=>store.language.value)
+  const l = useSelector((store) => store.language.value);
 
   console.log(goods);
 

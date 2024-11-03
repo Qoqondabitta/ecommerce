@@ -48,7 +48,13 @@ const Account = () => {
       <BlackNav />
       <Hero>
         <ProfilePhoto className="columnCenter">
-          <Image src={main} id="img-file" className="cursor" />
+          <Image
+            src={main}
+            id="img-file"
+            loading="lazy"
+            alt="XON Online Store"
+            className="cursor"
+          />
           <Mask for="bg-file" className="cursor" onClick={showFile}>
             {value == "ENG"
               ? "Update Photo"

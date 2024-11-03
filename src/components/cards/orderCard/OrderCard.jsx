@@ -21,7 +21,11 @@ const OrderCard = React.memo(({ info }) => {
   return (
     <Container className="column-center">
       <Left className="center">
-        <Productimage src={info?.bg || boom} />
+        <Productimage
+          loading="lazy"
+          alt="XON Online Store"
+          src={info?.bg || boom}
+        />
       </Left>
       <Right className="column-center">
         <Texts>

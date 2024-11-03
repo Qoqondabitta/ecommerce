@@ -40,7 +40,7 @@ const TopProSliderCard = React.memo(
           to="/collection"
           style={{ textDecoration: "none" }}
         >
-          <Image src={img} alt={title} />
+          <Image src={img} loading="lazy" alt="XON Online Store" />
         </NavLink>
         <Price>{price}</Price>
         {show ? (

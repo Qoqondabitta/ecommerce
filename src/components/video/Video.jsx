@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Main, Videos, Blur, Content } from "./style";
 import video from "../../assets/images/video.mp4";
 import Title from "../generics/title";

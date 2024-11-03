@@ -23,7 +23,7 @@ const LikeCard = React.memo(({ list }) => {
     <>
       <Container key={list.id}>
         <NavLink to={`/collection/${list.id}`}>
-          <Imgs src={list?.bg} />
+          <Imgs src={list?.bg} loading="lazy" alt="XON Online Store" />
         </NavLink>
         <Data>
           <Desc>

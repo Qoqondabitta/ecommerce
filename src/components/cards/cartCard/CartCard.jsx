@@ -55,7 +55,7 @@ const CartCard = React.memo(({ info }) => {
   return (
     <Container className="center">
       <Left>
-        <Productimage src={info.bg} />
+        <Productimage loading="lazy" alt="XON Online Store" src={info.bg} />
         <Button onClick={() => setShow(!show)} buy="true">
           {l == "ENG" ? "Buy" : l == "UZB" ? "Olmoq" : "Купить"}
         </Button>

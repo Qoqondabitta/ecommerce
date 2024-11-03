@@ -25,11 +25,17 @@ const About = () => {
         <AboutTitle>
           {l == "ENG" ? "About Xon" : l == "UZB" ? "Xon Haqida" : "Про XOH"}
         </AboutTitle>
-        <AboutBanner src={xonofficialbackground} />
+        <AboutBanner
+          loading="lazy"
+          alt="XON Online Store"
+          src={xonofficialbackground}
+        />
         {about.map((v, i) => {
-          return <AboutText key={i}>
-            {l == "ENG" ? v.t[0] : l == "UZB" ? v.t[1] : v.t[2]}
-          </AboutText>;
+          return (
+            <AboutText key={i}>
+              {l == "ENG" ? v.t[0] : l == "UZB" ? v.t[1] : v.t[2]}
+            </AboutText>
+          );
         })}
         <AboutHelp>
           {l == "ENG"

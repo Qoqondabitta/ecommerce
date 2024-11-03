@@ -54,8 +54,11 @@ const BotProSliderCard = React.memo(({
   const removeLike = () => {};
   return (
     <Container key={id} className={move ? "move" : ""}>
-      <NavLink to={`/collection`} onClick={()=>dispatch(changeCollection(col))}>
-        <Image src={img} alt={title} />
+      <NavLink
+        to={`/collection`}
+        onClick={() => dispatch(changeCollection(col))}
+      >
+        <Image loading="lazy" alt="XON Online Store" src={img} />
       </NavLink>
       <Price>{price}</Price>
       {show ? (
