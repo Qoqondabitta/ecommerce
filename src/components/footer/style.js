@@ -50,7 +50,7 @@ export const FooterRows = styled.div`
 
 export const Parts = styled.div`
   flex: 1;
-  gap: 25px;
+  gap: 15px;
   font-weight: bold;
 
   @media only screen and (max-width: 600px) {
@@ -80,7 +80,7 @@ export const Item = styled.li`
   gap: ${({ gap }) => gap};
   width: ${({ widths }) => widths && "100%"};
   font-weight: ${({ capital }) => (capital == "uppercase" ? "600" : "normal")};
-  font-size: ${({ fontSize }) => (fontSize ? fontSize : "14px")};
+  font-size: ${({ fontSize }) => (fontSize ? fontSize : "12px")};
   color: ${({ color }) => color};
   cursor: pointer;
   text-transform: ${({ capital }) =>

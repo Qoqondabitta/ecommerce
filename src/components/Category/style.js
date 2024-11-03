@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const Container = styled.div`
-  z-index: 9000000000000;
+  z-index: 900000000000000000000000000000000000000000;
   width: 480px;
   display: flex;
   flex-direction: column;

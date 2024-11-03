@@ -13,7 +13,7 @@ const getType = ({ type }) => {
         fontSize: "14px",
         padding: "15px 20px",
         width: "270px",
-        zIndex: "999999999999999999",
+        zIndex: "99",
         background: "#ffffff1a",
         backdropFilter: "blur(16px) saturate(120%)",
       };

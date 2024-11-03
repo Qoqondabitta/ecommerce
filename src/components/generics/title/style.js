@@ -56,7 +56,8 @@ const getType = ({ type }) => {
         // color: "white",
         letterSpacing: "-0.5rem",
         fontFamily: '"DM Serif Display", serif',
-        zIndex: "900"
+        zIndex: "900",
+        order: "1", 
       };
     case "soonTitle":
       return {
@@ -190,7 +191,7 @@ export const Titles = styled.p`
         : type == "videoTitle"
         ? "12px"
         : type == "sneakersTitle"
-        ? "20px"
+        ? "32px"
         : ""};
     width: ${({ type }) => type == "videoText" && "fit-content"};
     /* height: ${({ type }) => type == "videoText" && "60px"}; */

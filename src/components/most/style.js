@@ -27,6 +27,7 @@ export const Container = styled.div`
 export const Back = styled.div`
   flex: 1;
   height: 100%;
+  /* width: 50%; */
   padding-bottom: 30px;
   position: relative;
   cursor: pointer;

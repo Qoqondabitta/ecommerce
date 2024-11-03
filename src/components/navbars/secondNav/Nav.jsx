@@ -66,7 +66,6 @@ const Nav = () => {
             size="1.6em"
             className="navIcons"
           />
-
           <NavLink to="/account">
             <FaRegHeart color="white" size="1.5em" className="navIcons" />
           </NavLink>

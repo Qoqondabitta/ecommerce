@@ -45,6 +45,10 @@ export const FirstCol = styled.div`
   align-items: flex-start;
   justify-content: center;
   padding: 10px 0px 0px 0px;
+
+  @media only screen and (max-width: 600px){
+    width: 80%;
+  }
 `;
 
 export const SecondCol = styled.div`

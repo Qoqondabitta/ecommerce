@@ -53,7 +53,7 @@ export const AlertBox = styled.div`
 
 export const Input = styled.input`
   width: 100%;
-  height: 30px;
+  height: 40px;
   border: 1px solid grey;
   border-radius: 5px;
   padding: 5px 10px;
@@ -61,6 +61,10 @@ export const Input = styled.input`
 
   &::placeholder {
     color: transparent;
+  }
+
+  @media only screen and (max-width: 600px){
+    height: 35px;
   }
 `;
 

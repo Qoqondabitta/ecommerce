@@ -8,6 +8,7 @@ import { TextWrapper, Text, Info } from "../../mini/pokerTextSlider/style.js";
 import { NavLink } from "react-router-dom";
 import { changeCollection } from "../../../redux/collection";
 import { pokerSliderKids, pokerSliderPerfume, pokerSliderWomen } from "../../../constants/slideConstants/pokerSliderElements";
+import "./more.css"
 
 const TripleSlider = () => {
   const o = useSelector(store=>store.order.value)
@@ -15,8 +16,15 @@ const TripleSlider = () => {
   const { value } = useSelector((store) => store.language);
   return (
     <Main className="center">
-      <Wrapper className="center">
-        {(o==0?pokerSliderWomen:o==2?pokerSliderKids:o==3?pokerSliderPerfume:tripleSliderElements).map((v, i) => (
+      <Wrapper className="center triple-scroll">
+        {(o == 0
+          ? pokerSliderWomen
+          : o == 2
+          ? pokerSliderKids
+          : o == 3
+          ? pokerSliderPerfume
+          : tripleSliderElements
+        ).map((v, i) => (
           <Container key={i} className="center">
             <Content id="content" className={v.player}>
               <TextWrapper>
@@ -32,7 +40,11 @@ const TripleSlider = () => {
                   ))}
                 </Text>
               </TextWrapper>
-              <NavLink to="/collection" style={{textDecoration: "none"}} onClick={()=>dispatch(changeCollection(v.l))}>
+              <NavLink
+                to="/collection"
+                style={{ textDecoration: "none" }}
+                onClick={() => dispatch(changeCollection(v.l))}
+              >
                 <Button type="gucci">
                   {value == "ENG"
                     ? v.btn[0]

@@ -2,7 +2,7 @@ import back from "../../assets/images/bottomCard/bottom11png.webp";
 import back1 from "../../assets/images/topCard/left.jpg";
 import { cardfrank, collectioncardsport } from "./collection/collectionsport";
 // import { cardfrank } from "./collection/collectionsuit";
-import mostperfumeleft from "../../assets/images/backgrounds/mostperfumeright.jpg";
+import mostperfumeleft from "../../assets/images/backgrounds/mostperfumeleft.jpg";
 import mostperfumeright from "../../assets/images/backgrounds/mostperfumeright.png";
 import mostwomanright from "../../assets/images/backgrounds/mostwomenright.jpeg";
 import mostwomanleft from "../../assets/images/backgrounds/mostwomenleft.jpg";
@@ -40,7 +40,7 @@ export const mostconstants = [
 export const mostperfume = [
   {
     p: "alignEnd",
-    b: { source: mostperfumeleft, placement: "center -340px" },
+    b: { source: mostperfumeleft, placement: "center" },
     ty: "grey",
     sp: "columnAlignEnd",
     te: {
@@ -48,7 +48,7 @@ export const mostperfume = [
       t: "gucci",
     },
     btn: [
-      "Explore Fragrance Collection",
+      "Explore Fragrance",
       "Dezodarantlar To'plami",
       "Смотреть коллекцию",
     ],

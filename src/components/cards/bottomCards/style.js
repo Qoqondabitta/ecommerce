@@ -52,7 +52,7 @@ export const Title = styled(Container)`
 export const H1 = styled.h1`
   font-size: 20px;
   font-weight: 400;
-  width: 100%;
+  width: 90%;
   overflow: hidden;
   white-space: nowrap;
   height: 24px;

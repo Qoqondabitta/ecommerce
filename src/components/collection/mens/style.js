@@ -20,7 +20,7 @@ export const Container = styled.div`
 
   @media only screen and (max-width: 600px) {
     width: 100%;
-    height: 230px;
+    height: 400px;
     padding: 0px 30px;
     gap: 5px;
     text-align: center;

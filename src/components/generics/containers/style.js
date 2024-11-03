@@ -20,7 +20,7 @@ const getBoxStyle = ({ type }) => {
       return {
         gap: "10px",
         height: "fit-content",
-        zIndex: "100000000000",
+        zIndex: "1000",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",

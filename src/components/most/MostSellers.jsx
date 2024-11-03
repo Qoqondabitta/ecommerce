@@ -1,5 +1,5 @@
 import React from "react";
-import { Back, Container, Main, Content, Darkening } from "./style";
+import { Back, Container, Main } from "./style";
 import Button from "..//generics/button/Button";
 import Title from "../generics/title";
 import { Bunker } from "../generics";

@@ -16,12 +16,11 @@ export const Container = styled.div`
   width: 100%;
   margin: 0 auto;
   @media only screen and (max-width: 600px) {
-    padding: 20px 10px 0px 10px;
-    height: 40px;
-    margin-top: 5px;
+    padding: 0px 10px 0px 10px;
+    flex-wrap: wrap;
   }
   @media only screen and (max-width: 400px) {
-    padding: 20px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
   }
 `;
 
@@ -36,19 +35,23 @@ export const List = styled.ul`
   margin-bottom: 45px;
 
   @media only screen and (max-width: 1000px) {
-    display: none;
+    order: 3;
+    width: 100%;
   }
 `;
 
 export const Item = styled.li`
-  color: ${({color})=>color?"black":"white"};
+  color: ${({ color }) => (color ? "black" : "white")};
   font-size: 18px;
-  /* font-weight: 600; */
   background: #ffffff1a;
   padding: 2px 4px;
   border-radius: 5px;
   backdrop-filter: blur(10px) saturate(120%);
   font-family: "DM Serif Display", serif;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 14px;
+  }
 `;
 
 export const Link = styled.a`
@@ -135,5 +138,6 @@ export const MediaLook = styled.div`
 
   @media only screen and (max-width: 600px) {
     display: flex;
+    order: 2;
   }
 `;

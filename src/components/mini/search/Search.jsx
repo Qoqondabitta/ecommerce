@@ -64,7 +64,10 @@ const Search = React.memo(({ st }) => {
                 <NavLink
                   key={ind}
                   style={{ textDecoration: "none", color: "black" }}
-                  onClick={() => dispatch(changeCollection(val?.d))}
+                  onClick={() => {
+                    dispatch(changeCollection(val?.d));
+                    dispatch(toggleSearch());
+                  }}
                   to="/collection"
                 >
                   <Item>
@@ -89,6 +92,7 @@ const Search = React.memo(({ st }) => {
             <NavLink
               style={{ textDecoration: "none", color: "black" }}
               key={i}
+              onClick={() => dispatch(toggleSearch())}
               to={v?.page}
             >
               <Item onClick={() => dispatch(changeCollection(v?.l))}>
