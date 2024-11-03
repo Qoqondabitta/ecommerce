@@ -51,7 +51,7 @@ const About = () => {
             ? "XON olami haqida bilishingiz kerak bo'lgan hamma narsani mijoz maslahatchisi bilan bilib oling."
             : "Узнайте все, что вам нужно знать о вселенной XOH, у консультанта по работе с клиентами."}
         </AboutFind>
-        <NavLink to="./about" className="about-link">
+        <NavLink to="/service" className="about-link">
           {l == "ENG"
             ? "Contact XON Client Services"
             : l == "UZB"

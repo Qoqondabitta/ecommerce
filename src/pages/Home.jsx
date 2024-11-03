@@ -1,30 +1,14 @@
 import React from "react";
-import Add from "../components/Announcement/Add";
-import Slider from "../components/sliders/slider/Slider";
-import Nav from "../components/navbars/secondNav/Nav";
-import Video from "../components/video/Video";
-import DoubleSlider from "../components/sliders/doubleSlider/Double";
 import ProductSlider from "../components/sliders/productSlider/productSlider";
-import ClothTab from "../components/tabs/ClothTab";
 import TopProductSlider from "../components/sliders/topProductSlider/topProductSlider";
 import BotProductSlider from "../components/sliders//botProductSlider/botProductSlider";
 import { useSelector } from "react-redux";
-import Diogonal from "../components/diogonal/Diogonal";
-import Soon from "../components/soon/Soon";
 import Footer from "../components/footer/Footer";
 import ScrollWatcher from "../components/scrollWatcher/ScrollWatcher";
-import TripleSlider from "../components/sliders/trippleSlider/tripleSlider";
-import BigSlider from "../components/sliders/bigSlider/BigSlider";
 import TextSlider from "../components/mini/textSlider/TextSlider";
-import PokerTextSlider from "../components/mini/pokerTextSlider/PokerTextSlider";
-import TripleHeadings from "../components/mini/tripleHeadings/TripleHeadings";
 import GucciLido from "../components/mini/gucciLido/GucciLido";
-import MostSellers from "../components/most/MostSellers";
-import Genders from "../components/genders/Genders";
-import Sneakers from "../components/sneakers/Sneakers";
 import FootNav from "../components/footNav/FootNav";
-import Singin from "../components/accounts/signin/Singin";
-import Account from "../components/accounts/account/Account";
+import { homeComponents } from "../constants/home";
 
 const Home = () => {
   const { value } = useSelector((store) => store.title);
@@ -34,21 +18,14 @@ const Home = () => {
       <ScrollWatcher />
       {turn.value != 3 && <GucciLido />}
       {turn.value != 3 && <TextSlider />}
-      <Add />
-      <Nav />
-      <BigSlider />
-      <Genders />
-      <MostSellers />
-      <TripleSlider />
-      <Sneakers />
-      <ClothTab />
+      {homeComponents.map((v, i) => v.element)}
       {value == "SHOE" ? (
         <ProductSlider />
       ) : value == "TOP" ? (
         <TopProductSlider />
-      ) : (
-        <BotProductSlider />
-      )}
+        ) : (
+          <BotProductSlider />
+          )}
       <Footer />
       <FootNav />
     </div>
@@ -56,3 +33,20 @@ const Home = () => {
 };
 
 export default Home;
+
+// import Add from "../components/Announcement/Add";
+// import Nav from "../components/navbars/secondNav/Nav";
+// import BigSlider from "../components/sliders/bigSlider/BigSlider";
+// import Genders from "../components/genders/Genders";
+// import MostSellers from "../components/most/MostSellers";
+// import TripleSlider from "../components/sliders/trippleSlider/tripleSlider";
+// import Sneakers from "../components/sneakers/Sneakers";
+// import ClothTab from "../components/tabs/ClothTab";
+  {/* <Add />
+  <Nav />
+  <BigSlider />
+  <Genders />
+  <MostSellers />
+  <TripleSlider />
+  <Sneakers />
+  <ClothTab /> */}

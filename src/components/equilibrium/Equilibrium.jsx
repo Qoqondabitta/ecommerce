@@ -1,9 +1,9 @@
 import React from "react";
 import { Main } from "../sitemap/style";
-import Nav from "../navbars/blackNavbar/Nav";
-import Footer from "../footer/Footer";
 import { Container, EqualText, EqualTitle } from "./style";
 import { useSelector } from "react-redux";
+import Nav from "../navbars/blackNavbar/Nav";
+import Footer from "../footer/Footer";
 
 const Equilibrium = () => {
   const l = useSelector((state) => state.language.value);

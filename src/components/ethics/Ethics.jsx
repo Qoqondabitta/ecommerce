@@ -1,17 +1,17 @@
 import React from "react";
 import { Main } from "../sitemap/style";
-import Nav from "../navbars/blackNavbar/Nav";
 import {
-    Box,
+  Box,
   Container,
   EthicFirstTitle,
   EthicSecondTitle,
   EthicText,
   EthicThirdTitle,
 } from "./style";
-import Footer from "../footer/Footer";
 import { useSelector } from "react-redux";
 import { ethictexts } from "../../constants/componentsContants/ethic";
+import Nav from "../navbars/blackNavbar/Nav";
+import Footer from "../footer/Footer";
 
 const Ethics = () => {
   const l = useSelector((state) => state.language.value);
