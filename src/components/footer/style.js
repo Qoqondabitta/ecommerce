@@ -124,7 +124,7 @@ export const XON = styled.h1`
   text-align: center;
   color: white;
   letter-spacing: 20px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "DM Serif Display", Times, serif;
 
   @media only screen and (max-width: 600px) {
     font-size: 64px;
@@ -134,20 +134,20 @@ export const XON = styled.h1`
   }
   @media only screen and (max-width: 420px) {
     font-size: 50px;
-    line-height: 35px;
+    line-height: 55px;
     margin-top: 50px;
     letter-spacing: -0.5px;
   }
   @media only screen and (max-width: 400px) {
     font-size: 45px;
-    line-height: 40px;
+    line-height: 50px;
     word-spacing: 0.1rem;
     letter-spacing: 0.05rem;
     margin-top: 50px;
   }
   @media only screen and (max-width: 350px) {
     font-size: 40px;
-    line-height: 30px;
+    line-height: 45px;
     margin-top: 50px;
     letter-spacing: -0.5px;
   }
