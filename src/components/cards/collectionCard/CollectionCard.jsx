@@ -33,7 +33,7 @@ const CollectionCard = React.memo(({ list }) => {
     <>
       <Container>
         <NavLink to={`/collection/${id}`}>
-          <Imgs loading="lazy" alt="XON Online Store" src={bg} />
+            <Imgs loading="lazy" alt="XON Online Store" src={bg} />
         </NavLink>
         <Data>
           <Desc>
