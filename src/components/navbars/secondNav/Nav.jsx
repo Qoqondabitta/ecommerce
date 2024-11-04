@@ -34,7 +34,7 @@ const Nav = () => {
     <Main className="columnCenter">
       <Container>
         <NavLink to="/home" style={{ textDecoration: "none", zIndex: "1001" }}>
-          <Title color="white" id="mainTitle" type="xonTitle">
+          <Title color="white" type="xonTitle">
             {language.value == "RUS" ? "ХОН" : "XON"}
           </Title>
         </NavLink>
@@ -86,8 +86,8 @@ const Nav = () => {
           />
         </Shop>
         <MediaLook onClick={() => dispatch(toggleSearch())}>
-          <Input type="search" placeholder="Search Anything" />
-          <CiSearch color="black" />
+          <Input styl={{backgroundColor: "transparent", color: "white"}} type="search" placeholder="Search " />
+          <CiSearch color="white" />
         </MediaLook>
       </Container>
       {search.value && <Search />}

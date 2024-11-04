@@ -122,7 +122,10 @@ const Search = React.memo(({ st }) => {
           {searchDropMedia.map((v, i) => (
             <NavLink
               to="/collection"
-              onClick={() => dispatch(changeCollection(v?.d))}
+              onClick={() => {
+                dispatch(changeCollection(v?.d));
+                dispatch(toggleSearch());
+              }}
               style={{ textDecoration: "none", color: "black" }}
               key={i}
             >

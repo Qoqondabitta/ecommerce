@@ -132,16 +132,21 @@ export const XON = styled.h1`
     margin-top: 50px;
     letter-spacing: -0.5px;
   }
-
   @media only screen and (max-width: 420px) {
-    font-size: 55px;
+    font-size: 50px;
     line-height: 35px;
     margin-top: 50px;
     letter-spacing: -0.5px;
   }
-
-  @media only screen and (max-width: 350px) {
+  @media only screen and (max-width: 400px) {
     font-size: 45px;
+    line-height: 40px;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
+    margin-top: 50px;
+  }
+  @media only screen and (max-width: 350px) {
+    font-size: 40px;
     line-height: 30px;
     margin-top: 50px;
     letter-spacing: -0.5px;

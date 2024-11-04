@@ -1,16 +1,18 @@
-.crown{
-    position: relative;
-    top: 7px;
+.crown {
+  position: relative;
+  top: 7px;
 }
 
-.videoTitles{
-    position: relative;
-    top: 60px;
-    background-color: red;
+.videoTitles {
+  position: relative;
+  top: 60px;
+  background-color: red;
 }
 
-@media only screen and (max-width: 600px){
-    #sneakers-button-wrapper{
-        align-items: flex-start;
-    }
+#sneakers-button-wrapper {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
 }

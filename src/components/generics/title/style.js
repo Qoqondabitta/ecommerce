@@ -106,9 +106,9 @@ const getType = ({ type }) => {
       };
     default:
       return {
-        background: "blue",
-        color: "#fff",
-        borderRadius: "12px",
+        // background: "blue",
+        // color: "#fff",
+        // borderRadius: "12px",
       };
   }
 };
@@ -126,7 +126,7 @@ export const Titles = styled.p`
 
   @media only screen and (max-width: 1025px) {
     display: ${({ media }) => media && "none"};
-    color: ${({color})=>color};
+    color: ${({ color }) => color};
     line-height: ${({ type }) =>
       type == "xonTitle" ? "90px" : type == "videoTitle" ? "39px" : ""};
     letter-spacing: ${({ type }) =>
@@ -144,7 +144,7 @@ export const Titles = styled.p`
         : type == "videoTitle"
         ? "46px"
         : "18px"};
-        width: ${({type})=>type=="videoText"&&"70%"};
+    width: ${({ type }) => type == "videoText" && "70%"};
   }
   @media only screen and (max-width: 1000px) {
     display: ${({ media }) => media && "none"};
@@ -164,7 +164,7 @@ export const Titles = styled.p`
         ? "14px"
         : type == "videoTitle"
         ? "33px"
-            : "18px"};
+        : "18px"};
   }
   @media only screen and (max-width: 600px) {
     font-size: ${({ type }) =>
@@ -187,11 +187,41 @@ export const Titles = styled.p`
     word-spacing: ${({ type }) => type == "videoTitle" && "0rem"};
     line-height: ${({ type }) =>
       type == "xonTitle"
-        ? "80px"
+        ? "70px"
         : type == "videoTitle"
         ? "12px"
         : type == "sneakersTitle"
         ? "32px"
+        : ""};
+    width: ${({ type }) => type == "videoText" && "fit-content"};
+    /* height: ${({ type }) => type == "videoText" && "60px"}; */
+  }
+  @media only screen and (max-width: 400px) {
+    font-size: ${({ type }) =>
+      type == "xonTitle"
+        ? "60px"
+        : type == "gucci" || type == "sneakersTitle"
+        ? "26px"
+        : type == "videoText"
+        ? "12px"
+        : type == "videoTitle"
+        ? "20px"
+        : "18px"};
+    font-weight: ${({ type }) => type == "xonTitle" && "20px"};
+    letter-spacing: ${({ type }) =>
+      type == "xonTitle"
+        ? "-0.34rem"
+        : type == "videoTitle"
+        ? "-0.1rem"
+        : "0rem"};
+    word-spacing: ${({ type }) => type == "videoTitle" && "0rem"};
+    line-height: ${({ type }) =>
+      type == "xonTitle"
+        ? "60px"
+        : type == "videoTitle"
+        ? "12px"
+        : type == "sneakersTitle"
+        ? "28px"
         : ""};
     width: ${({ type }) => type == "videoText" && "fit-content"};
     /* height: ${({ type }) => type == "videoText" && "60px"}; */

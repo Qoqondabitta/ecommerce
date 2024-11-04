@@ -16,11 +16,11 @@ export const Container = styled.div`
   width: 100%;
   margin: 0 auto;
   @media only screen and (max-width: 600px) {
-    padding: 0px 10px 0px 10px;
+    padding: 10px 10px 0px 10px;
     flex-wrap: wrap;
   }
   @media only screen and (max-width: 400px) {
-    padding: 0px 10px 0px 10px;
+    align-items: flex-start;
   }
 `;
 
@@ -37,6 +37,7 @@ export const List = styled.ul`
   @media only screen and (max-width: 1000px) {
     order: 3;
     width: 100%;
+    margin-bottom: 30px;
   }
 `;
 
@@ -56,7 +57,6 @@ export const Item = styled.li`
 
 export const Link = styled.a`
   text-decoration: none;
-  /* font-weight: bold; */
   font-family: "DM Serif Display", serif;
   letter-spacing: 0.1rem;
 `;
@@ -130,14 +130,15 @@ export const MediaLook = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: white;
+  background: transparent;
+  border: 1px solid white;
   padding: 7px 10px;
   border-radius: 7px;
   display: none;
-  margin-bottom: 12px;
 
   @media only screen and (max-width: 600px) {
     display: flex;
     order: 2;
+    margin-top: 5px;
   }
 `;

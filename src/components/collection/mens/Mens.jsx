@@ -186,9 +186,14 @@ const Mens = () => {
           ? kidscollection
           : allperfumecollection
         ).map((v, i) => (
-          <Title type={v.ty} key={i} color={v?.color}>
+          <h1
+            // type={v?.ty}
+            id={v?.it}
+            key={i}
+            color={v?.color}
+          >
             {value == "ENG" ? v.c[0] : value == "UZB" ? v.c[1] : v.c[2]}
-          </Title>
+          </h1>
         ))}
       </Container>
       <Wrapper className="columnCenter">

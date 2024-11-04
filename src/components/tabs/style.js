@@ -6,6 +6,10 @@ export const Main = styled.div`
 
 export const Container = styled.div`
   padding: 50px 50px 0px 50px;
+
+  @media only screen and (max-width: 600px){
+    padding: 50px 20px 0px 20px;
+  }
 `;
 
 export const List = styled.ul`

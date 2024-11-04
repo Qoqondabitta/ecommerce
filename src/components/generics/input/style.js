@@ -8,15 +8,15 @@ const getType = ({ type }) => {
         border: "none",
         outline: "none",
         // width: "50%",
-        background: "white",
-        color: "black",
+        background: "transparent",
+        color: "white",
         borderRadius: "5px",
       };
     case "mainSearch":
       return {
         width: "90%",
         background: "transparent",
-        border:"none",
+        border: "none",
         borderBottom: "1px solid grey",
         padding: "5px 0px",
         fontSize: "16px",
@@ -38,6 +38,6 @@ export const Inputs = styled.input`
   ${getType};
 
   &::placeholder {
-    color: black;
+    color: ${({ type }) => (type == "search" ? `white` : "120px")};
   }
 `;

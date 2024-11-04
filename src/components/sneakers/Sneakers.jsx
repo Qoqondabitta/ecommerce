@@ -35,9 +35,9 @@ const Sneakers = () => {
               {value == "ENG" ? v.m[0] : value == "RUS" ? v.m[2] : v.m[1]}
             </Title>
           ))}
-          <Bunker
-            id="#sneakers-button-wrapper"
-            type="sneakersBtn"
+          <div
+            id="sneakers-button-wrapper"
+            // type="sneakersBtn"
             className="justifyStart"
           >
             {sneakersBtnconstants.map(({ m }, i) => (
@@ -56,7 +56,7 @@ const Sneakers = () => {
                 </Button>
               </NavLink>
             ))}
-          </Bunker>
+          </div>
         </Content>
       </Container>
     </Main>

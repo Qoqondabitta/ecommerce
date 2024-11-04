@@ -1,10 +1,10 @@
-.category-item{
-    background-color: white;
+.category-item {
+  background-color: white;
 }
 
-.category-active-item{
-    background-color: black;
-    color: white;
+.category-active-item {
+  background-color: black;
+  color: white;
 }
 
 .category-menu::-webkit-scrollbar {
@@ -12,7 +12,38 @@
   height: 5px;
 }
 
-.warning-closer{
+.warning-closer {
   position: relative;
   top: 6px;
+}
+
+#video-text-for-mens-collection {
+  font-size: 16px;
+  width: fit-content;
+  color: white;
+  font-weight: 400;
+}
+
+#soon-title-for-mens-collection {
+  font-size: 33px;
+  line-height: 30px;
+  font-family: "DM Serif Display", serif;
+  width: fit-content;
+  width: 100%;
+  color: white;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.1rem;
+  text-align: center;
+  z-index: 200;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 600px) {
+  #video-text-for-mens-collection {
+    display: none;
+  }
+  #soon-title-for-mens-collection {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

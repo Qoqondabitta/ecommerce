@@ -54,7 +54,7 @@ import onehalf1 from "../../../assets/images/collection/men/threcollectioncardon
 
 export const menscollection = [
   {
-    ty: "soonTitle",
+    it: "soon-title-for-mens-collection",
     c: [
       "MEN’S FALL WINTER 2024 COLLECTION",
       "2024 Kuzga Erkaklarning To'plami ",
@@ -62,7 +62,7 @@ export const menscollection = [
     ],
   },
   {
-    ty: "videoText",
+    it: "video-text-for-mens-collection",
     c: [
       "New silhouettes and details redefine men’s ready-to-wear while introducing the Gucci Horsebit creeper loafers.",
       "Yangi siluetlar va detallar XON-ni taqdim etgan holda erkaklarning tayyor kiyimlarini qayta belgilaydi.",
@@ -73,7 +73,7 @@ export const menscollection = [
 ];
 export const womenscollection = [
   {
-    ty: "soonTitle",
+    it: "soon-title-for-mens-collection",
     c: [
       "WOMEN’S FALL WINTER 2024 COLLECTION",
       "2024 Kuzga Ayollarning To'plami ",
@@ -81,7 +81,7 @@ export const womenscollection = [
     ],
   },
   {
-    ty: "videoText",
+    it: "video-text-for-mens-collection",
     c: [
       "New silhouettes and details redefine men’s ready-to-wear while introducing the Gucci Horsebit creeper loafers.",
       "Yangi siluetlar va detallar XON-ni taqdim etgan holda erkaklarning tayyor kiyimlarini qayta belgilaydi.",
@@ -92,7 +92,7 @@ export const womenscollection = [
 ];
 export const allperfumecollection = [
   {
-    ty: "soonTitle",
+    it: "soon-title-for-mens-collection",
     c: [
       "FALL WINTER 2024 Perfumes",
       "2024 Kuzga Atirlar To'plami ",
@@ -100,7 +100,7 @@ export const allperfumecollection = [
     ],
   },
   {
-    ty: "videoText",
+    it: "video-text-for-mens-collection",
     c: [
       "New silhouettes and details redefine men’s ready-to-wear while introducing the Gucci Horsebit creeper loafers.",
       "Yangi siluetlar va detallar XON-ni taqdim etgan holda erkaklarning tayyor kiyimlarini qayta belgilaydi.",
@@ -111,7 +111,7 @@ export const allperfumecollection = [
 ];
 export const kidscollection = [
   {
-    ty: "soonTitle",
+    it: "soon-title-for-mens-collection",
     c: [
       "KIDS FALL WINTER 2024 COLLECTION",
       "2024 Kuzga Bolalarning To'plami",
@@ -119,7 +119,7 @@ export const kidscollection = [
     ],
   },
   {
-    ty: "videoText",
+    it: "video-text-for-mens-collection",
     c: [
       "New silhouettes and details redefine men’s ready-to-wear while introducing the Gucci Horsebit creeper loafers.",
       "Yangi siluetlar va detallar XON-ni taqdim etgan holda erkaklarning tayyor kiyimlarini qayta belgilaydi.",
@@ -180,7 +180,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -214,7 +214,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -236,7 +236,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -267,7 +267,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -298,7 +298,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -328,7 +328,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -358,7 +358,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -389,7 +389,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -419,7 +419,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -449,7 +449,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -479,7 +479,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -509,7 +509,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -539,7 +539,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -569,7 +569,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -599,7 +599,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -629,7 +629,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -659,7 +659,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -689,7 +689,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -719,7 +719,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -749,7 +749,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -779,7 +779,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -809,7 +809,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -843,7 +843,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -873,7 +873,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -903,7 +903,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
@@ -933,7 +933,7 @@ export const collectioncardconstants = [
       `Dark Blue T-Shirt with short sleeves is good fit for
        various of occasions like jogging, regular meetings and even at home.
        They can fit with classic, sport and half-classic pants and make you
-       look better and stylish. It worths its cost and you will not regret
+       look better and soon-title-for-mens-collection. It worths its cost and you will not regret
        after owning this awesome clothing.`,
       `Qisqa yengli to'q moviy futbolka juda mos keladi
        yugurish, muntazam yig'ilishlar va hatto uyda kabi turli xil holatlar.
